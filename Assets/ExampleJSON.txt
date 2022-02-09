@@ -1,0 +1,64 @@
+{
+  "passages": [
+    {
+      "text": "Why hello there\n[[piss off->angry option]]\n[[make smile->Happy Option]]",
+      "links": [
+        {
+          "name": "piss off",
+          "link": "angry option",
+          "pid": "2"
+        },
+        {
+          "name": "make smile",
+          "link": "Happy Option",
+          "pid": "3"
+        }
+      ],
+      "name": "Greeting",
+      "pid": "1",
+      "position": {
+        "x": "546",
+        "y": "88"
+      }
+    },
+    {
+      "text": "GRRRRRR",
+      "name": "angry option",
+      "pid": "2",
+      "position": {
+        "x": "405",
+        "y": "254.33333333333334"
+      }
+    },
+    {
+      "text": ":D [[excited much->Excited Message]]",
+      "links": [
+        {
+          "name": "excited much",
+          "link": "Excited Message",
+          "pid": "4"
+        }
+      ],
+      "name": "Happy Option",
+      "pid": "3",
+      "position": {
+        "x": "695",
+        "y": "248.33333333333334"
+      }
+    },
+    {
+      "text": "THIS IS A SUPER LONG MESSAGE TO TEST IF THE LINE WILL WRAP AND ADD A NEW LINE AND ITS JUST GONNA KEEP GOING AND GOING AND GOING AND GOING AND GOING AND GOING AND GOING",
+      "name": "Excited Message",
+      "pid": "4",
+      "position": {
+        "x": "668",
+        "y": "368.33333333333337"
+      }
+    }
+  ],
+  "name": "Test Story",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "558A0FDC-9638-46CE-A057-914A1AAF4D0F"
+}
