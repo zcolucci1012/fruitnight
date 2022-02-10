@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    public TextAsset dialogueTextFile;
+    //public TextAsset dialogueTextFile;
     public List<DialogueNode> nodes = new List<DialogueNode>();
     // Start is called before the first frame update
     void Start()
     {
-        loadDialogue();
+        //loadDialogue();
     }
 
-    private void loadDialogue()
+    public void loadDialogue(TextAsset dialogueTextFile)
     {
         PasssageListObject passages = JsonUtility.FromJson<PasssageListObject>(dialogueTextFile.text);
         foreach (Passage passage in passages.passages)
