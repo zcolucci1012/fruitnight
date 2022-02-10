@@ -20,7 +20,7 @@ public class LevelHandler : MonoBehaviour
 
     List<Fighter> entities = new List<Fighter>();
     int turn = 0;
-    string description;
+    string description = "";
 
     // Start is called before the first frame update
     void Start()
@@ -68,41 +68,68 @@ public class LevelHandler : MonoBehaviour
     public void Player1Attack1()
     {
         players[0].Attack1();
+        turn++;
     }
 
     public void Player1Attack2()
     {
         players[0].Attack2();
+        turn++;
     }
 
     public void Player2Attack1()
     {
         players[1].Attack1();
+        turn++;
     }
 
     public void Player2Attack2()
     {
         players[1].Attack2();
+        turn++;
     }
 
-    public void UpdateDescription(int button)
+    public void Hovering(int n)
     {
-        switch (button)
+        switch (n)
         {
             case 0:
                 description = players[0].attack1desc;
+                player1Attack1Button.GetComponentInChildren<Text>().text =
+                    "> " + players[0].attack1name;
                 break;
             case 1:
                 description = players[0].attack2desc;
+                player1Attack2Button.GetComponentInChildren<Text>().text =
+                    "> " + players[0].attack2name;
                 break;
             case 2:
                 description = players[1].attack1desc;
+                player2Attack1Button.GetComponentInChildren<Text>().text =
+                    "> " + players[1].attack1name;
                 break;
             case 3:
                 description = players[1].attack2desc;
+                player2Attack2Button.GetComponentInChildren<Text>().text =
+                    "> " + players[1].attack2name;
                 break;
             default:
                 break;
         }
+    }
+
+    public void ExitHover()
+    {
+        player1Attack1Button.GetComponentInChildren<Text>().text =
+            players[0].attack1name;
+        player1Attack2Button.GetComponentInChildren<Text>().text =
+            players[0].attack2name;
+
+        player2Attack1Button.GetComponentInChildren<Text>().text =
+            players[1].attack1name;
+        player2Attack2Button.GetComponentInChildren<Text>().text =
+            players[1].attack2name;
+
+        description = "";
     }
 }

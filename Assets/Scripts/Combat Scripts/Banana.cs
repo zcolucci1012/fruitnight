@@ -18,12 +18,12 @@ public class Banana : Fighter
 
     public override void Attack1()
     {
-
+        print("Banana attack 1");
     }
 
     public override void Attack2()
     {
-
+        print("Banana attack 2");
     }
 
 

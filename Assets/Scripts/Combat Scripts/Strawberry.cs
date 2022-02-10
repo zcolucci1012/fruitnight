@@ -18,11 +18,11 @@ public class Strawberry : Fighter
 
     public override void Attack1()
     {
-
+        print("Strawberry attack 1");
     }
 
     public override void Attack2()
     {
-
+        print("Strawberry attack 2");
     }
 }
