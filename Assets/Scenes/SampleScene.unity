@@ -306,6 +306,8 @@ MonoBehaviour:
   player2Attack1Button: {fileID: 1372923372}
   player2Attack2Button: {fileID: 1497885619}
   descriptionText: {fileID: 1256526148}
+  defaultColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+  grayedOut: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
 --- !u!4 &186533391
 Transform:
   m_ObjectHideFlags: 0
@@ -854,8 +856,24 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 186533390}
           m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
-          m_MethodName: UpdateDescription
+          m_MethodName: Hovering
           m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186533390}
+          m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
+          m_MethodName: ExitHover
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1325,8 +1343,24 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 186533390}
           m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
-          m_MethodName: UpdateDescription
+          m_MethodName: Hovering
           m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186533390}
+          m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
+          m_MethodName: ExitHover
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1508,8 +1542,24 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 186533390}
           m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
-          m_MethodName: UpdateDescription
+          m_MethodName: Hovering
           m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186533390}
+          m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
+          m_MethodName: ExitHover
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1750,8 +1800,24 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 186533390}
           m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
-          m_MethodName: UpdateDescription
+          m_MethodName: Hovering
           m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186533390}
+          m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
+          m_MethodName: ExitHover
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
