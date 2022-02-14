@@ -16,13 +16,13 @@ public class Strawberry : Fighter
         
     }
 
-    public override void Attack1()
+    public override string Attack1(Fighter[] targets)
     {
-        print("Strawberry attack 1");
+        return "Strawberry attacks " + targets[0].name + " with " + attack1name;
     }
 
-    public override void Attack2()
+    public override string Attack2(Fighter[] targets)
     {
-        print("Strawberry attack 2");
+        return "Strawberry attacks " + targets[0].name + " with " + attack2name;
     }
 }

@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackButton : MonoBehaviour
+public class TrainingDummy : Fighter
 {
-    public string description;
+    public override string Attack1(Fighter[] targets)
+    {
+        return "Dummy attack 3";
+    }
+
+    public override string Attack2(Fighter[] targets)
+    {
+        return "Dummy attack 2";
+    }
 
     // Start is called before the first frame update
     void Start()

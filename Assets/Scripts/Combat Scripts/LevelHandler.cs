@@ -21,6 +21,10 @@ public class LevelHandler : MonoBehaviour
     List<Fighter> entities = new List<Fighter>();
     int turn = 0;
     string description = "";
+    bool selectingTarget = false;
+    string currentAttack = "";
+    string currentAttackName = "";
+    AttackType currentAttackType = AttackType.SingleTarget;
 
     // Start is called before the first frame update
     void Start()
@@ -42,9 +46,30 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PickAttack();
+        if (selectingTarget && turn < players.Length)
+        {
+            SelectTarget();
+        }
+        else if (turn >= players.Length)
+        {
+            EnemyAttack();
+            turn++;
+            if (turn >= entities.Count)
+            {
+                turn = 0;
+            }
+        }
+        else
+        {
+            PickAttack();
+        }
 
         descriptionText.GetComponent<Text>().text = description;
+    }
+
+    void EnemyAttack()
+    {
+
     }
 
     void PickAttack()
@@ -67,26 +92,35 @@ public class LevelHandler : MonoBehaviour
 
     public void Player1Attack1()
     {
-        players[0].Attack1();
-        turn++;
+        selectingTarget = true;
+        currentAttack = "player1attack1";
+        currentAttackName = players[0].attack1name;
+        currentAttackType = players[0].attack1type;
+        
     }
 
     public void Player1Attack2()
     {
-        players[0].Attack2();
-        turn++;
+        selectingTarget = true;
+        currentAttack = "player1attack2";
+        currentAttackName = players[0].attack2name;
+        currentAttackType = players[0].attack2type;
     }
 
     public void Player2Attack1()
     {
-        players[1].Attack1();
-        turn++;
+        selectingTarget = true;
+        currentAttack = "player2attack1";
+        currentAttackName = players[1].attack1name;
+        currentAttackType = players[1].attack1type;
     }
 
     public void Player2Attack2()
     {
-        players[1].Attack2();
-        turn++;
+        selectingTarget = true;
+        currentAttack = "player2attack2";
+        currentAttackName = players[1].attack2name;
+        currentAttackType = players[1].attack2type;
     }
 
     public void Hovering(int n)
@@ -115,6 +149,88 @@ public class LevelHandler : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+    public void SelectTarget()
+    {
+        if (currentAttackType == AttackType.AllyTarget)
+        {
+            description = currentAttackName + ":\nSelect ally target";
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (i != turn)
+                {
+                    players[i].GetComponent<Button>().enabled = true;
+                }
+            }
+        }
+        else if (currentAttackType == AttackType.SingleTarget)
+        {
+            description = currentAttackName + ":\nSelect enemy target";
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                enemies[i].GetComponent<Button>().enabled = true;
+            }
+        } else if (currentAttackType == AttackType.MultiTarget)
+        {
+            SelectedTarget(enemies);
+        }
+    }
+
+    public void SelectedTarget(Fighter target)
+    {
+        switch (currentAttack)
+        {
+            case "player1attack1":
+                description = players[0].Attack1(new Fighter[] { target });
+                break;
+            case "player1attack2":
+                description = players[0].Attack2(new Fighter[] { target });
+                break;
+            case "player2attack1":
+                description = players[1].Attack1(new Fighter[] { target });
+                break;
+            case "player2attack2":
+                description = players[1].Attack2(new Fighter[] { target });
+                break;
+            default:
+                break;
+        }
+
+        selectingTarget = false;
+        turn++;
+        foreach (Fighter e in entities)
+        {
+            e.GetComponent<Button>().enabled = false;
+        }
+    }
+
+    public void SelectedTarget(Fighter[] targets)
+    {
+        switch (currentAttack)
+        {
+            case "player1attack1":
+                description = players[0].Attack1(targets);
+                break;
+            case "player1attack2":
+                description = players[0].Attack2(targets);
+                break;
+            case "player2attack1":
+                description = players[1].Attack1(targets);
+                break;
+            case "player2attack2":
+                description = players[1].Attack2(targets);
+                break;
+            default:
+                break;
+        }
+
+        selectingTarget = false;
+        turn++;
+        foreach (Fighter e in entities)
+        {
+            e.GetComponent<Button>().enabled = false;
         }
     }
 

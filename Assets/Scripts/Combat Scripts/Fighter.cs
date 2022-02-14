@@ -10,6 +10,9 @@ public abstract class Fighter : MonoBehaviour
     public string attack1desc = "none";
     public string attack2desc = "none";
 
+    public AttackType attack1type = AttackType.SingleTarget;
+    public AttackType attack2type = AttackType.SingleTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,8 @@ public abstract class Fighter : MonoBehaviour
         
     }
 
-    public abstract void Attack1();
+    //return value is result of attack to print
+    public abstract string Attack1(Fighter[] targets);
 
-    public abstract void Attack2();
+    public abstract string Attack2(Fighter[] targets);
 }
