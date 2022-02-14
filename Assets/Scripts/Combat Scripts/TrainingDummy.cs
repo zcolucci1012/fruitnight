@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Banana : Fighter
+public class TrainingDummy : Fighter
 {
-
     public override string Attack1(Fighter[] targets)
     {
-        targets[0].hp -= 4;
-        return "Banana attacks " + targets[0].name + " with " + attack1name;
+        return "Dummy attack 3";
     }
 
     public override string Attack2(Fighter[] targets)
     {
-        return "Banana attacks " + targets[0].name + " with " + attack2name;
+        return "Dummy attack 2";
     }
 }

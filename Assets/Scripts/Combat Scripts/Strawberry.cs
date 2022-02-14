@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class Strawberry : Fighter
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public override string Attack1(Fighter[] targets)
     {
-        
+        targets[0].hp -= 4;
+        return "Strawberry attacks " + targets[0].name + " with " + attack1name;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override string Attack2(Fighter[] targets)
     {
-        
-    }
-
-    public override void Attack1()
-    {
-        print("Strawberry attack 1");
-    }
-
-    public override void Attack2()
-    {
-        print("Strawberry attack 2");
+        return "Strawberry attacks " + targets[0].name + " with " + attack2name;
     }
 }
