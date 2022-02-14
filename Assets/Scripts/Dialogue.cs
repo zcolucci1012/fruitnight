@@ -2,15 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+public class Dialogue
 {
     //public TextAsset dialogueTextFile;
     public List<DialogueNode> nodes = new List<DialogueNode>();
-    // Start is called before the first frame update
-    void Start()
-    {
-        //loadDialogue();
-    }
 
     public void loadDialogue(TextAsset dialogueTextFile)
     {
