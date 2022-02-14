@@ -88,6 +88,11 @@ public class LevelHandler : MonoBehaviour
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack2Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
+
+        if (entities[turn].unconscious)
+        {
+            turn++;
+        }
     }
 
     public void Player1Attack1()
@@ -198,12 +203,7 @@ public class LevelHandler : MonoBehaviour
                 break;
         }
 
-        selectingTarget = false;
-        turn++;
-        foreach (Fighter e in entities)
-        {
-            e.GetComponent<Button>().enabled = false;
-        }
+        NextTurn();
     }
 
     public void SelectedTarget(Fighter[] targets)
@@ -226,13 +226,24 @@ public class LevelHandler : MonoBehaviour
                 break;
         }
 
+        NextTurn();
+    }
+
+    public void NextTurn()
+    {
         selectingTarget = false;
         turn++;
-        foreach (Fighter e in entities)
+        for (int i = 0; i < entities.Count; i++)
         {
-            e.GetComponent<Button>().enabled = false;
+            entities[i].GetComponent<Button>().enabled = false;
+            if (entities[i].unconscious || entities[i].hp <= 0)
+            {
+                description += "\n" + entities[i].name + " has fallen unconscious!";
+            }
         }
     }
+
+    
 
     public void ExitHover()
     {

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class Fighter : MonoBehaviour
 {
+    public int hp = 0;
+    public bool unconscious = false;
+
     public string attack1name = "none";
     public string attack2name = "none";
 
@@ -22,7 +25,10 @@ public abstract class Fighter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (hp <= 0)
+        {
+            unconscious = true;
+        }
     }
 
     //return value is result of attack to print
