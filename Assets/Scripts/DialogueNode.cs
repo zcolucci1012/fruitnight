@@ -7,6 +7,8 @@ public class DialogueNode
     public string text;
     public DialogueOption option1;
     public DialogueOption option2;
+    public string emotion = "base";
+    public int score = 0;
 
     public DialogueNode()
     {

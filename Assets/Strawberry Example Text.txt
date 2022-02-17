@@ -1,0 +1,85 @@
+{
+  "passages": [
+    {
+      "text": "Hi there! It's berry nice to meet you.\n[[Ugh piss off->Mean choice]]\n[[Oh hello!! It's nice to meet you too!->Nice choice]]",
+      "links": [
+        {
+          "name": "Ugh piss off",
+          "link": "Mean choice",
+          "pid": "2"
+        },
+        {
+          "name": "Oh hello!! It's nice to meet you too!",
+          "link": "Nice choice",
+          "pid": "3"
+        }
+      ],
+      "name": "Strawberry Meet",
+      "pid": "1",
+      "position": {
+        "x": "441",
+        "y": "136"
+      },
+      "tags": [
+        "base",
+        "0"
+      ]
+    },
+    {
+      "text": "Jeez! You're one sour grape!\n[[Actually, I'm a banana, dummy->Mean 2]]\n[[Sorry, I don't know what came over me. It's nice to meet you too->Nice choice]]",
+      "links": [
+        {
+          "name": "Actually, I'm a banana, dummy",
+          "link": "Mean 2",
+          "pid": "4"
+        },
+        {
+          "name": "Sorry, I don't know what came over me. It's nice to meet you too",
+          "link": "Nice choice",
+          "pid": "3"
+        }
+      ],
+      "name": "Mean choice",
+      "pid": "2",
+      "position": {
+        "x": "335",
+        "y": "262"
+      },
+      "tags": [
+        "angry",
+        "-1"
+      ]
+    },
+    {
+      "text": "I'm strawberry!\n",
+      "name": "Nice choice",
+      "pid": "3",
+      "position": {
+        "x": "640",
+        "y": "442"
+      },
+      "tags": [
+        "happy",
+        "1"
+      ]
+    },
+    {
+      "text": "Well... bye...",
+      "name": "Mean 2",
+      "pid": "4",
+      "position": {
+        "x": "172",
+        "y": "461"
+      },
+      "tags": [
+        "sad",
+        "-1"
+      ]
+    }
+  ],
+  "name": "Fruitnight",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "CB3639A4-5331-40B3-AB52-6D7B9393A94C"
+}

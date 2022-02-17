@@ -527,5 +527,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueWindow: {fileID: 536700315}
-  dialoguePath: {fileID: 4900000, guid: 4e3b24f7374c0b3458ae85dc6f5402db, type: 3}
+  dialoguePath: {fileID: 4900000, guid: c4231a9e6d7c90543a16a9f6cd6fb97d, type: 3}
   NPCName: Strawberry
