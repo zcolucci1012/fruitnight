@@ -18,6 +18,7 @@ public class NPCDialogue : MonoBehaviour
 
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
+    public int score = 0;
     public string NPCName;
 
     // initialization
@@ -71,6 +72,10 @@ public class NPCDialogue : MonoBehaviour
     private void display_node(DialogueNode node)
     {
         dialogue_text.GetComponent<Text>().text = node.text;
+        score += node.score;
+        // change image
+        this.GetComponent<SwapEmotion>().swapEmotion(node.emotion);
+
 
         option_1.SetActive(false);
         option_2.SetActive(false);
