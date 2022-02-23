@@ -31,6 +31,8 @@ public abstract class Fighter : MonoBehaviour
         }
     }
 
+    //function executes after attack and target are selected
+    //targets are who the attack hits
     //return value is result of attack to print
     public abstract string Attack1(Fighter[] targets);
 

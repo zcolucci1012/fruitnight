@@ -8,7 +8,7 @@ public class Banana : Fighter
     public override string Attack1(Fighter[] targets)
     {
         targets[0].hp -= 4;
-        return "Banana attacks " + targets[0].name + " with " + attack1name;
+        return "Banana attacks " + targets[0].name + " with " + attack1name + " dealing 4 damage";
     }
 
     public override string Attack2(Fighter[] targets)
