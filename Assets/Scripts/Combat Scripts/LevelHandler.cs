@@ -13,6 +13,7 @@ public class LevelHandler : MonoBehaviour
     public GameObject player1Attack2Button;
     public GameObject player2Attack1Button;
     public GameObject player2Attack2Button;
+    public GameObject comboAttackButton;
     public GameObject descriptionText;
 
     public Color defaultColor;
@@ -44,6 +45,9 @@ public class LevelHandler : MonoBehaviour
             players[1].attack1name;
         player2Attack2Button.GetComponentInChildren<Text>().text =
             players[1].attack2name;
+
+        comboAttackButton.GetComponentInChildren<Text>().text =
+            GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]).attackName;
     }
 
     // Update is called once per frame
@@ -135,6 +139,15 @@ public class LevelHandler : MonoBehaviour
         currentAttack = "player2attack2";
         currentAttackName = players[1].attack2name;
         currentAttackType = players[1].attack2type;
+    }
+
+    public void ComboAttack()
+    {
+        selectingTarget = true;
+        currentAttack = "comboAttack";
+        Attack comboAttack = GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]);
+        currentAttackName = comboAttack.attackName;
+        currentAttackType = comboAttack.type;
     }
 
     //displays description and adds ">" over hovered attack

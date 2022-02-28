@@ -1178,14 +1178,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff622310a98bc3b4594a51f8c47898a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  hp: 10
   unconscious: 0
-  attack1name: strawberry fields
-  attack2name: red recovery
-  attack1desc: strawberry fields desc
-  attack2desc: red recovery desc
+  attack1name: strawberry patch
+  attack2name: vitamic c-rious
+  attack1desc: heals the selected player for 4 health
+  attack2desc: 'increases '
   attack1type: 0
   attack2type: 2
+  dmgMod: 1
+  defense: 7
 --- !u!114 &727899602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2521,7 +2523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690364e413cda8843ac53631d12db75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 20
   unconscious: 0
   attack1name: dummy punch
   attack2name: dummy slam
@@ -2529,6 +2531,8 @@ MonoBehaviour:
   attack2desc: dummy slam desc
   attack1type: 0
   attack2type: 0
+  dmgMod: 1
+  defense: 10
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3003,14 +3007,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f072ddb42109e4da548a973a432a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  hp: 15
   unconscious: 0
-  attack1name: banana slamma
-  attack2name: peel slap
-  attack1desc: banana slamma desc
-  attack2desc: peel slap desc
+  attack1name: peel slap
+  attack2name: banana slamma
+  attack1desc: attacks one enemy for 4 hp
+  attack2desc: attacks all enemies for 2 hp
   attack1type: 0
   attack2type: 0
+  dmgMod: 1
+  defense: 10
 --- !u!114 &2054587306
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,6 +16,9 @@ public abstract class Fighter : MonoBehaviour
     public AttackType attack1type = AttackType.SingleTarget;
     public AttackType attack2type = AttackType.SingleTarget;
 
+    public float dmgMod = 1;
+    public float defense = 10;
+
     // Start is called before the first frame update
     void Start()
     {
