@@ -24,9 +24,8 @@ public class LevelHandler : MonoBehaviour
     string description = "";
     bool selectingTarget = false;
     bool enemyAttacking = false;
-    string currentAttack = "";
-    string currentAttackName = "";
-    AttackType currentAttackType = AttackType.SingleTarget;
+    Attack currentAttack = null;
+    Attack comboAttack = null;
 
     // Start is called before the first frame update
     void Start()
@@ -46,8 +45,9 @@ public class LevelHandler : MonoBehaviour
         player2Attack2Button.GetComponentInChildren<Text>().text =
             players[1].attack2name;
 
-        comboAttackButton.GetComponentInChildren<Text>().text =
-            GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]).attackName;
+        this.comboAttack = GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]);
+
+        comboAttackButton.GetComponentInChildren<Text>().text = this.comboAttack.attackName;
     }
 
     // Update is called once per frame
@@ -77,13 +77,42 @@ public class LevelHandler : MonoBehaviour
             }
         }
 
+        if (AllUnconscious(players))
+        {
+            LoseGame();
+        } else if (AllUnconscious(enemies))
+        {
+            WinGame();
+        }
+        
+
         //ensure attack buttons are enabled/disabled
         ToggleAttackButtons();
 
         descriptionText.GetComponent<Text>().text = description;
     }
 
-    
+    void LoseGame()
+    {
+        Debug.Log("LOSE GAME, GO TO NEXT SCENE");
+    }
+
+    void WinGame()
+    {
+        Debug.Log("WIN GAME, GO TO NEXT SCENE");
+    }
+
+    bool AllUnconscious(Fighter[] fighters)
+    {
+        foreach (Fighter f in fighters)
+        {
+            if (!f.unconscious)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 
     //toggles player 1 and 2 attacks on or off depending on turn
     void ToggleAttackButtons()
@@ -92,62 +121,53 @@ public class LevelHandler : MonoBehaviour
         player1Attack2Button.GetComponent<Button>().enabled = turn == 0;
         player2Attack1Button.GetComponent<Button>().enabled = turn == 1;
         player2Attack2Button.GetComponent<Button>().enabled = turn == 1;
+        comboAttackButton.GetComponent<Button>().enabled = turn == 0;
 
         player1Attack1Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player1Attack2Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player2Attack1Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
+        comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0;
 
         player1Attack1Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack2Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
+        comboAttackButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
     }
 
     //begins attack 1 for player 1
     public void Player1Attack1()
     {
         selectingTarget = true;
-        currentAttack = "player1attack1";
-        currentAttackName = players[0].attack1name;
-        currentAttackType = players[0].attack1type;
-        
+        currentAttack = players[0].attack1;
     }
 
     //begins attack 2 for player 1
     public void Player1Attack2()
     {
         selectingTarget = true;
-        currentAttack = "player1attack2";
-        currentAttackName = players[0].attack2name;
-        currentAttackType = players[0].attack2type;
+        currentAttack = players[0].attack2;
     }
 
     //begins attack 1 for player 2
     public void Player2Attack1()
     {
         selectingTarget = true;
-        currentAttack = "player2attack1";
-        currentAttackName = players[1].attack1name;
-        currentAttackType = players[1].attack1type;
+        currentAttack = players[1].attack1;
     }
 
     //begins attack 2 for player 2
     public void Player2Attack2()
     {
         selectingTarget = true;
-        currentAttack = "player2attack2";
-        currentAttackName = players[1].attack2name;
-        currentAttackType = players[1].attack2type;
+        currentAttack = players[1].attack2;
     }
 
     public void ComboAttack()
     {
         selectingTarget = true;
-        currentAttack = "comboAttack";
-        Attack comboAttack = GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]);
-        currentAttackName = comboAttack.attackName;
-        currentAttackType = comboAttack.type;
+        currentAttack = this.comboAttack;
     }
 
     //displays description and adds ">" over hovered attack
@@ -176,6 +196,11 @@ public class LevelHandler : MonoBehaviour
                 player2Attack2Button.GetComponentInChildren<Text>().text =
                     "> " + players[1].attack2name;
                 break;
+            case -1:
+                description = this.comboAttack.description;
+                comboAttackButton.GetComponentInChildren<Text>().text =
+                    "> " + this.comboAttack.attackName;
+                break;
             default:
                 break;
         }
@@ -185,9 +210,9 @@ public class LevelHandler : MonoBehaviour
     //in the case of a multi-target attack, executes the attack on all targets regardless
     public void SelectTarget()
     {
-        if (currentAttackType == AttackType.AllyTarget)
+        if (currentAttack.type == AttackType.AllyTarget)
         {
-            description = currentAttackName + ":\nSelect ally target";
+            description = currentAttack.attackName + ":\nSelect ally target";
             for (int i = 0; i < players.Length; i++)
             {
                 if (i != turn)
@@ -196,14 +221,14 @@ public class LevelHandler : MonoBehaviour
                 }
             }
         }
-        else if (currentAttackType == AttackType.SingleTarget)
+        else if (currentAttack.type == AttackType.SingleTarget)
         {
-            description = currentAttackName + ":\nSelect enemy target";
+            description = currentAttack.attackName + ":\nSelect enemy target";
             for (int i = 0; i < enemies.Length; i++)
             {
                 enemies[i].GetComponent<Button>().enabled = true;
             }
-        } else if (currentAttackType == AttackType.MultiTarget)
+        } else if (currentAttack.type == AttackType.MultiTarget)
         {
             SelectedTarget(enemies);
         }
@@ -213,23 +238,7 @@ public class LevelHandler : MonoBehaviour
     //changes description based on attack result
     public void SelectedTarget(Fighter target)
     {
-        switch (currentAttack)
-        {
-            case "player1attack1":
-                description = players[0].Attack1(new Fighter[] { target });
-                break;
-            case "player1attack2":
-                description = players[0].Attack2(new Fighter[] { target });
-                break;
-            case "player2attack1":
-                description = players[1].Attack1(new Fighter[] { target });
-                break;
-            case "player2attack2":
-                description = players[1].Attack2(new Fighter[] { target });
-                break;
-            default:
-                break;
-        }
+        this.description = currentAttack.execute(new Fighter[] { target });
 
         NextTurn();
     }
@@ -237,23 +246,7 @@ public class LevelHandler : MonoBehaviour
     //overloaded for multiple targets
     public void SelectedTarget(Fighter[] targets)
     {
-        switch (currentAttack)
-        {
-            case "player1attack1":
-                description = players[0].Attack1(targets);
-                break;
-            case "player1attack2":
-                description = players[0].Attack2(targets);
-                break;
-            case "player2attack1":
-                description = players[1].Attack1(targets);
-                break;
-            case "player2attack2":
-                description = players[1].Attack2(targets);
-                break;
-            default:
-                break;
-        }
+        this.description = currentAttack.execute(targets);
 
         NextTurn();
     }
@@ -267,7 +260,7 @@ public class LevelHandler : MonoBehaviour
         for (int i = 0; i < entities.Count; i++)
         {
             entities[i].GetComponent<Button>().enabled = false;
-            if (entities[i].unconscious || entities[i].hp <= 0)
+            if (entities[i].unconscious)
             {
                 description += "\n" + entities[i].name + " has fallen unconscious!";
             }
@@ -290,6 +283,9 @@ public class LevelHandler : MonoBehaviour
         player2Attack2Button.GetComponentInChildren<Text>().text =
             players[1].attack2name;
 
+        comboAttackButton.GetComponentInChildren<Text>().text =
+            this.comboAttack.attackName;
+
         description = "";
     }
 
@@ -311,51 +307,36 @@ public class LevelHandler : MonoBehaviour
         switch (attack)
         {
             case 0:
-                if (enemy.attack1type == AttackType.SingleTarget)
-                {
-                    Fighter player = players[Random.Range(0, players.Length)];
-                    description = enemy.Attack1(new Fighter[] { player });
-                }
-                else if (enemy.attack1type == AttackType.AllyTarget)
-                {
-                    Fighter otherEnemy = null;
-                    do
-                    {
-                        otherEnemy = enemies[Random.Range(0, enemies.Length)];
-                    } while (enemy == otherEnemy);
-
-                    description = enemy.Attack1(new Fighter[] { otherEnemy });
-                }
-                else if (enemy.attack1type == AttackType.MultiTarget)
-                {
-                    description = enemy.Attack1(players);
-                }
+                this.currentAttack = enemy.attack1;
                 break;
             case 1:
-                if (enemy.attack2type == AttackType.SingleTarget)
-                {
-                    Fighter player = players[Random.Range(0, players.Length)];
-                    description = enemy.Attack2(new Fighter[] { player });
-                }
-                else if (enemy.attack2type == AttackType.AllyTarget)
-                {
-                    Fighter otherEnemy = null;
-                    do
-                    {
-                        otherEnemy = enemies[Random.Range(0, enemies.Length)];
-                    } while (enemy == otherEnemy);
-
-                    description = enemy.Attack2(new Fighter[] { otherEnemy });
-                }
-                else if (enemy.attack2type == AttackType.MultiTarget)
-                {
-                    description = enemy.Attack2(players);
-                }
+                this.currentAttack = enemy.attack2;
                 break;
-
+            default:
+                break;
         }
 
-        Invoke("EndAttack", 5);
+        if (this.currentAttack.type == AttackType.SingleTarget)
+        {
+            Fighter player = players[Random.Range(0, players.Length)];
+            description = this.currentAttack.execute(new Fighter[] { player });
+        }
+        else if (this.currentAttack.type == AttackType.AllyTarget)
+        {
+            Fighter otherEnemy = null;
+            do
+            {
+                otherEnemy = enemies[Random.Range(0, enemies.Length)];
+            } while (enemy == otherEnemy);
+
+            description = this.currentAttack.execute(new Fighter[] { otherEnemy });
+        }
+        else if (this.currentAttack.type == AttackType.MultiTarget)
+        {
+            description = this.currentAttack.execute(players);
+        }
+
+        Invoke("EndAttack", 2);
     }
 
     //ends attack by incrememting turn and stopping enemy attack
