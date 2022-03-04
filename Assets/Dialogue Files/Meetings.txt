@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "The dark brown below me is rough and hard, while the brightness of the top is almost blinding as a contrast. The light peering in through the walls is the only normal I've seen for a while. \n\n[[continue->1]]",
+      "text": "The dark brown below me is rough and hard, while the brightness of the top is almost blinding as a contrast. The light peering in through the walls is the only normal I've seen for a while. \n\n[[continue->1]]\n",
       "links": [
         {
           "name": "continue",
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[Where am I? Is this some sort of afterlife?->8]]",
+      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[Where am I? Is this some sort of afterlife?->8]]\n<img src=\"images/Strawberry base.PNG\" />",
       "links": [
         {
           "name": "Where am I? Is this some sort of afterlife?",
@@ -163,8 +163,8 @@
       "name": "7",
       "pid": "8",
       "position": {
-        "x": "668",
-        "y": "1361"
+        "x": "671",
+        "y": "1359"
       },
       "tags": [
         "0",
@@ -237,7 +237,7 @@
       "tags": [
         "0",
         "Strawberry",
-        "sad"
+        "meh"
       ]
     },
     {
@@ -848,7 +848,7 @@
       ]
     }
   ],
-  "name": "Meetings Test",
+  "name": "Meetings",
   "startnode": "1",
   "creator": "Twine",
   "creator-version": "2.3.16",

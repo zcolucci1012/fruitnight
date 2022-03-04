@@ -433,7 +433,7 @@ PrefabInstance:
       objectReference: {fileID: 490504674}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.size
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[0]
@@ -499,6 +499,14 @@ PrefabInstance:
       propertyPath: emotions.Array.data[15]
       value: 
       objectReference: {fileID: 21300000, guid: d67e954dcbef3f44ab2c5b755ee89502, type: 3}
+    - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: emotions.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: 852e0c29ccec6fb46ae38e25d3d7f21f, type: 3}
+    - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: emotions.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b74ba96cf40fbf4b854635a1ab3a0ee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8cf684633760aa449da36c346a9f152, type: 3}
 --- !u!1 &829445287
