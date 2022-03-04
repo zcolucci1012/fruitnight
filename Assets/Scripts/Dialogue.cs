@@ -48,7 +48,7 @@ public class Dialogue
                 }
                 else if (j == 1)
                 {
-                    node.speaker = s;
+                    node.speaker = s.Replace('-', ' ');
                 }
                 else if (j == 2)
                 {
