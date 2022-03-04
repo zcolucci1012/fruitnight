@@ -8,6 +8,8 @@ public class DialogueNode
     public DialogueOption option1;
     public DialogueOption option2;
     public string emotion = "base";
+    public string speaker;
+    public string bg;
     public int score = 0;
 
     public DialogueNode()
