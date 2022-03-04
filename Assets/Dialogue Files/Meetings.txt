@@ -110,7 +110,7 @@
       ]
     },
     {
-      "text": "Oh, I didn`t think that the wall could be broken through like that.\n\n[[continue->6]]",
+      "text": "Oh, I didn't think that the wall could be broken through like that.\n\n[[continue->6]]",
       "links": [
         {
           "name": "continue",
@@ -152,10 +152,10 @@
       ]
     },
     {
-      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[continue->8]]",
+      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[Where am I? Is this some sort of afterlife?->8]]",
       "links": [
         {
-          "name": "continue",
+          "name": "Where am I? Is this some sort of afterlife?",
           "link": "8",
           "pid": "9"
         }
@@ -173,10 +173,10 @@
       ]
     },
     {
-      "text": "Where am I? Is this some sort of afterlife?\n\n[[Where am I? Is this some sort of afterlife?->9]]",
+      "text": "As I said, there's no need to be afraid. Oh, where are my manners?\n\n[[continue->9]]",
       "links": [
         {
-          "name": "Where am I? Is this some sort of afterlife?",
+          "name": "continue",
           "link": "9",
           "pid": "10"
         }
@@ -184,8 +184,76 @@
       "name": "8",
       "pid": "9",
       "position": {
-        "x": "668",
-        "y": "1511"
+        "x": "667",
+        "y": "1576"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "My name is Strawberry. I'm a fruit! It seems like you're also some sort of fruit. Out of curiosity, where did you come from?\n[[I've always been here, what're you on about?->10]]\n[[I'm from a supermarket. I'm not sure where I am right now though.->12]]",
+      "links": [
+        {
+          "name": "I've always been here, what're you on about?",
+          "link": "10",
+          "pid": "11"
+        },
+        {
+          "name": "I'm from a supermarket. I'm not sure where I am right now though.",
+          "link": "12",
+          "pid": "13"
+        }
+      ],
+      "name": "9",
+      "pid": "10",
+      "position": {
+        "x": "665",
+        "y": "1799"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "Uh-huh... Wait, didn't you just ask where you were?\n\n[[Uh, that was a joke! Haha, I got you, didn't I?->11]]",
+      "links": [
+        {
+          "name": "Uh, that was a joke! Haha, I got you, didn't I?",
+          "link": "11",
+          "pid": "12"
+        }
+      ],
+      "name": "10",
+      "pid": "11",
+      "position": {
+        "x": "302",
+        "y": "2013"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "Strawberry laughs a bit nervously.\n\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "17"
+        }
+      ],
+      "name": "11",
+      "pid": "12",
+      "position": {
+        "x": "300",
+        "y": "2225"
       },
       "tags": [
         "0",
@@ -194,19 +262,129 @@
       ]
     },
     {
-      "text": "As I said, there's no need to be afraid. Oh, where are my manners?\n\n[[continue->10]]",
+      "text": "Oh, we call this place the Kitchen. It's kind of been our home since we were raised.\n\n[[continue->13]]",
       "links": [
         {
           "name": "continue",
-          "link": "10",
-          "pid": "11"
+          "link": "13",
+          "pid": "14"
         }
       ],
-      "name": "9",
-      "pid": "10",
+      "name": "12",
+      "pid": "13",
       "position": {
-        "x": "677",
-        "y": "1702"
+        "x": "953",
+        "y": "1986"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "So how's this \"supermarket\" place? Is it cool?\n\n[[It's a really fun and cool place. It's full of fruits, meats, and so much more!->14]]\n[[It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.->15]]",
+      "links": [
+        {
+          "name": "It's a really fun and cool place. It's full of fruits, meats, and so much more!",
+          "link": "14",
+          "pid": "15"
+        },
+        {
+          "name": "It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "13",
+      "pid": "14",
+      "position": {
+        "x": "957",
+        "y": "2160"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Really? Man, I'd love to check out a supermarket sometime then. It sounds like a blast!\n\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "17"
+        }
+      ],
+      "name": "14",
+      "pid": "15",
+      "position": {
+        "x": "746",
+        "y": "2341"
+      },
+      "tags": [
+        "2",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "Oh my, that sounds like an awful time! Well, at least you're safe now in the Kitchen!\n\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "17"
+        }
+      ],
+      "name": "15",
+      "pid": "16",
+      "position": {
+        "x": "1168",
+        "y": "2331"
+      },
+      "tags": [
+        "1",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "Oh yeah, I forgot to ask. What kind of fruit are you?\n\n\n[[Oh, I forgot to introduce myself. I'm a banana!->17]]",
+      "links": [
+        {
+          "name": "Oh, I forgot to introduce myself. I'm a banana!",
+          "link": "17",
+          "pid": "18"
+        }
+      ],
+      "name": "16",
+      "pid": "17",
+      "position": {
+        "x": "569",
+        "y": "2702"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "It's a pleasure to meet you, Banana! Let me introduce you to some of the other fruits around. I think there was one around here somewhere...\n\n[[continue->18]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18",
+          "pid": "19"
+        }
+      ],
+      "name": "17",
+      "pid": "18",
+      "position": {
+        "x": "570",
+        "y": "2888"
       },
       "tags": [
         "0",
@@ -215,17 +393,458 @@
       ]
     },
     {
-      "text": "My name is Strawberry. I'm a fruit! It seems like you're also some sort of fruit, so there's no need to be afraid.\n",
-      "name": "10",
-      "pid": "11",
+      "text": "Strawberry looks around the area, then moves over to the corner of the brown wall.\n[[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "20"
+        }
+      ],
+      "name": "18",
+      "pid": "19",
       "position": {
-        "x": "677",
-        "y": "1852"
+        "x": "570",
+        "y": "3038"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Here they are! This is Blueberry. They're a bit shy, but they're quite the talker once you pique their curiosity!\n\n[[continue->20]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "21"
+        }
+      ],
+      "name": "19",
+      "pid": "20",
+      "position": {
+        "x": "570",
+        "y": "3188"
       },
       "tags": [
         "0",
         "Strawberry",
         "happy"
+      ]
+    },
+    {
+      "text": "Hey, that's not f-fair! I wasn't b-being shy or anything! I was just... Admiring the brown wall!\n\n[[continue->21]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "22"
+        }
+      ],
+      "name": "20",
+      "pid": "21",
+      "position": {
+        "x": "570",
+        "y": "3338"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "Strawberry laughs at the pouting Blueberry. Seems the two get along very well.\n\n[[It's nice to meet you Blueberry. I'm-->22]]",
+      "links": [
+        {
+          "name": "It's nice to meet you Blueberry. I'm-",
+          "link": "22",
+          "pid": "23"
+        }
+      ],
+      "name": "21",
+      "pid": "22",
+      "position": {
+        "x": "570",
+        "y": "3488"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Musa acuminata. Although, you're tall enough for me to ask if you're Musa balbisiana instead.\n\n[[continue->23]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "23",
+          "pid": "24"
+        }
+      ],
+      "name": "22",
+      "pid": "23",
+      "position": {
+        "x": "570",
+        "y": "3638"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "Question: How tough are you?\n\n[[Huh? I'm a bit confused.->24]]",
+      "links": [
+        {
+          "name": "Huh? I'm a bit confused.",
+          "link": "24",
+          "pid": "25"
+        }
+      ],
+      "name": "23",
+      "pid": "24",
+      "position": {
+        "x": "570",
+        "y": "3788"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Scratch that, I'm pretty sure now Musa Balbisiana is actually what's known as plantains. Although, would you mind if I call you Musa for short?\n\n[[Uhh, I guess. There's nothing that's stopping you but-->25]]\n",
+      "links": [
+        {
+          "name": "Uhh, I guess. There's nothing that's stopping you but-",
+          "link": "25",
+          "pid": "26"
+        }
+      ],
+      "name": "24",
+      "pid": "25",
+      "position": {
+        "x": "570",
+        "y": "3938"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "That's just Blueberry's way of saying hi for the most part. There was someone else here in case you did turn out to be a bit more aggressive. Now, where are they?\n\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "27"
+        }
+      ],
+      "name": "25",
+      "pid": "26",
+      "position": {
+        "x": "570",
+        "y": "4088"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Right here. I was just trying to figure out how good this wall is. As it turns out, not good enough.\n\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "28"
+        }
+      ],
+      "name": "26",
+      "pid": "27",
+      "position": {
+        "x": "570",
+        "y": "4238"
+      },
+      "tags": [
+        "0",
+        "???",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "The sound of ripping coming from the same wall reveals a yellow figure, round but very pointed on the ends. \n\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "29"
+        }
+      ],
+      "name": "27",
+      "pid": "28",
+      "position": {
+        "x": "570",
+        "y": "4388"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "The name's Lemon. I've already heard enough about you though. You lot aren't exactly the quietest of folks. \n\n[[continue->29]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29",
+          "pid": "30"
+        }
+      ],
+      "name": "28",
+      "pid": "29",
+      "position": {
+        "x": "570",
+        "y": "4538"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "annoyed"
+      ]
+    },
+    {
+      "text": "Come on, Lemon. At least be more welcoming to the new fruit. Who knows, maybe they can help you out on your \"scouting missions\".\n\n[[continue->30]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "30",
+          "pid": "31"
+        }
+      ],
+      "name": "29",
+      "pid": "30",
+      "position": {
+        "x": "570",
+        "y": "4688"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "It's reconnaissance. However, I will say that I'm interested if this new person is strong. \n\n[[continue->31]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "31",
+          "pid": "32"
+        }
+      ],
+      "name": "30",
+      "pid": "31",
+      "position": {
+        "x": "570",
+        "y": "4838"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "Lemon moves closer to me, almost analyzing me with their gaze. He then puts on a pair of sunglasses.\n\n[[continue->32]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "32",
+          "pid": "33"
+        }
+      ],
+      "name": "31",
+      "pid": "32",
+      "position": {
+        "x": "570",
+        "y": "4988"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Looks like you're all clear. No weapons, no mold. \n\n[[Wait, where did you even get tha-->33]]",
+      "links": [
+        {
+          "name": "Wait, where did you even get tha-",
+          "link": "33",
+          "pid": "34"
+        }
+      ],
+      "name": "32",
+      "pid": "33",
+      "position": {
+        "x": "570",
+        "y": "5138"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sunglasses"
+      ]
+    },
+    {
+      "text": "Oh, would you look at the time? If you excuse me, I need to do that reconnaissance I was talking about in the drawers. Maybe tell those silverware pieces to poke at something hard and bend. \n\n[[continue->34]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "34",
+          "pid": "35"
+        }
+      ],
+      "name": "33",
+      "pid": "34",
+      "position": {
+        "x": "570",
+        "y": "5288"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sunglasses"
+      ]
+    },
+    {
+      "text": "Wait u- And they're gone... Seriously, I can't figure out how to keep their attention for more than two seconds without mentioning forks. \n\n[[Is there something on their mind? They seemed very distracted.->35]]",
+      "links": [
+        {
+          "name": "Is there something on their mind? They seemed very distracted.",
+          "link": "35",
+          "pid": "36"
+        }
+      ],
+      "name": "34",
+      "pid": "35",
+      "position": {
+        "x": "570",
+        "y": "5438"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "Don't mind Citrus Limon, they're going through a lot right now and they need to get something off their chest.\n\n[[continue->36]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "36",
+          "pid": "37"
+        }
+      ],
+      "name": "35",
+      "pid": "36",
+      "position": {
+        "x": "570",
+        "y": "5588"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, that reminds me! I need to catch up with the passion fruits! Something about their singing and needing me to help them practice their pitch. \n\n[[continue->37]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "37",
+          "pid": "38"
+        }
+      ],
+      "name": "36",
+      "pid": "37",
+      "position": {
+        "x": "570",
+        "y": "5738"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Strawberry zooms off, quickly turning the corner of the big brown wall.\n\n[[continue->38]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "38",
+          "pid": "39"
+        }
+      ],
+      "name": "37",
+      "pid": "38",
+      "position": {
+        "x": "570",
+        "y": "5888"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "So it's just you and me, Musa! I can help show you around the place. Oh, how about we go over the blender! I'm sure the culture here's different than wherever you came from! \n\n[[continue->39]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "39",
+          "pid": "40"
+        }
+      ],
+      "name": "38",
+      "pid": "39",
+      "position": {
+        "x": "570",
+        "y": "6038"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Although it may be a hard sell. It's an incredibly dangerous place and all. I could be fine checking it out on my own, so feel free to catch up with the others if you want!\n",
+      "name": "39",
+      "pid": "40",
+      "position": {
+        "x": "570",
+        "y": "6188"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
       ]
     }
   ],

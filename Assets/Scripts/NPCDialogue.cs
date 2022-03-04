@@ -19,7 +19,6 @@ public class NPCDialogue : MonoBehaviour
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
     public int score = 0;
-    public string NPCName;
 
     // initialization
     void Start()
@@ -33,8 +32,6 @@ public class NPCDialogue : MonoBehaviour
         option_1 = GameObject.Find("Option 1");
         option_2 = GameObject.Find("Option 2");
         exit_button = GameObject.Find("Exit");
-
-        name_text.GetComponent<Text>().text = NPCName + ":";
 
         exit_button.SetActive(false);
 
@@ -71,13 +68,32 @@ public class NPCDialogue : MonoBehaviour
 
     private void display_node(DialogueNode node)
     {
+        // change text
         dialogue_text.GetComponent<Text>().text = node.text;
-        score += node.score;
+        
+        // change score
+        if (node.score != 0)
+        {
+            FindObjectOfType<RelationshipScore>().changeScore(node.speaker, node.score);
+        }
+
+
         // change image
         this.GetComponent<SwapEmotion>().swapEmotion(node.speaker, node.emotion);
         this.GetComponent<SwapBackground>().swapBackground(node.bg);
 
+        // change name in textbox
+        if (!node.speaker.Equals("noSpeaker"))
+        {
+            name_text.GetComponent<Text>().text = node.speaker + ":";
+        }
+        else
+        {
+            name_text.GetComponent<Text>().text = " ";
+        }
 
+
+        // change options
         option_1.SetActive(false);
         option_2.SetActive(false);
 

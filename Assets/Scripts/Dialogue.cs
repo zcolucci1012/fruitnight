@@ -38,6 +38,7 @@ public class Dialogue
                 }
             }
 
+            // tags store: score, speaker, emotion, background
             int j = 0;
             foreach (string s in passage.tags)
             {
