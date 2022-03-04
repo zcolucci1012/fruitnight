@@ -38,16 +38,26 @@ public class Dialogue
                 }
             }
 
-            for (int i = 0; i < passage.tags.Count; i++)
+            int j = 0;
+            foreach (string s in passage.tags)
             {
-                if (i == 0)
+                if (j == 0)
                 {
-                    node.emotion = passage.tags[0];
+                    node.score = int.Parse(s);
                 }
-                else if (i == 1)
+                else if (j == 1)
                 {
-                    node.score = int.Parse(passage.tags[1]);
+                    node.speaker = s;
                 }
+                else if (j == 2)
+                {
+                    node.emotion = s;
+                }
+                else if (j == 3)
+                {
+                    node.bg = s;
+                }
+                j++;
             }
             nodes.Add(node);
         }

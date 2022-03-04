@@ -74,7 +74,8 @@ public class NPCDialogue : MonoBehaviour
         dialogue_text.GetComponent<Text>().text = node.text;
         score += node.score;
         // change image
-        this.GetComponent<SwapEmotion>().swapEmotion(node.emotion);
+        this.GetComponent<SwapEmotion>().swapEmotion(node.speaker, node.emotion);
+        this.GetComponent<SwapBackground>().swapBackground(node.bg);
 
 
         option_1.SetActive(false);

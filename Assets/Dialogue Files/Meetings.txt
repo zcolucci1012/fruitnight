@@ -1,0 +1,237 @@
+{
+  "passages": [
+    {
+      "text": "The dark brown below me is rough and hard, while the brightness of the top is almost blinding as a contrast. The light peering in through the walls is the only normal I've seen for a while. \n\n[[continue->1]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "1",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "668",
+        "y": "311"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion",
+        "bag"
+      ]
+    },
+    {
+      "text": "The slight murmuring beyond these walls makes me nervous too. I'm not sure what's out there or what they're planning. \n\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1",
+      "pid": "2",
+      "position": {
+        "x": "668",
+        "y": "461"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion",
+        "bag"
+      ]
+    },
+    {
+      "text": "How long has it been since I last saw proper daylight? This enclosure is almost frightening and can't be climbed up, at least by someone of my stature.\n\n[[continue->3]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "3",
+          "pid": "4"
+        }
+      ],
+      "name": "2",
+      "pid": "3",
+      "position": {
+        "x": "668",
+        "y": "611"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion",
+        "bag"
+      ]
+    },
+    {
+      "text": "You know what? Enough of this! I'm gonna break through. \n\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3",
+      "pid": "4",
+      "position": {
+        "x": "668",
+        "y": "761"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion",
+        "bag"
+      ]
+    },
+    {
+      "text": "My vision is filled with light in comparison to the darkness of the brown container beforehand. From the distance, I can see many large objects, some metallic, some plastic, and even some glass.\n\n[[continue->5]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4",
+      "pid": "5",
+      "position": {
+        "x": "668",
+        "y": "911"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Oh, I didn`t think that the wall could be broken through like that.\n\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "7"
+        }
+      ],
+      "name": "5",
+      "pid": "6",
+      "position": {
+        "x": "668",
+        "y": "1061"
+      },
+      "tags": [
+        "0",
+        "???",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Something red appears in view, small and smiling in front of me.\n\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "8"
+        }
+      ],
+      "name": "6",
+      "pid": "7",
+      "position": {
+        "x": "668",
+        "y": "1211"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[continue->8]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "9"
+        }
+      ],
+      "name": "7",
+      "pid": "8",
+      "position": {
+        "x": "668",
+        "y": "1361"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Where am I? Is this some sort of afterlife?\n\n[[Where am I? Is this some sort of afterlife?->9]]",
+      "links": [
+        {
+          "name": "Where am I? Is this some sort of afterlife?",
+          "link": "9",
+          "pid": "10"
+        }
+      ],
+      "name": "8",
+      "pid": "9",
+      "position": {
+        "x": "668",
+        "y": "1511"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "As I said, there's no need to be afraid. Oh, where are my manners?\n\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "9",
+      "pid": "10",
+      "position": {
+        "x": "677",
+        "y": "1702"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "My name is Strawberry. I'm a fruit! It seems like you're also some sort of fruit, so there's no need to be afraid.\n",
+      "name": "10",
+      "pid": "11",
+      "position": {
+        "x": "677",
+        "y": "1852"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    }
+  ],
+  "name": "Meetings Test",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "884F1439-02D3-4C6E-BA88-9E61AA025F49"
+}

@@ -1,23 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SwapEmotion : MonoBehaviour
 {
 
     public List<Sprite> emotions;
+    public Image image;
 
-    public void swapEmotion(string emotion)
+    public void swapEmotion(string speaker, string emotion)
     {
-        for (int i = 0; i < emotions.Count; i++)
+
+
+        image.sprite = null;
+        image.color = new Color(255, 255, 255, 0);
+
+
+        foreach (Sprite sprite in emotions)
         {
-            if (emotions[i].name.Contains(emotion))
+            if (sprite.name.Equals(speaker + " " + emotion))
             {
                 // set new picture
-                this.GetComponent<SpriteRenderer>().sprite = emotions[i];
-                break;
+                image.color = new Color(255, 255, 255, 255);
+                image.sprite = sprite;
+                return;
             }
         }
+
     }
 
   
