@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Strawberry : Fighter
 {
-
-    public override string Attack1(Fighter[] targets)
+    private void Awake()
     {
-        targets[0].hp -= 4;
-        return "Strawberry attacks " + targets[0].name + " with " + attack1name;
-    }
+        this.attack1execute = targets =>
+        {
+            targets[0].Damage(-4);
+            return "Strawberry heals " + targets[0].name + " for 4 HP";
+        };
 
-    public override string Attack2(Fighter[] targets)
-    {
-        return "Strawberry attacks " + targets[0].name + " with " + attack2name;
+        this.attack2execute = targets =>
+        {
+            targets[0].dmgMult *= 1.25f;
+            return "Strawberry increases " + targets[0].name + "\'s damage by 25%";
+        };
+
+        this.attack1 = new Attack(this.attack1name, this.attack1desc, this.attack1type, this.attack1execute);
+        this.attack2 = new Attack(this.attack2name, this.attack2desc, this.attack2type, this.attack2execute);
     }
 }

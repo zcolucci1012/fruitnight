@@ -278,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 186533391}
   - component: {fileID: 186533390}
+  - component: {fileID: 186533392}
   m_Layer: 0
   m_Name: LevelHandler
   m_TagString: Untagged
@@ -306,6 +307,7 @@ MonoBehaviour:
   player1Attack2Button: {fileID: 1662546076}
   player2Attack1Button: {fileID: 1372923372}
   player2Attack2Button: {fileID: 1497885619}
+  comboAttackButton: {fileID: 1090162347}
   descriptionText: {fileID: 1256526148}
   defaultColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   grayedOut: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
@@ -323,6 +325,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186533392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186533389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005f903f46fdad44986b054a742c0aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &208507551
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,8 +527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.9700012}
-  m_SizeDelta: {x: 78.264, y: 97.6484}
+  m_AnchoredPosition: {x: 0, y: -8.614691}
+  m_SizeDelta: {x: 87.3135, y: 108.9392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302378027
 MonoBehaviour:
@@ -536,9 +550,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b5740a76d91b824aab5a99a8a37906d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4efc653dc81c6184e8662da78787cd86, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1178,14 +1192,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff622310a98bc3b4594a51f8c47898a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  maxHp: 10
+  defense: 7
   unconscious: 0
-  attack1name: strawberry fields
-  attack2name: red recovery
-  attack1desc: strawberry fields desc
-  attack2desc: red recovery desc
-  attack1type: 0
+  attack1name: strawberry patch
+  attack2name: vitamic c-rious
+  attack1desc: heals the selected player for 4 health
+  attack2desc: increases damage of target by 25%
+  attack1type: 2
   attack2type: 2
+  dmgMult: 1
+  dmgMod: 0
 --- !u!114 &727899602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b5740a76d91b824aab5a99a8a37906d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4efc653dc81c6184e8662da78787cd86, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1533,7 +1550,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: -1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -1600,7 +1617,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 186533390}
         m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
-        m_MethodName: Player1Attack1
+        m_MethodName: ComboAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1986,7 +2003,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 621514659}
+  m_TargetGraphic: {fileID: 1372923375}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2264,7 +2281,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 621514659}
+  m_TargetGraphic: {fileID: 1497885623}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2521,7 +2538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690364e413cda8843ac53631d12db75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  maxHp: 20
+  defense: 10
   unconscious: 0
   attack1name: dummy punch
   attack2name: dummy slam
@@ -2529,6 +2547,8 @@ MonoBehaviour:
   attack2desc: dummy slam desc
   attack1type: 0
   attack2type: 0
+  dmgMult: 1
+  dmgMod: 0
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2803,7 +2823,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 621514659}
+  m_TargetGraphic: {fileID: 1662546079}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -3003,14 +3023,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f072ddb42109e4da548a973a432a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  maxHp: 15
+  defense: 10
   unconscious: 0
-  attack1name: banana slamma
-  attack2name: peel slap
-  attack1desc: banana slamma desc
-  attack2desc: peel slap desc
+  attack1name: peel slap
+  attack2name: banana slamma
+  attack1desc: attacks one enemy for 4 hp
+  attack2desc: attacks all enemies for 2 hp
   attack1type: 0
   attack2type: 0
+  dmgMult: 1
+  dmgMod: 0
 --- !u!114 &2054587306
 MonoBehaviour:
   m_ObjectHideFlags: 0

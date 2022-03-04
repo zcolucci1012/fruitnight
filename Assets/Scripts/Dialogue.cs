@@ -37,6 +37,18 @@ public class Dialogue
                     node.option2.id = passage.links[i].pid - 1;
                 }
             }
+
+            for (int i = 0; i < passage.tags.Count; i++)
+            {
+                if (i == 0)
+                {
+                    node.emotion = passage.tags[0];
+                }
+                else if (i == 1)
+                {
+                    node.score = int.Parse(passage.tags[1]);
+                }
+            }
             nodes.Add(node);
         }
     }
@@ -53,6 +65,7 @@ class Passage
 {
     public string text;
     public List<Link> links;
+    public List<string> tags;
 }
 
 [System.Serializable]
