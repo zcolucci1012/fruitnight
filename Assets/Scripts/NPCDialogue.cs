@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class NPCDialogue : MonoBehaviour
 
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
+    public string nextScene;
     public int score = 0;
 
     // initialization
@@ -115,6 +117,7 @@ public class NPCDialogue : MonoBehaviour
         {
             exit_button.SetActive(true);
             exit_button.GetComponent<Button>().onClick.AddListener(delegate { DialogueWindow.SetActive(false); });
+            exit_button.GetComponent<Button>().onClick.AddListener(delegate { SceneManager.LoadScene(nextScene); });
         }
 
     }
