@@ -1,0 +1,390 @@
+{
+  "passages": [
+    {
+      "text": "After about 20 minutes or so of wandering, I finally found what I think Lemon called the \"Drawer\".\n\n[[continue->1]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "1",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "283.5",
+        "y": "555.8000030517578"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Come out, you shiny piercers! Are you afraid to get bent?!\n\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1",
+      "pid": "2",
+      "position": {
+        "x": "283.5",
+        "y": "705.8000030517578"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "The sound of lemon's voice echoes throughout the area. I think they're talking about the silverware but I'm not sure. \n\n[[Hey, Lemon! Where are you?->3]]",
+      "links": [
+        {
+          "name": "Hey, Lemon! Where are you?",
+          "link": "3",
+          "pid": "4"
+        }
+      ],
+      "name": "2",
+      "pid": "3",
+      "position": {
+        "x": "283.5",
+        "y": "855.8000030517578"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "The sound of someone running echoes, getting closer. \n\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3",
+      "pid": "4",
+      "position": {
+        "x": "283.5",
+        "y": "1005.8000030517578"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Why are you here? You know this place is dangerous, right?\n\n[[Well, I was interested in knowing you as a fruit.->5]]",
+      "links": [
+        {
+          "name": "Well, I was interested in knowing you as a fruit.",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4",
+      "pid": "5",
+      "position": {
+        "x": "283.5",
+        "y": "1155.8000030517578"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "It doesn't help that the last and first time we talked, you wanted to leave. \n\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "7"
+        }
+      ],
+      "name": "5",
+      "pid": "6",
+      "position": {
+        "x": "283.5",
+        "y": "1305.8000030517578"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Not to mention, if it's dangerous, wouldn't you want to go along with someone else? Have someone there to make sure you're not alone?\n\n[[continue->7]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "8"
+        }
+      ],
+      "name": "6",
+      "pid": "7",
+      "position": {
+        "x": "283.5",
+        "y": "1455.8000030517578"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Yeah, I wish I wasn't alone. That's exactly why I'm asking the forks to tango! Hey, idiots! Wanna dance with death?!\n\n[[Yeah, these silverware pieces can get smashed and broken!->8]]\n[[Lemon, are you okay? You seem unhinged right now. Please, calm down.->9]] \n",
+      "links": [
+        {
+          "name": "Yeah, these silverware pieces can get smashed and broken!",
+          "link": "8",
+          "pid": "9"
+        },
+        {
+          "name": "Lemon, are you okay? You seem unhinged right now. Please, calm down.",
+          "link": "9",
+          "pid": "10"
+        }
+      ],
+      "name": "7",
+      "pid": "8",
+      "position": {
+        "x": "283.5",
+        "y": "1605.8000030517578"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": " Oh, you're also a hater of silverware? I didn't realize that.\n\n[[Yeah, I just don't show it actively. Don't worry, you're not alone.->10]]",
+      "links": [
+        {
+          "name": "Yeah, I just don't show it actively. Don't worry, you're not alone.",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "8",
+      "pid": "9",
+      "position": {
+        "x": "93.5",
+        "y": "1792.8000030517578"
+      },
+      "tags": [
+        "1",
+        "Lemon",
+        "happy"
+      ]
+    },
+    {
+      "text": "It's their fault. They're pure evil in this kitchen. You don't know what they've done in the past.\n\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "9",
+      "pid": "10",
+      "position": {
+        "x": "454.5",
+        "y": "1800.8000030517578"
+      },
+      "tags": [
+        "2",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "All of you idiot pieces of silverware should just rust! You lot are the root of every problem in this kitchen!\n\n[[So what did the silverware even do to you? Are you sure these guys only cause problems?->11]]\n[[Hey, silverware! Shining and gleaming villains! Show yourselves, you cowards!->12]]",
+      "links": [
+        {
+          "name": "So what did the silverware even do to you? Are you sure these guys only cause problems?",
+          "link": "11",
+          "pid": "12"
+        },
+        {
+          "name": "Hey, silverware! Shining and gleaming villains! Show yourselves, you cowards!",
+          "link": "12",
+          "pid": "14"
+        }
+      ],
+      "name": "10",
+      "pid": "11",
+      "position": {
+        "x": "280.5",
+        "y": "1996.8000030517578"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "There are literal knives and forks in their ranks! It's as if they're made to pierce and torture us.\n\n[[I guess that's kind of fair. But is there something greater tha-->13]]\n",
+      "links": [
+        {
+          "name": "I guess that's kind of fair. But is there something greater tha-",
+          "link": "13",
+          "pid": "13"
+        }
+      ],
+      "name": "11",
+      "pid": "12",
+      "position": {
+        "x": "59.5",
+        "y": "2162.800003051758"
+      },
+      "tags": [
+        "2",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "Oi! Are you the lot that's been yelling to the sky?\n\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "15"
+        }
+      ],
+      "name": "13",
+      "pid": "13",
+      "position": {
+        "x": "254.5",
+        "y": "2463.800003051758"
+      },
+      "tags": [
+        "0",
+        "???",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Yeah, I hope you guys get scratched and smudged until your gleam is no more!\n\n[[continue->13]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "13"
+        }
+      ],
+      "name": "12",
+      "pid": "14",
+      "position": {
+        "x": "525.5",
+        "y": "2174.800003051758"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "Ahh, the big fork. I'd say it's a pleasure but I'd be lying. And I wanna be more honest with my new friend around.\n\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "14",
+      "pid": "15",
+      "position": {
+        "x": "255.5",
+        "y": "2657.800003051758"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "annoyed"
+      ]
+    },
+    {
+      "text": "You got some real nerve coming into our part of the Kitchen and disturbing the peace so soon after your friend died.\n\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "17"
+        }
+      ],
+      "name": "15",
+      "pid": "16",
+      "position": {
+        "x": "252.5",
+        "y": "2843.800003051758"
+      },
+      "tags": [
+        "0",
+        "Big-Fork",
+        "base"
+      ]
+    },
+    {
+      "text": "Lemon is visibly frustrated. They're fuming with rage and about ready to let loose.\n\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "18"
+        }
+      ],
+      "name": "16",
+      "pid": "17",
+      "position": {
+        "x": "252.5",
+        "y": "2993.800003051758"
+      },
+      "tags": [
+        "0",
+        "noSpeaker",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Why don't we find out how fast you bend under the pressure! Enough talk! Let's fight!",
+      "name": "17",
+      "pid": "18",
+      "position": {
+        "x": "252.5",
+        "y": "3143.800003051758"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    }
+  ],
+  "name": "Lemon Date 1",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "9141A8B5-8548-4926-84FD-19CCDC6FF32C"
+}

@@ -24,11 +24,11 @@ public class RelationshipScore : MonoBehaviour
             lemonScore += score;
         }
 
-        /*
+        
         Debug.Log("strawberryScore: " + strawberryScore);
         Debug.Log("blueberryScore: " + blueberryScore);
         Debug.Log("lemonScore: " + lemonScore);
-        */
+        
     }
 
 }
