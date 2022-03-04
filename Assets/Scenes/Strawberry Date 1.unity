@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: dialoguePath
       value: 
-      objectReference: {fileID: 4900000, guid: 7b50422b9ab1faa4caafb591fdaf260b, type: 3}
+      objectReference: {fileID: 4900000, guid: c4231a9e6d7c90543a16a9f6cd6fb97d, type: 3}
     - target: {fileID: 4197445750120166993, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: image
       value: 
@@ -418,43 +418,43 @@ PrefabInstance:
     - target: {fileID: 4197445750120166993, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: defaultBg
       value: 
-      objectReference: {fileID: 21300000, guid: 5eb798da97f4fec4fad0b6cf0bf8cc53, type: 3}
+      objectReference: {fileID: 21300000, guid: 779bf0907bccda84f852a20af8638502, type: 3}
     - target: {fileID: 4197445750120166993, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: backgrounds.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4197445750120166993, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: backgrounds.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 232b035288ef66f49b32ac7a2bee08a1, type: 3}
+      objectReference: {fileID: 21300000, guid: 517e1d7b3afd6ff48bf03810b9e04ca8, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: image
       value: 
       objectReference: {fileID: 490504674}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 3ec3635b5de656e4fafa1ed4f40d064a, type: 3}
+      objectReference: {fileID: 21300000, guid: 57a49774f8d163a45aeb3124db3b6c56, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 0bedb582446e63f4e814bf5c934bd486, type: 3}
+      objectReference: {fileID: 21300000, guid: 852e0c29ccec6fb46ae38e25d3d7f21f, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: be667d51598fcdf418cf5a75846c5ed8, type: 3}
+      objectReference: {fileID: 21300000, guid: f53b91f88cc951147857c7acaf45ea32, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 6dc794b63fd126348a13f363c3ab30fb, type: 3}
+      objectReference: {fileID: 21300000, guid: 2b74ba96cf40fbf4b854635a1ab3a0ee, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[4]
       value: 
-      objectReference: {fileID: 21300000, guid: ecd3a75f3cf66f64aa65a4bcc11336db, type: 3}
+      objectReference: {fileID: 21300000, guid: eaa5f411443592d42b93505cccacacdf, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[5]
       value: 
@@ -462,123 +462,123 @@ PrefabInstance:
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: 141b3a57a15cedb42b2d98d5faf7b365, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: f57ebe78fc7a1034781816c6edd8cbdd, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[8]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[10]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[11]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[12]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[13]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[14]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[15]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[16]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[17]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[18]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[19]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[20]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[21]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[22]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[23]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[24]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[25]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[26]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[27]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[28]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[29]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[30]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[31]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[32]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[33]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[34]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[35]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 75f9d3c1975bf7a42bb267492dbed1dc, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[36]
       value: 
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5eb798da97f4fec4fad0b6cf0bf8cc53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 779bf0907bccda84f852a20af8638502, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

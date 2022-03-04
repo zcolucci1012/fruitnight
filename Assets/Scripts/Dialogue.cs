@@ -56,7 +56,7 @@ public class Dialogue
                 }
                 else if (j == 3)
                 {
-                    node.bg = s;
+                    node.bg = s.Replace('-', ' ');
                 }
                 j++;
             }
