@@ -1211,6 +1211,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1597652034}
   - component: {fileID: 1597652033}
+  - component: {fileID: 1597652036}
+  - component: {fileID: 1597652035}
+  - component: {fileID: 1597652037}
   m_Layer: 0
   m_Name: DateSelectionManager
   m_TagString: Untagged
@@ -1234,10 +1237,9 @@ MonoBehaviour:
   TableBackground: {fileID: 1106015524}
   BlenderBackground: {fileID: 563802232}
   SinkBackground: {fileID: 1519861217}
-  fruits:
-  - {fileID: 21300000, guid: 7b5740a76d91b824aab5a99a8a37906d, type: 3}
-  - {fileID: 21300000, guid: e3846c8c2bad0b94c88af0e638092250, type: 3}
-  - {fileID: 21300000, guid: 39c09506b441c1e44b46f88e4e9f27bb, type: 3}
+  strawberry: {fileID: 1597652036}
+  blueberry: {fileID: 1597652035}
+  lemon: {fileID: 1597652037}
 --- !u!4 &1597652034
 Transform:
   m_ObjectHideFlags: 0
@@ -1252,6 +1254,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1597652035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597652032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d836379f0142bc4e81a0686a072d25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 3ec3635b5de656e4fafa1ed4f40d064a, type: 3}
+--- !u!114 &1597652036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597652032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113252706138fdd428feca1b5850b1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 57a49774f8d163a45aeb3124db3b6c56, type: 3}
+--- !u!114 &1597652037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597652032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3266519632f6e46801fe02ca318e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 4920fcde737a00c439cd53e70a8d038f, type: 3}
 --- !u!1 &1816916692
 GameObject:
   m_ObjectHideFlags: 0
