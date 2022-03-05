@@ -9,6 +9,7 @@ public abstract class Fighter : MonoBehaviour
     public int maxHp = 0;
     public int currentHp;
     public float defense = 10;
+    public float baseDefense = 10;
     public bool unconscious = false;
 
     public string attack1name = "none";
@@ -29,6 +30,12 @@ public abstract class Fighter : MonoBehaviour
     public Attack attack1;
     public Attack attack2;
     public Attack[] attacks;
+
+    // list of current acting defense modifiers, and how long they will last
+    public List<(int defValue, int turnsLeft)> defenseModifiers = new List<(int defValue, int turnsLeft)>{};
+
+    // specifies how many more turns the fighter is frozen for and can't move
+    public int turnsFrozen = 0;
 
     public float dmgMult = 1;
     public int dmgMod = 0;
@@ -80,6 +87,27 @@ public abstract class Fighter : MonoBehaviour
         if (this.currentHp > maxHp)
         {
             this.currentHp = maxHp;
+        }
+    }
+
+    // add a defense modifier for the specified amount of turns
+    public void Defense(int modifier, int turns) {
+        this.defenseModifiers.Add((modifier, turns));
+        this.defense = Mathf.Clamp(this.defense + modifier, 0, 20);
+    }
+
+    public void updateStats() {
+        // loops through and see if any modifiers have worn off.
+        for (int ii = 0; ii < defenseModifiers.Count; ii++) {
+            defenseModifiers[ii] = (defenseModifiers[ii].defValue, defenseModifiers[ii].turnsLeft - 1);
+            if (defenseModifiers[ii].turnsLeft <= 0) {
+                // remove effects from it on defense
+                // TODO : fix this to account for edge cases where removing the defense modifier will still result in something over 20
+                this.defense = Mathf.Clamp(this.defense - defenseModifiers[ii].defValue, 0, 20);
+
+                // remove defense modifier from active list
+                defenseModifiers.RemoveAt(ii);
+            }
         }
     }
 }

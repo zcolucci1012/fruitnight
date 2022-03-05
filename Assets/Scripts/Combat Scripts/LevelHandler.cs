@@ -27,6 +27,8 @@ public class LevelHandler : MonoBehaviour
     Attack currentAttack = null;
     Attack comboAttack = null;
 
+    // TODO : add dialogue queue
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,8 +55,17 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // reset turn
         if (turn >= entities.Count)
         {
+            // handle updating fighter stats that decay
+            foreach (Fighter player in players) {
+                player.updateStats();
+            }
+
+            foreach(Fighter enemy in enemies) {
+                enemy.updateStats();
+            }
             turn = 0;
         }
         //skip turn if unconcsious
@@ -62,6 +73,7 @@ public class LevelHandler : MonoBehaviour
         {
             turn++;
         }
+
         //checks if player is selecting a target, and if its a player's turn
         if (selectingTarget && turn < players.Length)
         {
@@ -77,6 +89,7 @@ public class LevelHandler : MonoBehaviour
             }
         }
 
+        // checks if the combat should end
         if (AllUnconscious(players))
         {
             LoseGame();
@@ -85,7 +98,6 @@ public class LevelHandler : MonoBehaviour
             WinGame();
         }
         
-
         //ensure attack buttons are enabled/disabled
         ToggleAttackButtons();
 

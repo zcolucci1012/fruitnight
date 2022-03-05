@@ -13,6 +13,5 @@ public class HealthBar : MonoBehaviour
 
     public void UpdateHealthBar() {
         healthBarImage.fillAmount = Mathf.Clamp((float)fighter.currentHp / (float)fighter.maxHp, 0, 1f);
-        Debug.Log(healthBarImage.fillAmount);
     }
 }
