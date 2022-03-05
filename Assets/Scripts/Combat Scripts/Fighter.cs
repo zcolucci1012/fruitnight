@@ -7,7 +7,7 @@ using System;
 public abstract class Fighter : MonoBehaviour
 {
     public int maxHp = 0;
-    private int currentHp;
+    public int currentHp;
     public float defense = 10;
     public bool unconscious = false;
 
@@ -35,16 +35,16 @@ public abstract class Fighter : MonoBehaviour
 
     private Vector3 originalEulerAngles;
 
-    public Slider healthBar = null;
+    public HealthBar healthBar = null;
 
     // Start is called before the first frame update
     void Start()
     {
         this.currentHp = this.maxHp;
-        if (this.healthBar != null)
+        /*if (this.healthBar != null)
         {
             this.healthBar.maxValue = this.maxHp;
-        }
+        }*/
 
         originalEulerAngles = this.transform.eulerAngles;
     }
@@ -52,9 +52,8 @@ public abstract class Fighter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.healthBar != null)
-        {
-            this.healthBar.value = this.currentHp;
+        if (this.healthBar != null) {
+            healthBar.UpdateHealthBar();
         }
 
         if (unconscious)
