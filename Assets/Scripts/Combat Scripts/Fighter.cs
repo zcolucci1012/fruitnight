@@ -28,6 +28,7 @@ public abstract class Fighter : MonoBehaviour
 
     public Attack attack1;
     public Attack attack2;
+    public Attack[] attacks;
 
     public float dmgMult = 1;
     public int dmgMod = 0;
