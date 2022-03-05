@@ -408,6 +408,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: nextScene
+      value: Strawberry Combat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: dialoguePath
       value: 
       objectReference: {fileID: 4900000, guid: c4231a9e6d7c90543a16a9f6cd6fb97d, type: 3}
