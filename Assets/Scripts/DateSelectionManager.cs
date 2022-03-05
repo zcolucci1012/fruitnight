@@ -10,11 +10,11 @@ public class DateSelectionManager : MonoBehaviour
     public GameObject BlenderBackground;
     public GameObject SinkBackground;
 
-    // public Sprite Strawberry;
-    // public Sprite Blueberry;
-    // public Sprite Lemon;
+    public StrawberryFruit strawberry;
+    public BlueberryFruit blueberry;
+    public LemonFruit lemon;
 
-    public List<Sprite> fruits; // Index relates to location on screen
+    private List<Fruit> fruits = new List<Fruit>(); // Index relates to location on screen
                                 // 0: Table
                                 // 1: Blender
                                 // 2: Sink
@@ -22,16 +22,23 @@ public class DateSelectionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        KitchenBackground.transform.Find("TableSprite").GetComponent<Image>().sprite = fruits[0];
-        KitchenBackground.transform.Find("BlenderSprite").GetComponent<Image>().sprite = fruits[1];
-        KitchenBackground.transform.Find("SinkSprite").GetComponent<Image>().sprite = fruits[2];
+        //strawberry = GetComponent<StrawberryFruit>();
+        //blueberry = GetComponent<BlueberryFruit>();
+        //lemon = GetComponent<LemonFruit>();
+        fruits.Add(strawberry);
+        fruits.Add(blueberry);
+        fruits.Add(lemon);
+
+        KitchenBackground.transform.Find("TableSprite").GetComponent<Image>().sprite = fruits[0].sprite;
+        KitchenBackground.transform.Find("BlenderSprite").GetComponent<Image>().sprite = fruits[1].sprite;
+        KitchenBackground.transform.Find("SinkSprite").GetComponent<Image>().sprite = fruits[2].sprite;
     }
 
     // uses Fisher-Yates Shuffle algorithm
     public void ShuffleFruitLocations()
     {
         System.Random _random = new System.Random();
-        Sprite temp;
+        Fruit temp;
         int n = fruits.Count;
 
         for (int i = 0; i < n; i++)
@@ -45,25 +52,28 @@ public class DateSelectionManager : MonoBehaviour
 
     public void TransitionToTable()
     {
-        KitchenBackground.SetActive(false);
-        TableBackground.SetActive(true);
+        fruits[0].InitiateDate();
+        //KitchenBackground.SetActive(false);
+        //TableBackground.SetActive(true);
 
-        TableBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[0];
+        //TableBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[0].sprite;
     }
 
     public void TransitionToBlender()
     {
-        KitchenBackground.SetActive(false);
-        BlenderBackground.SetActive(true);
+        fruits[1].InitiateDate();
+        //KitchenBackground.SetActive(false);
+        //BlenderBackground.SetActive(true);
 
-        BlenderBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[1];
+        //BlenderBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[1].sprite;
     }
 
     public void TransitionToSink()
     {
-        KitchenBackground.SetActive(false);
-        SinkBackground.SetActive(true);
+        fruits[2].InitiateDate();
+        //KitchenBackground.SetActive(false);
+        //SinkBackground.SetActive(true);
 
-        SinkBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[2];
+        //SinkBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[2].sprite;
     }
 }

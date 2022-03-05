@@ -720,6 +720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueWindow: {fileID: 68847829445696470}
   dialoguePath: {fileID: 0}
+  nextScene: 
   score: 0
 --- !u!1 &1135705025403329647
 GameObject:
