@@ -319,10 +319,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 829445291}
     m_Modifications:
+    - target: {fileID: 68847827730413770, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68847827730413770, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d6e4b44a50e5544ba4fff68b8a0c716, type: 3}
+    - target: {fileID: 68847829029786499, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68847829029786499, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d6e4b44a50e5544ba4fff68b8a0c716, type: 3}
     - target: {fileID: 68847829445696470, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: m_Name
       value: Text Box
       objectReference: {fileID: 0}
+    - target: {fileID: 68847829445696488, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68847829445696488, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f49c53bbb3f26da45ba22c9c946e2f25, type: 3}
     - target: {fileID: 68847829445696489, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -415,6 +439,14 @@ PrefabInstance:
       propertyPath: dialoguePath
       value: 
       objectReference: {fileID: 4900000, guid: 12bf44181aaaa9f4f9e6985d98dbfa2a, type: 3}
+    - target: {fileID: 2825495613882163534, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825495613882163534, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d6e4b44a50e5544ba4fff68b8a0c716, type: 3}
     - target: {fileID: 4197445750120166993, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: image
       value: 
