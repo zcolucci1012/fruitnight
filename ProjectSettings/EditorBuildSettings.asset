@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Blueberry Date 1.unity
     guid: 3b4a0d95299b7b64d84c680593978c53
   - enabled: 1
-    path: Assets/Scenes/Strawberry Combat.unity
+    path: Assets/Scenes/StrawberryCombat.unity
     guid: 0fb8fed2d66975343ac66f8291ad4911
+  - enabled: 1
+    path: Assets/Scenes/LemonCombat.unity
+    guid: 8542d055fdc0d8d4fbbadb11b76ad03b
+  - enabled: 1
+    path: Assets/Scenes/BlueberryCombat.unity
+    guid: abaadc7ed4852de4f92b0dd50ac3e00e
   m_configObjects: {}

@@ -528,6 +528,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: nextScene
+      value: BlueberryCombat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: audioPlayer
       value: 
       objectReference: {fileID: 808710372}
@@ -594,11 +598,11 @@ PrefabInstance:
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: 141b3a57a15cedb42b2d98d5faf7b365, type: 3}
+      objectReference: {fileID: 21300000, guid: 869abf05d11f30548b2efa03a4e96e32, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: f57ebe78fc7a1034781816c6edd8cbdd, type: 3}
+      objectReference: {fileID: 21300000, guid: a4f8fd455cddbc64c844a8f1959d40db, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[8]
       value: 
