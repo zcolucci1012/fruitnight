@@ -27,6 +27,10 @@ public class LevelHandler : MonoBehaviour
     Attack currentAttack = null;
     Attack comboAttack = null;
 
+    public int relationshipScore = 1;
+
+    // TODO : add dialogue queue
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,8 +57,17 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // reset turn
         if (turn >= entities.Count)
         {
+            // handle updating fighter stats that decay
+            foreach (Fighter player in players) {
+                player.endOfRoundUpdate();
+            }
+
+            foreach(Fighter enemy in enemies) {
+                enemy.endOfRoundUpdate();
+            }
             turn = 0;
         }
         //skip turn if unconcsious
@@ -62,6 +75,7 @@ public class LevelHandler : MonoBehaviour
         {
             turn++;
         }
+
         //checks if player is selecting a target, and if its a player's turn
         if (selectingTarget && turn < players.Length)
         {
@@ -77,6 +91,7 @@ public class LevelHandler : MonoBehaviour
             }
         }
 
+        // checks if the combat should end
         if (AllUnconscious(players))
         {
             LoseGame();
@@ -85,7 +100,6 @@ public class LevelHandler : MonoBehaviour
             WinGame();
         }
         
-
         //ensure attack buttons are enabled/disabled
         ToggleAttackButtons();
 
@@ -128,6 +142,8 @@ public class LevelHandler : MonoBehaviour
         player2Attack1Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0;
+
+        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2;
 
         player1Attack1Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
@@ -197,7 +213,7 @@ public class LevelHandler : MonoBehaviour
                     "> " + players[1].attack2name;
                 break;
             case -1:
-                description = this.comboAttack.description;
+                description = relationshipScore > 2 ? this.comboAttack.description : "Your partner doesn't feel comfortable enough yet to do this attack with you...";
                 comboAttackButton.GetComponentInChildren<Text>().text =
                     "> " + this.comboAttack.attackName;
                 break;
@@ -231,6 +247,8 @@ public class LevelHandler : MonoBehaviour
         } else if (currentAttack.type == AttackType.MultiTarget)
         {
             SelectedTarget(enemies);
+        } else if (currentAttack.type == AttackType.MultiAllyTarget) {
+            SelectedTarget(players);
         }
     }
 
