@@ -490,6 +490,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
+      propertyPath: nextScene
+      value: LemonCombat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2639267840432858540, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: audioPlayer
       value: 
       objectReference: {fileID: 528227113}
@@ -560,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: 90c95c23e9b7d6b45b45a7b59db1cea0, type: 3}
+      objectReference: {fileID: 21300000, guid: 39bb5df2f2d47af4ba773062358c48f7, type: 3}
     - target: {fileID: 4206263881978752403, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: emotions.Array.data[8]
       value: 
