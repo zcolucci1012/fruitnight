@@ -8,7 +8,7 @@ public class TrainingDummy : Fighter
     {
         this.attack1execute = targets =>
         {
-            string msg = "The training dummy attacks " + targets[0].name + " with " + this.attack1name + "\n";
+            string msg = "The knife attacks " + targets[0].name + " with " + this.attack1name + "\n";
             if (targets[0].defense <= UnityEngine.Random.Range(1, 20))
             {
                 int dmg = (int)(4 * dmgMult) + dmgMod;
@@ -25,7 +25,7 @@ public class TrainingDummy : Fighter
 
         this.attack2execute = targets =>
         {
-            string msg = "The training dummy attacks " + targets[0].name + " with " + this.attack1name + "\n";
+            string msg = "The knife attacks " + targets[0].name + " with " + this.attack1name + "\n";
             if (targets[0].defense <= UnityEngine.Random.Range(1, 20))
             {
                 int dmg = (int)(4 * dmgMult) + dmgMod;

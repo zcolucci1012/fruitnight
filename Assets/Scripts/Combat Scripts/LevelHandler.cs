@@ -352,7 +352,12 @@ public class LevelHandler : MonoBehaviour
 
         if (this.currentAttack.type == AttackType.SingleTarget)
         {
-            Fighter player = players[Random.Range(0, players.Length)];
+            Fighter player = null;
+            do
+            {
+                player = players[Random.Range(0, players.Length)];
+            } while (player.unconscious);
+            
             description = this.currentAttack.execute(new Fighter[] { player });
         }
         else if (this.currentAttack.type == AttackType.AllyTarget)
