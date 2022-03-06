@@ -89,7 +89,7 @@
       ]
     },
     {
-      "text": "My vision is filled with light in comparison to the darkness of the brown container beforehand. From the distance, I can see many large objects, some metallic, some plastic, and even some glass.\n\n[[continue->5]]\n",
+      "text": "My vision is filled with light in comparison to the darkness of the brown paper bag. From the distance, I can see many large objects, some metallic, some plastic, and even some glass.\n\n[[continue->5]]\n",
       "links": [
         {
           "name": "continue",
@@ -393,7 +393,7 @@
       ]
     },
     {
-      "text": "Strawberry looks around the area, then moves over to the corner of the brown wall.\n[[continue->19]]",
+      "text": "Strawberry looks around the area, then moves over to the corner of the brown bag.\n[[continue->19]]",
       "links": [
         {
           "name": "continue",
@@ -582,7 +582,7 @@
       ]
     },
     {
-      "text": "The sound of ripping coming from the same wall reveals a yellow figure, round but very pointed on the ends. \n\n[[continue->28]]",
+      "text": "The sound of ripping coming from the paper bag reveals a yellow figure, round but very pointed on the ends. \n\n[[continue->28]]",
       "links": [
         {
           "name": "continue",
@@ -792,7 +792,7 @@
       ]
     },
     {
-      "text": "Strawberry zooms off, quickly turning the corner of the big brown wall.\n\n[[continue->38]]",
+      "text": "Strawberry zooms off, quickly turning the corner of the large brown bag.\n\n[[continue->38]]",
       "links": [
         {
           "name": "continue",
