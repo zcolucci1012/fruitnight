@@ -336,13 +336,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 10
   currentHp: 10
-  defense: 5
-  baseDefense: 5
+  defense: 12
+  baseDefense: 12
   unconscious: 0
   attack1name: Evil Genius
   attack2name: Study Up
   attack1desc: "Attack enemy for 2 pts of damage, lowers opponent\u2019s defense
-    by 2 pts for 2 turnspt for 2 turns"
+    by 2 pts for 2 turns"
   attack2desc: Increases partners defense by 2, increases their own by 3, for 2 turns
   attack1type: 0
   attack2type: 3
@@ -915,7 +915,9 @@ MonoBehaviour:
   descriptionText: {fileID: 2067090637}
   defaultColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   grayedOut: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+  fruit: blueberry
   relationshipScore: 1
+  scoreObject: {fileID: 1922788358}
 --- !u!114 &624623258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3638,8 +3640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 15
   currentHp: 0
-  defense: 5
-  baseDefense: 5
+  defense: 7
+  baseDefense: 7
   unconscious: 0
   attack1name: peel slap
   attack2name: banana slamma

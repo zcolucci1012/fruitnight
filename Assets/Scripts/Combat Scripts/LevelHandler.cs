@@ -27,7 +27,9 @@ public class LevelHandler : MonoBehaviour
     Attack currentAttack = null;
     Attack comboAttack = null;
 
+    public string fruit = "";
     public int relationshipScore = 1;
+    public RelationshipScore scoreObject;
 
     // TODO : add dialogue queue
 
@@ -52,6 +54,14 @@ public class LevelHandler : MonoBehaviour
         this.comboAttack = GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]);
 
         comboAttackButton.GetComponentInChildren<Text>().text = this.comboAttack.attackName;
+
+        if (fruit.Equals("strawberry")) {
+            relationshipScore  = RelationshipScore.strawberryScore;
+        } else if (fruit.Equals("lemon")) {
+            relationshipScore  = RelationshipScore.lemonScore;
+        } else if (fruit.Equals("blueberry")) {
+            relationshipScore  = RelationshipScore.blueberryScore;
+        }
     }
 
     // Update is called once per frame
