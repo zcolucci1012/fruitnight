@@ -50,7 +50,6 @@ public class NPCDialogue : MonoBehaviour
     private void SetSelectedOption(int x)
     {
         selected_option = x;
-        AudioSource.PlayClipAtPoint(clickSFX, audioPlayer.transform.position);
     }
 
     public IEnumerator run()

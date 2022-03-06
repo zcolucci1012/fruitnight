@@ -240,8 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 15
   currentHp: 0
-  defense: 5
-  baseDefense: 5
+  defense: 7
+  baseDefense: 7
   unconscious: 0
   attack1name: peel slap
   attack2name: banana slamma
@@ -625,9 +625,8 @@ GameObject:
   - component: {fileID: 458976456}
   - component: {fileID: 458976455}
   - component: {fileID: 458976453}
-  - component: {fileID: 458976454}
   m_Layer: 5
-  m_Name: Fork
+  m_Name: Fork 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,9 +669,9 @@ MonoBehaviour:
   defense: 1
   baseDefense: 1
   unconscious: 0
-  attack1name: Blend
+  attack1name: Stab
   attack2name: Heal
-  attack1desc: ' It tosses blender blades towards their opponent. '
+  attack1desc: It stabs their opponent.
   attack2desc: none
   attack1type: 0
   attack2type: 0
@@ -680,33 +679,6 @@ MonoBehaviour:
   dmgMult: 1
   dmgMod: 0
   healthBar: {fileID: 1968906609}
---- !u!114 &458976454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458976451}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690364e413cda8843ac53631d12db75a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 0
-  currentHp: 0
-  defense: 10
-  baseDefense: 10
-  unconscious: 0
-  attack1name: none
-  attack2name: none
-  attack1desc: none
-  attack2desc: none
-  attack1type: 0
-  attack2type: 0
-  turnsFrozen: 0
-  dmgMult: 1
-  dmgMod: 0
-  healthBar: {fileID: 0}
 --- !u!114 &458976455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,7 +686,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458976451}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -1901,7 +1873,9 @@ MonoBehaviour:
   descriptionText: {fileID: 1865931544}
   defaultColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   grayedOut: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+  fruit: lemon
   relationshipScore: 1
+  scoreObject: {fileID: 957659822}
 --- !u!114 &1158978758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2135,9 +2109,8 @@ GameObject:
   - component: {fileID: 1494673800}
   - component: {fileID: 1494673799}
   - component: {fileID: 1494673797}
-  - component: {fileID: 1494673798}
   m_Layer: 5
-  m_Name: Fork
+  m_Name: Fork 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2160,9 +2133,9 @@ MonoBehaviour:
   defense: 1
   baseDefense: 1
   unconscious: 0
-  attack1name: Blend
+  attack1name: Stab
   attack2name: Heal
-  attack1desc: ' It tosses blender blades towards their opponent. '
+  attack1desc: It stabs their opponent.
   attack2desc: none
   attack1type: 0
   attack2type: 0
@@ -2170,33 +2143,6 @@ MonoBehaviour:
   dmgMult: 1
   dmgMod: 0
   healthBar: {fileID: 1201199119}
---- !u!114 &1494673798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494673796}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690364e413cda8843ac53631d12db75a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 0
-  currentHp: 0
-  defense: 10
-  baseDefense: 10
-  unconscious: 0
-  attack1name: none
-  attack2name: none
-  attack1desc: none
-  attack2desc: none
-  attack1type: 0
-  attack2type: 0
-  turnsFrozen: 0
-  dmgMult: 1
-  dmgMod: 0
-  healthBar: {fileID: 0}
 --- !u!114 &1494673799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2204,7 +2150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494673796}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 

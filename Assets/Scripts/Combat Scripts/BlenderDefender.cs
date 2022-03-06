@@ -9,7 +9,7 @@ public class BlenderDefender : Fighter
         // Blend attack (damage)
         this.attack1execute = targets =>
         {
-            string msg = "The Blender Defender attacks " + targets[0].name + " with " + this.attack1name + "\n" + this.attack1desc;
+            string msg = "The enemy attacks " + targets[0].name + " with " + this.attack1name + "\n" + this.attack1desc;
             if (targets[0].defense <= UnityEngine.Random.Range(1, 20))
             {
                 int dmg = (int)(4 * dmgMult) + dmgMod;
@@ -26,7 +26,7 @@ public class BlenderDefender : Fighter
 
         this.attack2execute = targets =>
         {
-            string msg = "The training dummy uses healing on itself.\n";
+            string msg = "The enemy uses healing on itself.\n";
             this.Damage(-2);
             msg += "It healed itself for 2 HP";
             return msg;
