@@ -12,11 +12,6 @@ public class SwapEmotion : MonoBehaviour
     public void swapEmotion(string speaker, string emotion)
     {
 
-        if (speaker.Equals("Banana"))
-        {
-            return;
-        }
-
         image.sprite = null;
         image.color = new Color(255, 255, 255, 0);
 
