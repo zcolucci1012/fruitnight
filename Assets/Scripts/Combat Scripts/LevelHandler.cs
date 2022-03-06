@@ -27,6 +27,8 @@ public class LevelHandler : MonoBehaviour
     Attack currentAttack = null;
     Attack comboAttack = null;
 
+    public int relationshipScore = 1;
+
     // TODO : add dialogue queue
 
     // Start is called before the first frame update
@@ -60,11 +62,11 @@ public class LevelHandler : MonoBehaviour
         {
             // handle updating fighter stats that decay
             foreach (Fighter player in players) {
-                player.updateStats();
+                player.endOfRoundUpdate();
             }
 
             foreach(Fighter enemy in enemies) {
-                enemy.updateStats();
+                enemy.endOfRoundUpdate();
             }
             turn = 0;
         }
@@ -141,6 +143,8 @@ public class LevelHandler : MonoBehaviour
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0;
 
+        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2;
+
         player1Attack1Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
@@ -209,7 +213,7 @@ public class LevelHandler : MonoBehaviour
                     "> " + players[1].attack2name;
                 break;
             case -1:
-                description = this.comboAttack.description;
+                description = relationshipScore > 2 ? this.comboAttack.description : "Your partner doesn't feel comfortable enough yet to do this attack with you...";
                 comboAttackButton.GetComponentInChildren<Text>().text =
                     "> " + this.comboAttack.attackName;
                 break;
@@ -243,6 +247,8 @@ public class LevelHandler : MonoBehaviour
         } else if (currentAttack.type == AttackType.MultiTarget)
         {
             SelectedTarget(enemies);
+        } else if (currentAttack.type == AttackType.MultiAllyTarget) {
+            SelectedTarget(players);
         }
     }
 

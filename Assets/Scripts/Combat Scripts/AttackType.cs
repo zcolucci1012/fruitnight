@@ -7,5 +7,6 @@ using UnityEngine;
 public enum AttackType {
     SingleTarget,
     MultiTarget,
-    AllyTarget
+    AllyTarget,
+    MultiAllyTarget
 }

@@ -20,6 +20,7 @@ public abstract class Fighter : MonoBehaviour
 
     public AttackType attack1type = AttackType.SingleTarget;
     public AttackType attack2type = AttackType.SingleTarget;
+    //public AttackType attack3type = AttackType.SingleTarget;
 
     //function executes after attack and target are selected
     //targets are who the attack hits
@@ -29,7 +30,8 @@ public abstract class Fighter : MonoBehaviour
 
     public Attack attack1;
     public Attack attack2;
-    public Attack[] attacks;
+    //public Attack attack3;
+    //public Attack[] attacks;
 
     // list of current acting defense modifiers, and how long they will last
     public List<(int defValue, int turnsLeft)> defenseModifiers = new List<(int defValue, int turnsLeft)>{};
@@ -96,7 +98,7 @@ public abstract class Fighter : MonoBehaviour
         this.defense = Mathf.Clamp(this.defense + modifier, 0, 20);
     }
 
-    public void updateStats() {
+    public void endOfRoundUpdate() {
         // loops through and see if any modifiers have worn off.
         for (int ii = 0; ii < defenseModifiers.Count; ii++) {
             defenseModifiers[ii] = (defenseModifiers[ii].defValue, defenseModifiers[ii].turnsLeft - 1);
@@ -109,5 +111,14 @@ public abstract class Fighter : MonoBehaviour
                 defenseModifiers.RemoveAt(ii);
             }
         }
+
+        // reduces turns frozen value 
+        if (this.turnsFrozen > 0) {
+            this.turnsFrozen--;
+        }
+    }
+
+    public bool canAttack() {
+        return turnsFrozen <= 0;
     }
 }
