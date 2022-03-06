@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class LevelHandler : MonoBehaviour
 {
@@ -81,7 +82,7 @@ public class LevelHandler : MonoBehaviour
             turn = 0;
         }
         //skip turn if unconcsious
-        if (entities[turn].unconscious)
+        if (entities[turn].unconscious || entities[turn].turnsFrozen > 0)
         {
             turn++;
         }
@@ -104,10 +105,10 @@ public class LevelHandler : MonoBehaviour
         // checks if the combat should end
         if (AllUnconscious(players))
         {
-            LoseGame();
+            Invoke("LoseGame", 2);
         } else if (AllUnconscious(enemies))
         {
-            WinGame();
+            Invoke("WinGame", 2);
         }
         
         //ensure attack buttons are enabled/disabled
@@ -119,11 +120,13 @@ public class LevelHandler : MonoBehaviour
     void LoseGame()
     {
         Debug.Log("LOSE GAME, GO TO NEXT SCENE");
+        SceneManager.LoadScene("DateSelection");
     }
 
     void WinGame()
     {
         Debug.Log("WIN GAME, GO TO NEXT SCENE");
+        SceneManager.LoadScene("DateSelection");
     }
 
     bool AllUnconscious(Fighter[] fighters)
@@ -252,7 +255,10 @@ public class LevelHandler : MonoBehaviour
             description = currentAttack.attackName + ":\nSelect enemy target";
             for (int i = 0; i < enemies.Length; i++)
             {
-                enemies[i].GetComponent<Button>().enabled = true;
+                if (!enemies[i].unconscious)
+                {
+                    enemies[i].GetComponent<Button>().enabled = true;
+                }
             }
         } else if (currentAttack.type == AttackType.MultiTarget)
         {
