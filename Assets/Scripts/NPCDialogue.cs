@@ -16,11 +16,13 @@ public class NPCDialogue : MonoBehaviour
     private GameObject exit_button;
 
     private int selected_option = -2;
+    private string prevEmotion = "";
 
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
     public string nextScene;
-    public int score = 0;
+    public AudioClip clickSFX;
+    public GameObject audioPlayer;
 
     // initialization
     void Start()
@@ -48,7 +50,7 @@ public class NPCDialogue : MonoBehaviour
     private void SetSelectedOption(int x)
     {
         selected_option = x;
-        // add sound
+        AudioSource.PlayClipAtPoint(clickSFX, audioPlayer.transform.position);
     }
 
     public IEnumerator run()
@@ -82,6 +84,11 @@ public class NPCDialogue : MonoBehaviour
 
         // change image
         this.GetComponent<SwapEmotion>().swapEmotion(node.speaker, node.emotion);
+        if (!prevEmotion.Equals(node.speaker + " " + node.emotion))
+        {
+            FindObjectOfType<DialogueAudio>().PlayAudio(node.speaker, node.emotion);
+        }
+        prevEmotion = node.speaker + " " + node.emotion;
         this.GetComponent<SwapBackground>().swapBackground(node.bg);
 
         // change name in textbox
