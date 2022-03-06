@@ -744,16 +744,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330171132}
-  m_LocalRotation: {x: -0, y: -0, z: -0.5317304, w: 0.8469137}
+  m_LocalRotation: {x: -0, y: -0, z: -0.12304336, w: 0.9924013}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 208507552}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -64.245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.136}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.7, y: -40.9}
+  m_AnchoredPosition: {x: 9, y: -28}
   m_SizeDelta: {x: 101.2532, y: 75.9494}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &330171134
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cba5a151127737a4596e923a9e578f62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d05c77ccebca04499a0e215df241f54, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2850,7 +2850,7 @@ GameObject:
   - component: {fileID: 1625713356}
   - component: {fileID: 1625713359}
   m_Layer: 5
-  m_Name: Sandbag
+  m_Name: Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,13 +2863,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625713354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.4144498, w: 0.9100722}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2424, y: 1.2424, z: 1.2424}
   m_Children: []
   m_Father: {fileID: 780532723}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -48.969}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 195, y: 93}
@@ -2890,10 +2890,10 @@ MonoBehaviour:
   maxHp: 20
   defense: 10
   unconscious: 0
-  attack1name: dummy punch
-  attack2name: dummy slam
-  attack1desc: dummy punch desc
-  attack2desc: dummy slam desc
+  attack1name: chop!
+  attack2name: slash!
+  attack1desc: chop desc
+  attack2desc: slash desc
   attack1type: 0
   attack2type: 0
   dmgMult: 1
@@ -2919,7 +2919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ebb2a1f890420be40bf14cae9f11d48e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76fff40ff0ec292489f1e9d9c5acd783, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3625,13 +3625,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054587303}
-  m_LocalRotation: {x: -0, y: -0, z: 0.4562281, w: -0.8898629}
+  m_LocalRotation: {x: -0, y: -0, z: 0.12701435, w: -0.9919009}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780532723}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -54.288}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.594}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -189, y: 93}
@@ -3681,7 +3681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cba5a151127737a4596e923a9e578f62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d05c77ccebca04499a0e215df241f54, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
