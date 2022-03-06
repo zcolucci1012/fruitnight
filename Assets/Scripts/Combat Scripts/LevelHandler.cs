@@ -156,7 +156,7 @@ public class LevelHandler : MonoBehaviour
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0;
 
-        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2;
+        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2 && !players[0].unconscious && !players[1].unconscious;
 
         player1Attack1Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
