@@ -25,9 +25,9 @@ public class DateSelectionManager : MonoBehaviour
         //strawberry = GetComponent<StrawberryFruit>();
         //blueberry = GetComponent<BlueberryFruit>();
         //lemon = GetComponent<LemonFruit>();
-        fruits.Add(strawberry);
-        fruits.Add(blueberry);
         fruits.Add(lemon);
+        fruits.Add(blueberry);
+        fruits.Add(strawberry);
 
         KitchenBackground.transform.Find("TableSprite").GetComponent<Image>().sprite = fruits[0].sprite;
         KitchenBackground.transform.Find("BlenderSprite").GetComponent<Image>().sprite = fruits[1].sprite;

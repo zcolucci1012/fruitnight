@@ -13,7 +13,7 @@
       "pid": "1",
       "position": {
         "x": "405",
-        "y": "442.70001220703125"
+        "y": "442"
       },
       "tags": [
         "0",
@@ -34,7 +34,7 @@
       "pid": "2",
       "position": {
         "x": "405",
-        "y": "592.7000122070312"
+        "y": "592"
       },
       "tags": [
         "0",
@@ -55,12 +55,12 @@
       "pid": "3",
       "position": {
         "x": "405",
-        "y": "742.7000122070312"
+        "y": "742"
       },
       "tags": [
         "0",
         "Banana",
-        "noEmotion"
+        "base"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "pid": "4",
       "position": {
         "x": "405",
-        "y": "892.7000122070312"
+        "y": "892"
       },
       "tags": [
         "0",
@@ -97,7 +97,7 @@
       "pid": "5",
       "position": {
         "x": "405",
-        "y": "1042.7000122070312"
+        "y": "1042"
       },
       "tags": [
         "0",
@@ -118,7 +118,7 @@
       "pid": "6",
       "position": {
         "x": "405",
-        "y": "1192.7000122070312"
+        "y": "1192"
       },
       "tags": [
         "0",
@@ -127,10 +127,10 @@
       ]
     },
     {
-      "text": "So, did you see anything in particular that caught your attention?\n\n[[I was kind of stuck navigating this fridge. It's not exactly the easiest thing to figure out for the first time on your own.->7]]\n[[Yeah, there are a lot of cool places to explore! Although I think I might need someone with me before I get lost.->10]]",
+      "text": "So, did you see anything in particular that caught your attention?\n\n[[I was kind of stuck navigating the sink. It's not exactly the easiest thing to figure out for the first time on your own.->7]]\n[[Yeah, there are a lot of cool places to explore! Although I think I might need someone with me before I get lost.->10]]",
       "links": [
         {
-          "name": "I was kind of stuck navigating this fridge. It's not exactly the easiest thing to figure out for the first time on your own.",
+          "name": "I was kind of stuck navigating the sink. It's not exactly the easiest thing to figure out for the first time on your own.",
           "link": "7",
           "pid": "8"
         },
@@ -144,7 +144,7 @@
       "pid": "7",
       "position": {
         "x": "405",
-        "y": "1342.7000122070312"
+        "y": "1342"
       },
       "tags": [
         "0",
@@ -165,7 +165,7 @@
       "pid": "8",
       "position": {
         "x": "119",
-        "y": "1542.7000122070312"
+        "y": "1542"
       },
       "tags": [
         "1",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "text": "I see, I see. The fridge is large, so if you take the wrong turn, it'd be hard to find your way back. \n\n[[continue->9]]",
+      "text": "I see, I see. The sink is large, so if you take the wrong turn, it'd be hard to find your way back. \n\n[[continue->9]]",
       "links": [
         {
           "name": "continue",
@@ -186,7 +186,7 @@
       "pid": "9",
       "position": {
         "x": "119",
-        "y": "1692.7000122070312"
+        "y": "1692"
       },
       "tags": [
         "0",
@@ -207,7 +207,7 @@
       "pid": "10",
       "position": {
         "x": "127",
-        "y": "1894.7000122070312"
+        "y": "1894"
       },
       "tags": [
         "0",
@@ -228,7 +228,7 @@
       "pid": "11",
       "position": {
         "x": "610",
-        "y": "1521.7000122070312"
+        "y": "1521"
       },
       "tags": [
         "0",
@@ -249,12 +249,12 @@
       "pid": "12",
       "position": {
         "x": "385",
-        "y": "2175.7000122070312"
+        "y": "2175"
       },
       "tags": [
         "0",
         "Banana",
-        "noEmotion"
+        "base"
       ]
     },
     {
@@ -270,7 +270,7 @@
       "pid": "13",
       "position": {
         "x": "343",
-        "y": "2381.7000122070312"
+        "y": "2381"
       },
       "tags": [
         "0",
@@ -291,7 +291,7 @@
       "pid": "14",
       "position": {
         "x": "358",
-        "y": "2563.7000122070312"
+        "y": "2563"
       },
       "tags": [
         "0",
@@ -312,7 +312,7 @@
       "pid": "15",
       "position": {
         "x": "358",
-        "y": "2713.7000122070312"
+        "y": "2713"
       },
       "tags": [
         "0",
@@ -333,7 +333,7 @@
       "pid": "16",
       "position": {
         "x": "359",
-        "y": "2863.7000122070312"
+        "y": "2863"
       },
       "tags": [
         "0",
@@ -355,7 +355,7 @@
       "pid": "17",
       "position": {
         "x": "359",
-        "y": "3013.7000122070312"
+        "y": "3013"
       },
       "tags": [
         "0",
@@ -370,7 +370,7 @@
       "pid": "18",
       "position": {
         "x": "359",
-        "y": "3163.7000122070312"
+        "y": "3163"
       },
       "tags": [
         "0",
