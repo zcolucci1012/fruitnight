@@ -82,6 +82,9 @@ public class ComboAttacks : MonoBehaviour
         } else if (f1 is Banana && f2 is BlueberryFighter ||
             f2 is Banana && f1 is BlueberryFighter) {
                 return blueberryBanana;
+        }else if (f1 is Banana && f2 is LemonFighter ||
+            f2 is Banana && f1 is LemonFighter) {
+                return lemonBanana;
         }
         return null;
     }
