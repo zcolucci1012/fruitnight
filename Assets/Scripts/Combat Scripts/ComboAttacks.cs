@@ -52,7 +52,7 @@ public class ComboAttacks : MonoBehaviour
     });
 
     private Attack lemonBanana = new Attack("Lemon Twist",
-    "Banana riles Lemon up with talk about silverware, and lemon goes on a rampage. Deals 6 points of damage to each target, and lowers their defense by 1 pt for 2 turns.",
+    "Banana riles Lemon up with talk about silverware, and lemon goes on a rampage. Deals 6 points of damage to one target, and lowers their defense by 1 pt for 2 turns.",
     AttackType.SingleTarget,
     targets => 
     {
