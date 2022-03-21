@@ -11,6 +11,7 @@ public class DialogueNode
     public string speaker;
     public string bg;
     public int score = 0;
+    public bool unlockVerbal = false;
 
     public DialogueNode()
     {
