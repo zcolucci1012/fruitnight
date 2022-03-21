@@ -10,6 +10,7 @@ public class NPCDialogue : MonoBehaviour
     private Dialogue d = new Dialogue();
 
     private GameObject name_text;
+    private GameObject name_box;
     private GameObject dialogue_text;
     private GameObject option_1;
     private GameObject option_2;
@@ -32,6 +33,7 @@ public class NPCDialogue : MonoBehaviour
         d.loadDialogue(dialoguePath);
 
         name_text = GameObject.Find("NPC Name");
+        name_box = GameObject.Find("Name Box");
         dialogue_text = GameObject.Find("NPC Dialogue");
         option_1 = GameObject.Find("Option 1");
         option_2 = GameObject.Find("Option 2");
@@ -93,10 +95,12 @@ public class NPCDialogue : MonoBehaviour
         // change name in textbox
         if (!node.speaker.Equals("noSpeaker"))
         {
+            name_box.SetActive(true);
             name_text.GetComponent<Text>().text = node.speaker + ":";
         }
         else
         {
+            name_box.SetActive(false);
             name_text.GetComponent<Text>().text = " ";
         }
 
