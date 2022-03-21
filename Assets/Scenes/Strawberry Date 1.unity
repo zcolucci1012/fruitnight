@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304, y: -84}
+  m_AnchoredPosition: {x: -300, y: 20}
   m_SizeDelta: {x: 86, y: 86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490504674
@@ -465,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 68847829445696489, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 80
+      value: -170
       objectReference: {fileID: 0}
     - target: {fileID: 68847829445696489, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1056,6 +1056,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3252873219631227553, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4801066050701075392, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
       propertyPath: m_Name
       value: Date Audio
@@ -1106,8 +1110,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
       propertyPath: clips.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: afc39e4481a848a47a40c17a7637ec50, type: 3}
+    - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 27a5ed0cba4fef3458a496fd29eb67d1, type: 3}
+    - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a0d9528c93e24a54b9df32344ca53bf8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
 --- !u!82 &1917776812 stripped

@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304, y: -84}
+  m_AnchoredPosition: {x: -300, y: 20}
   m_SizeDelta: {x: 86, y: 86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490504674
@@ -326,8 +326,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
       propertyPath: clips.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03081e1788ed4ba4faa79b4b7de3b757, type: 3}
+    - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: c9645b63017f93542a1eeeb45f12871f, type: 3}
+    - target: {fileID: 6578686701386415744, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: e312071d1a7a3474d9cd917c6efadcda, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548c45c479b56a14a872f85a3c36de86, type: 3}
 --- !u!1 &528227113 stripped
@@ -536,7 +548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 68847829445696489, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 80
+      value: -170
       objectReference: {fileID: 0}
     - target: {fileID: 68847829445696489, guid: b8cf684633760aa449da36c346a9f152, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
