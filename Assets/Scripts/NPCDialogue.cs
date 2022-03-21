@@ -104,6 +104,12 @@ public class NPCDialogue : MonoBehaviour
             name_text.GetComponent<Text>().text = " ";
         }
 
+        // did this unlock a verbal attack?
+        if (node.unlockVerbal)
+        {
+            FindObjectOfType<RelationshipScore>().unlockVerbal(node.speaker);
+        }
+
 
         // change options
         option_1.SetActive(false);

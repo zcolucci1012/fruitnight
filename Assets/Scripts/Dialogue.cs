@@ -20,6 +20,10 @@ public class Dialogue
             }
             else
             {
+                if (passage.text.Contains("$"))
+                {
+                    node.unlockVerbal = true;
+                }
                 int index = passage.text.IndexOf("[");
                 node.text = passage.text.Substring(0, index);
             }
