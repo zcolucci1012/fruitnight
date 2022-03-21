@@ -68,6 +68,12 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //skip turn if unconcsious or frozen
+        while (turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
+        {
+            turn++;
+        }
+
         // reset turn
         if (turn >= entities.Count)
         {
@@ -80,11 +86,6 @@ public class LevelHandler : MonoBehaviour
                 enemy.endOfRoundUpdate();
             }
             turn = 0;
-        }
-        //skip turn if unconcsious
-        if (entities[turn].unconscious || entities[turn].turnsFrozen > 0)
-        {
-            turn++;
         }
 
         //checks if player is selecting a target, and if its a player's turn
@@ -148,13 +149,13 @@ public class LevelHandler : MonoBehaviour
         player1Attack2Button.GetComponent<Button>().enabled = turn == 0;
         player2Attack1Button.GetComponent<Button>().enabled = turn == 1;
         player2Attack2Button.GetComponent<Button>().enabled = turn == 1;
-        comboAttackButton.GetComponent<Button>().enabled = turn == 0;
+        comboAttackButton.GetComponent<Button>().enabled = turn == 0 || turn == 1;
 
         player1Attack1Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player1Attack2Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player2Attack1Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
-        comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0;
+        comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0 || turn == 1;
 
         comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2 && !players[0].unconscious && !players[1].unconscious;
 
@@ -162,7 +163,7 @@ public class LevelHandler : MonoBehaviour
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack2Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
-        comboAttackButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+        comboAttackButton.GetComponent<Image>().color = turn == 0 || turn == 1 ? defaultColor : grayedOut;
     }
 
     //begins attack 1 for player 1
