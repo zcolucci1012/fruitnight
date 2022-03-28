@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &111651960
 GameObject:
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   players:
   - {fileID: 2054587305}
-  - {fileID: 0}
+  - {fileID: 727899601}
   enemies:
   - {fileID: 1625713356}
   player1Attack1Button: {fileID: 621514658}
@@ -440,7 +440,7 @@ MonoBehaviour:
   descriptionText: {fileID: 1256526148}
   defaultColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   grayedOut: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
-  fruit: strawberry
+  fruit: blackberry
   relationshipScore: 1
   scoreObject: {fileID: 1124394018}
 --- !u!4 &186533391
@@ -455,7 +455,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &186533392
 MonoBehaviour:
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 302378028}
   - component: {fileID: 302378027}
   m_Layer: 5
-  m_Name: StrawberryImage
+  m_Name: BlackberryImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,7 +682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4efc653dc81c6184e8662da78787cd86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -850,88 +850,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356318653}
   m_CullTransparentMesh: 1
---- !u!1 &514811947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 514811949}
-  - component: {fileID: 514811948}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &514811948
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514811947}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b5a43b7662193994b993b77ebb920c7a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &514811949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514811947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.0357, z: 0}
-  m_LocalScale: {x: 2.0099225, y: 2.0099225, z: 2.0099225}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727899600}
   - component: {fileID: 727899603}
+  - component: {fileID: 727899601}
   - component: {fileID: 727899602}
   - component: {fileID: 727899604}
   m_Layer: 5
@@ -1312,6 +1231,34 @@ RectTransform:
   m_AnchoredPosition: {x: -437.36, y: 89.316}
   m_SizeDelta: {x: 93.716, y: 93.7162}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &727899601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727899599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24893a49550849442acd9b185aec1792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 8
+  currentHp: 0
+  defense: 13
+  baseDefense: 13
+  unconscious: 0
+  attack1name: Darkseed Shot
+  attack2name: Poisonfruit
+  attack1desc: Attacks enemy for 2 damage, preventing any healing for 2 turns
+  attack2desc: Infects enemy with poison dealing 1 damage per round for 4 rounds
+  attack1type: 0
+  attack2type: 0
+  turnsFrozen: 0
+  turnsCantHeal: 0
+  dmgMod: 0
+  healthBar: {fileID: 0}
+  canHeal: 0
 --- !u!114 &727899602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,7 +1279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4efc653dc81c6184e8662da78787cd86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1399,7 +1346,7 @@ MonoBehaviour:
         m_MethodName: SelectedTarget
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 727899601}
           m_ObjectArgumentAssemblyTypeName: Fighter, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1512,7 +1459,7 @@ RectTransform:
   - {fileID: 727899600}
   - {fileID: 1625713355}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1815,7 +1762,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1256526148
 GameObject:
@@ -2703,8 +2650,10 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   turnsFrozen: 0
+  turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 2130389620}
+  canHeal: 0
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3310,8 +3259,10 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   turnsFrozen: 0
+  turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 167742582}
+  canHeal: 0
 --- !u!114 &2054587306
 MonoBehaviour:
   m_ObjectHideFlags: 0
