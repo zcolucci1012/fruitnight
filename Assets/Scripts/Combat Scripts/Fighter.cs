@@ -39,7 +39,6 @@ public abstract class Fighter : MonoBehaviour
     // specifies how many more turns the fighter is frozen for and can't move
     public int turnsFrozen = 0;
 
-    public float dmgMult = 1;
     public int dmgMod = 0;
 
     private Vector3 originalEulerAngles;
@@ -71,12 +70,35 @@ public abstract class Fighter : MonoBehaviour
         }
     }
     
-    public void Damage(int hp)
+    public AttackResult Hit(Fighter target, int dmg)
+    {
+        int roll = UnityEngine.Random.Range(0, 20);
+        // print("defense: " + target.defense + ", roll: " + roll);
+        if (target.defense < roll)
+        {
+            int effectiveDamage = target.Damage(dmg + dmgMod);
+            string msg = this.name + " deals " + effectiveDamage + " points of damage to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            return new AttackResult(true, effectiveDamage, msg);
+        }
+        else
+        {
+            return new AttackResult(false, 0, this.name + " misses " + target.name);
+        }
+        
+    }
+
+    public int Damage(int hp)
     {
         this.currentHp -= hp;
+        int effectiveDamage = hp;
         if (this.currentHp <= 0)
         {
             unconscious = true;
+            effectiveDamage += this.currentHp;
             this.currentHp = 0;
             this.transform.eulerAngles = this.originalEulerAngles + new Vector3(0, 0, 90);
         }
@@ -88,8 +110,11 @@ public abstract class Fighter : MonoBehaviour
 
         if (this.currentHp > maxHp)
         {
+            effectiveDamage += (this.currentHp - maxHp);
             this.currentHp = maxHp;
         }
+
+        return effectiveDamage;
     }
 
     // add a defense modifier for the specified amount of turns
