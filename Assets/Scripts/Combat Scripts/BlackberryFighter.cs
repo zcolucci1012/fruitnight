@@ -11,22 +11,26 @@ public class BlackberryFighter : Fighter
         this.attack1execute = targets =>
         {
             AttackResult result = Hit(targets[0], 2);
+            string msg = result.msg;
             if (result.hit)
             {
                 targets[0].turnsCantHeal = 2;
+                msg += " and removes their ability to heal";
             }
-            return result.msg + " and removes their ability to heal";
+            return msg;
         };
 
         //Poisonfruit
         this.attack2execute = targets =>
         {
             AttackResult result = Hit(targets[0], 1);
-            if (result.hit)
+            string msg = result.msg;
+            if (result.hit) 
             {
                 targets[0].poisonAttacks.Add(new PoisonAttack(3, 1));
+                msg += " poisoning them for 3 turns";
             }
-            return result + " poisoning them for 3 turns";
+            return msg;
         };
 
         this.attack1 = new Attack(this.attack1name, this.attack1desc, this.attack1type, this.attack1execute);

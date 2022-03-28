@@ -157,12 +157,11 @@ public abstract class Fighter : MonoBehaviour
         foreach (PoisonAttack p in poisonAttacks)
         {
             Damage(p.dmg);
+            print("poison damage!");
             p.turns--;
-            if (p.turns <= 0)
-            {
-                poisonAttacks.Remove(p);
-            }
         }
+
+        poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
     }
 
     public bool canAttack() {

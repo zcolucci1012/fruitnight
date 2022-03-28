@@ -7,8 +7,8 @@ using System;
 //contains a list of combo attacks for each character
 public class ComboAttacks : MonoBehaviour
 {
-    private static Fighter f1;
-    private static Fighter f2;
+    private static Fighter fighter1;
+    private static Fighter fighter2;
 
     private Attack bananaStrawberry = new Attack("lunchbox launch", 
         "strawberry throws banana at the enemies, dealing 3 damage and reducing their damage by 1", 
@@ -70,33 +70,61 @@ public class ComboAttacks : MonoBehaviour
         return msg;
     });
 
-    /*
+    
     private Attack blackberryBanana = new Attack("Bittersweet",
-        "All enemies take 2 damage, and Banana and Blackberry heal according to damage dealt"
+        "All enemies take 2 damage, and Banana and Blackberry heal according to damage dealt",
         AttackType.MultiTarget,
         targets =>
         {
-
+            int healthStolen = 0;
+            string msg = "";
             foreach (Fighter f in targets)
             {
                 AttackResult result = Hit(f, 2);
+                healthStolen += result.dmg;
+                msg += result.msg + "\n";
             }
+            if (healthStolen > 0)
+            {
+                if (!(fighter2 is BlackberryFighter))
+                {
+                    Fighter temp = fighter2;
+                    fighter2 = fighter1;
+                    fighter1 = temp;
+                }
+                int f2healing = -fighter2.Damage(-(healthStolen - healthStolen / 2));
+                int f1healing = -fighter1.Damage(-(healthStolen / 2));
+                msg += "Blackberry and Banana heal for " + f2healing + " and " + f1healing + " respectively";
+            }
+
+            return msg;
         });
-    */
+    
 
     //gets a combo attack based on fighters in play
     public Attack ComboAttack(Fighter f1, Fighter f2)
     {
+        fighter1 = f1;
+        fighter2 = f2;
         if (f1 is Banana && f2 is Strawberry ||
             f2 is Banana && f1 is Strawberry)
         {
             return bananaStrawberry;
-        } else if (f1 is Banana && f2 is BlueberryFighter ||
-            f2 is Banana && f1 is BlueberryFighter) {
-                return blueberryBanana;
-        }else if (f1 is Banana && f2 is LemonFighter ||
-            f2 is Banana && f1 is LemonFighter) {
-                return lemonBanana;
+        }
+        else if (f1 is Banana && f2 is BlueberryFighter ||
+          f2 is Banana && f1 is BlueberryFighter)
+        {
+            return blueberryBanana;
+        }
+        else if (f1 is Banana && f2 is LemonFighter ||
+           f2 is Banana && f1 is LemonFighter)
+        {
+            return lemonBanana;
+        }
+        else if (f1 is Banana && f2 is BlackberryFighter ||
+          f2 is Banana && f1 is BlackberryFighter)
+        {
+            return blackberryBanana;
         }
         return null;
     }
