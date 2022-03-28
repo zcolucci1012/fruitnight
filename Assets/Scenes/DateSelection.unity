@@ -3370,6 +3370,8 @@ GameObject:
   - component: {fileID: 1597652036}
   - component: {fileID: 1597652035}
   - component: {fileID: 1597652037}
+  - component: {fileID: 1597652039}
+  - component: {fileID: 1597652038}
   m_Layer: 0
   m_Name: DateSelectionManager
   m_TagString: Untagged
@@ -3389,21 +3391,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5171e031c3960e8489f32a9e2b732d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawerLocation: {fileID: 0}
-  blenderLocation: {fileID: 0}
-  sinkLocation: {fileID: 0}
-  leftTableLocation: {fileID: 0}
-  upperCabinetLocation: {fileID: 0}
-  rightTableLocation: {fileID: 0}
-  overheadLampLocation: {fileID: 0}
-  lowerCabinetLocation: {fileID: 0}
-  ovenMittenLocation: {fileID: 0}
-  stoveLocation: {fileID: 0}
+  drawerLocation: {fileID: 285706089}
+  blenderLocation: {fileID: 2105493751}
+  sinkLocation: {fileID: 1514143687}
+  leftTableLocation: {fileID: 1541343033}
+  upperCabinetLocation: {fileID: 67002315}
+  rightTableLocation: {fileID: 383836023}
+  overheadLampLocation: {fileID: 925734813}
+  lowerCabinetLocation: {fileID: 2034099935}
+  ovenMittenLocation: {fileID: 557321400}
+  stoveLocation: {fileID: 1404869600}
   strawberry: {fileID: 1597652036}
   blueberry: {fileID: 1597652035}
   lemon: {fileID: 1597652037}
-  blackberry: {fileID: 0}
-  tomato: {fileID: 0}
+  blackberry: {fileID: 1597652039}
+  tomato: {fileID: 1597652038}
 --- !u!4 &1597652034
 Transform:
   m_ObjectHideFlags: 0
@@ -3457,6 +3459,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 4920fcde737a00c439cd53e70a8d038f, type: 3}
+--- !u!114 &1597652038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597652032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67a7d731daec30409f17316815d035a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 7b5740a76d91b824aab5a99a8a37906d, type: 3}
+--- !u!114 &1597652039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597652032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086ec4586a398294b8219ef1f9ccf439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
 --- !u!1 &1676060428
 GameObject:
   m_ObjectHideFlags: 0
