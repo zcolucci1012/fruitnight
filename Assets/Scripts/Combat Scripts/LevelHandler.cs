@@ -93,12 +93,13 @@ public class LevelHandler : MonoBehaviour
         {
             SelectTarget();
         }
-        //if enemy's turn, play enemy attack after 2 seconds
+        //if enemy's turn, play enemy attack after a certain number of seconds
         else if (turn >= players.Length)
         {
             if (!enemyAttacking)
             {
-                Invoke("BeginEnemyAttack", 2);
+                float duration = Mathf.Max(1, description.Length / 25f);
+                Invoke("BeginEnemyAttack", duration);
                 enemyAttacking = true;
             }
         }
@@ -295,10 +296,6 @@ public class LevelHandler : MonoBehaviour
         for (int i = 0; i < entities.Count; i++)
         {
             entities[i].GetComponent<Button>().enabled = false;
-            if (entities[i].unconscious)
-            {
-                description += "\n" + entities[i].name + " has fallen unconscious!";
-            }
         }
 
         ToggleAttackButtons();
