@@ -53,7 +53,7 @@ public class DateSelectionManager : MonoBehaviour
             LemonFruit.daysLeftUntilDateable--;
             BlackberryFruit.daysLeftUntilDateable--;
             TomatoFruit.daysLeftUntilDateable--;
-            SceneManager.LoadScene("DateSelection");
+            SceneManager.LoadScene("TransitionBetweenDays");
         }
         else
         {
