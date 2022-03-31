@@ -7,24 +7,22 @@ using System;
 //contains a list of combo attacks for each character
 public class ComboAttacks : MonoBehaviour
 {
+    private static Fighter fighter1;
+    private static Fighter fighter2;
+
     private Attack bananaStrawberry = new Attack("lunchbox launch", 
-        "strawberry throws banana at the enemies, dealing 3 damage and reducing their damage by 2", 
+        "strawberry throws banana at the enemies, dealing 3 damage and reducing their damage by 1", 
         AttackType.MultiTarget,
         targets =>
         {
             string msg = "Strawberry and Banana use lunchbox launch!\n";
-            int roll = UnityEngine.Random.Range(1, 20);
             foreach (Fighter f in targets)
             {
-                if (f.defense <= roll)
+                AttackResult result = Hit(f, 3);
+                if (result.hit)
                 {
-                    f.Damage(3);
-                    f.dmgMod = -2;
-                    msg += "It hits " + f.name + " for 3 damage, reducing damage by 2";
-                }
-                else
-                {
-                    msg += "It misses " + f.name;
+                    f.dmgMod = -1;
+                    msg += result.msg + " and their damage is reduced by 1";
                 }
             }
 
@@ -41,7 +39,7 @@ public class ComboAttacks : MonoBehaviour
         foreach (Fighter f in targets)
         {
              if (f.defense <= roll) {
-                    f.turnsFrozen += 2;
+                    f.turnsFrozen = 2;
                     msg += "It hits " + f.name + " and freezes them in combat.";
              } else {
                 msg += "It misses " + f.name;
@@ -72,20 +70,81 @@ public class ComboAttacks : MonoBehaviour
         return msg;
     });
 
+    
+    private Attack blackberryBanana = new Attack("Bittersweet",
+        "All enemies take 2 damage, and Banana and Blackberry heal according to damage dealt",
+        AttackType.MultiTarget,
+        targets =>
+        {
+            int healthStolen = 0;
+            string msg = "";
+            foreach (Fighter f in targets)
+            {
+                AttackResult result = Hit(f, 2);
+                healthStolen += result.dmg;
+                msg += result.msg + "\n";
+            }
+            if (healthStolen > 0)
+            {
+                if (!(fighter2 is BlackberryFighter))
+                {
+                    Fighter temp = fighter2;
+                    fighter2 = fighter1;
+                    fighter1 = temp;
+                }
+                int f2healing = -fighter2.Damage(-(healthStolen - healthStolen / 2));
+                int f1healing = -fighter1.Damage(-(healthStolen / 2));
+                msg += "Blackberry and Banana heal for " + f2healing + " and " + f1healing + " respectively";
+            }
+
+            return msg;
+        });
+    
+
     //gets a combo attack based on fighters in play
     public Attack ComboAttack(Fighter f1, Fighter f2)
     {
+        fighter1 = f1;
+        fighter2 = f2;
         if (f1 is Banana && f2 is Strawberry ||
             f2 is Banana && f1 is Strawberry)
         {
             return bananaStrawberry;
-        } else if (f1 is Banana && f2 is BlueberryFighter ||
-            f2 is Banana && f1 is BlueberryFighter) {
-                return blueberryBanana;
-        }else if (f1 is Banana && f2 is LemonFighter ||
-            f2 is Banana && f1 is LemonFighter) {
-                return lemonBanana;
+        }
+        else if (f1 is Banana && f2 is BlueberryFighter ||
+          f2 is Banana && f1 is BlueberryFighter)
+        {
+            return blueberryBanana;
+        }
+        else if (f1 is Banana && f2 is LemonFighter ||
+           f2 is Banana && f1 is LemonFighter)
+        {
+            return lemonBanana;
+        }
+        else if (f1 is Banana && f2 is BlackberryFighter ||
+          f2 is Banana && f1 is BlackberryFighter)
+        {
+            return blackberryBanana;
         }
         return null;
+    }
+
+    private static AttackResult Hit(Fighter target, int dmg)
+    {
+        int roll = UnityEngine.Random.Range(1, 20);
+        if (target.defense < roll)
+        {
+            string msg = target.name + " takes " + dmg + "damage";
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            return new AttackResult(true, dmg, msg);
+        }
+        else
+        {
+            return new AttackResult(false, 0, target.name + " avoids the attack");
+        }
+
     }
 }
