@@ -71,7 +71,6 @@ public class RelationshipScore : MonoBehaviour
             default:
                 break;
         }
-        Debug.Log("HERE");
     }
 
 }

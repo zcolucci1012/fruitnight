@@ -7,6 +7,7 @@ public class DialogueNode
     public string text;
     public DialogueOption option1;
     public DialogueOption option2;
+    public DialogueOption option3;
     public string emotion = "base";
     public string speaker;
     public string bg;
@@ -17,5 +18,6 @@ public class DialogueNode
     {
         option1 = new DialogueOption();
         option2 = new DialogueOption();
+        option3 = new DialogueOption();
     }
 }

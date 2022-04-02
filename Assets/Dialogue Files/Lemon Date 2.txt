@@ -1,0 +1,850 @@
+{
+  "passages": [
+    {
+      "text": "I saw Lemon looming around the right side of the table. They looked like they were a bit sad. \n\n[[continue->1]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "1",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "405",
+        "y": "171"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Seeing this as a stark change from their usual self, I decided to check in on them for a while. \n\n\n[[Hey, Lemon. Are you doing alright?->2]]",
+      "links": [
+        {
+          "name": "Hey, Lemon. Are you doing alright?",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1",
+      "pid": "2",
+      "position": {
+        "x": "406",
+        "y": "321"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Oh, I didn't notice you were there. I was just checking up on things is all. \n\n[[continue->3]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "3",
+          "pid": "4"
+        }
+      ],
+      "name": "2",
+      "pid": "3",
+      "position": {
+        "x": "405",
+        "y": "471"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "Lemon turns to look away and down the side of the table for a bit. It's clear they have something on their mind. \n\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3",
+      "pid": "4",
+      "position": {
+        "x": "405",
+        "y": "621"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "You know, this used to be a place where I'd hang out a lot with another fruit. They were pretty cool, even cooler than me. \n\n[[Oh, really? Did they also hate silverware?->5]]",
+      "links": [
+        {
+          "name": "Oh, really? Did they also hate silverware?",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4",
+      "pid": "5",
+      "position": {
+        "x": "405",
+        "y": "771"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sad"
+      ]
+    },
+    {
+      "text": "You don't know this because you got here recently but I didn't always hate silverware. And neither did my friend. \n\n[[Did?->5.1]]\n[[Why did you start hating silverware?->5.2]]\n",
+      "links": [
+        {
+          "name": "Did?",
+          "link": "5.1",
+          "pid": "35"
+        },
+        {
+          "name": "Why did you start hating silverware?",
+          "link": "5.2",
+          "pid": "36"
+        }
+      ],
+      "name": "5",
+      "pid": "6",
+      "position": {
+        "x": "405",
+        "y": "921"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "They got pushed down this tableside. We were supposed to meet up here but I ran a bit late. \n\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "8"
+        }
+      ],
+      "name": "6",
+      "pid": "7",
+      "position": {
+        "x": "171",
+        "y": "1092"
+      },
+      "tags": [
+        "2",
+        "Lemon",
+        "sad"
+      ]
+    },
+    {
+      "text": "By the time I got here, I was too late. The only things leaving the area were pieces of silverware, and one of them was a large knife.\n\n[[So this big knife came around here and you assume that they had something to do with the loss of your friend?->10]]",
+      "links": [
+        {
+          "name": "So this big knife came around here and you assume that they had something to do with the loss of your friend?",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "7",
+      "pid": "8",
+      "position": {
+        "x": "161",
+        "y": "1262"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sad"
+      ]
+    },
+    {
+      "text": "The silverware, they must've been the ones responsible. There was no one else here when my friend fell.\n\n[[continue->9]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9",
+          "pid": "10"
+        }
+      ],
+      "name": "8",
+      "pid": "9",
+      "position": {
+        "x": "605",
+        "y": "1083"
+      },
+      "tags": [
+        "1",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "The damn grin on the large knife as they left this place told me everything I needed to know. \n\n[[So this big knife came around here and you assume that they had something to do with the loss of your friend?->10]]",
+      "links": [
+        {
+          "name": "So this big knife came around here and you assume that they had something to do with the loss of your friend?",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "9",
+      "pid": "10",
+      "position": {
+        "x": "605",
+        "y": "1233"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "There isn't any other way. They would never take their own life. In fact, we were planning on meeting here before going somewhere else in the kitchen.\n\n[[continue->11]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "11",
+          "pid": "12"
+        }
+      ],
+      "name": "10",
+      "pid": "11",
+      "position": {
+        "x": "394",
+        "y": "1501"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "I can't tell why they'd do such a thing. My friend did nothing wrong! They were kind and cool and...\n\n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "13"
+        }
+      ],
+      "name": "11",
+      "pid": "12",
+      "position": {
+        "x": "394",
+        "y": "1651"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sad"
+      ]
+    },
+    {
+      "text": "Lemon pulls out the sunglasses to look at them before showing them off to me for a moment. \n\n[[continue->13]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "14"
+        }
+      ],
+      "name": "12",
+      "pid": "13",
+      "position": {
+        "x": "394",
+        "y": "1801"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "This was the only thing I could find from the incident. They loved to show these off. \n\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "15"
+        }
+      ],
+      "name": "13",
+      "pid": "14",
+      "position": {
+        "x": "394",
+        "y": "1951"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sunglasses"
+      ]
+    },
+    {
+      "text": "It's like a part of them is still with me whenever I carry it around. \n\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "14",
+      "pid": "15",
+      "position": {
+        "x": "394",
+        "y": "2101"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "sunglasses"
+      ]
+    },
+    {
+      "text": "Lemon takes the pair off before looking off at the distance. I wonder how long they've been carrying this burden... \n\n[[Tell me more about this friend.->15.1]]\n[[Those silverware will pay.->15.2]]",
+      "links": [
+        {
+          "name": "Tell me more about this friend.",
+          "link": "15.1",
+          "pid": "37"
+        },
+        {
+          "name": "Those silverware will pay.",
+          "link": "15.2",
+          "pid": "38"
+        }
+      ],
+      "name": "15",
+      "pid": "16",
+      "position": {
+        "x": "394",
+        "y": "2251"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Right, I didn't even mention their name. They were Lime. They were a more outgoing type, similar to Strawberry but far less busy. \n\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "18"
+        }
+      ],
+      "name": "16",
+      "pid": "17",
+      "position": {
+        "x": "139",
+        "y": "2427"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "They hung out with me so often that I felt at home with them around, regardless of where we were. \n\n[[continue->18]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18",
+          "pid": "19"
+        }
+      ],
+      "name": "17",
+      "pid": "18",
+      "position": {
+        "x": "139",
+        "y": "2577"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "happy"
+      ]
+    },
+    {
+      "text": "I wish you could've met them. Lime was the first one to meet me when I came to the Kitchen myself. \n\n[[We can make sure the silverware pay.->18.1]]\n[[Maybe violence isn't the way.->18.2]]",
+      "links": [
+        {
+          "name": "We can make sure the silverware pay.",
+          "link": "18.1",
+          "pid": "39"
+        },
+        {
+          "name": "Maybe violence isn't the way.",
+          "link": "18.2",
+          "pid": "40"
+        }
+      ],
+      "name": "18",
+      "pid": "19",
+      "position": {
+        "x": "139",
+        "y": "2727"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "Yeah, I hate those things with a burning passion. Whatever brought them into existence should pay dearly for what they've caused!\n\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "25"
+        }
+      ],
+      "name": "19",
+      "pid": "20",
+      "position": {
+        "x": "0",
+        "y": "3100"
+      },
+      "tags": [
+        "2",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "Lime would want you to be happy first and foremost, not vengeful. \n\n[[continue->21]]\n$",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "22"
+        }
+      ],
+      "name": "20",
+      "pid": "21",
+      "position": {
+        "x": "324",
+        "y": "2898"
+      },
+      "tags": [
+        "4",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Plus, when you're done with these silverware, what's next? Have you thought that far yet?\n\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "25"
+        }
+      ],
+      "name": "21",
+      "pid": "22",
+      "position": {
+        "x": "328",
+        "y": "3102"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Don't worry, I'll make sure that they get what they deserve in due time. Thanks for sticking it out with me, though.\n\n[[continue->23]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "23",
+          "pid": "24"
+        }
+      ],
+      "name": "22",
+      "pid": "23",
+      "position": {
+        "x": "660",
+        "y": "2409"
+      },
+      "tags": [
+        "1",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "I appreciate you being there to support me. \n\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "25"
+        }
+      ],
+      "name": "23",
+      "pid": "24",
+      "position": {
+        "x": "660",
+        "y": "2559"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "happy"
+      ]
+    },
+    {
+      "text": "Now then, I think it's time we left, how about we go-\n\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "26"
+        }
+      ],
+      "name": "24",
+      "pid": "25",
+      "position": {
+        "x": "563",
+        "y": "3388"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "base"
+      ]
+    },
+    {
+      "text": "To an early grave!\n\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "27"
+        }
+      ],
+      "name": "25",
+      "pid": "26",
+      "position": {
+        "x": "557",
+        "y": "3595"
+      },
+      "tags": [
+        "0",
+        "???",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Lemon turns around quickly, his face filled with rage.\n\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "28"
+        }
+      ],
+      "name": "26",
+      "pid": "27",
+      "position": {
+        "x": "557",
+        "y": "3775"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Well, if it isn't Grand Knife. What're you doing here? \n\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "29"
+        }
+      ],
+      "name": "27",
+      "pid": "28",
+      "position": {
+        "x": "557",
+        "y": "3925"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "Thought I'd bring my plus one with me to greet ya'. After all, ya did sock 'im. \n\n[[continue->29]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29",
+          "pid": "30"
+        }
+      ],
+      "name": "28",
+      "pid": "29",
+      "position": {
+        "x": "557",
+        "y": "4075"
+      },
+      "tags": [
+        "0",
+        "Grand-Knife",
+        "base"
+      ]
+    },
+    {
+      "text": "Oi! Don't just treat me like I'm some rotten fruit. I've got a name too!\n\n[[continue->30]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "30",
+          "pid": "31"
+        }
+      ],
+      "name": "29",
+      "pid": "30",
+      "position": {
+        "x": "545",
+        "y": "4289"
+      },
+      "tags": [
+        "0",
+        "Big-Fork",
+        "base"
+      ]
+    },
+    {
+      "text": "You can go shut it, Big Fork. The adults are talking.\n\n[[continue->31]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "31",
+          "pid": "32"
+        }
+      ],
+      "name": "30",
+      "pid": "31",
+      "position": {
+        "x": "545",
+        "y": "4439"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "Not anymore we aren't!\n\n[[continue->32]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "32",
+          "pid": "33"
+        }
+      ],
+      "name": "31",
+      "pid": "32",
+      "position": {
+        "x": "545",
+        "y": "4589"
+      },
+      "tags": [
+        "0",
+        "Grand-Knife",
+        "base"
+      ]
+    },
+    {
+      "text": "Grand Knife lunges at Lemon, seeking to push them off the table. However, Lemon dodges this at the last second.\n\n[[continue->33]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "33",
+          "pid": "34"
+        }
+      ],
+      "name": "32",
+      "pid": "33",
+      "position": {
+        "x": "545",
+        "y": "4739"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "You're right, enough talk! Let's do this! \n",
+      "name": "33",
+      "pid": "34",
+      "position": {
+        "x": "545",
+        "y": "4889"
+      },
+      "tags": [
+        "0",
+        "Lemon",
+        "angry"
+      ]
+    },
+    {
+      "text": "Did? What happened to them?\n\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "7"
+        }
+      ],
+      "name": "5.1",
+      "pid": "35",
+      "position": {
+        "x": "129",
+        "y": "933"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Wait, so what caused you to hate silverware?\n\n[[continue->8]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "9"
+        }
+      ],
+      "name": "5.2",
+      "pid": "36",
+      "position": {
+        "x": "648",
+        "y": "911"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Tell me more about this friend of yours. What were they like exactly?\n\n[[cotninue->16]]",
+      "links": [
+        {
+          "name": "cotninue",
+          "link": "16",
+          "pid": "17"
+        }
+      ],
+      "name": "15.1",
+      "pid": "37",
+      "position": {
+        "x": "131",
+        "y": "2268"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Those silverwares will pay for what they've done to your friend. I can't believe the audacity.\n\n[[cotninue->22]]",
+      "links": [
+        {
+          "name": "cotninue",
+          "link": "22",
+          "pid": "23"
+        }
+      ],
+      "name": "15.2",
+      "pid": "38",
+      "position": {
+        "x": "688",
+        "y": "2242"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "We can make sure that these damn silverware will pay for what they've done. \n\n[[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "20"
+        }
+      ],
+      "name": "18.1",
+      "pid": "39",
+      "position": {
+        "x": "2",
+        "y": "2919"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "You know, maybe violence isn't the first thing to do from this.\n\n[[continue->20]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "21"
+        }
+      ],
+      "name": "18.2",
+      "pid": "40",
+      "position": {
+        "x": "358",
+        "y": "2744"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    }
+  ],
+  "name": "Lemon Date 2",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "9BEA172D-EE83-42B1-A88F-F956AD8227A4"
+}
