@@ -14,6 +14,7 @@ public class NPCDialogue : MonoBehaviour
     private GameObject dialogue_text;
     private GameObject option_1;
     private GameObject option_2;
+    private GameObject option_3;
     private GameObject exit_button;
 
     private int selected_option = -2;
@@ -37,6 +38,7 @@ public class NPCDialogue : MonoBehaviour
         dialogue_text = GameObject.Find("NPC Dialogue");
         option_1 = GameObject.Find("Option 1");
         option_2 = GameObject.Find("Option 2");
+        option_3 = GameObject.Find("Option 3");
         exit_button = GameObject.Find("Exit");
 
         exit_button.SetActive(false);
@@ -114,6 +116,7 @@ public class NPCDialogue : MonoBehaviour
         // change options
         option_1.SetActive(false);
         option_2.SetActive(false);
+        option_3.SetActive(false);
 
         if (node.option1.id != 0)
         {
@@ -129,7 +132,14 @@ public class NPCDialogue : MonoBehaviour
             option_2.GetComponentInChildren<Text>().text = node.option2.text;
         }
 
-        if (node.option1.id == 0 && node.option2.id == 0)
+        if (node.option3.id != 0)
+        {
+            option_3.SetActive(true);
+            option_3.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option3.id); });
+            option_3.GetComponentInChildren<Text>().text = node.option3.text;
+        }
+
+        if (node.option1.id == 0 && node.option2.id == 0 && node.option3.id == 0)
         {
             exit_button.SetActive(true);
             exit_button.GetComponent<Button>().onClick.AddListener(delegate { DialogueWindow.SetActive(false); });
