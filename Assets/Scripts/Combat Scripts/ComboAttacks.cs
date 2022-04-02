@@ -94,7 +94,7 @@ public class ComboAttacks : MonoBehaviour
                 }
                 int f2healing = -fighter2.Damage(-(healthStolen - healthStolen / 2));
                 int f1healing = -fighter1.Damage(-(healthStolen / 2));
-                msg += "Blackberry and Banana heal for " + f2healing + " and " + f1healing + " respectively";
+                msg += "Blackberry and Banana heal for " + f2healing + " HP and " + f1healing + " HP respectively";
             }
 
             return msg;
@@ -134,12 +134,13 @@ public class ComboAttacks : MonoBehaviour
         int roll = UnityEngine.Random.Range(1, 20);
         if (target.defense < roll)
         {
-            string msg = target.name + " takes " + dmg + "damage";
+            int effectiveDamage = target.Damage(dmg);
+            string msg = target.name + " takes " + effectiveDamage + " damage";
             if (target.unconscious)
             {
                 msg += ", knocking them unconscious";
             }
-            return new AttackResult(true, dmg, msg);
+            return new AttackResult(true, effectiveDamage, msg);
         }
         else
         {
