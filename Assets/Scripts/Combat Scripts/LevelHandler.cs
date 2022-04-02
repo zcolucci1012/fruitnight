@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class LevelHandler : MonoBehaviour
 {
@@ -62,6 +63,8 @@ public class LevelHandler : MonoBehaviour
             relationshipScore  = RelationshipScore.lemonScore;
         } else if (fruit.Equals("blueberry")) {
             relationshipScore  = RelationshipScore.blueberryScore;
+        } else if (fruit.Equals("blackberry")) {
+            relationshipScore = RelationshipScore.blackberryScore;
         }
     }
 
@@ -264,7 +267,7 @@ public class LevelHandler : MonoBehaviour
             }
         } else if (currentAttack.type == AttackType.MultiTarget)
         {
-            SelectedTarget(enemies);
+            SelectedTarget(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
         } else if (currentAttack.type == AttackType.MultiAllyTarget) {
             SelectedTarget(players);
         }
@@ -370,7 +373,8 @@ public class LevelHandler : MonoBehaviour
         }
         else if (this.currentAttack.type == AttackType.MultiTarget)
         {
-            description = this.currentAttack.execute(players);
+
+            description = this.currentAttack.execute(players.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
         }
 
         Invoke("EndAttack", 2);
