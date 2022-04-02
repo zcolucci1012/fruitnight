@@ -1,0 +1,900 @@
+{
+  "passages": [
+    {
+      "text": "I find Strawberry in the cabinet. They seem focused, mumbling to themself.\n\n\n[[continue->1]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "1",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "728",
+        "y": "273"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Oh hey! Did you need something from me?\n\n[[No, I don't need anything. I just wanted to see what you were up to.->2]]",
+      "links": [
+        {
+          "name": "No, I don't need anything. I just wanted to see what you were up to.",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1",
+      "pid": "2",
+      "position": {
+        "x": "728",
+        "y": "423"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "I'm just going over my schedule for today!\n\n[[continue->3]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "3",
+          "pid": "4"
+        }
+      ],
+      "name": "2",
+      "pid": "3",
+      "position": {
+        "x": "728",
+        "y": "573"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "In a little bit I have to help passionfruits again with singing practice. They have to sing for the Great Tournament after all...\n\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3",
+      "pid": "4",
+      "position": {
+        "x": "728",
+        "y": "723"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "After that I have to help ___ with ___\n\n[[continue->5]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4",
+      "pid": "5",
+      "position": {
+        "x": "728",
+        "y": "873"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, but I also promised I'd help Blueberry with their experiments. I better get around to that today...\n\n[[Sounds like a lot!->5.1]]\n[[Sounds boring...->5.2]]",
+      "links": [
+        {
+          "name": "Sounds like a lot!",
+          "link": "5.1",
+          "pid": "7"
+        },
+        {
+          "name": "Sounds boring...",
+          "link": "5.2",
+          "pid": "8"
+        }
+      ],
+      "name": "5",
+      "pid": "6",
+      "position": {
+        "x": "728",
+        "y": "1023"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "Woah! That's a whole lot on your plate. How do you have time for all this?\n\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "9"
+        }
+      ],
+      "name": "5.1",
+      "pid": "7",
+      "position": {
+        "x": "526",
+        "y": "1188"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Ugh, sounds really boring...\n\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "35"
+        }
+      ],
+      "name": "5.2",
+      "pid": "8",
+      "position": {
+        "x": "1160",
+        "y": "1204"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "It's true, I have pretty busy days. But fruits need by help, so I do all that I can to be there for them!\n\n[[That's nice of you!->6.1]]\n[[But don't you ever relax?->6.2]]",
+      "links": [
+        {
+          "name": "That's nice of you!",
+          "link": "6.1",
+          "pid": "10"
+        },
+        {
+          "name": "But don't you ever relax?",
+          "link": "6.2",
+          "pid": "11"
+        }
+      ],
+      "name": "6",
+      "pid": "9",
+      "position": {
+        "x": "526",
+        "y": "1338"
+      },
+      "tags": [
+        "1",
+        "Strawberry"
+      ]
+    },
+    {
+      "text": "Wow, Strawberry! That's so nice of you to do.\n\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "12"
+        }
+      ],
+      "name": "6.1",
+      "pid": "10",
+      "position": {
+        "x": "163",
+        "y": "1505"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "That's really cool of you Strawberry, but when do you get to relax?\n\n[[continue->9]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9",
+          "pid": "14"
+        }
+      ],
+      "name": "6.2",
+      "pid": "11",
+      "position": {
+        "x": "688",
+        "y": "1459"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Thanks! I try my best to be a sweet berry to all my friends.\n\n[[continue->8]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "13"
+        }
+      ],
+      "name": "7",
+      "pid": "12",
+      "position": {
+        "x": "163",
+        "y": "1655"
+      },
+      "tags": [
+        "1",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "If you ever need my help with anything, don't be afraid to ask!\n\n[[Thanks, Strawberry.->26]]",
+      "links": [
+        {
+          "name": "Thanks, Strawberry.",
+          "link": "26",
+          "pid": "37"
+        }
+      ],
+      "name": "8",
+      "pid": "13",
+      "position": {
+        "x": "163",
+        "y": "1805"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "Relax? What do you mean?\n\n[[Sorry it's just... When do you get to do the stuff you enjoy?->10]]",
+      "links": [
+        {
+          "name": "Sorry it's just... When do you get to do the stuff you enjoy?",
+          "link": "10",
+          "pid": "15"
+        }
+      ],
+      "name": "9",
+      "pid": "14",
+      "position": {
+        "x": "742",
+        "y": "1618"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "Helping others is what I enjoy doing! Plus, I love seeing my friends happy!\n\n[[continue->11]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "11",
+          "pid": "16"
+        }
+      ],
+      "name": "10",
+      "pid": "15",
+      "position": {
+        "x": "742",
+        "y": "1768"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "They depend on me, and I'm always there to lend a leaf.\n\n[[I guess that makes sense.->11.1]]\n[[What about yourself?->11.2]]",
+      "links": [
+        {
+          "name": "I guess that makes sense.",
+          "link": "11.1",
+          "pid": "18"
+        },
+        {
+          "name": "What about yourself?",
+          "link": "11.2",
+          "pid": "17"
+        }
+      ],
+      "name": "11",
+      "pid": "16",
+      "position": {
+        "x": "742",
+        "y": "1918"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "What about helping yourself? You have hobbies don't you?\n\n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "19"
+        }
+      ],
+      "name": "11.2",
+      "pid": "17",
+      "position": {
+        "x": "778",
+        "y": "2070"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I guess when you put it like that it makes sense. That's nice of you.\n\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "12"
+        }
+      ],
+      "name": "11.1",
+      "pid": "18",
+      "position": {
+        "x": "553",
+        "y": "2097"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Hey! I totally have hobbies I just... never have time to really do them.\n\n[[continue->13]]\n$",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "20"
+        }
+      ],
+      "name": "12",
+      "pid": "19",
+      "position": {
+        "x": "778",
+        "y": "2220"
+      },
+      "tags": [
+        "1",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "It's a little embarrassing... But I secretly love knitting. I just haven't gotten the chance to practice it enough to be good at it.\n\n[[That's so lame!->13.1]]\n[[That sounds sick!->13.2]]",
+      "links": [
+        {
+          "name": "That's so lame!",
+          "link": "13.1",
+          "pid": "21"
+        },
+        {
+          "name": "That sounds sick!",
+          "link": "13.2",
+          "pid": "22"
+        }
+      ],
+      "name": "13",
+      "pid": "20",
+      "position": {
+        "x": "778",
+        "y": "2370"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Knitting? That's so lame! What're you, an elderberry?\n\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "23"
+        }
+      ],
+      "name": "13.1",
+      "pid": "21",
+      "position": {
+        "x": "394",
+        "y": "2544"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "That sounds sick! You should knit more!\n\n[[continue->18]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18",
+          "pid": "27"
+        }
+      ],
+      "name": "13.2",
+      "pid": "22",
+      "position": {
+        "x": "1123",
+        "y": "2559"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Strawberry's face falters for a moment.\n\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "24"
+        }
+      ],
+      "name": "14",
+      "pid": "23",
+      "position": {
+        "x": "394",
+        "y": "2694"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "You're right... It's silly. I should just forget about all that.\n\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "25"
+        }
+      ],
+      "name": "15",
+      "pid": "24",
+      "position": {
+        "x": "394",
+        "y": "2844"
+      },
+      "tags": [
+        "-2",
+        "Strawberry",
+        "cry"
+      ]
+    },
+    {
+      "text": "They regain their composure and their usual smile is back on their face.\n\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "26"
+        }
+      ],
+      "name": "16",
+      "pid": "25",
+      "position": {
+        "x": "394",
+        "y": "2994"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "I swear I can hear them sniffle, but maybe that was just my imagination.\n\n[[continue->20]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "29"
+        }
+      ],
+      "name": "17",
+      "pid": "26",
+      "position": {
+        "x": "394",
+        "y": "3144"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "You really think so? Thanks... Maybe I can knit you something nice!\n\n[[I'd really like that, Strawberry->19]]",
+      "links": [
+        {
+          "name": "I'd really like that, Strawberry",
+          "link": "19",
+          "pid": "28"
+        }
+      ],
+      "name": "18",
+      "pid": "27",
+      "position": {
+        "x": "1123",
+        "y": "2709"
+      },
+      "tags": [
+        "2",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "Strawberry smiles, but something about it seems different from their usual happy face. It's more genuine, more real.\n\n[[continue->20]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "29"
+        }
+      ],
+      "name": "19",
+      "pid": "28",
+      "position": {
+        "x": "1123",
+        "y": "2859"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "I guess it just feels like since everyone depends on me, I can't let them down.\n\n[[continue->21]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "30"
+        }
+      ],
+      "name": "20",
+      "pid": "29",
+      "position": {
+        "x": "857",
+        "y": "3261"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "How else can I make my friends happy?\n\n[[Your friends like you for you.->21.1]]\n[[Who cares?->21.2]]",
+      "links": [
+        {
+          "name": "Your friends like you for you.",
+          "link": "21.1",
+          "pid": "32"
+        },
+        {
+          "name": "Who cares?",
+          "link": "21.2",
+          "pid": "33"
+        }
+      ],
+      "name": "21",
+      "pid": "30",
+      "position": {
+        "x": "849",
+        "y": "3441"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "Thanks. You're such a kind fruit! I'm lucky to be your friend.\n\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "37"
+        }
+      ],
+      "name": "22",
+      "pid": "31",
+      "position": {
+        "x": "469",
+        "y": "3779"
+      },
+      "tags": [
+        "1",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "Your friends like you just for being you, Strawberry. They don't need to gain anything from you. You're enough!\n\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "31"
+        }
+      ],
+      "name": "21.1",
+      "pid": "32",
+      "position": {
+        "x": "525",
+        "y": "3559"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Who cares about other fruits? They all suck anyways.\n\n[[continue->23]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "23",
+          "pid": "34"
+        }
+      ],
+      "name": "21.2",
+      "pid": "33",
+      "position": {
+        "x": "1202",
+        "y": "3565"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I guess that's one way to look at it. I definitely care about my friends though.\n\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "37"
+        }
+      ],
+      "name": "23",
+      "pid": "34",
+      "position": {
+        "x": "1247",
+        "y": "3760"
+      },
+      "tags": [
+        "-1",
+        "Strawberry",
+        "meh"
+      ]
+    },
+    {
+      "text": "Oh! If you're not interested, I won't bother you with it.\n\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "36"
+        }
+      ],
+      "name": "24",
+      "pid": "35",
+      "position": {
+        "x": "1160",
+        "y": "1354"
+      },
+      "tags": [
+        "-1",
+        "Strawberry",
+        "cry"
+      ]
+    },
+    {
+      "text": "Sorry...\n\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "37"
+        }
+      ],
+      "name": "25",
+      "pid": "36",
+      "position": {
+        "x": "1160",
+        "y": "1504"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "cry"
+      ]
+    },
+    {
+      "text": "Suddenly, I can hear the clinking of glass and ominous murmuring.\n\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "38"
+        }
+      ],
+      "name": "26",
+      "pid": "37",
+      "position": {
+        "x": "882",
+        "y": "4279.0001220703125"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "I see fear set in on Strawberry's face.\n\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "39"
+        }
+      ],
+      "name": "27",
+      "pid": "38",
+      "position": {
+        "x": "882",
+        "y": "4429.0001220703125"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Oh no...\n\n[[What? What is it?->29]]",
+      "links": [
+        {
+          "name": "What? What is it?",
+          "link": "29",
+          "pid": "40"
+        }
+      ],
+      "name": "28",
+      "pid": "39",
+      "position": {
+        "x": "882",
+        "y": "4579.0001220703125"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "The Jars... They've been trying to turn me into jam for as long as I can remember.\n\n[[Jam!?->30]]",
+      "links": [
+        {
+          "name": "Jam!?",
+          "link": "30",
+          "pid": "41"
+        }
+      ],
+      "name": "29",
+      "pid": "40",
+      "position": {
+        "x": "882",
+        "y": "4729.0001220703125"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "cry"
+      ]
+    },
+    {
+      "text": "Yep... Jam. I don't think we can get out of here without fighting them. Do you think you could help me out here?\n\n[[Of course, Strawberry!->31]]",
+      "links": [
+        {
+          "name": "Of course, Strawberry!",
+          "link": "31",
+          "pid": "42"
+        }
+      ],
+      "name": "30",
+      "pid": "41",
+      "position": {
+        "x": "882",
+        "y": "4879.0001220703125"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "cry"
+      ]
+    },
+    {
+      "text": "Strawberry and I turn to face The Jars, ready to fight.",
+      "name": "31",
+      "pid": "42",
+      "position": {
+        "x": "882",
+        "y": "5029.0001220703125"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    }
+  ],
+  "name": "Strawberry Date 2",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "570A0397-A252-4D7F-B8C3-DB49071CE1E2"
+}
