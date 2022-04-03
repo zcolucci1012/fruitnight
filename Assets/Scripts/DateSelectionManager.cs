@@ -2,78 +2,187 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public enum KitchenLocation
+{
+    Drawer,
+    Blender,
+    Sink,
+    LeftTable,
+    Stove,
+    UpperCabinet,
+    RightTable,
+    OverheadLamp,
+    OvenMitten,
+    LowerCabinet
+}
 
 public class DateSelectionManager : MonoBehaviour
 {
-    public GameObject KitchenBackground;
-    public GameObject TableBackground;
-    public GameObject BlenderBackground;
-    public GameObject SinkBackground;
+    public GameObject drawerLocation;
+    public GameObject blenderLocation;
+    public GameObject sinkLocation;
+    public GameObject leftTableLocation;
+    public GameObject upperCabinetLocation;
+    public GameObject rightTableLocation;
+    public GameObject overheadLampLocation;
+    public GameObject lowerCabinetLocation;
+    public GameObject ovenMittenLocation;
+    public GameObject stoveLocation;
 
     public StrawberryFruit strawberry;
     public BlueberryFruit blueberry;
     public LemonFruit lemon;
+    public BlackberryFruit blackberry;
+    public TomatoFruit tomato;
 
-    private List<Fruit> fruits = new List<Fruit>(); // Index relates to location on screen
-                                // 0: Table
-                                // 1: Blender
-                                // 2: Sink
+    private Fruit[] fruits = new Fruit[10]; // Index relates to location on screen, see KitchenLocations Enum
+    private GameObject[] locations = new GameObject[10]; // Index relates to location on screen, see KitchenLocations Enum
+
+    private static int numDatesLeftInDay = 2;
 
     // Start is called before the first frame update
     void Start()
     {
-        //strawberry = GetComponent<StrawberryFruit>();
-        //blueberry = GetComponent<BlueberryFruit>();
-        //lemon = GetComponent<LemonFruit>();
-        fruits.Add(lemon);
-        fruits.Add(blueberry);
-        fruits.Add(strawberry);
-
-        KitchenBackground.transform.Find("TableSprite").GetComponent<Image>().sprite = fruits[0].sprite;
-        KitchenBackground.transform.Find("BlenderSprite").GetComponent<Image>().sprite = fruits[1].sprite;
-        KitchenBackground.transform.Find("SinkSprite").GetComponent<Image>().sprite = fruits[2].sprite;
-    }
-
-    // uses Fisher-Yates Shuffle algorithm
-    public void ShuffleFruitLocations()
-    {
-        System.Random _random = new System.Random();
-        Fruit temp;
-        int n = fruits.Count;
-
-        for (int i = 0; i < n; i++)
+        if (numDatesLeftInDay <= 0)
         {
-            int r = i + (int)(_random.NextDouble() * (n - i));
-            temp = fruits[r];
-            fruits[r] = fruits[i];
-            fruits[i] = temp;
+            numDatesLeftInDay = 2;
+            StrawberryFruit.daysLeftUntilDateable--;
+            BlueberryFruit.daysLeftUntilDateable--;
+            LemonFruit.daysLeftUntilDateable--;
+            BlackberryFruit.daysLeftUntilDateable--;
+            TomatoFruit.daysLeftUntilDateable--;
+            SceneManager.LoadScene("TransitionBetweenDays");
+        }
+        else
+        {
+            InitializeLocationsArray();
+            SetFruitLocations();
         }
     }
 
-    public void TransitionToTable()
+    private void InitializeLocationsArray()
     {
-        fruits[0].InitiateDate();
-        //KitchenBackground.SetActive(false);
-        //TableBackground.SetActive(true);
+        locations[(int)KitchenLocation.Drawer] = drawerLocation;
+        locations[(int)KitchenLocation.Blender] = blenderLocation;
+        locations[(int)KitchenLocation.Sink] = sinkLocation;
+        locations[(int)KitchenLocation.LeftTable] = leftTableLocation;
+        locations[(int)KitchenLocation.UpperCabinet] = upperCabinetLocation;
+        locations[(int)KitchenLocation.RightTable] = rightTableLocation;
+        locations[(int)KitchenLocation.OverheadLamp] = overheadLampLocation;
+        locations[(int)KitchenLocation.OvenMitten] = ovenMittenLocation;
+        locations[(int)KitchenLocation.Stove] = stoveLocation;
+        locations[(int)KitchenLocation.LowerCabinet] = lowerCabinetLocation;
 
-        //TableBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[0].sprite;
+        foreach (GameObject go in locations)
+        {
+            go.SetActive(false);
+        }
+    }
+
+    private void SetFruitLocations()
+    {
+        int index;
+
+        if (StrawberryFruit.daysLeftUntilDateable <= 0)
+        {
+            index = strawberry.SetLocation();
+            fruits[index] = strawberry;
+            locations[index].GetComponent<Image>().sprite = strawberry.sprite;
+            locations[index].SetActive(true);
+        }
+
+        if (BlueberryFruit.daysLeftUntilDateable <= 0)
+        {
+            index = blueberry.SetLocation();
+            fruits[index] = blueberry;
+            locations[index].GetComponent<Image>().sprite = blueberry.sprite;
+            locations[index].SetActive(true);
+        }
+
+        if (LemonFruit.daysLeftUntilDateable <= 0)
+        {
+            index = lemon.SetLocation();
+            fruits[index] = lemon;
+            locations[index].GetComponent<Image>().sprite = lemon.sprite;
+            locations[index].SetActive(true);
+        }
+
+        if (BlackberryFruit.daysLeftUntilDateable <= 0)
+        {
+            index = blackberry.SetLocation();
+            fruits[index] = blackberry;
+            locations[index].GetComponent<Image>().sprite = blackberry.sprite;
+            locations[index].SetActive(true);
+        }
+
+        if (TomatoFruit.daysLeftUntilDateable <= 0)
+        {
+            index = tomato.SetLocation();
+            fruits[index] = tomato;
+            locations[index].GetComponent<Image>().sprite = tomato.sprite;
+            locations[index].SetActive(true);
+        }
+    }
+
+    public void TransitionToDrawer()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.Drawer].InitiateDate();
     }
 
     public void TransitionToBlender()
     {
-        fruits[1].InitiateDate();
-        //KitchenBackground.SetActive(false);
-        //BlenderBackground.SetActive(true);
-
-        //BlenderBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[1].sprite;
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.Blender].InitiateDate();
     }
 
     public void TransitionToSink()
     {
-        fruits[2].InitiateDate();
-        //KitchenBackground.SetActive(false);
-        //SinkBackground.SetActive(true);
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.Sink].InitiateDate();
+    }
 
-        //SinkBackground.transform.Find("Sprite").GetComponent<Image>().sprite = fruits[2].sprite;
+    public void TransitionToLeftTable()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.LeftTable].InitiateDate();
+    }
+
+    public void TransitionToUpperCabinet()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.UpperCabinet].InitiateDate();
+    }
+
+    public void TransitionToRightTable()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.RightTable].InitiateDate();
+    }
+
+    public void TransitionToOverheadLamp()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.OverheadLamp].InitiateDate();
+    }
+
+    public void TransitionToLowerCabinet()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.LowerCabinet].InitiateDate();
+    }
+
+    public void TransitionToStove()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.Stove].InitiateDate();
+    }
+
+    public void TransitionToOvenMitten()
+    {
+        numDatesLeftInDay--;
+        fruits[(int)KitchenLocation.OvenMitten].InitiateDate();
     }
 }

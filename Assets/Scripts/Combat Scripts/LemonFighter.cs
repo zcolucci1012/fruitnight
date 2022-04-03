@@ -9,18 +9,22 @@ public class LemonFighter : Fighter
         // Sour Power
         this.attack1execute = targets =>
         {
-            targets[0].Damage(2);
-            targets[0].Defense(-2, 2);
-            return "Lemon deals 4 points of damage to " + targets[0].name + "\n";
+            return Hit(targets[0], 4).msg;
         };
 
         // Lemon Twist
         this.attack2execute = targets =>
         {
-            targets[0].Damage(6);
-            int selfDamage = UnityEngine.Random.Range(2, 4);
-            this.Damage(selfDamage);
-            return "Lemon deals 6 points of damage to " + targets[0].name + " but hurts itself for " + selfDamage + " points\n";
+            AttackResult result = Hit(targets[0], 6);
+            string msg = result.msg;
+            if (result.hit)
+            {
+                int selfDamage = UnityEngine.Random.Range(2, 4);
+                this.Damage(selfDamage);
+                msg += "\nLemon hurts themself for " + selfDamage + " damage";
+
+            }
+            return msg;
         };
 
         this.attack1 = new Attack(this.attack1name, this.attack1desc, this.attack1type, this.attack1execute);

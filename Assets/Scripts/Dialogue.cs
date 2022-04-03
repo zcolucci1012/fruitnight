@@ -20,6 +20,10 @@ public class Dialogue
             }
             else
             {
+                if (passage.text.Contains("$"))
+                {
+                    node.unlockVerbal = true;
+                }
                 int index = passage.text.IndexOf("[");
                 node.text = passage.text.Substring(0, index);
             }
@@ -31,10 +35,15 @@ public class Dialogue
                     node.option1.text = passage.links[i].name;
                     node.option1.id = passage.links[i].pid - 1; // the pid is stored 1-indexed, so subtract one to zero index
                 }
-                else
+                else if (i == 1)
                 {
                     node.option2.text = passage.links[i].name;
                     node.option2.id = passage.links[i].pid - 1;
+                }
+                else
+                {
+                    node.option3.text = passage.links[i].name;
+                    node.option3.id = passage.links[i].pid - 1;
                 }
             }
 

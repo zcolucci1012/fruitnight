@@ -1,0 +1,792 @@
+{
+  "passages": [
+    {
+      "text": "Strawberry mentioned that they saw Blueberry hanging around the lights on top of the oven in their spare time. I didn't even realize fruits can get here.\n\n[[continue->1]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "1",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "288",
+        "y": "526"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "The height alone could probably scare most things away from this place. I wonder what piqued their curiosity this time.\n\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1",
+      "pid": "2",
+      "position": {
+        "x": "288",
+        "y": "676"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Fascinating! I've never seen anything like this before!\n\n[[continue->3]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "3",
+          "pid": "4"
+        }
+      ],
+      "name": "2",
+      "pid": "3",
+      "position": {
+        "x": "288",
+        "y": "826"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "I can't even tell if that's a good thing or a bad thing. I start heading towards where I heard their voice. \n\n[[Hey, Blueberry! Are you okay? ->4]]",
+      "links": [
+        {
+          "name": "Hey, Blueberry! Are you okay? ",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3",
+      "pid": "4",
+      "position": {
+        "x": "289",
+        "y": "976"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Oh, is that you, Musa? I'm over here, just around the corner! \n\n[[continue->5]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4",
+      "pid": "5",
+      "position": {
+        "x": "289",
+        "y": "1126"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "I turn the corner and see Blueberry, reading a large wall of text embedded in the light. \n\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "7"
+        }
+      ],
+      "name": "5",
+      "pid": "6",
+      "position": {
+        "x": "289",
+        "y": "1276"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "It's more of that \"Caut Ion\" stuff that we saw at the blender. Actually, I've noticed more of that stuff around a lot more objects.\n\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "8"
+        }
+      ],
+      "name": "6",
+      "pid": "7",
+      "position": {
+        "x": "289",
+        "y": "1426"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "It's even been around the fridge. Do you think that this lamp is sacred too?\n\n[[Maybe the blender isn't so sacred...->7.1]]\n[[Another sacred object?!!->7.2]]\n",
+      "links": [
+        {
+          "name": "Maybe the blender isn't so sacred...",
+          "link": "7.1",
+          "pid": "17"
+        },
+        {
+          "name": "Another sacred object?!!",
+          "link": "7.2",
+          "pid": "18"
+        }
+      ],
+      "name": "7",
+      "pid": "8",
+      "position": {
+        "x": "289",
+        "y": "1576"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Wait, what are you saying? Wouldn't that mean that Elderberry is lying to us?\n\n[[continue->9]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9",
+          "pid": "10"
+        }
+      ],
+      "name": "8",
+      "pid": "9",
+      "position": {
+        "x": "50",
+        "y": "1750"
+      },
+      "tags": [
+        "-1",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "I'm not so sure. After all, I've known Elderberry all my life. \n\n[[continue->13]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "14"
+        }
+      ],
+      "name": "9",
+      "pid": "10",
+      "position": {
+        "x": "50",
+        "y": "1900"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "annoyed"
+      ]
+    },
+    {
+      "text": "I can't believe how amazing this Kitchen is to have so many sacred objects nearby. \n\n[[continue->11]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "11",
+          "pid": "12"
+        }
+      ],
+      "name": "10",
+      "pid": "11",
+      "position": {
+        "x": "545",
+        "y": "1736"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I know, right? We have to thank Elderberry for the opportunity to study these objects. \n\n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "13"
+        }
+      ],
+      "name": "11",
+      "pid": "12",
+      "position": {
+        "x": "543",
+        "y": "1908"
+      },
+      "tags": [
+        "1",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Although it's interesting how they have the Blender Defenders but there isn't also anything to defend the lamp or the fridge. \n\n[[continue->13]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "14"
+        }
+      ],
+      "name": "12",
+      "pid": "13",
+      "position": {
+        "x": "456",
+        "y": "2025"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Is it possible that we could uncover some unknown truth about this place?\n\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "15"
+        }
+      ],
+      "name": "13",
+      "pid": "14",
+      "position": {
+        "x": "286",
+        "y": "2182"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "Maybe like some previous signs of life or beings from beyond our understanding.\n\n[[I mean, I did come from an unknown place. And there has to be some sort of origin for us as fruit.->15]]",
+      "links": [
+        {
+          "name": "I mean, I did come from an unknown place. And there has to be some sort of origin for us as fruit.",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "14",
+      "pid": "15",
+      "position": {
+        "x": "286",
+        "y": "2332"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "But how did this place come into being? Is there a reason why the blender is seen as a sacred object?\n\n[[Maybe there isn't a real reason.->15.1]]\n[[The blender could be something far beyond our understanding->15.2]]\n[[Elderberry's knowledge is vast...->15.3]]",
+      "links": [
+        {
+          "name": "Maybe there isn't a real reason.",
+          "link": "15.1",
+          "pid": "19"
+        },
+        {
+          "name": "The blender could be something far beyond our understanding",
+          "link": "15.2",
+          "pid": "20"
+        },
+        {
+          "name": "Elderberry's knowledge is vast...",
+          "link": "15.3",
+          "pid": "21"
+        }
+      ],
+      "name": "15",
+      "pid": "16",
+      "position": {
+        "x": "286",
+        "y": "2482"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "You know, maybe the fact that there are so many things with this \"Caut Ion\" stuff means the blender isn't so sacred.\n\n[[continue->8]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "9"
+        }
+      ],
+      "name": "7.1",
+      "pid": "17",
+      "position": {
+        "x": "43",
+        "y": "1629"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "There's another sacred object? That's so crazy!\n\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "7.2",
+      "pid": "18",
+      "position": {
+        "x": "480",
+        "y": "1593"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Okay, hear me out. What if there isn't a real reason? What if we're all playing in the hands of some scheme?\n\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "22"
+        }
+      ],
+      "name": "15.1",
+      "pid": "19",
+      "position": {
+        "x": "58",
+        "y": "2659"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "That blender could be something even greater than we could imagine. Like some weapon or portal or something. \n\n[[continue->18]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18",
+          "pid": "24"
+        }
+      ],
+      "name": "15.2",
+      "pid": "20",
+      "position": {
+        "x": "293",
+        "y": "2646"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "This Elderberry sure knows a lot. I'm sure they've taught you a lot of stuff about sacred objects.\n\n[[continue->20]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "26"
+        }
+      ],
+      "name": "15.3",
+      "pid": "21",
+      "position": {
+        "x": "495",
+        "y": "2636"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Are you okay, Musa? You're kind of freaking me out here...\n\n[[continue->17]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "23"
+        }
+      ],
+      "name": "16",
+      "pid": "22",
+      "position": {
+        "x": "58",
+        "y": "2809"
+      },
+      "tags": [
+        "-2",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "This isn't something we should be saying in front of a sacred object.\n\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "33"
+        }
+      ],
+      "name": "17",
+      "pid": "23",
+      "position": {
+        "x": "58",
+        "y": "2959"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "annoyed"
+      ]
+    },
+    {
+      "text": "I remember Elderberry mentioning that the blender sent people beyond to a realm they don't even know.\n\n[[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "25"
+        }
+      ],
+      "name": "18",
+      "pid": "24",
+      "position": {
+        "x": "293",
+        "y": "2796"
+      },
+      "tags": [
+        "2",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "To be honest, that's probably the only reason why I want to win the tournament. It's like a sacred land or dimension! \n\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "33"
+        }
+      ],
+      "name": "19",
+      "pid": "25",
+      "position": {
+        "x": "293",
+        "y": "2946"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Yeah, Elderberry has been my mentor for so long. They saw my curiosity as a blessing while some people were a bit annoyed by it.\n\n[[I think that's what makes you fun!->20.1]]\n[[It's a bit of a nuisance, but...->20.2]]\n$",
+      "links": [
+        {
+          "name": "I think that's what makes you fun!",
+          "link": "20.1",
+          "pid": "27"
+        },
+        {
+          "name": "It's a bit of a nuisance, but...",
+          "link": "20.2",
+          "pid": "28"
+        }
+      ],
+      "name": "20",
+      "pid": "26",
+      "position": {
+        "x": "570",
+        "y": "2824"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "I think that curiosity of yours is what makes these interactions fun!\n\n[[continue->21]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "29"
+        }
+      ],
+      "name": "20.1",
+      "pid": "27",
+      "position": {
+        "x": "439",
+        "y": "3041"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "It's a bit of a nuisance, but I find that interesting. After all, there isn't a dull moment with you around!\n\n[[continue->23]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "23",
+          "pid": "31"
+        }
+      ],
+      "name": "20.2",
+      "pid": "28",
+      "position": {
+        "x": "676",
+        "y": "3031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh! Thanks...\n\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "30"
+        }
+      ],
+      "name": "21",
+      "pid": "29",
+      "position": {
+        "x": "439",
+        "y": "3191"
+      },
+      "tags": [
+        "3",
+        "Blueberry",
+        "blush"
+      ]
+    },
+    {
+      "text": "Blueberry made a big smile after hearing that.\n\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "33"
+        }
+      ],
+      "name": "22",
+      "pid": "30",
+      "position": {
+        "x": "439",
+        "y": "3341"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Wait, really? But don't I cause more problems than you'd like?\n\n[[That just adds to the fun!->24]]",
+      "links": [
+        {
+          "name": "That just adds to the fun!",
+          "link": "24",
+          "pid": "32"
+        }
+      ],
+      "name": "23",
+      "pid": "31",
+      "position": {
+        "x": "676",
+        "y": "3181"
+      },
+      "tags": [
+        "4",
+        "Blueberry",
+        "blush"
+      ]
+    },
+    {
+      "text": "Blueberry is blushing a lot from that. Wait, was that a bit cheesy?\n\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "33"
+        }
+      ],
+      "name": "24",
+      "pid": "32",
+      "position": {
+        "x": "676",
+        "y": "3331"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Ahem, anywa-\n\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "34"
+        }
+      ],
+      "name": "25",
+      "pid": "33",
+      "position": {
+        "x": "305",
+        "y": "3734"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Blueberry moved slightly to the side and froze. \n\n[[Uhh, Blueberry, are you alright?->27]]",
+      "links": [
+        {
+          "name": "Uhh, Blueberry, are you alright?",
+          "link": "27",
+          "pid": "35"
+        }
+      ],
+      "name": "26",
+      "pid": "34",
+      "position": {
+        "x": "305",
+        "y": "3884"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Musa, don't move. There's a creature behind you.\n\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "36"
+        }
+      ],
+      "name": "27",
+      "pid": "35",
+      "position": {
+        "x": "305",
+        "y": "4034"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "If I'm not mistaken, it's the infamous Dust Bunny I've heard of around these parts.\n\n[[Is it dangerous? Do we have to fight it?->29]]",
+      "links": [
+        {
+          "name": "Is it dangerous? Do we have to fight it?",
+          "link": "29",
+          "pid": "37"
+        }
+      ],
+      "name": "28",
+      "pid": "36",
+      "position": {
+        "x": "305",
+        "y": "4184"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "I don't know, but I don't want to be pushed into a corner this high up! Let's fight it before it can act!",
+      "name": "29",
+      "pid": "37",
+      "position": {
+        "x": "305",
+        "y": "4334"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    }
+  ],
+  "name": "Blueberry Date 2",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "B443C89E-2E57-43D2-812C-26B629A2BBD9"
+}

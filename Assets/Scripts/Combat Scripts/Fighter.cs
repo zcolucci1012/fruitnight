@@ -38,13 +38,15 @@ public abstract class Fighter : MonoBehaviour
 
     // specifies how many more turns the fighter is frozen for and can't move
     public int turnsFrozen = 0;
+    public int turnsCantHeal = 0;
+    public List<PoisonAttack> poisonAttacks = new List<PoisonAttack>();
 
-    public float dmgMult = 1;
     public int dmgMod = 0;
 
     private Vector3 originalEulerAngles;
 
     public HealthBar healthBar = null;
+    public bool canHeal;
 
     // Start is called before the first frame update
     void Start()
@@ -71,12 +73,39 @@ public abstract class Fighter : MonoBehaviour
         }
     }
     
-    public void Damage(int hp)
+    public AttackResult Hit(Fighter target, int dmg)
     {
+        int roll = UnityEngine.Random.Range(1, 20);
+        // print("defense: " + target.defense + ", roll: " + roll);
+        if (target.defense < roll)
+        {
+            int effectiveDamage = target.Damage(dmg + dmgMod);
+            string msg = this.name + " deals " + effectiveDamage + " points of damage to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            return new AttackResult(true, effectiveDamage, msg);
+        }
+        else
+        {
+            return new AttackResult(false, 0, this.name + " misses " + target.name);
+        }
+        
+    }
+
+    public int Damage(int hp)
+    {
+        if (turnsCantHeal > 0 && hp < 0)
+        {
+            return 0;
+        }
         this.currentHp -= hp;
+        int effectiveDamage = hp;
         if (this.currentHp <= 0)
         {
             unconscious = true;
+            effectiveDamage += this.currentHp;
             this.currentHp = 0;
             this.transform.eulerAngles = this.originalEulerAngles + new Vector3(0, 0, 90);
         }
@@ -88,8 +117,11 @@ public abstract class Fighter : MonoBehaviour
 
         if (this.currentHp > maxHp)
         {
+            effectiveDamage += (this.currentHp - maxHp);
             this.currentHp = maxHp;
         }
+
+        return effectiveDamage;
     }
 
     // add a defense modifier for the specified amount of turns
@@ -116,6 +148,20 @@ public abstract class Fighter : MonoBehaviour
         if (this.turnsFrozen > 0) {
             this.turnsFrozen--;
         }
+        
+        if (this.turnsCantHeal > 0)
+        {
+            this.turnsCantHeal--;
+        }
+
+        foreach (PoisonAttack p in poisonAttacks)
+        {
+            Damage(p.dmg);
+            print("poison damage!");
+            p.turns--;
+        }
+
+        poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
     }
 
     public bool canAttack() {

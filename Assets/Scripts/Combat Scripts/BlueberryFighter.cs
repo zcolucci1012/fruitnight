@@ -10,9 +10,14 @@ public class BlueberryFighter : Fighter
         // Sugar Blast
         this.attack1execute = targets =>
         {
-            targets[0].Damage(2);
-            targets[0].Defense(-2, 2);
-            return "Blueberry deals 2 points of damage to " + targets[0].name + " and lowers their defense by 2 points";
+            AttackResult result = Hit(targets[0], 2);
+            string msg = result.msg;
+            if (result.hit)
+            {
+                targets[0].Defense(-2, 2);
+                msg += "\n" + targets[0].name + "\'s defense lowers by 2";
+            }
+            return msg;
         };
 
         this.attack2execute = targets =>

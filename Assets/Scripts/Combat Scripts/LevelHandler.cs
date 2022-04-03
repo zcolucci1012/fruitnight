@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class LevelHandler : MonoBehaviour
 {
@@ -62,12 +63,20 @@ public class LevelHandler : MonoBehaviour
             relationshipScore  = RelationshipScore.lemonScore;
         } else if (fruit.Equals("blueberry")) {
             relationshipScore  = RelationshipScore.blueberryScore;
+        } else if (fruit.Equals("blackberry")) {
+            relationshipScore = RelationshipScore.blackberryScore;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        //skip turn if unconcsious or frozen
+        while (turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
+        {
+            turn++;
+        }
+
         // reset turn
         if (turn >= entities.Count)
         {
@@ -81,23 +90,19 @@ public class LevelHandler : MonoBehaviour
             }
             turn = 0;
         }
-        //skip turn if unconcsious
-        if (entities[turn].unconscious || entities[turn].turnsFrozen > 0)
-        {
-            turn++;
-        }
 
         //checks if player is selecting a target, and if its a player's turn
         if (selectingTarget && turn < players.Length)
         {
             SelectTarget();
         }
-        //if enemy's turn, play enemy attack after 2 seconds
+        //if enemy's turn, play enemy attack after a certain number of seconds
         else if (turn >= players.Length)
         {
             if (!enemyAttacking)
             {
-                Invoke("BeginEnemyAttack", 2);
+                float duration = Mathf.Max(1, description.Length / 25f);
+                Invoke("BeginEnemyAttack", duration);
                 enemyAttacking = true;
             }
         }
@@ -148,13 +153,13 @@ public class LevelHandler : MonoBehaviour
         player1Attack2Button.GetComponent<Button>().enabled = turn == 0;
         player2Attack1Button.GetComponent<Button>().enabled = turn == 1;
         player2Attack2Button.GetComponent<Button>().enabled = turn == 1;
-        comboAttackButton.GetComponent<Button>().enabled = turn == 0;
+        comboAttackButton.GetComponent<Button>().enabled = turn == 0 || turn == 1;
 
         player1Attack1Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player1Attack2Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player2Attack1Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
-        comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0;
+        comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0 || turn == 1;
 
         comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2 && !players[0].unconscious && !players[1].unconscious;
 
@@ -162,7 +167,7 @@ public class LevelHandler : MonoBehaviour
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack2Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
-        comboAttackButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+        comboAttackButton.GetComponent<Image>().color = turn == 0 || turn == 1 ? defaultColor : grayedOut;
     }
 
     //begins attack 1 for player 1
@@ -262,7 +267,7 @@ public class LevelHandler : MonoBehaviour
             }
         } else if (currentAttack.type == AttackType.MultiTarget)
         {
-            SelectedTarget(enemies);
+            SelectedTarget(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
         } else if (currentAttack.type == AttackType.MultiAllyTarget) {
             SelectedTarget(players);
         }
@@ -294,10 +299,6 @@ public class LevelHandler : MonoBehaviour
         for (int i = 0; i < entities.Count; i++)
         {
             entities[i].GetComponent<Button>().enabled = false;
-            if (entities[i].unconscious)
-            {
-                description += "\n" + entities[i].name + " has fallen unconscious!";
-            }
         }
 
         ToggleAttackButtons();
@@ -372,7 +373,8 @@ public class LevelHandler : MonoBehaviour
         }
         else if (this.currentAttack.type == AttackType.MultiTarget)
         {
-            description = this.currentAttack.execute(players);
+
+            description = this.currentAttack.execute(players.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
         }
 
         Invoke("EndAttack", 2);
