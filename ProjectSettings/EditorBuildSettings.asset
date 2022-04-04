@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Blackberry Date 2.unity
     guid: e15cc7fc9003ed247a2711a7ba335c9e
+  - enabled: 1
+    path: Assets/Scenes/Lemon Date 2.unity
+    guid: 717d95e310000b742ae4bd5fda0e50a3
+  - enabled: 1
+    path: Assets/Scenes/Strawberry Date 2.unity
+    guid: df080d853cff2a44d808f92cf0f87a20
   m_configObjects: {}
