@@ -152,6 +152,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ac49eebf194a0748b00ee92a144b688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strawberryFruitImage: {fileID: 1223655622}
+  blueberryFruitImage: {fileID: 966602126}
+  lemonFruitImage: {fileID: 832335997}
+  blackberryFruitImage: {fileID: 1557526600}
+  tomatoFruitImage: {fileID: 1719758821}
+  emotionSprites:
+  - {fileID: 21300000, guid: 57a49774f8d163a45aeb3124db3b6c56, type: 3}
+  - {fileID: 21300000, guid: f53b91f88cc951147857c7acaf45ea32, type: 3}
+  - {fileID: 21300000, guid: 852e0c29ccec6fb46ae38e25d3d7f21f, type: 3}
+  - {fileID: 21300000, guid: 6dc794b63fd126348a13f363c3ab30fb, type: 3}
+  - {fileID: 21300000, guid: 3ec3635b5de656e4fafa1ed4f40d064a, type: 3}
+  - {fileID: 21300000, guid: 0bedb582446e63f4e814bf5c934bd486, type: 3}
+  - {fileID: 21300000, guid: 4920fcde737a00c439cd53e70a8d038f, type: 3}
+  - {fileID: 21300000, guid: 6a038978b9c4bf447aa4f0f6632e5ad3, type: 3}
+  - {fileID: 21300000, guid: ff8f681d031c58147beedc3913668477, type: 3}
+  - {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
+  - {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
+  - {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
+  - {fileID: 21300000, guid: b12ef9e4ed86b754d8476b4fff65a461, type: 3}
+  - {fileID: 21300000, guid: b12ef9e4ed86b754d8476b4fff65a461, type: 3}
+  - {fileID: 21300000, guid: b12ef9e4ed86b754d8476b4fff65a461, type: 3}
   strawberryRelativeRelationshipImage: {fileID: 2096568198}
   blueberryRelativeRelationshipImage: {fileID: 1927738075}
   lemonRelativeRelationshipImage: {fileID: 1768317021}
