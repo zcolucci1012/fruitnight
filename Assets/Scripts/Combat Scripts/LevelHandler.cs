@@ -13,8 +13,12 @@ public class LevelHandler : MonoBehaviour
 
     public GameObject player1Attack1Button;
     public GameObject player1Attack2Button;
+    public GameObject player1Attack3Button;
+    public GameObject player1ComplimentButton;
+    public GameObject player1InsultButton;
     public GameObject player2Attack1Button;
     public GameObject player2Attack2Button;
+    public GameObject player2Attack3Button;
     public GameObject comboAttackButton;
     public GameObject descriptionText;
 
@@ -33,6 +37,8 @@ public class LevelHandler : MonoBehaviour
     public int relationshipScore = 1;
     public RelationshipScore scoreObject;
 
+    public VerbalAttacks verbalAttacks;
+
     // TODO : add dialogue queue
 
     // Start is called before the first frame update
@@ -47,11 +53,19 @@ public class LevelHandler : MonoBehaviour
             players[0].attack1name;
         player1Attack2Button.GetComponentInChildren<Text>().text =
             players[0].attack2name;
+        player1Attack3Button.GetComponentInChildren<Text>().text =
+            players[0].attack3name;
+        player1ComplimentButton.GetComponentInChildren<Text>().text =
+            "Compliment";
+        player1InsultButton.GetComponentInChildren<Text>().text =
+            "Insult";
 
         player2Attack1Button.GetComponentInChildren<Text>().text =
             players[1].attack1name;
         player2Attack2Button.GetComponentInChildren<Text>().text =
             players[1].attack2name;
+        player2Attack3Button.GetComponentInChildren<Text>().text =
+            players[1].attack3name;
 
         this.comboAttack = GetComponent<ComboAttacks>().ComboAttack(players[0], players[1]);
 
@@ -151,22 +165,34 @@ public class LevelHandler : MonoBehaviour
     {
         player1Attack1Button.GetComponent<Button>().enabled = turn == 0;
         player1Attack2Button.GetComponent<Button>().enabled = turn == 0;
+        player1Attack3Button.GetComponent<Button>().enabled = turn == 0;
+        player1ComplimentButton.GetComponent<Button>().enabled = turn == 0;
+        player1InsultButton.GetComponent<Button>().enabled = turn == 0;
         player2Attack1Button.GetComponent<Button>().enabled = turn == 1;
         player2Attack2Button.GetComponent<Button>().enabled = turn == 1;
+        player2Attack3Button.GetComponent<Button>().enabled = turn == 1;
         comboAttackButton.GetComponent<Button>().enabled = turn == 0 || turn == 1;
 
         player1Attack1Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player1Attack2Button.GetComponent<EventTrigger>().enabled = turn == 0;
+        player1Attack3Button.GetComponent<EventTrigger>().enabled = turn == 0;
+        player1ComplimentButton.GetComponent<EventTrigger>().enabled = turn == 0;
+        player1InsultButton.GetComponent<EventTrigger>().enabled = turn == 0;
         player2Attack1Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
+        player2Attack3Button.GetComponent<EventTrigger>().enabled = turn == 1;
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0 || turn == 1;
 
         comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2 && !players[0].unconscious && !players[1].unconscious;
 
         player1Attack1Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+        player1Attack3Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+        player1ComplimentButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+        player1InsultButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack2Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
+        player2Attack3Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         comboAttackButton.GetComponent<Image>().color = turn == 0 || turn == 1 ? defaultColor : grayedOut;
     }
 
@@ -184,6 +210,27 @@ public class LevelHandler : MonoBehaviour
         currentAttack = players[0].attack2;
     }
 
+    //begins attack 3 for player 1
+    public void Player1Attack3()
+    {
+        selectingTarget = true;
+        currentAttack = players[0].attack3;
+    }
+
+    // begins compliment attack for player 1
+    public void Player1Compliment() 
+    {
+        selectingTarget = true;
+        currentAttack = verbalAttacks.VerbalAttack(true);
+    }
+
+    // begins insult attack for player 1
+    public void Player1Insult() 
+    {
+        selectingTarget = true;
+        currentAttack = verbalAttacks.VerbalAttack(false);
+    }
+
     //begins attack 1 for player 2
     public void Player2Attack1()
     {
@@ -196,6 +243,13 @@ public class LevelHandler : MonoBehaviour
     {
         selectingTarget = true;
         currentAttack = players[1].attack2;
+    }
+
+    //begins attack 3 for player 2
+    public void Player2Attack3()
+    {
+        selectingTarget = true;
+        currentAttack = players[1].attack3;
     }
 
     public void ComboAttack()
@@ -221,14 +275,34 @@ public class LevelHandler : MonoBehaviour
                     "> " + players[0].attack2name;
                 break;
             case 2:
+                description = players[0].attack3desc;
+                player1Attack3Button.GetComponentInChildren<Text>().text =
+                    "> " + players[0].attack3name;
+                break;
+            case 3: // compliment attack
+                description = "Compliment an ally or opponent.";
+                player1ComplimentButton.GetComponentInChildren<Text>().text =
+                    "> Compliment";
+                break;
+            case 4: // insult atack
+                description = "Insult an ally or opponent.";
+                player1InsultButton.GetComponentInChildren<Text>().text =
+                    "> Insult";
+                break;
+            case 5:
                 description = players[1].attack1desc;
                 player2Attack1Button.GetComponentInChildren<Text>().text =
                     "> " + players[1].attack1name;
                 break;
-            case 3:
+            case 6:
                 description = players[1].attack2desc;
                 player2Attack2Button.GetComponentInChildren<Text>().text =
                     "> " + players[1].attack2name;
+                break;
+            case 7:
+                description = players[1].attack3desc;
+                player2Attack3Button.GetComponentInChildren<Text>().text =
+                    "> " + players[1].attack3name;
                 break;
             case -1:
                 description = relationshipScore > 2 ? this.comboAttack.description : "Your partner doesn't feel comfortable enough yet to do this attack with you...";
@@ -249,7 +323,7 @@ public class LevelHandler : MonoBehaviour
             description = currentAttack.attackName + ":\nSelect ally target";
             for (int i = 0; i < players.Length; i++)
             {
-                if (i != turn)
+                if (!players[i].unconscious)
                 {
                     players[i].GetComponent<Button>().enabled = true;
                 }
@@ -265,11 +339,29 @@ public class LevelHandler : MonoBehaviour
                     enemies[i].GetComponent<Button>().enabled = true;
                 }
             }
-        } else if (currentAttack.type == AttackType.MultiTarget)
+        } 
+        else if (currentAttack.type == AttackType.MultiTarget)
         {
             SelectedTarget(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
         } else if (currentAttack.type == AttackType.MultiAllyTarget) {
-            SelectedTarget(players);
+            SelectedTarget(players.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+        } else if (currentAttack.type == AttackType.AnyTarget) {
+            description = currentAttack.attackName + ":\nSelect ally or enemy target";
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (!enemies[i].unconscious)
+                {
+                    enemies[i].GetComponent<Button>().enabled = true;
+                }
+            }
+
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (!players[i].unconscious)
+                {
+                    players[i].GetComponent<Button>().enabled = true;
+                }
+            }
         }
     }
 
@@ -312,11 +404,19 @@ public class LevelHandler : MonoBehaviour
             players[0].attack1name;
         player1Attack2Button.GetComponentInChildren<Text>().text =
             players[0].attack2name;
+        player1Attack3Button.GetComponentInChildren<Text>().text =
+            players[0].attack3name;
+        player1ComplimentButton.GetComponentInChildren<Text>().text =
+            "Compliment";
+        player1InsultButton.GetComponentInChildren<Text>().text =
+            "Insult";
 
         player2Attack1Button.GetComponentInChildren<Text>().text =
             players[1].attack1name;
         player2Attack2Button.GetComponentInChildren<Text>().text =
             players[1].attack2name;
+        player2Attack3Button.GetComponentInChildren<Text>().text =
+            players[1].attack3name;
 
         comboAttackButton.GetComponentInChildren<Text>().text =
             this.comboAttack.attackName;
@@ -346,6 +446,9 @@ public class LevelHandler : MonoBehaviour
                 break;
             case 1:
                 this.currentAttack = enemy.attack2;
+                break;
+            case 2:
+                this.currentAttack = enemy.attack3;
                 break;
             default:
                 break;

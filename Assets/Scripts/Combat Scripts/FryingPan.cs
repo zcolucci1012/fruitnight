@@ -22,7 +22,11 @@ public class FryingPan : Fighter
         {
             string msg = "The enemy heals its partner.\n";
             int healing = -targets[0].Damage(-2);
-            msg += "It healed them for " + healing + " HP";
+            if (healing == 0) {
+                msg += "It can't heal!";
+            } else {
+                msg += "It healed itself for " + healing + " HP";
+            }
             return msg;
         };
 
