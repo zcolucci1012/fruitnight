@@ -21,12 +21,12 @@
       ]
     },
     {
-      "text": "Seeing this as a stark change from their usual self, I decided to check in on them for a while. \n\n\n[[Hey, Lemon. Are you doing alright?->2]]",
+      "text": "Seeing this as a stark change from their usual self, I decided to check in on them for a while. \n\n\n[[continue->1.5]]",
       "links": [
         {
-          "name": "Hey, Lemon. Are you doing alright?",
-          "link": "2",
-          "pid": "3"
+          "name": "continue",
+          "link": "1.5",
+          "pid": "41"
         }
       ],
       "name": "1",
@@ -82,12 +82,12 @@
       ]
     },
     {
-      "text": "You know, this used to be a place where I'd hang out a lot with another fruit. They were pretty cool, even cooler than me. \n\n[[Oh, really? Did they also hate silverware?->5]]",
+      "text": "You know, this used to be a place where I'd hang out a lot with another fruit. They were pretty cool, even cooler than me. \n\n[[continue->4.5]]",
       "links": [
         {
-          "name": "Oh, really? Did they also hate silverware?",
-          "link": "5",
-          "pid": "6"
+          "name": "continue",
+          "link": "4.5",
+          "pid": "42"
         }
       ],
       "name": "4",
@@ -103,17 +103,12 @@
       ]
     },
     {
-      "text": "You don't know this because you got here recently but I didn't always hate silverware. And neither did my friend. \n\n[[Did?->5.1]]\n[[Why did you start hating silverware?->5.2]]\n",
+      "text": "You don't know this because you got here recently but I didn't always hate silverware. And neither did my friend. \n\n[[continue->5 options]]\n",
       "links": [
         {
-          "name": "Did?",
-          "link": "5.1",
-          "pid": "35"
-        },
-        {
-          "name": "Why did you start hating silverware?",
-          "link": "5.2",
-          "pid": "36"
+          "name": "continue",
+          "link": "5 options",
+          "pid": "43"
         }
       ],
       "name": "5",
@@ -150,12 +145,12 @@
       ]
     },
     {
-      "text": "By the time I got here, I was too late. The only things leaving the area were pieces of silverware, and one of them was a large knife.\n\n[[So this big knife came around here and you assume that they had something to do with the loss of your friend?->10]]",
+      "text": "By the time I got here, I was too late. The only things leaving the area were pieces of silverware, and one of them was a large knife.\n\n[[continue->7.5]]",
       "links": [
         {
-          "name": "So this big knife came around here and you assume that they had something to do with the loss of your friend?",
-          "link": "10",
-          "pid": "11"
+          "name": "continue",
+          "link": "7.5",
+          "pid": "44"
         }
       ],
       "name": "7",
@@ -192,12 +187,12 @@
       ]
     },
     {
-      "text": "The damn grin on the large knife as they left this place told me everything I needed to know. \n\n[[So this big knife came around here and you assume that they had something to do with the loss of your friend?->10]]",
+      "text": "The damn grin on the large knife as they left this place told me everything I needed to know. \n\n[[continue->9.5]]",
       "links": [
         {
-          "name": "So this big knife came around here and you assume that they had something to do with the loss of your friend?",
-          "link": "10",
-          "pid": "11"
+          "name": "continue",
+          "link": "9.5",
+          "pid": "45"
         }
       ],
       "name": "9",
@@ -317,17 +312,12 @@
       ]
     },
     {
-      "text": "Lemon takes the pair off before looking off at the distance. I wonder how long they've been carrying this burden... \n\n[[Tell me more about this friend.->15.1]]\n[[Those silverware will pay.->15.2]]",
+      "text": "Lemon takes the pair off before looking off at the distance. I wonder how long they've been carrying this burden... \n[[continue->15 options]]",
       "links": [
         {
-          "name": "Tell me more about this friend.",
-          "link": "15.1",
-          "pid": "37"
-        },
-        {
-          "name": "Those silverware will pay.",
-          "link": "15.2",
-          "pid": "38"
+          "name": "continue",
+          "link": "15 options",
+          "pid": "46"
         }
       ],
       "name": "15",
@@ -384,17 +374,12 @@
       ]
     },
     {
-      "text": "I wish you could've met them. Lime was the first one to meet me when I came to the Kitchen myself. \n\n[[We can make sure the silverware pay.->18.1]]\n[[Maybe violence isn't the way.->18.2]]",
+      "text": "I wish you could've met them. Lime was the first one to meet me when I came to the Kitchen myself. \n\n[[continue->18 options]]",
       "links": [
         {
-          "name": "We can make sure the silverware pay.",
-          "link": "18.1",
-          "pid": "39"
-        },
-        {
-          "name": "Maybe violence isn't the way.",
-          "link": "18.2",
-          "pid": "40"
+          "name": "continue",
+          "link": "18 options",
+          "pid": "47"
         }
       ],
       "name": "18",
@@ -452,12 +437,12 @@
       ]
     },
     {
-      "text": "Plus, when you're done with these silverware, what's next? Have you thought that far yet?\n\n[[continue->24]]",
+      "text": "Plus, when you're done with these silverware, what's next? Have you thought that far yet?\n\n[[continue->21.5]]",
       "links": [
         {
           "name": "continue",
-          "link": "24",
-          "pid": "25"
+          "link": "21.5",
+          "pid": "48"
         }
       ],
       "name": "21",
@@ -838,6 +823,186 @@
       "tags": [
         "0",
         "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Hey, Lemon. Are you doing alright?\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1.5",
+      "pid": "41",
+      "position": {
+        "x": "580",
+        "y": "383"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, really? Did they also hate silverware?\n[[continue->5]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4.5",
+      "pid": "42",
+      "position": {
+        "x": "582",
+        "y": "745"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Did?->5.1]]\n[[Why did you start hating silverware?->5.2]]",
+      "links": [
+        {
+          "name": "Did?",
+          "link": "5.1",
+          "pid": "35"
+        },
+        {
+          "name": "Why did you start hating silverware?",
+          "link": "5.2",
+          "pid": "36"
+        }
+      ],
+      "name": "5 options",
+      "pid": "43",
+      "position": {
+        "x": "405",
+        "y": "1071"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "So this big knife came around here and you assume that they had something to do with the loss of your friend?\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "7.5",
+      "pid": "44",
+      "position": {
+        "x": "161",
+        "y": "1412"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "So this big knife came around here and you assume that they had something to do with the loss of your friend?\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "11"
+        }
+      ],
+      "name": "9.5",
+      "pid": "45",
+      "position": {
+        "x": "605",
+        "y": "1383"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Tell me more about this friend.->15.1]]\n[[Those silverware will pay.->15.2]]",
+      "links": [
+        {
+          "name": "Tell me more about this friend.",
+          "link": "15.1",
+          "pid": "37"
+        },
+        {
+          "name": "Those silverware will pay.",
+          "link": "15.2",
+          "pid": "38"
+        }
+      ],
+      "name": "15 options",
+      "pid": "46",
+      "position": {
+        "x": "394",
+        "y": "2401"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "[[We can make sure the silverware pay.->18.1]]\n[[Maybe violence isn't the way.->18.2]]",
+      "links": [
+        {
+          "name": "We can make sure the silverware pay.",
+          "link": "18.1",
+          "pid": "39"
+        },
+        {
+          "name": "Maybe violence isn't the way.",
+          "link": "18.2",
+          "pid": "40"
+        }
+      ],
+      "name": "18 options",
+      "pid": "47",
+      "position": {
+        "x": "139",
+        "y": "2877"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Huh, now that you mention it, that thought never quite crossed my mind. Maybe I should change my ways sooner rather than later.\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "25"
+        }
+      ],
+      "name": "21.5",
+      "pid": "48",
+      "position": {
+        "x": "289",
+        "y": "3276"
+      },
+      "tags": [
+        "0",
+        "Lemon",
         "base"
       ]
     }

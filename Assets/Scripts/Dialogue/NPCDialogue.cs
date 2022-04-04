@@ -53,7 +53,7 @@ public class NPCDialogue : MonoBehaviour
         // let player speed up dialogue if they press space
         if (Input.GetKey(KeyCode.Space))
         {
-            scrollSpeed = .001f;
+            scrollSpeed = .0001f;
         }
         else
         {

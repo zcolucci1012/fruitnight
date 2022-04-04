@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 490504674}
     - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: emotions.Array.size
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: emotions.Array.data[0]
@@ -274,6 +274,14 @@ PrefabInstance:
       propertyPath: emotions.Array.data[6]
       value: 
       objectReference: {fileID: 21300000, guid: ec5984bf3d952bc48ab038ce0a314e6d, type: 3}
+    - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+      propertyPath: emotions.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 39bb5df2f2d47af4ba773062358c48f7, type: 3}
+    - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+      propertyPath: emotions.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d05c77ccebca04499a0e215df241f54, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
 --- !u!224 &370142994 stripped
