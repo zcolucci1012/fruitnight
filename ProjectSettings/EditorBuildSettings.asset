@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlackberryCombat.unity
     guid: 4ba0cfd892bc5f040a4ab15c4528723f
+  - enabled: 1
+    path: Assets/Scenes/Blackberry Date 1.unity
+    guid: 44911273d025f0544a4280da4b081760
+  - enabled: 1
+    path: Assets/Scenes/Blackberry Date 2.unity
+    guid: e15cc7fc9003ed247a2711a7ba335c9e
   m_configObjects: {}
