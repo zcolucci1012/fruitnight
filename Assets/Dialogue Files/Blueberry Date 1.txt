@@ -22,17 +22,12 @@
       ]
     },
     {
-      "text": "We're here. This is the blender! It's kind of a sacred place according to Elderberry but I'm sure that there's something around here that may be evidence of a prior civilization. \n\n\n[[Wait, who's this elderberry fruit? They're a part of something sacred as well?->2]]\n[[Ooh, is it some sort of ancient civilization we're looking for? Is that related to the special name you gave me?->4]]",
+      "text": "We're here. This is the blender! It's kind of a sacred place according to Elderberry but I'm sure that there's something around here that may be evidence of a prior civilization. \n[[continue->1 options]]",
       "links": [
         {
-          "name": "Wait, who's this elderberry fruit? They're a part of something sacred as well?",
-          "link": "2",
-          "pid": "3"
-        },
-        {
-          "name": "Ooh, is it some sort of ancient civilization we're looking for? Is that related to the special name you gave me?",
-          "link": "4",
-          "pid": "5"
+          "name": "continue",
+          "link": "1 options",
+          "pid": "34"
         }
       ],
       "name": "1",
@@ -101,8 +96,8 @@
       "name": "4",
       "pid": "5",
       "position": {
-        "x": "895",
-        "y": "626"
+        "x": "908",
+        "y": "619"
       },
       "tags": [
         "2",
@@ -174,17 +169,12 @@
       ]
     },
     {
-      "text": "\"Caut Ion\"? Huh. I have no idea what this word even means. Hey, Musa, are you able to figure this out?\n\n[[Uhh, I think that might mean something like danger. I'm not entirely sure though.->9]]\n[[It's possible that is a sign of something interesting and powerful.->12]]",
+      "text": "\"Caut Ion\"? Huh. I have no idea what this word even means. Hey, Musa, are you able to figure this out?\n\n[[continue->8 options]]",
       "links": [
         {
-          "name": "Uhh, I think that might mean something like danger. I'm not entirely sure though.",
-          "link": "9",
-          "pid": "10"
-        },
-        {
-          "name": "It's possible that is a sign of something interesting and powerful.",
-          "link": "12",
-          "pid": "13"
+          "name": "continue",
+          "link": "8 options",
+          "pid": "35"
         }
       ],
       "name": "8",
@@ -347,17 +337,12 @@
       ]
     },
     {
-      "text": "I think this says on and off at the same time but it's separated by a crooked line.\n\n[[I'm pretty sure that sounds really dangerous. We might want to steer clear of that one.->17]]\n[[Wow, that's really interesting. Being both on and off? I want to hear how that's done.->19]]",
+      "text": "I think this says on and off at the same time but it's separated by a crooked line.\n[[continue->16 options]]",
       "links": [
         {
-          "name": "I'm pretty sure that sounds really dangerous. We might want to steer clear of that one.",
-          "link": "17",
-          "pid": "18"
-        },
-        {
-          "name": "Wow, that's really interesting. Being both on and off? I want to hear how that's done.",
-          "link": "19",
-          "pid": "20"
+          "name": "continue",
+          "link": "16 options",
+          "pid": "36"
         }
       ],
       "name": "16",
@@ -573,6 +558,207 @@
         "0",
         "Blueberry",
         "base"
+      ]
+    },
+    {
+      "text": "Wait, who's this elderberry fruit? They're a part of something sacred as well?\n\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1.1",
+      "pid": "28",
+      "position": {
+        "x": "402",
+        "y": "483"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Ooh, is it some sort of ancient civilization we're looking for? Is that related to the special name you gave me?\n\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "1.2",
+      "pid": "29",
+      "position": {
+        "x": "919",
+        "y": "448"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "It's possible that is a sign of something interesting and powerful.\n \n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "13"
+        }
+      ],
+      "name": "8.2",
+      "pid": "30",
+      "position": {
+        "x": "928",
+        "y": "1305"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Uhh, I think that might mean something like danger. I'm not entirely sure though. \n\n[[continue->9]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9",
+          "pid": "10"
+        }
+      ],
+      "name": "8.1",
+      "pid": "31",
+      "position": {
+        "x": "431",
+        "y": "1298"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I'm pretty sure that sounds really dangerous. We might want to steer clear of that one.\n\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "18"
+        }
+      ],
+      "name": "16.1",
+      "pid": "32",
+      "position": {
+        "x": "438",
+        "y": "2390"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Wow, that's really interesting. Being both on and off? I want to hear how that's done. \n\n[[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "20"
+        }
+      ],
+      "name": "16.2",
+      "pid": "33",
+      "position": {
+        "x": "934",
+        "y": "2379"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Wait, Elderberry?->1.1]]\n[[An ancient civilization? That sounds fun!->1.2]]",
+      "links": [
+        {
+          "name": "Wait, Elderberry?",
+          "link": "1.1",
+          "pid": "28"
+        },
+        {
+          "name": "An ancient civilization? That sounds fun!",
+          "link": "1.2",
+          "pid": "29"
+        }
+      ],
+      "name": "1 options",
+      "pid": "34",
+      "position": {
+        "x": "668",
+        "y": "611"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "[[It could mean something dangerous.->8.1]]\n[[That sounds like there's something interesting around.->8.2]]",
+      "links": [
+        {
+          "name": "It could mean something dangerous.",
+          "link": "8.1",
+          "pid": "31"
+        },
+        {
+          "name": "That sounds like there's something interesting around.",
+          "link": "8.2",
+          "pid": "30"
+        }
+      ],
+      "name": "8 options",
+      "pid": "35",
+      "position": {
+        "x": "681",
+        "y": "1454"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "[[I think that sounds dangerous.->16.1]]\n[[Wait, that's interesting. Let's try it.->16.2]]",
+      "links": [
+        {
+          "name": "I think that sounds dangerous.",
+          "link": "16.1",
+          "pid": "32"
+        },
+        {
+          "name": "Wait, that's interesting. Let's try it.",
+          "link": "16.2",
+          "pid": "33"
+        }
+      ],
+      "name": "16 options",
+      "pid": "36",
+      "position": {
+        "x": "680",
+        "y": "2531"
+      },
+      "tags": [
+        "0",
+        "option"
       ]
     }
   ],
