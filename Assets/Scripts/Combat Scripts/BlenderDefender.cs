@@ -16,7 +16,11 @@ public class BlenderDefender : Fighter
         {
             string msg = "The enemy uses healing on itself.\n";
             int healing = -this.Damage(-2);
-            msg += "It healed itself for " + healing + " HP";
+            if (healing == 0) {
+                msg += "It can't heal!";
+            } else {
+                msg += "It healed itself for " + healing + " HP";
+            }
             return msg;
         };
 
