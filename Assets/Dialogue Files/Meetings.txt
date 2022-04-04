@@ -278,17 +278,12 @@
       ]
     },
     {
-      "text": "So how's this \"supermarket\" place? Is it cool?\n\n[[It's a really fun and cool place. It's full of fruits, meats, and so much more!->14]]\n[[It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.->15]]",
+      "text": "So how's this \"supermarket\" place? Is it cool?\n\n[[continue->13 options]]",
       "links": [
         {
-          "name": "It's a really fun and cool place. It's full of fruits, meats, and so much more!",
-          "link": "14",
-          "pid": "15"
-        },
-        {
-          "name": "It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.",
-          "link": "15",
-          "pid": "16"
+          "name": "continue",
+          "link": "13 options",
+          "pid": "48"
         }
       ],
       "name": "13",
@@ -990,6 +985,31 @@
         "0",
         "Banana",
         "base"
+      ]
+    },
+    {
+      "text": "[[It's a really fun and cool place. It's full of fruits, meats, and so much more!->14]]\n[[It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.->15]]",
+      "links": [
+        {
+          "name": "It's a really fun and cool place. It's full of fruits, meats, and so much more!",
+          "link": "14",
+          "pid": "15"
+        },
+        {
+          "name": "It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "13 options",
+      "pid": "48",
+      "position": {
+        "x": "956",
+        "y": "2294"
+      },
+      "tags": [
+        "0",
+        "option"
       ]
     }
   ],
