@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TransitionBetweenDays.unity
     guid: f859ca24854230642aafb7828f104f98
+  - enabled: 1
+    path: Assets/Scenes/BlackberryCombat.unity
+    guid: 4ba0cfd892bc5f040a4ab15c4528723f
   m_configObjects: {}
