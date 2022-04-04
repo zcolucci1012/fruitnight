@@ -14,23 +14,26 @@ public abstract class Fighter : MonoBehaviour
 
     public string attack1name = "none";
     public string attack2name = "none";
+    public string attack3name = "none";
 
     public string attack1desc = "none";
     public string attack2desc = "none";
+    public string attack3desc = "none";
 
     public AttackType attack1type = AttackType.SingleTarget;
     public AttackType attack2type = AttackType.SingleTarget;
-    //public AttackType attack3type = AttackType.SingleTarget;
+    public AttackType attack3type = AttackType.SingleTarget;
 
     //function executes after attack and target are selected
     //targets are who the attack hits
     //return value is result of attack to print
     public Func<Fighter[], string> attack1execute;
     public Func<Fighter[], string> attack2execute;
+    public Func<Fighter[], string> attack3execute;
 
     public Attack attack1;
     public Attack attack2;
-    //public Attack attack3;
+    public Attack attack3;
     //public Attack[] attacks;
 
     // list of current acting defense modifiers, and how long they will last
@@ -80,7 +83,7 @@ public abstract class Fighter : MonoBehaviour
         if (target.defense < roll)
         {
             int effectiveDamage = target.Damage(dmg + dmgMod);
-            string msg = this.name + " deals " + effectiveDamage + " points of damage to " + target.name;
+            string msg = this.name + " deals " + effectiveDamage + " hp of damage to " + target.name;
             if (target.unconscious)
             {
                 msg += ", knocking them unconscious";

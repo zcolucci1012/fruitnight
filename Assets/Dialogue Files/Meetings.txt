@@ -152,7 +152,7 @@
       ]
     },
     {
-      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[Where am I? Is this some sort of afterlife?->8]]\n<img src=\"images/Strawberry base.PNG\" />",
+      "text": "Calm down there, you're safe over here. There's no one who's going to hurt you here.\n\n[[Where am I? Is this some sort of afterlife?->8]]",
       "links": [
         {
           "name": "Where am I? Is this some sort of afterlife?",
@@ -194,17 +194,12 @@
       ]
     },
     {
-      "text": "My name is Strawberry. I'm a fruit! It seems like you're also some sort of fruit. Out of curiosity, where did you come from?\n[[I've always been here, what're you on about?->10]]\n[[I'm from a supermarket. I'm not sure where I am right now though.->12]]",
+      "text": "My name is Strawberry. I'm a fruit! It seems like you're also some sort of fruit. Out of curiosity, where did you come from?\n\n[[continue->9 options]]",
       "links": [
         {
-          "name": "I've always been here, what're you on about?",
-          "link": "10",
-          "pid": "11"
-        },
-        {
-          "name": "I'm from a supermarket. I'm not sure where I am right now though.",
-          "link": "12",
-          "pid": "13"
+          "name": "continue",
+          "link": "9 options",
+          "pid": "41"
         }
       ],
       "name": "9",
@@ -283,17 +278,12 @@
       ]
     },
     {
-      "text": "So how's this \"supermarket\" place? Is it cool?\n\n[[It's a really fun and cool place. It's full of fruits, meats, and so much more!->14]]\n[[It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.->15]]",
+      "text": "So how's this \"supermarket\" place? Is it cool?\n\n[[continue->13 options]]",
       "links": [
         {
-          "name": "It's a really fun and cool place. It's full of fruits, meats, and so much more!",
-          "link": "14",
-          "pid": "15"
-        },
-        {
-          "name": "It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.",
-          "link": "15",
-          "pid": "16"
+          "name": "continue",
+          "link": "13 options",
+          "pid": "48"
         }
       ],
       "name": "13",
@@ -351,19 +341,19 @@
       ]
     },
     {
-      "text": "Oh yeah, I forgot to ask. What kind of fruit are you?\n\n\n[[Oh, I forgot to introduce myself. I'm a banana!->17]]",
+      "text": "Oh yeah, I forgot to ask. What kind of fruit are you?\n\n\n[[continue->16 options]]",
       "links": [
         {
-          "name": "Oh, I forgot to introduce myself. I'm a banana!",
-          "link": "17",
-          "pid": "18"
+          "name": "continue",
+          "link": "16 options",
+          "pid": "42"
         }
       ],
       "name": "16",
       "pid": "17",
       "position": {
-        "x": "569",
-        "y": "2702"
+        "x": "577",
+        "y": "2558"
       },
       "tags": [
         "0",
@@ -456,12 +446,12 @@
       ]
     },
     {
-      "text": "Strawberry laughs at the pouting Blueberry. Seems the two get along very well.\n\n[[It's nice to meet you Blueberry. I'm-->22]]",
+      "text": "Strawberry laughs at the pouting Blueberry. Seems the two get along very well.\n\n[[continue->21.5]]",
       "links": [
         {
-          "name": "It's nice to meet you Blueberry. I'm-",
-          "link": "22",
-          "pid": "23"
+          "name": "continue",
+          "link": "21.5",
+          "pid": "43"
         }
       ],
       "name": "21",
@@ -498,12 +488,12 @@
       ]
     },
     {
-      "text": "Question: How tough are you?\n\n[[Huh? I'm a bit confused.->24]]",
+      "text": "Question: How tough are you?\n\n[[continue->23.5]]",
       "links": [
         {
-          "name": "Huh? I'm a bit confused.",
-          "link": "24",
-          "pid": "25"
+          "name": "continue",
+          "link": "23.5",
+          "pid": "44"
         }
       ],
       "name": "23",
@@ -519,12 +509,12 @@
       ]
     },
     {
-      "text": "Scratch that, I'm pretty sure now Musa Balbisiana is actually what's known as plantains. Although, would you mind if I call you Musa for short?\n\n[[Uhh, I guess. There's nothing that's stopping you but-->25]]\n",
+      "text": "Scratch that, I'm pretty sure now Musa Balbisiana is actually what's known as plantains. Although, would you mind if I call you Musa for short?\n\n[[continue->24.5]]\n",
       "links": [
         {
-          "name": "Uhh, I guess. There's nothing that's stopping you but-",
-          "link": "25",
-          "pid": "26"
+          "name": "continue",
+          "link": "24.5",
+          "pid": "45"
         }
       ],
       "name": "24",
@@ -687,12 +677,12 @@
       ]
     },
     {
-      "text": "Looks like you're all clear. No weapons, no mold. \n\n[[Wait, where did you even get tha-->33]]",
+      "text": "Looks like you're all clear. No weapons, no mold. \n\n[[continue->32.5]]",
       "links": [
         {
-          "name": "Wait, where did you even get tha-",
-          "link": "33",
-          "pid": "34"
+          "name": "continue",
+          "link": "32.5",
+          "pid": "46"
         }
       ],
       "name": "32",
@@ -729,12 +719,12 @@
       ]
     },
     {
-      "text": "Wait u- And they're gone... Seriously, I can't figure out how to keep their attention for more than two seconds without mentioning forks. \n\n[[Is there something on their mind? They seemed very distracted.->35]]",
+      "text": "Wait u- And they're gone... Seriously, I can't figure out how to keep their attention for more than two seconds without mentioning forks. \n\n[[continue->34.5]]",
       "links": [
         {
-          "name": "Is there something on their mind? They seemed very distracted.",
-          "link": "35",
-          "pid": "36"
+          "name": "continue",
+          "link": "34.5",
+          "pid": "47"
         }
       ],
       "name": "34",
@@ -845,6 +835,181 @@
         "0",
         "Blueberry",
         "base"
+      ]
+    },
+    {
+      "text": "[[I've always been here, what're you on about?->10]]\n[[I'm from a supermarket. I'm not sure where I am right now though.->12]]",
+      "links": [
+        {
+          "name": "I've always been here, what're you on about?",
+          "link": "10",
+          "pid": "11"
+        },
+        {
+          "name": "I'm from a supermarket. I'm not sure where I am right now though.",
+          "link": "12",
+          "pid": "13"
+        }
+      ],
+      "name": "9 options",
+      "pid": "41",
+      "position": {
+        "x": "665",
+        "y": "1949"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "[[Oh, I forgot to introduce myself. I'm a banana!->17]]",
+      "links": [
+        {
+          "name": "Oh, I forgot to introduce myself. I'm a banana!",
+          "link": "17",
+          "pid": "18"
+        }
+      ],
+      "name": "16 options",
+      "pid": "42",
+      "position": {
+        "x": "572",
+        "y": "2738"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "It's nice to meet you Blueberry. I'm-\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "23"
+        }
+      ],
+      "name": "21.5",
+      "pid": "43",
+      "position": {
+        "x": "775",
+        "y": "3548"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Huh? I'm a bit confused.\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "25"
+        }
+      ],
+      "name": "23.5",
+      "pid": "44",
+      "position": {
+        "x": "767",
+        "y": "3842"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Uhh, I guess. There's nothing that's stopping you but-\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "26"
+        }
+      ],
+      "name": "24.5",
+      "pid": "45",
+      "position": {
+        "x": "754",
+        "y": "4050"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Wait, where did you even get tha-\n[[continue->33]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "33",
+          "pid": "34"
+        }
+      ],
+      "name": "32.5",
+      "pid": "46",
+      "position": {
+        "x": "743",
+        "y": "5223"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Is there something on their mind? They seemed very distracted.\n[[continue->35]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "35",
+          "pid": "36"
+        }
+      ],
+      "name": "34.5",
+      "pid": "47",
+      "position": {
+        "x": "744",
+        "y": "5491"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "[[It's a really fun and cool place. It's full of fruits, meats, and so much more!->14]]\n[[It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.->15]]",
+      "links": [
+        {
+          "name": "It's a really fun and cool place. It's full of fruits, meats, and so much more!",
+          "link": "14",
+          "pid": "15"
+        },
+        {
+          "name": "It's a bad place. It's cruel and cold and there are so many factions like meat and cleaning materials and it's terrifying.",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "13 options",
+      "pid": "48",
+      "position": {
+        "x": "956",
+        "y": "2294"
+      },
+      "tags": [
+        "0",
+        "option"
       ]
     }
   ],

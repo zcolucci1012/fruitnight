@@ -62,12 +62,12 @@
       ]
     },
     {
-      "text": "I can't even tell if that's a good thing or a bad thing. I start heading towards where I heard their voice. \n\n[[Hey, Blueberry! Are you okay? ->4]]",
+      "text": "I can't even tell if that's a good thing or a bad thing. I start heading towards where I heard their voice. \n\n[[continue->3.5]]",
       "links": [
         {
-          "name": "Hey, Blueberry! Are you okay? ",
-          "link": "4",
-          "pid": "5"
+          "name": "continue",
+          "link": "3.5",
+          "pid": "38"
         }
       ],
       "name": "3",
@@ -144,17 +144,12 @@
       ]
     },
     {
-      "text": "It's even been around the fridge. Do you think that this lamp is sacred too?\n\n[[Maybe the blender isn't so sacred...->7.1]]\n[[Another sacred object?!!->7.2]]\n",
+      "text": "It's even been around the fridge. Do you think that this lamp is sacred too?\n\n[[continue->7 options]]\n",
       "links": [
         {
-          "name": "Maybe the blender isn't so sacred...",
-          "link": "7.1",
-          "pid": "17"
-        },
-        {
-          "name": "Another sacred object?!!",
-          "link": "7.2",
-          "pid": "18"
+          "name": "continue",
+          "link": "7 options",
+          "pid": "39"
         }
       ],
       "name": "7",
@@ -296,12 +291,12 @@
       ]
     },
     {
-      "text": "Maybe like some previous signs of life or beings from beyond our understanding.\n\n[[I mean, I did come from an unknown place. And there has to be some sort of origin for us as fruit.->15]]",
+      "text": "Maybe like some previous signs of life or beings from beyond our understanding.\n\n[[continue->14.5]]",
       "links": [
         {
-          "name": "I mean, I did come from an unknown place. And there has to be some sort of origin for us as fruit.",
-          "link": "15",
-          "pid": "16"
+          "name": "continue",
+          "link": "14.5",
+          "pid": "40"
         }
       ],
       "name": "14",
@@ -317,29 +312,19 @@
       ]
     },
     {
-      "text": "But how did this place come into being? Is there a reason why the blender is seen as a sacred object?\n\n[[Maybe there isn't a real reason.->15.1]]\n[[The blender could be something far beyond our understanding->15.2]]\n[[Elderberry's knowledge is vast...->15.3]]",
+      "text": "But how did this place come into being? Is there a reason why the blender is seen as a sacred object?\n\n[[continue->15 options]]",
       "links": [
         {
-          "name": "Maybe there isn't a real reason.",
-          "link": "15.1",
-          "pid": "19"
-        },
-        {
-          "name": "The blender could be something far beyond our understanding",
-          "link": "15.2",
-          "pid": "20"
-        },
-        {
-          "name": "Elderberry's knowledge is vast...",
-          "link": "15.3",
-          "pid": "21"
+          "name": "continue",
+          "link": "15 options",
+          "pid": "41"
         }
       ],
       "name": "15",
       "pid": "16",
       "position": {
-        "x": "286",
-        "y": "2482"
+        "x": "174",
+        "y": "2454"
       },
       "tags": [
         "0",
@@ -453,7 +438,7 @@
       ]
     },
     {
-      "text": "Are you okay, Musa? You're kind of freaking me out here...\n\n[[continue->17]]\n",
+      "text": "Are you okay, Musa? You're kind of freaking me out here…\n\n[[continue->17]]\n",
       "links": [
         {
           "name": "continue",
@@ -537,17 +522,12 @@
       ]
     },
     {
-      "text": "Yeah, Elderberry has been my mentor for so long. They saw my curiosity as a blessing while some people were a bit annoyed by it.\n\n[[I think that's what makes you fun!->20.1]]\n[[It's a bit of a nuisance, but...->20.2]]\n$",
+      "text": "Yeah, Elderberry has been my mentor for so long. They saw my curiosity as a blessing while some people were a bit annoyed by it.\n\n[[continue->20 options]]\n$",
       "links": [
         {
-          "name": "I think that's what makes you fun!",
-          "link": "20.1",
-          "pid": "27"
-        },
-        {
-          "name": "It's a bit of a nuisance, but...",
-          "link": "20.2",
-          "pid": "28"
+          "name": "continue",
+          "link": "20 options",
+          "pid": "42"
         }
       ],
       "name": "20",
@@ -646,12 +626,12 @@
       ]
     },
     {
-      "text": "Wait, really? But don't I cause more problems than you'd like?\n\n[[That just adds to the fun!->24]]",
+      "text": "Wait, really? But don't I cause more problems than you'd like?\n\n[[continue->23.5]]",
       "links": [
         {
-          "name": "That just adds to the fun!",
-          "link": "24",
-          "pid": "32"
+          "name": "continue",
+          "link": "23.5",
+          "pid": "43"
         }
       ],
       "name": "23",
@@ -708,12 +688,12 @@
       ]
     },
     {
-      "text": "Blueberry moved slightly to the side and froze. \n\n[[Uhh, Blueberry, are you alright?->27]]",
+      "text": "Blueberry moved slightly to the side and froze. \n\n[[continue->26.5]]",
       "links": [
         {
-          "name": "Uhh, Blueberry, are you alright?",
-          "link": "27",
-          "pid": "35"
+          "name": "continue",
+          "link": "26.5",
+          "pid": "44"
         }
       ],
       "name": "26",
@@ -749,12 +729,12 @@
       ]
     },
     {
-      "text": "If I'm not mistaken, it's the infamous Dust Bunny I've heard of around these parts.\n\n[[Is it dangerous? Do we have to fight it?->29]]",
+      "text": "If I'm not mistaken, it's the infamous Dust Bunny I've heard of around these parts.\n\n[[continue->28.5]]",
       "links": [
         {
-          "name": "Is it dangerous? Do we have to fight it?",
-          "link": "29",
-          "pid": "37"
+          "name": "continue",
+          "link": "28.5",
+          "pid": "45"
         }
       ],
       "name": "28",
@@ -781,6 +761,191 @@
         "0",
         "Blueberry",
         "shock"
+      ]
+    },
+    {
+      "text": "Hey, Blueberry! Are you okay?\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3.5",
+      "pid": "38",
+      "position": {
+        "x": "446",
+        "y": "1031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Maybe the blender isn't so sacred...->7.1]]\n[[Another sacred object?!!->7.2]]",
+      "links": [
+        {
+          "name": "Maybe the blender isn't so sacred...",
+          "link": "7.1",
+          "pid": "17"
+        },
+        {
+          "name": "Another sacred object?!!",
+          "link": "7.2",
+          "pid": "18"
+        }
+      ],
+      "name": "7 options",
+      "pid": "39",
+      "position": {
+        "x": "289",
+        "y": "1726"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "I mean, I did come from an unknown place. And there has to be some sort of origin for us as fruit.\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "16"
+        }
+      ],
+      "name": "14.5",
+      "pid": "40",
+      "position": {
+        "x": "479",
+        "y": "2362"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Maybe there isn't a real reason.->15.1]]\n[[The blender could be something far beyond our understanding->15.2]]\n[[Elderberry's knowledge is vast...->15.3]]",
+      "links": [
+        {
+          "name": "Maybe there isn't a real reason.",
+          "link": "15.1",
+          "pid": "19"
+        },
+        {
+          "name": "The blender could be something far beyond our understanding",
+          "link": "15.2",
+          "pid": "20"
+        },
+        {
+          "name": "Elderberry's knowledge is vast...",
+          "link": "15.3",
+          "pid": "21"
+        }
+      ],
+      "name": "15 options",
+      "pid": "41",
+      "position": {
+        "x": "332",
+        "y": "2530"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "[[I think that's what makes you fun!->20.1]]\n[[It's a bit of a nuisance, but...->20.2]]",
+      "links": [
+        {
+          "name": "I think that's what makes you fun!",
+          "link": "20.1",
+          "pid": "27"
+        },
+        {
+          "name": "It's a bit of a nuisance, but...",
+          "link": "20.2",
+          "pid": "28"
+        }
+      ],
+      "name": "20 options",
+      "pid": "42",
+      "position": {
+        "x": "565",
+        "y": "2974"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "That just adds to the fun!\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "32"
+        }
+      ],
+      "name": "23.5",
+      "pid": "43",
+      "position": {
+        "x": "864",
+        "y": "3243"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Uhh, Blueberry, are you alright?\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "35"
+        }
+      ],
+      "name": "26.5",
+      "pid": "44",
+      "position": {
+        "x": "472",
+        "y": "3954"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Is it dangerous? Do we have to fight it?\n[[continue->29]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29",
+          "pid": "37"
+        }
+      ],
+      "name": "28.5",
+      "pid": "45",
+      "position": {
+        "x": "485",
+        "y": "4223"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
       ]
     }
   ],

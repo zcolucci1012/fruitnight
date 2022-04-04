@@ -153,11 +153,16 @@ MonoBehaviour:
   unconscious: 0
   attack1name: Evil Genius
   attack2name: Study Up
-  attack1desc: "Attack enemy for 2 pts of damage, lowers opponent\u2019s defense
-    by 2 pts for 2 turns"
-  attack2desc: Increases partners defense by 2, increases their own by 3, for 2 turns
+  attack3name: Berry Smart
+  attack1desc: "Attack enemy for 3 hp, lowers an opponent\u2019s defense by 3 pts
+    for 2 turns"
+  attack2desc: Increases partner's defense by 2 pts, increases their own by 3 pts
+    for 2 turns
+  attack3desc: Lowers all opponents defense by 2 pts for 2 turns and deals 1 hp of
+    damage to all opponents
   attack1type: 0
   attack2type: 3
+  attack3type: 1
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0

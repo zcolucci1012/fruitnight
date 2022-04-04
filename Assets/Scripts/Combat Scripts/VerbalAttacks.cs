@@ -27,6 +27,8 @@ public class VerbalAttacks : MonoBehaviour
     private Attack blackberryInsult;
     private Attack tomatoCompliment;
     private Attack tomatoInsult;
+    private Attack dummyCompliment;
+    private Attack dummyInsult;
 
     public void Awake()
     {
@@ -45,7 +47,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalComplimentMsg + "\nIt was not very effective...";
+                    msg = "'" + generalComplimentMsg + "'\n" + "\nIt's not very effective on " + f.name + ".\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -67,7 +69,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalInsultMsg + "\nIt was not very effective...";
+                    msg = "'" + generalInsultMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -89,7 +91,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalComplimentMsg + "\nIt was not very effective...";
+                    msg = "'" + generalComplimentMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -111,7 +113,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalInsultMsg + "\nIt was not very effective...";
+                    msg = "'" + generalInsultMsg + "'\n" + "\nIt's not very effective on " + f.name +"\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -133,7 +135,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalComplimentMsg + "\nIt was not very effective...";
+                    msg = "'" + generalComplimentMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -155,7 +157,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalInsultMsg + "\nIt was not very effective...";
+                    msg = "'" + generalInsultMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -177,7 +179,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalComplimentMsg + "\nIt was not very effective...";
+                    msg = "'" + generalComplimentMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -199,7 +201,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalInsultMsg + "\nIt was not very effective...";
+                    msg = "'" + generalInsultMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -221,7 +223,7 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalComplimentMsg + "\nIt was not very effective...";
+                    msg = "'" + generalComplimentMsg + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
@@ -243,37 +245,71 @@ public class VerbalAttacks : MonoBehaviour
                 }
                 else
                 {
-                    msg = generalInsultMsg + "\nIt was not very effective...";
+                    msg = "'" + generalInsultMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them.";
                 }
             }
 
             return msg;
         });
+
+        dummyCompliment = new Attack("Verbal attack dummy",
+        "Verbal attack dummy",
+        AttackType.SingleTarget,
+        targets => {
+            string msg = "";
+            foreach (Fighter f in targets)
+            {
+                msg = "'" + generalComplimentMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something to say to them, but nothing comes to mind. You'll need to learn more about them.";
+            }
+            return msg;
+        });
+
+        dummyInsult = new Attack("Verbal attack dummy",
+        "Verbal attack dummy",
+        AttackType.SingleTarget,
+        targets => {
+            string msg = "";
+            foreach (Fighter f in targets)
+            {
+                msg = "'" + generalInsultMsg + "'\n" + "\nIt's not very effective on " + f.name + "\nYou rack your brain for something to say to them, but nothing comes to mind. You'll need to learn more about them.";
+            }
+            return msg;
+        });
+
     }
 
-    public Attack VerbalAttack(Fighter f, bool compliment)
+    
+
+    public Attack VerbalAttack(bool compliment)
     {
-        if (f is Strawberry)
-        {
-            return compliment ? strawberryCompliment : strawberryInsult;
-        }
-        else if (f is BlueberryFighter)
-        {
-            return compliment ? blueberryCompliment : blueberryInsult;
-        }
-        else if (f is LemonFighter)
-        {
-            return compliment ? lemonCompliment : lemonInsult;
-        }
-        /* Uncomment when these fighters are added
-         * else if (f is BlackberryFighter)
-        {
-            return compliment ? blackberryCompliment : blackberryInsult;
-        }
-        else if (f is TomatoFighter)
-        {
-            return compliment ? tomatoCompliment : tomatoInsult;
-        }*/
-        return null;
+        return new Attack(compliment ? "Compliment" : "Insult",
+        compliment ? "Compliment an ally or enemy" : "Insult an ally or enemy",
+        AttackType.AnyTarget,
+        targets => {
+            Fighter f = targets[0];
+            if (f is Strawberry)
+            {
+                return compliment ? strawberryCompliment.execute(targets) : strawberryInsult.execute(targets);
+            }
+            else if (f is BlueberryFighter)
+            {
+                return compliment ? blueberryCompliment.execute(targets) : blueberryInsult.execute(targets);
+            }
+            else if (f is LemonFighter)
+            {
+                return compliment ? lemonCompliment.execute(targets) : lemonInsult.execute(targets);
+            }
+            else if (f is BlackberryFighter)
+            {
+                return compliment ? blackberryCompliment.execute(targets) : blackberryInsult.execute(targets);
+            } else { // handle for dummies
+                return compliment ? dummyCompliment.execute(targets) : dummyInsult.execute(targets);
+            }
+            /* Uncomment when these fighters are added
+            else if (f is TomatoFighter)
+            {
+                return compliment ? tomatoCompliment : tomatoInsult;
+            }*/
+        });
     }
 }

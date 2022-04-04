@@ -1,0 +1,1045 @@
+{
+  "passages": [
+    {
+      "text": "Oh, hey Banana. I was just on the way to the oven. What's up?\n[[continue->0 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "0 options",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "276.5",
+        "y": "168"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "[[Nothing much.->0.1]]\n[[A lot.->0.2]]",
+      "links": [
+        {
+          "name": "Nothing much.",
+          "link": "0.1",
+          "pid": "3"
+        },
+        {
+          "name": "A lot.",
+          "link": "0.2",
+          "pid": "4"
+        }
+      ],
+      "name": "0 options",
+      "pid": "2",
+      "position": {
+        "x": "276.5",
+        "y": "318"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Not much, how about yourself?\n[[continue->1]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "1",
+          "pid": "5"
+        }
+      ],
+      "name": "0.1",
+      "pid": "3",
+      "position": {
+        "x": "57.5",
+        "y": "466"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, a lot. Everyone here is so great, I've been meeting so many cool fruits!\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "7"
+        }
+      ],
+      "name": "0.2",
+      "pid": "4",
+      "position": {
+        "x": "517.5",
+        "y": "458"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Yea, same old, same old. I don't say this often, but you were pretty fun to hang with last time.\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "6"
+        }
+      ],
+      "name": "1",
+      "pid": "5",
+      "position": {
+        "x": "57.5",
+        "y": "616"
+      },
+      "tags": [
+        "2",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Well thanks! I had a great time!\n[[continue->8]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "11"
+        }
+      ],
+      "name": "2",
+      "pid": "6",
+      "position": {
+        "x": "57.5",
+        "y": "766"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh.\n[[continue->5]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "5",
+          "pid": "8"
+        }
+      ],
+      "name": "4",
+      "pid": "7",
+      "position": {
+        "x": "517.5",
+        "y": "608"
+      },
+      "tags": [
+        "-1",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "What about yourself?\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "9"
+        }
+      ],
+      "name": "5",
+      "pid": "8",
+      "position": {
+        "x": "517.5",
+        "y": "758"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Yea, not much really. Good to see you again though, I guess.\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "10"
+        }
+      ],
+      "name": "6",
+      "pid": "9",
+      "position": {
+        "x": "517.5",
+        "y": "908"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Good to see you, too!\n[[continue->8]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "11"
+        }
+      ],
+      "name": "7",
+      "pid": "10",
+      "position": {
+        "x": "517.5",
+        "y": "1058"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Listen, do you... umm.. wanna... umm...\n[[continue->9]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9",
+          "pid": "12"
+        }
+      ],
+      "name": "8",
+      "pid": "11",
+      "position": {
+        "x": "284.5",
+        "y": "1156"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Blackberry trails off.\n[[continue->9 options]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9 options",
+          "pid": "13"
+        }
+      ],
+      "name": "9",
+      "pid": "12",
+      "position": {
+        "x": "284.5",
+        "y": "1306"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "[[Want to hang out again?->9.1]]\n[[Umm... what?->9.2]]",
+      "links": [
+        {
+          "name": "Want to hang out again?",
+          "link": "9.1",
+          "pid": "14"
+        },
+        {
+          "name": "Umm... what?",
+          "link": "9.2",
+          "pid": "15"
+        }
+      ],
+      "name": "9 options",
+      "pid": "13",
+      "position": {
+        "x": "284.5",
+        "y": "1456"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Want to hang out again? Of course!\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "16"
+        }
+      ],
+      "name": "9.1",
+      "pid": "14",
+      "position": {
+        "x": "108.5",
+        "y": "1586"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, uhh, nevermind, sorry.\n[[continue->31]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "31",
+          "pid": "49"
+        }
+      ],
+      "name": "9.2",
+      "pid": "15",
+      "position": {
+        "x": "479.5",
+        "y": "1570"
+      },
+      "tags": [
+        "-2",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Oh goodness, you had no idea how much pressure that was for me to say. I am so bad at this stuff.\n[[continue->11]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "11",
+          "pid": "17"
+        }
+      ],
+      "name": "10",
+      "pid": "16",
+      "position": {
+        "x": "108.5",
+        "y": "1736"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Don't worry about it, we're friends!\n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "18"
+        }
+      ],
+      "name": "11",
+      "pid": "17",
+      "position": {
+        "x": "108.5",
+        "y": "1886"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Great. Anyway, umm...\n[[continue->12 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12 options",
+          "pid": "19"
+        }
+      ],
+      "name": "12",
+      "pid": "18",
+      "position": {
+        "x": "108.5",
+        "y": "2036"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "[[Want to practice fighting again?->12.1]]\n[[Tell me about what you think about the other fruits->12.2]]",
+      "links": [
+        {
+          "name": "Want to practice fighting again?",
+          "link": "12.1",
+          "pid": "20"
+        },
+        {
+          "name": "Tell me about what you think about the other fruits",
+          "link": "12.2",
+          "pid": "21"
+        }
+      ],
+      "name": "12 options",
+      "pid": "19",
+      "position": {
+        "x": "108.5",
+        "y": "2186"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Want to practice fighting again?\n[[continue->13]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "22"
+        }
+      ],
+      "name": "12.1",
+      "pid": "20",
+      "position": {
+        "x": "33.5",
+        "y": "2336"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh sure! Well, everyone's still pretty scary, so I'm not totally sure what I think.\n[[continue->12 options2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12 options2",
+          "pid": "39"
+        }
+      ],
+      "name": "12.2",
+      "pid": "21",
+      "position": {
+        "x": "183.5",
+        "y": "2336"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Umm, yea sure.\n[[continue->13 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13 options",
+          "pid": "23"
+        }
+      ],
+      "name": "13",
+      "pid": "22",
+      "position": {
+        "x": "33.5",
+        "y": "2486"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "[[We can do something else->13.1]]\n[[Great, it'll be fun!->13.2]]\n",
+      "links": [
+        {
+          "name": "We can do something else",
+          "link": "13.1",
+          "pid": "24"
+        },
+        {
+          "name": "Great, it'll be fun!",
+          "link": "13.2",
+          "pid": "25"
+        }
+      ],
+      "name": "13 options",
+      "pid": "23",
+      "position": {
+        "x": "33.5",
+        "y": "2636"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "We can do something else, if you want.\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "26"
+        }
+      ],
+      "name": "13.1",
+      "pid": "24",
+      "position": {
+        "x": "0",
+        "y": "2786"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Great! It'll be a lot of fun! Let's practice with this oven mitt here!\n[[continue->23]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "23",
+          "pid": "38"
+        }
+      ],
+      "name": "13.2",
+      "pid": "25",
+      "position": {
+        "x": "108.5",
+        "y": "2786"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "No, no it's fine.\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "27"
+        }
+      ],
+      "name": "14",
+      "pid": "26",
+      "position": {
+        "x": "0",
+        "y": "2936"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Seriously! I'm down to do whatever.\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "28"
+        }
+      ],
+      "name": "15",
+      "pid": "27",
+      "position": {
+        "x": "0",
+        "y": "3086"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Haha, okay. I guess I kinda wanna know what you think of the other fruits.\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "29"
+        }
+      ],
+      "name": "16",
+      "pid": "28",
+      "position": {
+        "x": "0",
+        "y": "3236"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Sure, of course! Well most of them are alright, but it's been really great talking to you.\n[[continue->18]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18",
+          "pid": "30"
+        }
+      ],
+      "name": "17",
+      "pid": "29",
+      "position": {
+        "x": "0",
+        "y": "3386"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh wow. Umm... I can't believe I'm saying this, but... I think you're really cool. Like really really cool. Like, I like you a lot.\n[[continue->18 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18 options",
+          "pid": "31"
+        }
+      ],
+      "name": "18",
+      "pid": "30",
+      "position": {
+        "x": "0",
+        "y": "3536"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "[[I like you too!->18.1]]\n[[You are cool too!->18.2]]",
+      "links": [
+        {
+          "name": "I like you too!",
+          "link": "18.1",
+          "pid": "32"
+        },
+        {
+          "name": "You are cool too!",
+          "link": "18.2",
+          "pid": "33"
+        }
+      ],
+      "name": "18 options",
+      "pid": "31",
+      "position": {
+        "x": "0",
+        "y": "3686"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": " I like you a lot, too!\n [[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "34"
+        }
+      ],
+      "name": "18.1",
+      "pid": "32",
+      "position": {
+        "x": "0",
+        "y": "3836"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "You're cool too!\n[[continue->21]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "36"
+        }
+      ],
+      "name": "18.2",
+      "pid": "33",
+      "position": {
+        "x": "120",
+        "y": "3836"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh really? That's so great. I was super nervous about telling you that. I don't usually open up to people, but I think you're super special.\n[[continue->20]]\n$",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "35"
+        }
+      ],
+      "name": "19",
+      "pid": "34",
+      "position": {
+        "x": "0",
+        "y": "3986"
+      },
+      "tags": [
+        "3",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Anyway, enough about me, do you wanna practice fighting now? I think I'm ready.\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "37"
+        }
+      ],
+      "name": "20",
+      "pid": "35",
+      "position": {
+        "x": "0",
+        "y": "4136"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Thanks, haha. Well, we should probably practice fighting, the tournament is coming soon.\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "37"
+        }
+      ],
+      "name": "21",
+      "pid": "36",
+      "position": {
+        "x": "120",
+        "y": "3986"
+      },
+      "tags": [
+        "1",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Sure! Let's give it a shot against this oven mitt.",
+      "name": "22",
+      "pid": "37",
+      "position": {
+        "x": "173",
+        "y": "4311"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Sounds good to me.\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "37"
+        }
+      ],
+      "name": "23",
+      "pid": "38",
+      "position": {
+        "x": "217.5",
+        "y": "2941"
+      },
+      "tags": [
+        "1",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "[[They're really nice!->12.2.1]]\n[[Yea, they can be scary->12.2.2]]\n",
+      "links": [
+        {
+          "name": "They're really nice!",
+          "link": "12.2.1",
+          "pid": "40"
+        },
+        {
+          "name": "Yea, they can be scary",
+          "link": "12.2.2",
+          "pid": "41"
+        }
+      ],
+      "name": "12 options2",
+      "pid": "39",
+      "position": {
+        "x": "286.5",
+        "y": "2487"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "If you get to know everyone, they're really nice!\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "42"
+        }
+      ],
+      "name": "12.2.1",
+      "pid": "40",
+      "position": {
+        "x": "211.5",
+        "y": "2637"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Yeah, they can definitely be a little intense.\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "45"
+        }
+      ],
+      "name": "12.2.2",
+      "pid": "41",
+      "position": {
+        "x": "485.5",
+        "y": "2630"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Hmm, I'm not sure... I don't think any of them are as nice as you though.\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "43"
+        }
+      ],
+      "name": "24",
+      "pid": "42",
+      "position": {
+        "x": "240.5",
+        "y": "2796"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Oh, thanks!\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "44"
+        }
+      ],
+      "name": "25",
+      "pid": "43",
+      "position": {
+        "x": "337.5",
+        "y": "2946"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Anyway, we should probably practice fighting or something since the tournament is coming up soon.\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "37"
+        }
+      ],
+      "name": "26",
+      "pid": "44",
+      "position": {
+        "x": "337.5",
+        "y": "3096"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Yea, totally! Er- I mean yeah. Well, nobody is as cool as you, though. You're the coolest.\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "46"
+        }
+      ],
+      "name": "27",
+      "pid": "45",
+      "position": {
+        "x": "485.5",
+        "y": "2780"
+      },
+      "tags": [
+        "2",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Haha, thank you!\n[[continue->29]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29",
+          "pid": "47"
+        }
+      ],
+      "name": "28",
+      "pid": "46",
+      "position": {
+        "x": "485.5",
+        "y": "2930"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Well, we should probably practice fighting together for the tournament.\n[[continue->30]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "30",
+          "pid": "48"
+        }
+      ],
+      "name": "29",
+      "pid": "47",
+      "position": {
+        "x": "485.5",
+        "y": "3080"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "I MEAN- um, not saying that we'd fight TOGETHER, but like, you know, um, hahaha.\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "37"
+        }
+      ],
+      "name": "30",
+      "pid": "48",
+      "position": {
+        "x": "485.5",
+        "y": "3230"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    },
+    {
+      "text": "Let's practice combat against this oven mitt!\n[[continue->32]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "32",
+          "pid": "50"
+        }
+      ],
+      "name": "31",
+      "pid": "49",
+      "position": {
+        "x": "479.5",
+        "y": "1720"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Uh, yeah, sure.",
+      "name": "32",
+      "pid": "50",
+      "position": {
+        "x": "479.5",
+        "y": "1870"
+      },
+      "tags": [
+        "0",
+        "Blackberry"
+      ]
+    }
+  ],
+  "name": "Blackberry Date 2",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "B0B5E9ED-3390-4E60-BD76-82B4BC49C3B5"
+}
