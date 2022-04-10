@@ -98,7 +98,7 @@ public class NPCDialogue : MonoBehaviour
         continue_button.SetActive(false);
 
         // if no dialogue, only options
-        if (node.speaker.Equals("option"))
+        if (node.speaker.Contains("option"))
         {
             DialogueWindow.SetActive(false);
             showOptions(node);
