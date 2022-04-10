@@ -16,6 +16,7 @@ public class NPCDialogue : MonoBehaviour
     private GameObject option_2;
     private GameObject option_3;
     private GameObject exit_button;
+    private GameObject continue_button;
 
     private int selected_option = -2;
     private string prevEmotion = "";
@@ -25,8 +26,6 @@ public class NPCDialogue : MonoBehaviour
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
     public string nextScene;
-    public AudioClip clickSFX;
-    public GameObject audioPlayer;
 
     // initialization
     void Start()
@@ -41,9 +40,11 @@ public class NPCDialogue : MonoBehaviour
         option_1 = GameObject.Find("Option 1");
         option_2 = GameObject.Find("Option 2");
         option_3 = GameObject.Find("Option 3");
+        continue_button = GameObject.Find("Continue");
         exit_button = GameObject.Find("Exit");
 
         exit_button.SetActive(false);
+        continue_button.SetActive(false);
 
         RunDialogue();
     }
@@ -53,7 +54,7 @@ public class NPCDialogue : MonoBehaviour
         // let player speed up dialogue if they press space
         if (Input.GetKey(KeyCode.Space))
         {
-            scrollSpeed = .0001f;
+            scrollSpeed = .00001f;
         }
         else
         {
@@ -94,6 +95,7 @@ public class NPCDialogue : MonoBehaviour
         option_1.SetActive(false);
         option_2.SetActive(false);
         option_3.SetActive(false);
+        continue_button.SetActive(false);
 
         // if no dialogue, only options
         if (node.speaker.Equals("option"))
@@ -161,30 +163,42 @@ public class NPCDialogue : MonoBehaviour
     // show the options
     private void showOptions(DialogueNode node)
     {
-            // change options
+        // change options
+        bool showOption1 = node.option1.id != 0;
+        bool showOption2 = node.option2.id != 0;
+        bool showOption3 = node.option3.id != 0;
 
-            if (node.option1.id != 0)
+        if (showOption1)
+        {
+            if (!showOption2 && !showOption3)
+            {
+                continue_button.SetActive(true);
+                continue_button.GetComponentInChildren<Text>().text = node.option1.text;
+                continue_button.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option1.id); });
+            }
+            else
             {
                 option_1.SetActive(true);
                 option_1.GetComponentInChildren<Text>().text = node.option1.text;
                 option_1.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option1.id); });
             }
+        }
 
-            if (node.option2.id != 0)
-            {
-                option_2.SetActive(true);
-                option_2.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option2.id); });
-                option_2.GetComponentInChildren<Text>().text = node.option2.text;
-            }
+        if (showOption2)
+        {
+            option_2.SetActive(true);
+            option_2.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option2.id); });
+            option_2.GetComponentInChildren<Text>().text = node.option2.text;
+        }
 
-            if (node.option3.id != 0)
-            {
-                option_3.SetActive(true);
-                option_3.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option3.id); });
-                option_3.GetComponentInChildren<Text>().text = node.option3.text;
-            }
+        if (showOption3)
+        {
+            option_3.SetActive(true);
+            option_3.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(node.option3.id); });
+            option_3.GetComponentInChildren<Text>().text = node.option3.text;
+        }
 
-        if (node.option1.id == 0 && node.option2.id == 0 && node.option3.id == 0)
+        if (!showOption1 && !showOption2 && !showOption3)
         {
             exit_button.SetActive(true);
             exit_button.GetComponent<Button>().onClick.AddListener(delegate { DialogueWindow.SetActive(false); });
