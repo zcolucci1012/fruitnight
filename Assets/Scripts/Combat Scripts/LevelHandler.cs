@@ -519,6 +519,10 @@ public class LevelHandler : MonoBehaviour
 
             description = this.currentAttack.execute(players.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
         }
+        else if (this.currentAttack.type == AttackType.MultiAllyTarget)
+        {
+            description = this.currentAttack.execute(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+        }
 
         Invoke("EndAttack", 2);
     }
