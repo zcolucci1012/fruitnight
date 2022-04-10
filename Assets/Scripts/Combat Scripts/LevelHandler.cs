@@ -44,6 +44,32 @@ public class LevelHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (TournamentManager.tournamentStarted)
+        {
+            players = TournamentManager.AllyPair.ToArray();
+            enemies = TournamentManager.OpponentPair.ToArray();
+
+            if (players[1] is Strawberry)
+            {
+                fruit = "strawberry";
+            }
+            else if (players[1] is BlueberryFighter)
+            {
+                fruit = "blueberry";
+            }
+            else if (players[1] is LemonFighter)
+            {
+                fruit = "lemon";
+            }
+            else if (players[1] is BlackberryFighter)
+            {
+                fruit = "blackberry";
+            }
+            /*else if (players[1] is TomatoFighter)
+            {
+
+            }*/
+        }
         //populate entities array with all entities, players first, then enemies
         entities.AddRange(players);
         entities.AddRange(enemies);
@@ -139,13 +165,27 @@ public class LevelHandler : MonoBehaviour
     void LoseGame()
     {
         Debug.Log("LOSE GAME, GO TO NEXT SCENE");
-        SceneManager.LoadScene("DateSelection");
+        if (TournamentManager.tournamentStarted)
+        {
+            SceneManager.LoadScene("TournamentCombat");
+        }
+        else
+        {
+            SceneManager.LoadScene("DateSelection");
+        }
     }
 
     void WinGame()
     {
         Debug.Log("WIN GAME, GO TO NEXT SCENE");
-        SceneManager.LoadScene("DateSelection");
+        if (TournamentManager.tournamentStarted)
+        {
+            TournamentManager.TransitionToFightTwo();
+        }
+        else
+        {
+            SceneManager.LoadScene("DateSelection");
+        }
     }
 
     bool AllUnconscious(Fighter[] fighters)
