@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,6 +27,8 @@ public class NPCDialogue : MonoBehaviour
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
     public string nextScene;
+    public ParticleSystem goodParticles;
+    public ParticleSystem badParticles;
 
     // initialization
     void Start()
@@ -115,6 +118,16 @@ public class NPCDialogue : MonoBehaviour
             if (node.score != 0)
             {
                 FindObjectOfType<RelationshipScore>().changeScore(node.speaker, node.score);
+                if (node.score > 0)
+                {
+                    goodParticles.Play();
+                }
+                else
+                {
+                    var main = goodParticles.main;
+                    main.maxParticles = Math.Abs(1000 * node.score);
+                    badParticles.Play();
+                }
             }
 
 
