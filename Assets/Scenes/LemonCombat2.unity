@@ -767,10 +767,10 @@ GameObject:
   - component: {fileID: 458976452}
   - component: {fileID: 458976457}
   - component: {fileID: 458976456}
-  - component: {fileID: 458976455}
   - component: {fileID: 458976453}
+  - component: {fileID: 458976455}
   m_Layer: 5
-  m_Name: Fork 2
+  m_Name: Big Fork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,8 +793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 414, y: 119}
-  m_SizeDelta: {x: 352.332, y: 365.8161}
+  m_AnchoredPosition: {x: 361, y: 107.54}
+  m_SizeDelta: {x: 234.4073, y: 233.1506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458976453
 MonoBehaviour:
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 458976451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2328a306faaee045a12762c33ae7846, type: 3}
+  m_Script: {fileID: 11500000, guid: 8555db49a41f4424494454576437d891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 12
@@ -813,14 +813,14 @@ MonoBehaviour:
   defense: 5
   baseDefense: 5
   unconscious: 0
-  attack1name: Stab
-  attack2name: Heal
+  attack1name: none
+  attack2name: none
   attack3name: none
-  attack1desc: It stabs their opponent.
+  attack1desc: none
   attack2desc: none
   attack3desc: none
   attack1type: 0
-  attack2type: 0
+  attack2type: 2
   attack3type: 0
   turnsFrozen: 0
   turnsCantHeal: 0
@@ -3834,10 +3834,10 @@ GameObject:
   - component: {fileID: 1494673802}
   - component: {fileID: 1494673801}
   - component: {fileID: 1494673800}
-  - component: {fileID: 1494673799}
   - component: {fileID: 1494673797}
+  - component: {fileID: 1494673799}
   m_Layer: 5
-  m_Name: Fork 1
+  m_Name: Grand Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3852,21 +3852,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1494673796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2328a306faaee045a12762c33ae7846, type: 3}
+  m_Script: {fileID: 11500000, guid: c87c67f0b1e457a45b7af9b7ad434193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 15
-  currentHp: 15
-  defense: 5
-  baseDefense: 5
+  maxHp: 20
+  currentHp: 20
+  defense: 7
+  baseDefense: 7
   unconscious: 0
-  attack1name: Stab
-  attack2name: Heal
+  attack1name: none
+  attack2name: none
   attack3name: none
-  attack1desc: It stabs their opponent.
+  attack1desc: none
   attack2desc: none
   attack3desc: none
-  attack1type: 0
+  attack1type: 1
   attack2type: 0
   attack3type: 0
   turnsFrozen: 0
@@ -3950,7 +3950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39bb5df2f2d47af4ba773062358c48f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 724de5c201c08fb478a14c200e94599e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3985,8 +3985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184, y: 119.21}
-  m_SizeDelta: {x: 352.332, y: 365.8161}
+  m_AnchoredPosition: {x: 160.401, y: 144.67}
+  m_SizeDelta: {x: 298.2017, y: 307.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1532250060
 PrefabInstance:
@@ -4029,11 +4029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 111.4575
+      value: 91.9454
       objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 112.0999
+      value: 102.36
       objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4065,11 +4065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -270.69
+      value: -287.7337
       objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 133.52
+      value: 86.34
       objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4906,11 +4906,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886202, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 93.716
+      value: 73.9198
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886202, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 93.7162
+      value: 84.7179
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886202, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4942,11 +4942,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886202, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -441.123
+      value: -497
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886202, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 88.60602
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886202, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
