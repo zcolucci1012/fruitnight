@@ -141,7 +141,7 @@ public class LevelHandler : MonoBehaviour
         {
             if (!enemyAttacking)
             {
-                float duration = Mathf.Max(1, description.Length / 25f);
+                float duration = Mathf.Max(1.5f, description.Length / 50f);
                 Invoke("BeginEnemyAttack", duration);
                 enemyAttacking = true;
             }
@@ -470,61 +470,54 @@ public class LevelHandler : MonoBehaviour
     void BeginEnemyAttack()
     {
         description = entities[turn].name + " is attacking...";
-        Invoke("EnemyAttack", 2);
+        Invoke("EnemyAttack", 1);
     }
 
     //exectues attack, updates description, ends after 5 seconds
     void EnemyAttack()
     {
         Fighter enemy = entities[turn];
+        Attack[] eligibleAttacks = enemy.GetEligibleAttacks();
 
-        int attack = Random.Range(0, 2);
-        switch (attack)
+        string msg = "ERROR";
+        while (msg == "ERROR")
         {
-            case 0:
-                this.currentAttack = enemy.attack1;
-                break;
-            case 1:
-                this.currentAttack = enemy.attack2;
-                break;
-            case 2:
-                this.currentAttack = enemy.attack3;
-                break;
-            default:
-                break;
-        }
+            this.currentAttack = eligibleAttacks[Random.Range(0, eligibleAttacks.Length)];
 
-        if (this.currentAttack.type == AttackType.SingleTarget)
-        {
-            Fighter player = null;
-            do
+            if (this.currentAttack.type == AttackType.SingleTarget)
             {
-                player = players[Random.Range(0, players.Length)];
-            } while (player.unconscious);
-            
-            description = this.currentAttack.execute(new Fighter[] { player });
-        }
-        else if (this.currentAttack.type == AttackType.AllyTarget)
-        {
-            Fighter otherEnemy = null;
-            do
+                Fighter player = null;
+                do
+                {
+                    player = players[Random.Range(0, players.Length)];
+                } while (player.unconscious);
+
+                msg = this.currentAttack.execute(new Fighter[] { player });
+            }
+            else if (this.currentAttack.type == AttackType.AllyTarget)
             {
-                otherEnemy = enemies[Random.Range(0, enemies.Length)];
-            } while (enemy == otherEnemy);
+                Fighter otherEnemy = null;
+                do
+                {
+                    otherEnemy = enemies[Random.Range(0, enemies.Length)];
+                } while (enemy == otherEnemy);
 
-            description = this.currentAttack.execute(new Fighter[] { otherEnemy });
+                msg = this.currentAttack.execute(new Fighter[] { otherEnemy });
+            }
+            else if (this.currentAttack.type == AttackType.MultiTarget)
+            {
+                msg = this.currentAttack.execute(players.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+            }
+            else if (this.currentAttack.type == AttackType.MultiAllyTarget)
+            {
+                msg = this.currentAttack.execute(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+            }
         }
-        else if (this.currentAttack.type == AttackType.MultiTarget)
-        {
 
-            description = this.currentAttack.execute(players.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
-        }
-        else if (this.currentAttack.type == AttackType.MultiAllyTarget)
-        {
-            description = this.currentAttack.execute(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
-        }
+        description = msg;
 
-        Invoke("EndAttack", 2);
+
+        Invoke("EndAttack", Mathf.Max(1.5f, description.Length / 50f));
     }
 
     //ends attack by incrememting turn and stopping enemy attack

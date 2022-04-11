@@ -2,24 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlenderDefender : Fighter
+public class Fork : Fighter
 {
     private void Awake()
     {
-        // Blend attack (damage)
+        // Stab
         this.attack1execute = targets =>
         {
             return Hit(targets[0], 4).msg;
         };
 
+        // Support
         this.attack2execute = targets =>
         {
-            string msg = "The enemy uses healing on itself.\n";
-            int healing = -this.Damage(-2);
-            if (healing == 0) {
+            if (targets[0].currentHp == targets[0].maxHp)
+            {
+                return "ERROR";
+            }
+            string msg = "The fork heals its partner.\n";
+            int healing = -targets[0].Damage(-3);
+            if (healing == 0)
+            {
                 msg += "It can't heal!";
-            } else {
-                msg += "It healed itself for " + healing + " HP";
+            }
+            else
+            {
+                msg += "It healed its partner " + healing + " HP";
             }
             return msg;
         };
