@@ -2,43 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackberryFighter : Fighter
+public class OvenMitt : Fighter
 {
-
     private void Awake()
     {
-        // Darkseed Shot
+        // Mend
         this.attack1execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 2);
-            string msg = result.msg;
-            if (result.hit)
-            {
-                targets[0].turnsCantHeal = result.dmg;
-                msg += " and removes their ability to heal for " + result.dmg + " turns";
-            }
+            string msg = "The oven mitt begins its passive mending, healing 1 HP per turn for 4 turns";
+            this.poisonAttacks.Add(new PoisonAttack(4, -1));
             return msg;
         };
 
-        //Poisonfruit
+        // Slap
         this.attack2execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 1);
-            string msg = result.msg;
-            if (result.hit) 
+            string msg = "The oven mitt slaps both of its enemies.\n";
+            foreach (Fighter f in targets)
             {
-                targets[0].poisonAttacks.Add(new PoisonAttack(result.dmg + 2, 1));
-                msg += " poisoning them for " + (result.dmg + 2) + " turns";
+                AttackResult result = this.Hit(f, 4);
+                msg += result.msg + "\n";
             }
             return msg;
         };
 
-        // Vampiric prickle
+        // Grab
         this.attack3execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 2);
-            string msg = result.msg;
-            if (result.hit) 
+            string msg = "The oven mitt grabs you and shakes the life out of you.\n";
+            AttackResult result = Hit(targets[0], 3);
+            msg += result.msg;
+            if (result.hit)
             {
                 int healing = Damage(-result.dmg);
                 msg += ", and stole " + targets[0].name + "\'s health to heal itself for " + (-healing) + " hp";

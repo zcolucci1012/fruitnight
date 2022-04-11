@@ -39,6 +39,8 @@ public class LevelHandler : MonoBehaviour
 
     public VerbalAttacks verbalAttacks;
 
+    bool isGameOver = false;
+
     // TODO : add dialogue queue
 
     // Start is called before the first frame update
@@ -110,56 +112,64 @@ public class LevelHandler : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        //skip turn if unconcsious or frozen
-        while (turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
+    { 
+        if (!isGameOver)
         {
-            turn++;
-        }
-
-        // reset turn
-        if (turn >= entities.Count)
-        {
-            // handle updating fighter stats that decay
-            foreach (Fighter player in players) {
-                player.endOfRoundUpdate();
-            }
-
-            foreach(Fighter enemy in enemies) {
-                enemy.endOfRoundUpdate();
-            }
-            turn = 0;
-        }
-
-        //checks if player is selecting a target, and if its a player's turn
-        if (selectingTarget && turn < players.Length)
-        {
-            SelectTarget();
-        }
-        //if enemy's turn, play enemy attack after a certain number of seconds
-        else if (turn >= players.Length)
-        {
-            if (!enemyAttacking)
+            //skip turn if unconcsious or frozen
+            while (turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
             {
-                float duration = Mathf.Max(1.5f, description.Length / 50f);
-                Invoke("BeginEnemyAttack", duration);
-                enemyAttacking = true;
+                turn++;
             }
-        }
 
-        // checks if the combat should end
-        if (AllUnconscious(players))
-        {
-            Invoke("LoseGame", 2);
-        } else if (AllUnconscious(enemies))
-        {
-            Invoke("WinGame", 2);
-        }
-        
-        //ensure attack buttons are enabled/disabled
-        ToggleAttackButtons();
+            // reset turn
+            if (turn >= entities.Count)
+            {
+                // handle updating fighter stats that decay
+                foreach (Fighter player in players)
+                {
+                    player.endOfRoundUpdate();
+                }
 
-        descriptionText.GetComponent<Text>().text = description;
+                foreach (Fighter enemy in enemies)
+                {
+                    enemy.endOfRoundUpdate();
+                }
+                turn = 0;
+            }
+
+            //checks if player is selecting a target, and if its a player's turn
+            if (selectingTarget && turn < players.Length)
+            {
+                SelectTarget();
+            }
+            //if enemy's turn, play enemy attack after a certain number of seconds
+            else if (turn >= players.Length)
+            {
+                if (!enemyAttacking)
+                {
+                    float duration = Mathf.Max(1.5f, description.Length / 50f);
+                    Invoke("BeginEnemyAttack", duration);
+                    enemyAttacking = true;
+                }
+            }
+
+            // checks if the combat should end
+            if (AllUnconscious(enemies))
+            {
+                Invoke("WinGame", 2);
+                isGameOver = true;
+            }
+            else if (AllUnconscious(players))
+            {
+                Invoke("LoseGame", 2);
+                isGameOver = true;
+            }
+
+            //ensure attack buttons are enabled/disabled
+            ToggleAttackButtons();
+
+            descriptionText.GetComponent<Text>().text = description;
+        }
     }
 
     void LoseGame()
@@ -497,12 +507,17 @@ public class LevelHandler : MonoBehaviour
             else if (this.currentAttack.type == AttackType.AllyTarget)
             {
                 Fighter otherEnemy = null;
+                bool enemyUnconscious = false;
                 do
                 {
                     otherEnemy = enemies[Random.Range(0, enemies.Length)];
+                    if (otherEnemy.unconscious)
+                    {
+                        enemyUnconscious = true;
+                    }
                 } while (enemy == otherEnemy);
 
-                msg = this.currentAttack.execute(new Fighter[] { otherEnemy });
+                msg = enemyUnconscious ? this.currentAttack.execute(new Fighter[] { otherEnemy }) : "ERROR";
             }
             else if (this.currentAttack.type == AttackType.MultiTarget)
             {

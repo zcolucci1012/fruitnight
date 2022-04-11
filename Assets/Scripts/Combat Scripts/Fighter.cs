@@ -173,17 +173,20 @@ public abstract class Fighter : MonoBehaviour
         if (this.turnsFrozen > 0) {
             this.turnsFrozen--;
         }
-        
-        if (this.turnsCantHeal > 0)
-        {
-            this.turnsCantHeal--;
-        }
 
         foreach (PoisonAttack p in poisonAttacks)
         {
-            Damage(p.dmg);
-            print("poison damage!");
+            if (!(p.dmg < 0 && (turnsCantHeal > 0 || unconscious)))
+            {
+                Damage(p.dmg);
+                print("poison damage!");
+            }
             p.turns--;
+        }
+
+        if (this.turnsCantHeal > 0)
+        {
+            this.turnsCantHeal--;
         }
 
         poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
