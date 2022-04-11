@@ -12,12 +12,13 @@
       "name": "0",
       "pid": "1",
       "position": {
-        "x": "276.5",
+        "x": "276",
         "y": "168"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -37,7 +38,7 @@
       "name": "0 options",
       "pid": "2",
       "position": {
-        "x": "276.5",
+        "x": "276",
         "y": "318"
       },
       "tags": [
@@ -57,7 +58,7 @@
       "name": "0.1",
       "pid": "3",
       "position": {
-        "x": "57.5",
+        "x": "57",
         "y": "466"
       },
       "tags": [
@@ -78,7 +79,7 @@
       "name": "0.2",
       "pid": "4",
       "position": {
-        "x": "517.5",
+        "x": "517",
         "y": "458"
       },
       "tags": [
@@ -99,12 +100,13 @@
       "name": "1",
       "pid": "5",
       "position": {
-        "x": "57.5",
+        "x": "57",
         "y": "616"
       },
       "tags": [
         "2",
-        "Blackberry"
+        "Blackberry",
+        "veryHappy"
       ]
     },
     {
@@ -119,7 +121,7 @@
       "name": "2",
       "pid": "6",
       "position": {
-        "x": "57.5",
+        "x": "57",
         "y": "766"
       },
       "tags": [
@@ -140,12 +142,13 @@
       "name": "4",
       "pid": "7",
       "position": {
-        "x": "517.5",
+        "x": "517",
         "y": "608"
       },
       "tags": [
         "-1",
-        "Blackberry"
+        "Blackberry",
+        "annoyed"
       ]
     },
     {
@@ -160,7 +163,7 @@
       "name": "5",
       "pid": "8",
       "position": {
-        "x": "517.5",
+        "x": "517",
         "y": "758"
       },
       "tags": [
@@ -181,12 +184,13 @@
       "name": "6",
       "pid": "9",
       "position": {
-        "x": "517.5",
+        "x": "517",
         "y": "908"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -201,7 +205,7 @@
       "name": "7",
       "pid": "10",
       "position": {
-        "x": "517.5",
+        "x": "517",
         "y": "1058"
       },
       "tags": [
@@ -222,12 +226,13 @@
       "name": "8",
       "pid": "11",
       "position": {
-        "x": "284.5",
+        "x": "284",
         "y": "1156"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "nervous"
       ]
     },
     {
@@ -242,7 +247,7 @@
       "name": "9",
       "pid": "12",
       "position": {
-        "x": "284.5",
+        "x": "284",
         "y": "1306"
       },
       "tags": [
@@ -267,7 +272,7 @@
       "name": "9 options",
       "pid": "13",
       "position": {
-        "x": "284.5",
+        "x": "284",
         "y": "1456"
       },
       "tags": [
@@ -287,7 +292,7 @@
       "name": "9.1",
       "pid": "14",
       "position": {
-        "x": "108.5",
+        "x": "108",
         "y": "1586"
       },
       "tags": [
@@ -308,12 +313,13 @@
       "name": "9.2",
       "pid": "15",
       "position": {
-        "x": "479.5",
+        "x": "479",
         "y": "1570"
       },
       "tags": [
         "-2",
-        "Blackberry"
+        "Blackberry",
+        "cry"
       ]
     },
     {
@@ -328,12 +334,13 @@
       "name": "10",
       "pid": "16",
       "position": {
-        "x": "108.5",
+        "x": "108",
         "y": "1736"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "happy"
       ]
     },
     {
@@ -348,7 +355,7 @@
       "name": "11",
       "pid": "17",
       "position": {
-        "x": "108.5",
+        "x": "108",
         "y": "1886"
       },
       "tags": [
@@ -369,12 +376,13 @@
       "name": "12",
       "pid": "18",
       "position": {
-        "x": "108.5",
+        "x": "108",
         "y": "2036"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -394,7 +402,7 @@
       "name": "12 options",
       "pid": "19",
       "position": {
-        "x": "108.5",
+        "x": "108",
         "y": "2186"
       },
       "tags": [
@@ -414,7 +422,7 @@
       "name": "12.1",
       "pid": "20",
       "position": {
-        "x": "33.5",
+        "x": "33",
         "y": "2336"
       },
       "tags": [
@@ -435,12 +443,13 @@
       "name": "12.2",
       "pid": "21",
       "position": {
-        "x": "183.5",
+        "x": "183",
         "y": "2336"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -455,12 +464,13 @@
       "name": "13",
       "pid": "22",
       "position": {
-        "x": "33.5",
+        "x": "33",
         "y": "2486"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -480,7 +490,7 @@
       "name": "13 options",
       "pid": "23",
       "position": {
-        "x": "33.5",
+        "x": "33",
         "y": "2636"
       },
       "tags": [
@@ -521,7 +531,7 @@
       "name": "13.2",
       "pid": "25",
       "position": {
-        "x": "108.5",
+        "x": "108",
         "y": "2786"
       },
       "tags": [
@@ -547,7 +557,8 @@
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -588,7 +599,8 @@
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "nervous"
       ]
     },
     {
@@ -629,7 +641,8 @@
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "nervous"
       ]
     },
     {
@@ -716,7 +729,8 @@
       },
       "tags": [
         "3",
-        "Blackberry"
+        "Blackberry",
+        "heart"
       ]
     },
     {
@@ -736,7 +750,8 @@
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "happy"
       ]
     },
     {
@@ -756,7 +771,8 @@
       },
       "tags": [
         "1",
-        "Blackberry"
+        "Blackberry",
+        "cry"
       ]
     },
     {
@@ -785,12 +801,13 @@
       "name": "23",
       "pid": "38",
       "position": {
-        "x": "217.5",
+        "x": "217",
         "y": "2941"
       },
       "tags": [
         "1",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -810,7 +827,7 @@
       "name": "12 options2",
       "pid": "39",
       "position": {
-        "x": "286.5",
+        "x": "286",
         "y": "2487"
       },
       "tags": [
@@ -830,7 +847,7 @@
       "name": "12.2.1",
       "pid": "40",
       "position": {
-        "x": "211.5",
+        "x": "211",
         "y": "2637"
       },
       "tags": [
@@ -851,7 +868,7 @@
       "name": "12.2.2",
       "pid": "41",
       "position": {
-        "x": "485.5",
+        "x": "485",
         "y": "2630"
       },
       "tags": [
@@ -872,12 +889,13 @@
       "name": "24",
       "pid": "42",
       "position": {
-        "x": "240.5",
+        "x": "240",
         "y": "2796"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "nervous"
       ]
     },
     {
@@ -892,7 +910,7 @@
       "name": "25",
       "pid": "43",
       "position": {
-        "x": "337.5",
+        "x": "337",
         "y": "2946"
       },
       "tags": [
@@ -913,12 +931,13 @@
       "name": "26",
       "pid": "44",
       "position": {
-        "x": "337.5",
+        "x": "337",
         "y": "3096"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -933,12 +952,13 @@
       "name": "27",
       "pid": "45",
       "position": {
-        "x": "485.5",
+        "x": "485",
         "y": "2780"
       },
       "tags": [
         "2",
-        "Blackberry"
+        "Blackberry",
+        "surprised"
       ]
     },
     {
@@ -953,7 +973,7 @@
       "name": "28",
       "pid": "46",
       "position": {
-        "x": "485.5",
+        "x": "485",
         "y": "2930"
       },
       "tags": [
@@ -974,12 +994,13 @@
       "name": "29",
       "pid": "47",
       "position": {
-        "x": "485.5",
+        "x": "485",
         "y": "3080"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "base"
       ]
     },
     {
@@ -994,12 +1015,13 @@
       "name": "30",
       "pid": "48",
       "position": {
-        "x": "485.5",
+        "x": "485",
         "y": "3230"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "surprised"
       ]
     },
     {
@@ -1014,7 +1036,7 @@
       "name": "31",
       "pid": "49",
       "position": {
-        "x": "479.5",
+        "x": "479",
         "y": "1720"
       },
       "tags": [
@@ -1028,12 +1050,13 @@
       "name": "32",
       "pid": "50",
       "position": {
-        "x": "479.5",
+        "x": "479",
         "y": "1870"
       },
       "tags": [
         "0",
-        "Blackberry"
+        "Blackberry",
+        "annoyed"
       ]
     }
   ],
