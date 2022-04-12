@@ -14,8 +14,8 @@ public class BlackberryFighter : Fighter
             string msg = result.msg;
             if (result.hit)
             {
-                targets[0].turnsCantHeal = 2;
-                msg += " and removes their ability to heal for 2 turns";
+                targets[0].turnsCantHeal = result.dmg;
+                msg += " and removes their ability to heal for " + result.dmg + " turns";
             }
             return msg;
         };
@@ -27,8 +27,8 @@ public class BlackberryFighter : Fighter
             string msg = result.msg;
             if (result.hit) 
             {
-                targets[0].poisonAttacks.Add(new PoisonAttack(3, 1));
-                msg += " poisoning them for 3 turns";
+                targets[0].poisonAttacks.Add(new PoisonAttack(result.dmg + 2, 1));
+                msg += " poisoning them for " + (result.dmg + 2) + " turns";
             }
             return msg;
         };
@@ -40,8 +40,8 @@ public class BlackberryFighter : Fighter
             string msg = result.msg;
             if (result.hit) 
             {
-                int healing = Damage(-2);
-                msg += ", and stole " + targets[0] + " health to heal itself for " + healing + " hp";
+                int healing = Damage(-result.dmg);
+                msg += ", and stole " + targets[0].name + "\'s health to heal itself for " + (-healing) + " hp";
             }
             return msg;
         };

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Linq;
 
 public abstract class Fighter : MonoBehaviour
 {
@@ -31,9 +32,9 @@ public abstract class Fighter : MonoBehaviour
     public Func<Fighter[], string> attack2execute;
     public Func<Fighter[], string> attack3execute;
 
-    public Attack attack1;
-    public Attack attack2;
-    public Attack attack3;
+    public Attack attack1 = null;
+    public Attack attack2 = null;
+    public Attack attack3 = null;
     //public Attack[] attacks;
 
     // list of current acting defense modifiers, and how long they will last
@@ -75,15 +76,30 @@ public abstract class Fighter : MonoBehaviour
             
         }
     }
-    
+
     public AttackResult Hit(Fighter target, int dmg)
     {
         int roll = UnityEngine.Random.Range(1, 20);
         // print("defense: " + target.defense + ", roll: " + roll);
-        if (target.defense < roll)
+        if (roll == 20 || roll == 19)
+        {
+            int effectiveDamage = target.Damage((dmg + dmgMod) * 2);
+            string msg = "CRITICAL HIT!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            return new AttackResult(true, effectiveDamage, msg);
+        }
+        else if (roll == 1)
+        {
+            string msg = "Critical miss: The attack misses " + target.name;
+            return new AttackResult(false, 0, msg);
+        }
+        else if (target.defense < roll)
         {
             int effectiveDamage = target.Damage(dmg + dmgMod);
-            string msg = this.name + " deals " + effectiveDamage + " hp of damage to " + target.name;
+            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
             if (target.unconscious)
             {
                 msg += ", knocking them unconscious";
@@ -92,7 +108,13 @@ public abstract class Fighter : MonoBehaviour
         }
         else
         {
-            return new AttackResult(false, 0, this.name + " misses " + target.name);
+            int effectiveDamage = target.Damage((dmg + dmgMod)/2);
+            string msg = "Weak hit: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            return new AttackResult(true, effectiveDamage, msg);
         }
         
     }
@@ -151,17 +173,20 @@ public abstract class Fighter : MonoBehaviour
         if (this.turnsFrozen > 0) {
             this.turnsFrozen--;
         }
-        
-        if (this.turnsCantHeal > 0)
-        {
-            this.turnsCantHeal--;
-        }
 
         foreach (PoisonAttack p in poisonAttacks)
         {
-            Damage(p.dmg);
-            print("poison damage!");
+            if (!(p.dmg < 0 && (turnsCantHeal > 0 || unconscious)))
+            {
+                Damage(p.dmg);
+                print("poison damage!");
+            }
             p.turns--;
+        }
+
+        if (this.turnsCantHeal > 0)
+        {
+            this.turnsCantHeal--;
         }
 
         poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
@@ -169,5 +194,24 @@ public abstract class Fighter : MonoBehaviour
 
     public bool canAttack() {
         return turnsFrozen <= 0;
+    }
+
+    public virtual Attack[] GetEligibleAttacks()
+    {
+        List<Attack> eligibleAttacks = new List<Attack>();
+        if (this.attack1 != null)
+        {
+            eligibleAttacks.Add(this.attack1);
+        }
+        if (this.attack2 != null)
+        {
+            eligibleAttacks.Add(this.attack2);
+        }
+        if (this.attack3 != null)
+        {
+            eligibleAttacks.Add(this.attack3);
+        }
+
+        return eligibleAttacks.ToArray();
     }
 }

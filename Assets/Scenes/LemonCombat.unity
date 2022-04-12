@@ -810,8 +810,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 12
   currentHp: 12
-  defense: 1
-  baseDefense: 1
+  defense: 5
+  baseDefense: 5
   unconscious: 0
   attack1name: Stab
   attack2name: Heal

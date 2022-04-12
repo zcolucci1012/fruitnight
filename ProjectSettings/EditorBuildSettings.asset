@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LemonCombat.unity
     guid: 8542d055fdc0d8d4fbbadb11b76ad03b
   - enabled: 1
-    path: Assets/Scenes/BlueberryCombat.unity
+    path: Assets/Scenes/BlueberryCombat2.unity
     guid: abaadc7ed4852de4f92b0dd50ac3e00e
   - enabled: 1
     path: Assets/Scenes/TransitionBetweenDays.unity
