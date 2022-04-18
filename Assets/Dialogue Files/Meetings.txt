@@ -740,19 +740,19 @@
       ]
     },
     {
-      "text": "Don't mind Citrus Limon, they're going through a lot right now and they need to get something off their chest.\n\n[[continue->36]]",
+      "text": "Don't mind Citrus Limon, they're going through a lot right now and they need to get something off their chest.\n\n[[continue->40]]",
       "links": [
         {
           "name": "continue",
-          "link": "36",
-          "pid": "37"
+          "link": "40",
+          "pid": "49"
         }
       ],
       "name": "35",
       "pid": "36",
       "position": {
-        "x": "570",
-        "y": "5588"
+        "x": "458",
+        "y": "5595"
       },
       "tags": [
         "0",
@@ -761,7 +761,7 @@
       ]
     },
     {
-      "text": "Oh, that reminds me! I need to catch up with the passion fruits! Something about their singing and needing me to help them practice their pitch. \n\n[[continue->37]]",
+      "text": "Oh, that quote reminds me! I need to catch up with the passion fruits! Something about their singing and needing me to help them practice their pitch.\n\n[[continue->37]]",
       "links": [
         {
           "name": "continue",
@@ -772,8 +772,8 @@
       "name": "36",
       "pid": "37",
       "position": {
-        "x": "570",
-        "y": "5738"
+        "x": "642",
+        "y": "9767.00048828125"
       },
       "tags": [
         "0",
@@ -782,19 +782,19 @@
       ]
     },
     {
-      "text": "Strawberry zooms off, quickly turning the corner of the large brown bag.\n\n[[continue->38]]",
+      "text": "Strawberry zooms off, quickly turning the corner of the large brown bag.\n\n[[continue->69]]",
       "links": [
         {
           "name": "continue",
-          "link": "38",
-          "pid": "39"
+          "link": "69",
+          "pid": "83"
         }
       ],
       "name": "37",
       "pid": "38",
       "position": {
-        "x": "570",
-        "y": "5888"
+        "x": "662",
+        "y": "9903.00048828125"
       },
       "tags": [
         "0",
@@ -814,8 +814,8 @@
       "name": "38",
       "pid": "39",
       "position": {
-        "x": "570",
-        "y": "6038"
+        "x": "650",
+        "y": "10542.00048828125"
       },
       "tags": [
         "0",
@@ -828,8 +828,8 @@
       "name": "39",
       "pid": "40",
       "position": {
-        "x": "570",
-        "y": "6188"
+        "x": "640",
+        "y": "10669.00048828125"
       },
       "tags": [
         "0",
@@ -1010,6 +1010,783 @@
       "tags": [
         "0",
         "option"
+      ]
+    },
+    {
+      "text": "And who might this person be? Their yellow is like, totally obnoxious. \n[[continue->41]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "41",
+          "pid": "50"
+        }
+      ],
+      "name": "40",
+      "pid": "49",
+      "position": {
+        "x": "539",
+        "y": "5746"
+      },
+      "tags": [
+        "0",
+        "???",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "A dark figure littered with black dots comes up from the other side of the bag.\n[[continue->42]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "42",
+          "pid": "51"
+        }
+      ],
+      "name": "41",
+      "pid": "50",
+      "position": {
+        "x": "539",
+        "y": "5896"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Oh, it's Rubus! Hey Rubus, don't be shy! \n[[continue->43]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "43",
+          "pid": "52"
+        }
+      ],
+      "name": "42",
+      "pid": "51",
+      "position": {
+        "x": "539",
+        "y": "6046"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "surprised"
+      ]
+    },
+    {
+      "text": "Banana, meet Blackberry. They're a bit off to the side most of the time but they're really nice when you get to know them. \n[[continue->45]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "45",
+          "pid": "53"
+        }
+      ],
+      "name": "43",
+      "pid": "52",
+      "position": {
+        "x": "539",
+        "y": "6196"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "I'm just checking out the new person and seeing if they might be a good fit for the upcoming tournament. \n[[continue->45 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "45 options",
+          "pid": "54"
+        }
+      ],
+      "name": "45",
+      "pid": "53",
+      "position": {
+        "x": "552",
+        "y": "6368"
+      },
+      "tags": [
+        "0",
+        "Blackberry",
+        "base"
+      ]
+    },
+    {
+      "text": "[[What's this tournament?->45.1]]\n[[It's nice to meet you, Blackberry. ->45.2]]\n",
+      "links": [
+        {
+          "name": "What's this tournament?",
+          "link": "45.1",
+          "pid": "55"
+        },
+        {
+          "name": "It's nice to meet you, Blackberry. ",
+          "link": "45.2",
+          "pid": "56"
+        }
+      ],
+      "name": "45 options",
+      "pid": "54",
+      "position": {
+        "x": "552",
+        "y": "6518"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Wait, what do you mean by a tournament?\n[[continue->46]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "46",
+          "pid": "57"
+        }
+      ],
+      "name": "45.1",
+      "pid": "55",
+      "position": {
+        "x": "373",
+        "y": "6694"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "It's nice to meet you blackberry. I'm Banana. \n[[continue->54]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "54",
+          "pid": "68"
+        }
+      ],
+      "name": "45.2",
+      "pid": "56",
+      "position": {
+        "x": "699",
+        "y": "6677"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "There's a tournament that's held every other week where fruits will fight each other in pairs. \n[[continue->47]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "47",
+          "pid": "58"
+        }
+      ],
+      "name": "46",
+      "pid": "57",
+      "position": {
+        "x": "373",
+        "y": "6844"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Why would fruits do that to each other? Wouldn't we bruise?\n[[continue->48]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "48",
+          "pid": "59"
+        }
+      ],
+      "name": "47",
+      "pid": "58",
+      "position": {
+        "x": "373",
+        "y": "6994"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, I can answer that. Elderberry holds this tournament so that the winning pair gets to enter the great blender from beyond!\n[[continue->48 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "48 options",
+          "pid": "60"
+        }
+      ],
+      "name": "48",
+      "pid": "59",
+      "position": {
+        "x": "373",
+        "y": "7144"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Who's this Elderberry?->48.1]]\n[[What's the blender?->48.2]]\n",
+      "links": [
+        {
+          "name": "Who's this Elderberry?",
+          "link": "48.1",
+          "pid": "61"
+        },
+        {
+          "name": "What's the blender?",
+          "link": "48.2",
+          "pid": "62"
+        }
+      ],
+      "name": "48 options",
+      "pid": "60",
+      "position": {
+        "x": "379",
+        "y": "7293"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Elderberry? Who's that? \n[[continue->49]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "49",
+          "pid": "63"
+        }
+      ],
+      "name": "48.1",
+      "pid": "61",
+      "position": {
+        "x": "304",
+        "y": "7443"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "What's this blender from beyond? That sounds pretty big and important to just name-drop.\n[[continue->52]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "52",
+          "pid": "66"
+        }
+      ],
+      "name": "48.2",
+      "pid": "62",
+      "position": {
+        "x": "454",
+        "y": "7443"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "They were the one who mentored me and took me in.\n[[continue->50]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "50",
+          "pid": "64"
+        }
+      ],
+      "name": "49",
+      "pid": "63",
+      "position": {
+        "x": "304",
+        "y": "7593"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "They're the leader of the Kitchen. They are wise and have a lot of knowledge and guidance for us fruits.\n[[continue->51]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "51",
+          "pid": "65"
+        }
+      ],
+      "name": "50",
+      "pid": "64",
+      "position": {
+        "x": "304",
+        "y": "7743"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Yes, and I heard that they once settled an issue with the silverware before. Maybe that Lemonhead should learn a thing or two from them as well.\n[[continue->57]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "57",
+          "pid": "71"
+        }
+      ],
+      "name": "51",
+      "pid": "65",
+      "position": {
+        "x": "304",
+        "y": "7893"
+      },
+      "tags": [
+        "0",
+        "Blackberry",
+        "annoyed"
+      ]
+    },
+    {
+      "text": "It's a big object that two fruits can enter every two weeks. We actually don't know what it's exactly made of.\n[[continue->53]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "53",
+          "pid": "67"
+        }
+      ],
+      "name": "52",
+      "pid": "66",
+      "position": {
+        "x": "454",
+        "y": "7593"
+      },
+      "tags": [
+        "0",
+        "Blackberry",
+        "base"
+      ]
+    },
+    {
+      "text": "I was actually thinking about visiting it soon, so I'll let you all know if I find something.\n[[continue->57]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "57",
+          "pid": "71"
+        }
+      ],
+      "name": "53",
+      "pid": "67",
+      "position": {
+        "x": "454",
+        "y": "7743"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "Oh, it's not every day that I hear that.\n[[continue->55]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "55",
+          "pid": "69"
+        }
+      ],
+      "name": "54",
+      "pid": "68",
+      "position": {
+        "x": "699",
+        "y": "6827"
+      },
+      "tags": [
+        "1",
+        "Blackberry",
+        "surprised"
+      ]
+    },
+    {
+      "text": "Rubus, you're starting to turn red. Are you down with something? \n[[continue->56]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "56",
+          "pid": "70"
+        }
+      ],
+      "name": "55",
+      "pid": "69",
+      "position": {
+        "x": "699",
+        "y": "6977"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "Of course not. I-\n[[continue->57]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "57",
+          "pid": "71"
+        }
+      ],
+      "name": "56",
+      "pid": "70",
+      "position": {
+        "x": "699",
+        "y": "7127"
+      },
+      "tags": [
+        "0",
+        "Blackberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Heeey. What happened to the large wall? Is there someone here?\n[[continue->58]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "58",
+          "pid": "72"
+        }
+      ],
+      "name": "57",
+      "pid": "71",
+      "position": {
+        "x": "676",
+        "y": "7960"
+      },
+      "tags": [
+        "0",
+        "???",
+        "noEmotion"
+      ]
+    },
+    {
+      "text": "Oh would you look at the time, I should go. This is Tomato. Bye!\n[[continue->59]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "59",
+          "pid": "73"
+        }
+      ],
+      "name": "58",
+      "pid": "72",
+      "position": {
+        "x": "676",
+        "y": "8110"
+      },
+      "tags": [
+        "0",
+        "Blackberry",
+        "base"
+      ]
+    },
+    {
+      "text": "As Blackberry rushes away quickly, a red and spherical figure comes rolling on in. \n[[continue->60]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "60",
+          "pid": "74"
+        }
+      ],
+      "name": "59",
+      "pid": "73",
+      "position": {
+        "x": "676",
+        "y": "8260"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Hey, what's the commotion about? Are you guys talking to the new fruit?\n[[continue->61]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "61",
+          "pid": "75"
+        }
+      ],
+      "name": "60",
+      "pid": "74",
+      "position": {
+        "x": "676",
+        "y": "8410"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "We're not up to much, Tomato. We're just catching Banana here up to speed. \n[[continue->62]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "62",
+          "pid": "76"
+        }
+      ],
+      "name": "61",
+      "pid": "75",
+      "position": {
+        "x": "676",
+        "y": "8560"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Really? Oh, it's a pleasure to meet you, Banana. I heard something about the tournament and I was suddenly very interested.\n[[continue->63]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "63",
+          "pid": "77"
+        }
+      ],
+      "name": "62",
+      "pid": "76",
+      "position": {
+        "x": "676",
+        "y": "8710"
+      },
+      "tags": [
+        "0",
+        "Tomato"
+      ]
+    },
+    {
+      "text": "Oh, Solanum. I didn't expect to see you here. Yeah, we were talking about the tournament since-\n[[continue->64]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "64",
+          "pid": "78"
+        }
+      ],
+      "name": "63",
+      "pid": "77",
+      "position": {
+        "x": "676",
+        "y": "8860"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "Blueberry turns to where Blackberry was and looks confused. It seems like Blueberry didn't actually expect Blackberry to leave.\n[[continue->65]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "65",
+          "pid": "79"
+        }
+      ],
+      "name": "64",
+      "pid": "78",
+      "position": {
+        "x": "676",
+        "y": "9010"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "Musa, where did Rubus run off to? \n[[continue->66]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "66",
+          "pid": "80"
+        }
+      ],
+      "name": "65",
+      "pid": "79",
+      "position": {
+        "x": "676",
+        "y": "9160"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, they ran off towards the stove. I'm sure they want to just hang out there for a while. \n[[continue->67]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "67",
+          "pid": "81"
+        }
+      ],
+      "name": "66",
+      "pid": "80",
+      "position": {
+        "x": "676",
+        "y": "9310"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "The stove? That sounds somewhat dangerous. Are you sure they're going to be alright there?\n[[continue->68]]\n",
+      "links": [
+        {
+          "name": "continue",
+          "link": "68",
+          "pid": "82"
+        }
+      ],
+      "name": "67",
+      "pid": "81",
+      "position": {
+        "x": "676",
+        "y": "9460"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "It's not in the stars to hold our destiny but ourselves. A wise fruit once told me that. I'm sure Blackberry should be fine. \n[[continue->36]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "36",
+          "pid": "37"
+        }
+      ],
+      "name": "68",
+      "pid": "82",
+      "position": {
+        "x": "676",
+        "y": "9610"
+      },
+      "tags": [
+        "0",
+        "Tomato"
+      ]
+    },
+    {
+      "text": "I-I'll just go to the windowsill since everyone seems to be leaving. My new friend, you're welcome to visit if you'd like. \n[[continue->70]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "70",
+          "pid": "84"
+        }
+      ],
+      "name": "69",
+      "pid": "83",
+      "position": {
+        "x": "671",
+        "y": "10078"
+      },
+      "tags": [
+        "0",
+        "Tomato"
+      ]
+    },
+    {
+      "text": "Although you probably have better things to do, huh. I'll just be waiting in case you do come over. \n[[continue->71]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "71",
+          "pid": "85"
+        }
+      ],
+      "name": "70",
+      "pid": "84",
+      "position": {
+        "x": "671",
+        "y": "10228"
+      },
+      "tags": [
+        "0",
+        "Tomato"
+      ]
+    },
+    {
+      "text": "With that, Tomato goes away, walking as if there's something on their mind. It's almost as if they want me to follow them.\n[[continue->38]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "38",
+          "pid": "39"
+        }
+      ],
+      "name": "71",
+      "pid": "85",
+      "position": {
+        "x": "671",
+        "y": "10378"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
       ]
     }
   ],

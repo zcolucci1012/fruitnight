@@ -27,8 +27,8 @@ public class NPCDialogue : MonoBehaviour
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
     public string nextScene;
-    public ParticleSystem goodParticles;
-    public ParticleSystem badParticles;
+    public GameObject goodParticles;
+    public GameObject badParticles;
 
     // initialization
     void Start()
@@ -99,6 +99,8 @@ public class NPCDialogue : MonoBehaviour
         option_2.SetActive(false);
         option_3.SetActive(false);
         continue_button.SetActive(false);
+        goodParticles.SetActive(false);
+        badParticles.SetActive(false);
 
         // if no dialogue, only options
         if (node.speaker.Contains("option"))
@@ -120,13 +122,11 @@ public class NPCDialogue : MonoBehaviour
                 FindObjectOfType<RelationshipScore>().changeScore(node.speaker, node.score);
                 if (node.score > 0)
                 {
-                    goodParticles.Play();
+                    goodParticles.SetActive(true);
                 }
                 else
                 {
-                    var main = goodParticles.main;
-                    main.maxParticles = Math.Abs(1000 * node.score);
-                    badParticles.Play();
+                    badParticles.SetActive(true);
                 }
             }
 
