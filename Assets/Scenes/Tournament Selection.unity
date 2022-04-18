@@ -3855,7 +3855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dddad5302cefde44ab00569646f1c8d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ebc84bb306095446a83d6ad65c720f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5507,8 +5507,8 @@ MonoBehaviour:
   DialogueWindow: {fileID: 2635075249502703855}
   dialoguePath: {fileID: 4900000, guid: 12bf44181aaaa9f4f9e6985d98dbfa2a, type: 3}
   nextScene: DateSelection
-  clickSFX: {fileID: 8300000, guid: e1a38b9e494b1ec4c8b9072b97bcbc5b, type: 3}
-  audioPlayer: {fileID: 0}
+  goodParticles: {fileID: 0}
+  badParticles: {fileID: 0}
 --- !u!1001 &7947730126210978557
 PrefabInstance:
   m_ObjectHideFlags: 0
