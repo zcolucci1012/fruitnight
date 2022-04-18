@@ -380,12 +380,20 @@ MonoBehaviour:
   - {fileID: 1625713356}
   player1Attack1Button: {fileID: 621514658}
   player1Attack2Button: {fileID: 1662546076}
+  player1Attack3Button: {fileID: 0}
+  player1ComplimentButton: {fileID: 0}
+  player1InsultButton: {fileID: 0}
   player2Attack1Button: {fileID: 1372923372}
   player2Attack2Button: {fileID: 1497885619}
+  player2Attack3Button: {fileID: 0}
   comboAttackButton: {fileID: 1090162347}
   descriptionText: {fileID: 1256526148}
   defaultColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   grayedOut: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+  fruit: 
+  relationshipScore: 1
+  scoreObject: {fileID: 0}
+  verbalAttacks: {fileID: 0}
 --- !u!4 &186533391
 Transform:
   m_ObjectHideFlags: 0
@@ -1434,17 +1442,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 10
+  currentHp: 0
   defense: 7
+  baseDefense: 10
   unconscious: 0
   attack1name: strawberry patch
   attack2name: vitamic c-rious
+  attack3name: none
   attack1desc: heals the selected player for 4 health
   attack2desc: increases damage of target by 25%
+  attack3desc: none
   attack1type: 2
   attack2type: 2
-  dmgMult: 1
+  attack3type: 0
+  turnsFrozen: 0
+  turnsCantHeal: 0
   dmgMod: 0
-  healthBar: {fileID: 1712381973}
+  healthBar: {fileID: 0}
+  canHeal: 0
 --- !u!114 &727899602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2888,17 +2903,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 20
+  currentHp: 0
   defense: 10
+  baseDefense: 10
   unconscious: 0
   attack1name: dummy punch
   attack2name: dummy slam
+  attack3name: none
   attack1desc: dummy punch desc
   attack2desc: dummy slam desc
+  attack3desc: none
   attack1type: 0
   attack2type: 0
-  dmgMult: 1
+  attack3type: 0
+  turnsFrozen: 0
+  turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 0}
+  canHeal: 0
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3650,17 +3672,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 15
+  currentHp: 0
   defense: 10
+  baseDefense: 10
   unconscious: 0
   attack1name: peel slap
   attack2name: banana slamma
+  attack3name: none
   attack1desc: attacks one enemy for 4 hp
   attack2desc: attacks all enemies for 2 hp
+  attack3desc: none
   attack1type: 0
   attack2type: 0
-  dmgMult: 1
+  attack3type: 0
+  turnsFrozen: 0
+  turnsCantHeal: 0
   dmgMod: 0
-  healthBar: {fileID: 361181802}
+  healthBar: {fileID: 0}
+  canHeal: 0
 --- !u!114 &2054587306
 MonoBehaviour:
   m_ObjectHideFlags: 0
