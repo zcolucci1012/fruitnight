@@ -22,13 +22,36 @@ public class NPCDialogue : MonoBehaviour
     private int selected_option = -2;
     private string prevEmotion = "";
 
-    public float scrollSpeed = 0.03f;
+    public float scrollSpeed = .00003f;
 
     public GameObject DialogueWindow;
     public TextAsset dialoguePath;
     public string nextScene;
     public GameObject goodParticles;
     public GameObject badParticles;
+
+    private bool spacePressed = false;
+    private bool dialogueIsPlaying = false;
+    private bool canContinue = false;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("SPACE");
+            spacePressed = true;
+        }
+        if (!dialogueIsPlaying)
+        {
+            return;
+        }
+
+        if (canContinue)
+        {
+            spacePressed = false;
+        }
+
+    }
 
     // initialization
     void Start()
@@ -50,19 +73,6 @@ public class NPCDialogue : MonoBehaviour
         continue_button.SetActive(false);
 
         RunDialogue();
-    }
-
-    void Update()
-    {
-        // let player speed up dialogue if they press space
-        if (Input.GetKey(KeyCode.Space))
-        {
-            scrollSpeed = .00001f;
-        }
-        else
-        {
-            scrollSpeed = .03f;
-        }
     }
 
     public void RunDialogue()
@@ -164,18 +174,29 @@ public class NPCDialogue : MonoBehaviour
     private IEnumerator DisplayText(DialogueNode node)
     {
         dialogue_text.GetComponent<Text>().text = "";
+        canContinue = false;
         foreach (char c in node.text.ToCharArray())
         {
+            dialogueIsPlaying = true;
+            // skip to end if press space
+            if (spacePressed)
+            {
+                dialogue_text.GetComponent<Text>().text = node.text;
+                break;
+            }
+
             dialogue_text.GetComponent<Text>().text += c;
             yield return new WaitForSecondsRealtime(scrollSpeed);
         }
         showOptions(node);
         yield return null;
+        dialogueIsPlaying = false;
     }
 
     // show the options
     private void showOptions(DialogueNode node)
     {
+        canContinue = true;
         // change options
         bool showOption1 = node.option1.id != 0;
         bool showOption2 = node.option2.id != 0;
