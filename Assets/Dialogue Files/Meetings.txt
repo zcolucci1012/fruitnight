@@ -1054,7 +1054,7 @@
       ]
     },
     {
-      "text": "Oh, it’s Rubus! Hey Rubus, don't be shy! \n[[continue->43]]",
+      "text": "Oh, it's Rubus! Hey Rubus, don't be shy! \n[[continue->43]]",
       "links": [
         {
           "name": "continue",
