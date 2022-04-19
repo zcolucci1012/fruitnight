@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RelationshipScore : MonoBehaviour
 {
-    public static int strawberryScore = 3;
+    public static int strawberryScore = 0;
     public static int blueberryScore = 0;
     public static int lemonScore = 0;
     public static int tomatoScore = 0;

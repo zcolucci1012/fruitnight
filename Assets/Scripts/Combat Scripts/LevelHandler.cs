@@ -110,8 +110,6 @@ public class LevelHandler : MonoBehaviour
         } else if (fruit.Equals("tomato")){
             relationshipScore = RelationshipScore.tomatoScore;
         }
-
-        print(this.fruit);
     }
 
     // Update is called once per frame
@@ -178,14 +176,12 @@ public class LevelHandler : MonoBehaviour
 
     void LoseGame()
     {
-        Debug.Log("LOSE GAME, GO TO NEXT SCENE");
         if (TournamentManager.tournamentStarted)
         {
             SceneManager.LoadScene("TournamentCombat");
         }
         else
         {
-            print(this.fruit);
             CombatTransition.fruit = this.fruit;
             CombatTransition.won = false;
             if (fruit.Equals("strawberry"))
@@ -214,7 +210,6 @@ public class LevelHandler : MonoBehaviour
 
     void WinGame()
     {
-        Debug.Log("WIN GAME, GO TO NEXT SCENE");
         if (TournamentManager.tournamentStarted)
         {
             TournamentManager.TransitionToFightTwo();
