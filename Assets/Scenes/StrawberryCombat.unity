@@ -3180,7 +3180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: -61}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1760186108
@@ -4643,19 +4643,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: attack1desc
-      value: heals the selected player for 4 hp
+      value: Heals the selected player for 4 hp
       objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: attack2desc
-      value: increases damage of selected player's attacks by 2 hp
+      value: Increases damage of selected player's attacks by 2 hp
       objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: attack3desc
-      value: shoots a stream of seeds at opponent for 3 hp
+      value: Shoots a stream of seeds at opponent for 3 hp
       objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: attack3name
-      value: seems seedy
+      value: Seems seedy
       objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926278, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

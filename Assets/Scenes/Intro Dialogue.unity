@@ -503,6 +503,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 829445292}
     - target: {fileID: 2602838737261797659, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+      propertyPath: defaultBg
+      value: 
+      objectReference: {fileID: 21300000, guid: 55d2c851fc810f34ab36942a6e395aaa, type: 3}
+    - target: {fileID: 2602838737261797659, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: backgrounds.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -536,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5074021050639453122, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5074021050639453122, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: m_AnchorMax.x

@@ -15,6 +15,27 @@ EditorBuildSettings:
     path: Assets/Scenes/DateSelection.unity
     guid: 24f3c4131d6d62d4e9bd0ee9872cd63a
   - enabled: 1
+    path: Assets/Scenes/BlackberryCombat2.unity
+    guid: 15ca2a7d8cd41e0458a7e8cb977ce147
+  - enabled: 1
+    path: Assets/Scenes/Blueberry Date 2.unity
+    guid: 4b33577bb749be9418bcb2b0a851714c
+  - enabled: 1
+    path: Assets/Scenes/BlueberryCombat.unity
+    guid: eedca916dfbb85d4f910efa7abba0cda
+  - enabled: 1
+    path: Assets/Scenes/CombatTransition.unity
+    guid: 9b2672b9dcdcab94ea4079e75265b9b6
+  - enabled: 1
+    path: Assets/Scenes/LemonCombat2.unity
+    guid: 58b2f0c6a906db44b954610a5fde3246
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 3b6bc88b800ef694f9d9157e5ed1cd3e
+  - enabled: 1
+    path: Assets/Scenes/Tournament Selection.unity
+    guid: cfc97271c1363354b97a21f3579ad8a6
+  - enabled: 1
     path: Assets/Scenes/Combat.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
