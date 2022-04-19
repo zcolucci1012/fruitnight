@@ -894,7 +894,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8664855498313448417, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 423995803}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 423995806}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4296762ec756b3e4bbf01e0f98cb35fa, type: 3}
@@ -903,6 +903,11 @@ MonoBehaviour:
 --- !u!224 &423995805 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+  m_PrefabInstance: {fileID: 423995803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &423995806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8664855498313448421, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 423995803}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &457068945
@@ -1450,6 +1455,7 @@ MonoBehaviour:
   turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 423995804}
+  healthBarObject: {fileID: 423995806}
   canHeal: 0
 --- !u!114 &604974778
 MonoBehaviour:
@@ -4452,6 +4458,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 780532723}
     m_Modifications:
+    - target: {fileID: 6330654330242903498, guid: 1fb47e2e1fb160a47b88275643c623a4, type: 3}
+      propertyPath: healthBarObject
+      value: 
+      objectReference: {fileID: 6330654329850589212}
     - target: {fileID: 6330654330242903499, guid: 1fb47e2e1fb160a47b88275643c623a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4546,6 +4556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fb47e2e1fb160a47b88275643c623a4, type: 3}
+--- !u!1 &6330654329850589212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3451095114755673773, guid: 1fb47e2e1fb160a47b88275643c623a4, type: 3}
+  m_PrefabInstance: {fileID: 6330654329850589211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8171296543675427827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4557,6 +4572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana
       objectReference: {fileID: 0}
+    - target: {fileID: 8171296543577483354, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
+      propertyPath: healthBarObject
+      value: 
+      objectReference: {fileID: 8171296543675427828}
     - target: {fileID: 8171296543577483355, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4647,3 +4666,8 @@ PrefabInstance:
       objectReference: {fileID: 186533390}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
+--- !u!1 &8171296543675427828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 673717791861840995, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
+  m_PrefabInstance: {fileID: 8171296543675427827}
+  m_PrefabAsset: {fileID: 0}

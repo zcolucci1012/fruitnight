@@ -50,6 +50,7 @@ public abstract class Fighter : MonoBehaviour
     private Vector3 originalEulerAngles;
 
     public HealthBar healthBar = null;
+    public GameObject healthBarObject;
     public bool canHeal;
 
     // Start is called before the first frame update
@@ -73,7 +74,11 @@ public abstract class Fighter : MonoBehaviour
 
         if (unconscious)
         {
-            
+            healthBarObject.SetActive(false);
+        }
+        else
+        {
+            healthBarObject.SetActive(true);
         }
     }
 

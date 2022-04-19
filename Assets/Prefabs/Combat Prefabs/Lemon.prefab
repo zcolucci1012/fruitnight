@@ -153,15 +153,19 @@ MonoBehaviour:
   unconscious: 0
   attack1name: Sour Power
   attack2name: Raging Lemon
+  attack3name: none
   attack1desc: Lemon flings citric acid in an opponents face. Does 4 pts of damage.
   attack2desc: Lemon becomes enraged. Does 6 pts of damage to a selected enemy, but
     hurts itself for 2-4 hp.
+  attack3desc: none
   attack1type: 0
   attack2type: 0
+  attack3type: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 249151089079210325}
+  healthBarObject: {fileID: 249151089079210321}
   canHeal: 0
 --- !u!1001 &8884170168757381812
 PrefabInstance:
@@ -276,6 +280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+--- !u!1 &249151089079210321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8664855498313448421, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+  m_PrefabInstance: {fileID: 8884170168757381812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &249151089079210326 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
@@ -286,7 +295,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8664855498313448417, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 8884170168757381812}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 249151089079210321}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4296762ec756b3e4bbf01e0f98cb35fa, type: 3}

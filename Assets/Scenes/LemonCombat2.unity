@@ -826,6 +826,7 @@ MonoBehaviour:
   turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 1968906609}
+  healthBarObject: {fileID: 1968906610}
   canHeal: 0
 --- !u!114 &458976455
 MonoBehaviour:
@@ -2881,7 +2882,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8664855498313448417, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 1201199118}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1201199121}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4296762ec756b3e4bbf01e0f98cb35fa, type: 3}
@@ -2890,6 +2891,11 @@ MonoBehaviour:
 --- !u!224 &1201199120 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+  m_PrefabInstance: {fileID: 1201199118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1201199121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8664855498313448421, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 1201199118}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1215613908
@@ -3873,6 +3879,7 @@ MonoBehaviour:
   turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 1201199119}
+  healthBarObject: {fileID: 1201199121}
   canHeal: 0
 --- !u!114 &1494673799
 MonoBehaviour:
@@ -4673,12 +4680,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8664855498313448417, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 1968906607}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1968906610}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4296762ec756b3e4bbf01e0f98cb35fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1968906610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8664855498313448421, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+  m_PrefabInstance: {fileID: 1968906607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983473875
 GameObject:
   m_ObjectHideFlags: 0

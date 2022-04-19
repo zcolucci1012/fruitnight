@@ -167,6 +167,7 @@ MonoBehaviour:
   turnsCantHeal: 0
   dmgMod: 0
   healthBar: {fileID: 1617850384108812487}
+  healthBarObject: {fileID: 1617850384108812483}
   canHeal: 0
 --- !u!1001 &7947730124937937702
 PrefabInstance:
@@ -281,6 +282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+--- !u!1 &1617850384108812483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8664855498313448421, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
+  m_PrefabInstance: {fileID: 7947730124937937702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1617850384108812484 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
@@ -291,7 +297,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8664855498313448417, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 7947730124937937702}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1617850384108812483}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4296762ec756b3e4bbf01e0f98cb35fa, type: 3}
