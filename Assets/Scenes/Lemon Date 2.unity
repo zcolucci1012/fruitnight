@@ -577,7 +577,7 @@ PrefabInstance:
     - target: {fileID: 2602838737261797659, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: defaultBg
       value: 
-      objectReference: {fileID: 21300000, guid: dddad5302cefde44ab00569646f1c8d1, type: 3}
+      objectReference: {fileID: 21300000, guid: e3e0a596486bb9543b94202b422f6487, type: 3}
     - target: {fileID: 3162497671459274403, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: m_Name
       value: Dialogue Window

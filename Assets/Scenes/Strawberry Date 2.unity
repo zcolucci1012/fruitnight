@@ -494,7 +494,7 @@ PrefabInstance:
     - target: {fileID: 2602838737261797659, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: defaultBg
       value: 
-      objectReference: {fileID: 21300000, guid: dddad5302cefde44ab00569646f1c8d1, type: 3}
+      objectReference: {fileID: 21300000, guid: 5e152f026aa7206429607068f02eec00, type: 3}
     - target: {fileID: 2602838737261797659, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: backgrounds.Array.size
       value: 0

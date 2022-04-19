@@ -773,7 +773,7 @@
       "pid": "37",
       "position": {
         "x": "642",
-        "y": "9767.00048828125"
+        "y": "9767"
       },
       "tags": [
         "0",
@@ -794,7 +794,7 @@
       "pid": "38",
       "position": {
         "x": "662",
-        "y": "9903.00048828125"
+        "y": "9903"
       },
       "tags": [
         "0",
@@ -815,7 +815,7 @@
       "pid": "39",
       "position": {
         "x": "650",
-        "y": "10542.00048828125"
+        "y": "10542"
       },
       "tags": [
         "0",
@@ -829,7 +829,7 @@
       "pid": "40",
       "position": {
         "x": "640",
-        "y": "10669.00048828125"
+        "y": "10669"
       },
       "tags": [
         "0",
@@ -1054,7 +1054,7 @@
       ]
     },
     {
-      "text": "Oh, it's Rubus! Hey Rubus, don't be shy! \n[[continue->43]]",
+      "text": "Oh, it’s Rubus! Hey Rubus, don't be shy! \n[[continue->43]]",
       "links": [
         {
           "name": "continue",
@@ -1561,7 +1561,7 @@
       "tags": [
         "0",
         "Tomato",
-        "base"
+        "curious"
       ]
     },
     {
@@ -1602,7 +1602,8 @@
       },
       "tags": [
         "0",
-        "Tomato"
+        "Tomato",
+        "smile"
       ]
     },
     {
@@ -1726,7 +1727,8 @@
       },
       "tags": [
         "0",
-        "Tomato"
+        "Tomato",
+        "base"
       ]
     },
     {
@@ -1746,7 +1748,8 @@
       },
       "tags": [
         "0",
-        "Tomato"
+        "Tomato",
+        "smile"
       ]
     },
     {
