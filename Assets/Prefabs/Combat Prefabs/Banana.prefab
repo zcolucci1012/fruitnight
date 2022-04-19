@@ -95,12 +95,12 @@ MonoBehaviour:
   defense: 7
   baseDefense: 7
   unconscious: 0
-  attack1name: peel slap
-  attack2name: banana slamma
-  attack3name: banana soothie
-  attack1desc: attacks one enemy for 4 hp
-  attack2desc: attacks all enemies for 2 hp
-  attack3desc: choose an ally to heal by 2 hp
+  attack1name: Peel Slap
+  attack2name: Banana Slamma
+  attack3name: Banana Soothie
+  attack1desc: Attacks one enemy for 4 hp
+  attack2desc: Attacks all enemies for 2 hp
+  attack3desc: Choose an ally to heal by 2 HP
   attack1type: 0
   attack2type: 1
   attack3type: 2
