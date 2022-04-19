@@ -109,7 +109,7 @@ public class SaveData : MonoBehaviour
         LogData();
         RelationshipScore.strawberryScore = PlayerPrefs.GetInt("strawberryRelationshipScore", 0);
         RelationshipScore.blueberryScore = PlayerPrefs.GetInt("blueberryRelationshipScore", 0);
-        RelationshipScore.lemonScore = PlayerPrefs.GetInt("lemonberryRelationshipScore", 0);
+        RelationshipScore.lemonScore = PlayerPrefs.GetInt("lemonRelationshipScore", 0);
         RelationshipScore.blackberryScore = PlayerPrefs.GetInt("blackberryRelationshipScore", 0);
         RelationshipScore.tomatoScore = PlayerPrefs.GetInt("tomatoRelationshipScore", 0);
 
