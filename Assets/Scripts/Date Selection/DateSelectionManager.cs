@@ -40,7 +40,7 @@ public class DateSelectionManager : MonoBehaviour
     private Fruit[] fruits = new Fruit[10]; // Index relates to location on screen, see KitchenLocations Enum
     private GameObject[] locations = new GameObject[10]; // Index relates to location on screen, see KitchenLocations Enum
 
-    private static int numDatesLeftInDay = 2;
+    public static int numDatesLeftInDay = 2;
 
     // Start is called before the first frame update
     void Start()

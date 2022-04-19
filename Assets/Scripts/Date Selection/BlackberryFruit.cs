@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BlackberryFruit : Fruit
 {
-    private static int numDates = 0;
+    public static int numDates = 0;
     public static int daysLeftUntilDateable = 0;
 
     private List<KitchenLocation> dateLocations = new List<KitchenLocation> { KitchenLocation.Stove, KitchenLocation.OvenMitten };

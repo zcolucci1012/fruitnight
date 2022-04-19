@@ -50,28 +50,28 @@ public class LevelHandler : MonoBehaviour
         {
             players = TournamentManager.AllyPair.ToArray();
             enemies = TournamentManager.OpponentPair.ToArray();
-
-            if (players[1] is Strawberry)
-            {
-                fruit = "strawberry";
-            }
-            else if (players[1] is BlueberryFighter)
-            {
-                fruit = "blueberry";
-            }
-            else if (players[1] is LemonFighter)
-            {
-                fruit = "lemon";
-            }
-            else if (players[1] is BlackberryFighter)
-            {
-                fruit = "blackberry";
-            }
-            /*else if (players[1] is TomatoFighter)
-            {
-                fruit = "tomato";
-            }*/
         }
+
+        if (players[1] is Strawberry)
+        {
+            fruit = "strawberry";
+        }
+        else if (players[1] is BlueberryFighter)
+        {
+            fruit = "blueberry";
+        }
+        else if (players[1] is LemonFighter)
+        {
+            fruit = "lemon";
+        }
+        else if (players[1] is BlackberryFighter)
+        {
+            fruit = "blackberry";
+        }
+        /*else if (players[1] is TomatoFighter)
+        {
+            fruit = "tomato";
+        }*/
         //populate entities array with all entities, players first, then enemies
         entities.AddRange(players);
         entities.AddRange(enemies);

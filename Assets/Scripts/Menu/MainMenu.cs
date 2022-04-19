@@ -7,6 +7,14 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        SaveData.Restart();
+        SaveData.Load();
         SceneManager.LoadScene("Intro Dialogue");
+    }
+
+    public void ContinueGame()
+    {
+        SaveData.Load();
+        SceneManager.LoadScene("DateSelection");
     }
 }
