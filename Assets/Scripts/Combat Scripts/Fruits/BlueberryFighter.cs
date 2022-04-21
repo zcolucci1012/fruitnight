@@ -38,6 +38,7 @@ public class BlueberryFighter : Fighter
         this.attack3execute = targets =>
         {
             targets[0].turnsCantHeal = 3;
+            FindObjectOfType<DialogueAudio>().PlayAudio(this.attack3name);
             return "Blueberry studies " + targets[0].name + " and removes their ability to heal for 3 turns";
         };
 

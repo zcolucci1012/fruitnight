@@ -334,7 +334,7 @@
         "0",
         "noSpeaker",
         "noEmotion",
-        "TableBackground1"
+        "TableBackground"
       ]
     },
     {
@@ -356,7 +356,7 @@
         "0",
         "Strawberry",
         "base",
-        "TableBackground1"
+        "TableBackground"
       ]
     },
     {
@@ -371,7 +371,7 @@
         "0",
         "Strawberry",
         "base",
-        "TableBackground1"
+        "TableBackground"
       ]
     },
     {
@@ -523,7 +523,7 @@
         "0",
         "Banana",
         "base",
-        "TableBackground1"
+        "TableBackground"
       ]
     }
   ],

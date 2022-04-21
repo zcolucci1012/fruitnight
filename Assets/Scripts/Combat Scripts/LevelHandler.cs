@@ -50,28 +50,28 @@ public class LevelHandler : MonoBehaviour
         {
             players = TournamentManager.AllyPair.ToArray();
             enemies = TournamentManager.OpponentPair.ToArray();
-
-            if (players[1] is Strawberry)
-            {
-                fruit = "strawberry";
-            }
-            else if (players[1] is BlueberryFighter)
-            {
-                fruit = "blueberry";
-            }
-            else if (players[1] is LemonFighter)
-            {
-                fruit = "lemon";
-            }
-            else if (players[1] is BlackberryFighter)
-            {
-                fruit = "blackberry";
-            }
-            /*else if (players[1] is TomatoFighter)
-            {
-
-            }*/
         }
+
+        if (players[1] is Strawberry)
+        {
+            fruit = "strawberry";
+        }
+        else if (players[1] is BlueberryFighter)
+        {
+            fruit = "blueberry";
+        }
+        else if (players[1] is LemonFighter)
+        {
+            fruit = "lemon";
+        }
+        else if (players[1] is BlackberryFighter)
+        {
+            fruit = "blackberry";
+        }
+        /*else if (players[1] is TomatoFighter)
+        {
+            fruit = "tomato";
+        }*/
         //populate entities array with all entities, players first, then enemies
         entities.AddRange(players);
         entities.AddRange(enemies);
@@ -107,6 +107,8 @@ public class LevelHandler : MonoBehaviour
             relationshipScore  = RelationshipScore.blueberryScore;
         } else if (fruit.Equals("blackberry")) {
             relationshipScore = RelationshipScore.blackberryScore;
+        } else if (fruit.Equals("tomato")){
+            relationshipScore = RelationshipScore.tomatoScore;
         }
     }
 
@@ -174,27 +176,69 @@ public class LevelHandler : MonoBehaviour
 
     void LoseGame()
     {
-        Debug.Log("LOSE GAME, GO TO NEXT SCENE");
         if (TournamentManager.tournamentStarted)
         {
             SceneManager.LoadScene("TournamentCombat");
         }
         else
         {
-            SceneManager.LoadScene("DateSelection");
+            CombatTransition.fruit = this.fruit;
+            CombatTransition.won = false;
+            if (fruit.Equals("strawberry"))
+            {
+                RelationshipScore.strawberryScore -= 2;
+            }
+            else if (fruit.Equals("lemon"))
+            {
+                RelationshipScore.lemonScore -= 2;
+            }
+            else if (fruit.Equals("blueberry"))
+            {
+                RelationshipScore.blueberryScore -= 2;
+            }
+            else if (fruit.Equals("blackberry"))
+            {
+                RelationshipScore.blackberryScore -= 2;
+            }
+            else if (fruit.Equals("tomato"))
+            {
+                RelationshipScore.tomatoScore -= 2;
+            }
+            SceneManager.LoadScene("CombatTransition");
         }
     }
 
     void WinGame()
     {
-        Debug.Log("WIN GAME, GO TO NEXT SCENE");
         if (TournamentManager.tournamentStarted)
         {
             TournamentManager.TransitionToFightTwo();
         }
         else
         {
-            SceneManager.LoadScene("DateSelection");
+            CombatTransition.fruit = this.fruit;
+            CombatTransition.won = true;
+            if (fruit.Equals("strawberry"))
+            {
+                RelationshipScore.strawberryScore += 2;
+            }
+            else if (fruit.Equals("lemon"))
+            {
+                RelationshipScore.lemonScore += 2;
+            }
+            else if (fruit.Equals("blueberry"))
+            {
+                RelationshipScore.blueberryScore += 2;
+            }
+            else if (fruit.Equals("blackberry"))
+            {
+                RelationshipScore.blackberryScore += 2;
+            }
+            else if (fruit.Equals("tomato"))
+            {
+                RelationshipScore.tomatoScore += 2;
+            }
+            SceneManager.LoadScene("CombatTransition");
         }
     }
 

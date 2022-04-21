@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pause Menu
   - Music
+  - Save Data
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,7 @@ public class Banana : Fighter
     {
         this.attack1execute = targets =>
         {
-            return Hit(targets[0], 4).msg;
+            return Hit(targets[0], 4, attack1.attackName).msg;
         };
 
         this.attack2execute = targets =>
@@ -17,7 +17,7 @@ public class Banana : Fighter
             string msg = "";
             foreach (Fighter f in targets)
             {
-                msg += Hit(f, 2).msg + "\n";
+                msg += Hit(f, 2, attack2.attackName).msg + "\n";
             }
             return msg;
         };

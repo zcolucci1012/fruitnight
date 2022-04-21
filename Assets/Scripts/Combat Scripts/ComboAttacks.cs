@@ -10,8 +10,8 @@ public class ComboAttacks : MonoBehaviour
     private static Fighter fighter1;
     private static Fighter fighter2;
 
-    private Attack bananaStrawberry = new Attack("lunchbox launch", 
-        "strawberry throws banana at the enemies, dealing 3 damage and reducing their damage by 1", 
+    private Attack bananaStrawberry = new Attack("Lunchbox Launch", 
+        "Strawberry throws Banana at the enemies, dealing 3 damage and reducing their damage by 1", 
         AttackType.MultiTarget,
         targets =>
         {

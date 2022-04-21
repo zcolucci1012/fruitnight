@@ -15,6 +15,7 @@ public class Strawberry : Fighter
         this.attack2execute = targets =>
         {
             targets[0].dmgMod += 2;
+            FindObjectOfType<DialogueAudio>().PlayAudio("Stat Boost");
             return "Strawberry increases " + targets[0].name + "\'s damage by 2";
         };
 

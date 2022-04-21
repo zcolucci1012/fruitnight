@@ -50,6 +50,7 @@ public abstract class Fighter : MonoBehaviour
     private Vector3 originalEulerAngles;
 
     public HealthBar healthBar = null;
+    public GameObject healthBarObject;
     public bool canHeal;
 
     // Start is called before the first frame update
@@ -73,7 +74,76 @@ public abstract class Fighter : MonoBehaviour
 
         if (unconscious)
         {
-            
+            healthBarObject.SetActive(false);
+        }
+        else
+        {
+            healthBarObject.SetActive(true);
+        }
+    }
+
+    public AttackResult Hit(Fighter target, int dmg, string name)
+    {
+        Debug.Log(name);
+        int roll = UnityEngine.Random.Range(1, 20);
+        // print("defense: " + target.defense + ", roll: " + roll);
+        if (roll == 20 || roll == 19)
+        {
+            int effectiveDamage = target.Damage((dmg + dmgMod) * 2);
+            string msg = "CRITICAL HIT!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                // play faint sound
+
+                msg += ", knocking them unconscious";
+            }
+            else
+            {
+                // play audio
+                FindObjectOfType<DialogueAudio>().PlayAudio(name);
+            }
+            return new AttackResult(true, effectiveDamage, msg);
+        }
+        else if (roll == 1)
+        {
+            string msg = "Critical miss: The attack misses " + target.name;
+            // play miss sound
+            FindObjectOfType<DialogueAudio>().PlayAudio("Miss");
+            return new AttackResult(false, 0, msg);
+        }
+        else if (target.defense < roll)
+        {
+            int effectiveDamage = target.Damage(dmg + dmgMod);
+            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                // play faint sound 
+
+                msg += ", knocking them unconscious";
+            }
+            else
+            {
+                // play audio
+                FindObjectOfType<DialogueAudio>().PlayAudio(name);
+            }
+            return new AttackResult(true, effectiveDamage, msg);
+        }
+        else
+        {
+            int effectiveDamage = target.Damage((dmg + dmgMod) / 2);
+            string msg = "Weak hit: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                // play faint sound 
+
+                msg += ", knocking them unconscious";
+            }
+            else
+            {
+                // play audio
+                FindObjectOfType<DialogueAudio>().PlayAudio(name);
+            }
+            return new AttackResult(true, effectiveDamage, msg);
         }
     }
 
@@ -87,8 +157,10 @@ public abstract class Fighter : MonoBehaviour
             string msg = "CRITICAL HIT!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
             if (target.unconscious)
             {
+                // play faint sound
                 msg += ", knocking them unconscious";
             }
+            // play audio
             return new AttackResult(true, effectiveDamage, msg);
         }
         else if (roll == 1)
@@ -104,6 +176,7 @@ public abstract class Fighter : MonoBehaviour
             {
                 msg += ", knocking them unconscious";
             }
+            // play audio
             return new AttackResult(true, effectiveDamage, msg);
         }
         else
@@ -114,6 +187,7 @@ public abstract class Fighter : MonoBehaviour
             {
                 msg += ", knocking them unconscious";
             }
+            // play audio
             return new AttackResult(true, effectiveDamage, msg);
         }
         
@@ -145,12 +219,17 @@ public abstract class Fighter : MonoBehaviour
             effectiveDamage += (this.currentHp - maxHp);
             this.currentHp = maxHp;
         }
-
+        // if they are healing, play heal sound
+        if (hp < 0)
+        {
+            FindObjectOfType<DialogueAudio>().PlayAudio("Heal");
+        }
         return effectiveDamage;
     }
 
     // add a defense modifier for the specified amount of turns
     public void Defense(int modifier, int turns) {
+        FindObjectOfType<DialogueAudio>().PlayAudio("Stat Boost");
         this.defenseModifiers.Add((modifier, turns));
         this.defense = Mathf.Clamp(this.defense + modifier, 0, 20);
     }
