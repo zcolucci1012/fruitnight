@@ -4655,7 +4655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2882410655628184236, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
       propertyPath: attack2type
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3306484831838144777, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
