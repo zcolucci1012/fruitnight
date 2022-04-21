@@ -12,13 +12,17 @@ public class LemonFruit : Fruit
 
     public override void InitiateDate()
     {
-        numDates++;
-        daysLeftUntilDateable = 2;
         SceneManager.LoadScene("Lemon Date " + numDates);
     }
 
     public override int SetLocation()
     {
         return (int)dateLocations[numDates];
+    }
+
+    public static void EndDate()
+    {
+        numDates++;
+        daysLeftUntilDateable = 2;
     }
 }

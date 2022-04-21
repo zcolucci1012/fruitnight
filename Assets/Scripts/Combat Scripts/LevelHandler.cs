@@ -221,6 +221,7 @@ public class LevelHandler : MonoBehaviour
             if (fruit.Equals("strawberry"))
             {
                 RelationshipScore.strawberryScore += 2;
+                StrawberryFruit.EndDate();
             }
             else if (fruit.Equals("lemon"))
             {
