@@ -1071,7 +1071,7 @@
       "tags": [
         "0",
         "Blueberry",
-        "surprised"
+        "shock"
       ]
     },
     {
