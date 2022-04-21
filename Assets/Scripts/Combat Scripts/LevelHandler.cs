@@ -571,6 +571,9 @@ public class LevelHandler : MonoBehaviour
             else if (this.currentAttack.type == AttackType.MultiAllyTarget)
             {
                 msg = this.currentAttack.execute(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+            } else if (this.currentAttack.type == AttackType.SelfTarget)
+            {
+                msg = this.currentAttack.execute(new Fighter[] { enemy });
             }
         }
 

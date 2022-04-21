@@ -2193,7 +2193,7 @@ GameObject:
   - component: {fileID: 1035700286}
   - component: {fileID: 1035700285}
   m_Layer: 5
-  m_Name: Knife
+  m_Name: Watty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 15
-  currentHp: 0
+  currentHp: 15
   defense: 13
   baseDefense: 13
   unconscious: 0
@@ -2223,8 +2223,8 @@ MonoBehaviour:
   attack2desc: Heals itself for 3HP
   attack3desc: Lowers both opponents defense by 2pts for 2 turns
   attack1type: 0
-  attack2type: 2
-  attack3type: 0
+  attack2type: 5
+  attack3type: 1
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -4652,6 +4652,10 @@ PrefabInstance:
     - target: {fileID: 2882410655628184236, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
       propertyPath: attack1name
       value: Existential crisis
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882410655628184236, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
+      propertyPath: attack2type
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3306484831838144777, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
