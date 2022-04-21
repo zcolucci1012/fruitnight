@@ -182,27 +182,33 @@ public class LevelHandler : MonoBehaviour
         }
         else
         {
+            DateSelectionManager.numDatesLeftInDay--;
             CombatTransition.fruit = this.fruit;
             CombatTransition.won = false;
             if (fruit.Equals("strawberry"))
             {
                 RelationshipScore.strawberryScore -= 2;
+                StrawberryFruit.EndDate();
             }
             else if (fruit.Equals("lemon"))
             {
                 RelationshipScore.lemonScore -= 2;
+                LemonFruit.EndDate();
             }
             else if (fruit.Equals("blueberry"))
             {
                 RelationshipScore.blueberryScore -= 2;
+                BlueberryFruit.EndDate();
             }
             else if (fruit.Equals("blackberry"))
             {
                 RelationshipScore.blackberryScore -= 2;
+                BlackberryFruit.EndDate();
             }
             else if (fruit.Equals("tomato"))
             {
                 RelationshipScore.tomatoScore -= 2;
+                TomatoFruit.EndDate();
             }
             SceneManager.LoadScene("CombatTransition");
         }
@@ -216,6 +222,7 @@ public class LevelHandler : MonoBehaviour
         }
         else
         {
+            DateSelectionManager.numDatesLeftInDay--;
             CombatTransition.fruit = this.fruit;
             CombatTransition.won = true;
             if (fruit.Equals("strawberry"))
@@ -226,18 +233,22 @@ public class LevelHandler : MonoBehaviour
             else if (fruit.Equals("lemon"))
             {
                 RelationshipScore.lemonScore += 2;
+                LemonFruit.EndDate();
             }
             else if (fruit.Equals("blueberry"))
             {
                 RelationshipScore.blueberryScore += 2;
+                BlueberryFruit.EndDate();
             }
             else if (fruit.Equals("blackberry"))
             {
                 RelationshipScore.blackberryScore += 2;
+                BlackberryFruit.EndDate();
             }
             else if (fruit.Equals("tomato"))
             {
                 RelationshipScore.tomatoScore += 2;
+                TomatoFruit.EndDate();
             }
             SceneManager.LoadScene("CombatTransition");
         }

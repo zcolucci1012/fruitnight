@@ -12,7 +12,7 @@ public class BlueberryFruit : Fruit
 
     public override void InitiateDate()
     {
-        SceneManager.LoadScene("Blueberry Date " + numDates);
+        SceneManager.LoadScene("Blueberry Date " + (numDates + 1));
     }
 
     public override int SetLocation()

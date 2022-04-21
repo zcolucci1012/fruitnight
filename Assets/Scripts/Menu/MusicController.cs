@@ -13,7 +13,14 @@ public class MusicController : MonoBehaviour
 
         if (objs.Length > 1)
         {
-            Destroy(objs[0]);
+            if (objs[0].name == objs[1].name)
+            {
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                Destroy(objs[0]);
+            }
         }
         DontDestroyOnLoad(gameObject);
         audioSource = GetComponent<AudioSource>();
