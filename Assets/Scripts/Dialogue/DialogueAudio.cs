@@ -14,7 +14,19 @@ public class DialogueAudio : MonoBehaviour
             if (clip.name.Equals(speaker + " " + emotion))
             {
                 // play audio!
-                AudioSource.PlayClipAtPoint(clip, transform.position);
+                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+            }
+        }
+    }
+
+    public void PlayAudio(string audioName)
+    {
+        foreach (AudioClip clip in clips)
+        {
+            if (clip.name.Equals(audioName))
+            {
+                // play audio!
+                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
             }
         }
     }
