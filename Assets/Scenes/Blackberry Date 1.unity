@@ -490,7 +490,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1021206569
+--- !u!224 &1235938108 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5074021050639453122, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+  m_PrefabInstance: {fileID: 8794711590132858000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1298739046
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -499,7 +504,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8050970116941013792, guid: 46157cfdd70015641938fc0fcf874c8f, type: 3}
       propertyPath: m_Name
-      value: MusicController
+      value: MusicControllerDate
       objectReference: {fileID: 0}
     - target: {fileID: 8050970116941013797, guid: 46157cfdd70015641938fc0fcf874c8f, type: 3}
       propertyPath: m_RootOrder
@@ -545,13 +550,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8050970116941013799, guid: 46157cfdd70015641938fc0fcf874c8f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5931610608a89fb4da4ecd7afdc1e128, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46157cfdd70015641938fc0fcf874c8f, type: 3}
---- !u!224 &1235938108 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5074021050639453122, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
-  m_PrefabInstance: {fileID: 8794711590132858000}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1885912762
 GameObject:
   m_ObjectHideFlags: 0

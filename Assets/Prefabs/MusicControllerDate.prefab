@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8050970116941013798}
   - component: {fileID: 8050970116941013799}
   m_Layer: 0
-  m_Name: MusicController
+  m_Name: MusicControllerDate
   m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 97a5f23f219747847ac0fbe1ab1f82fd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5931610608a89fb4da4ecd7afdc1e128, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
