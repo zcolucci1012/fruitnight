@@ -68,10 +68,10 @@ public class LevelHandler : MonoBehaviour
         {
             fruit = "blackberry";
         }
-        /*else if (players[1] is TomatoFighter)
+        else if (players[1] is Tomato)
         {
             fruit = "tomato";
-        }*/
+        }
         //populate entities array with all entities, players first, then enemies
         entities.AddRange(players);
         entities.AddRange(enemies);
@@ -221,6 +221,7 @@ public class LevelHandler : MonoBehaviour
             if (fruit.Equals("strawberry"))
             {
                 RelationshipScore.strawberryScore += 2;
+                StrawberryFruit.EndDate();
             }
             else if (fruit.Equals("lemon"))
             {
@@ -570,6 +571,9 @@ public class LevelHandler : MonoBehaviour
             else if (this.currentAttack.type == AttackType.MultiAllyTarget)
             {
                 msg = this.currentAttack.execute(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+            } else if (this.currentAttack.type == AttackType.SelfTarget)
+            {
+                msg = this.currentAttack.execute(new Fighter[] { enemy });
             }
         }
 

@@ -9,5 +9,6 @@ public enum AttackType {
     MultiTarget,
     AllyTarget,
     MultiAllyTarget,
-    AnyTarget
+    AnyTarget,
+    SelfTarget
 }

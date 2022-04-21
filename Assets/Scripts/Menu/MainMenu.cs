@@ -15,6 +15,12 @@ public class MainMenu : MonoBehaviour
     public void ContinueGame()
     {
         SaveData.Load();
-        SceneManager.LoadScene("DateSelection");
+        if (PlayerPrefs.GetInt("tournamentStarted", 0) == 1) {
+            SceneManager.LoadScene("Tournament Selection");
+        }
+        else
+        {
+            SceneManager.LoadScene("DateSelection");
+        }
     }
 }
