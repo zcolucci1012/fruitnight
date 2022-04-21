@@ -32,6 +32,7 @@ public abstract class Fighter : MonoBehaviour
     public Func<Fighter[], string> attack2execute;
     public Func<Fighter[], string> attack3execute;
 
+
     public Attack attack1 = null;
     public Attack attack2 = null;
     public Attack attack3 = null;
@@ -46,6 +47,7 @@ public abstract class Fighter : MonoBehaviour
     public List<PoisonAttack> poisonAttacks = new List<PoisonAttack>();
 
     public int dmgMod = 0;
+    public int turnsStrongHit = 0;
 
     private Vector3 originalEulerAngles;
 
@@ -84,6 +86,15 @@ public abstract class Fighter : MonoBehaviour
 
     public AttackResult Hit(Fighter target, int dmg)
     {
+        if (turnsStrongHit > 1) {
+            int effectiveDamage = target.Damage(dmg + dmgMod);
+            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            return new AttackResult(true, effectiveDamage, msg);
+        }
         int roll = UnityEngine.Random.Range(1, 20);
         // print("defense: " + target.defense + ", roll: " + roll);
         if (roll == 20 || roll == 19)
@@ -177,6 +188,10 @@ public abstract class Fighter : MonoBehaviour
         // reduces turns frozen value 
         if (this.turnsFrozen > 0) {
             this.turnsFrozen--;
+        }
+
+        if (this.turnsStrongHit > 0) {
+            this.turnsStrongHit--;
         }
 
         foreach (PoisonAttack p in poisonAttacks)

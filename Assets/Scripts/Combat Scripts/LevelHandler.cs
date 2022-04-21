@@ -68,10 +68,10 @@ public class LevelHandler : MonoBehaviour
         {
             fruit = "blackberry";
         }
-        /*else if (players[1] is TomatoFighter)
+        else if (players[1] is Tomato)
         {
             fruit = "tomato";
-        }*/
+        }
         //populate entities array with all entities, players first, then enemies
         entities.AddRange(players);
         entities.AddRange(enemies);
