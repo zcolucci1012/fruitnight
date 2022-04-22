@@ -10,7 +10,7 @@ public class BlueberryFighter : Fighter
         // Sugar Blast
         this.attack1execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 2);
+            AttackResult result = Hit(targets[0], 2, this.attack1name);
             string msg = result.msg;
             if (result.hit)
             {

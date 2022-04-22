@@ -21,7 +21,7 @@ public class Strawberry : Fighter
 
         this.attack3execute = targets =>
         {
-            return Hit(targets[0], 3).msg;
+            return Hit(targets[0], 3, "Seems seedy").msg;
         };
 
         this.attack1 = new Attack(this.attack1name, this.attack1desc, this.attack1type, this.attack1execute);

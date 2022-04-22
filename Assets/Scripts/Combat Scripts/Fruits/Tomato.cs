@@ -17,7 +17,8 @@ public class Tomato : Fighter
                 targets[0].turnsFrozen = 1;
                 msg = "Tomato sends " + targets[0].name + " into an existential crisis, freezing them for a turn.";
             } else {
-                this.turnsFrozen = 2; 
+                this.turnsFrozen = 2;
+                FindObjectOfType<DialogueAudio>().PlayAudio("Tomato meh");
                 msg = "It backfires, and sends Tomato into an existential crisis instead, freezing them on their next turn.";
             }
             return msg;
@@ -30,7 +31,7 @@ public class Tomato : Fighter
             if (this.turnsStrongHit > 0) {
                 roll = 5;
             }
-            AttackResult result = this.Hit(targets[0], roll);
+            AttackResult result = this.Hit(targets[0], roll, this.attack2name);
             string msg = result.msg;
             return msg;
         };

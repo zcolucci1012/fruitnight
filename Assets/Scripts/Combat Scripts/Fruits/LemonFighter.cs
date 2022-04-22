@@ -9,13 +9,13 @@ public class LemonFighter : Fighter
         // Sour Power
         this.attack1execute = targets =>
         {
-            return Hit(targets[0], 4).msg;
+            return Hit(targets[0], 4, "Sour Pour").msg;
         };
 
         // Lemon Twist
         this.attack2execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 6);
+            AttackResult result = Hit(targets[0], 6, this.attack2name);
             string msg = result.msg;
             if (result.hit)
             {

@@ -10,6 +10,7 @@ public class Jar : Fighter
         this.attack1execute = targets =>
         {
             targets[0].turnsFrozen+=2;
+            FindObjectOfType<DialogueAudio>().PlayAudio("Jar");
             return "The jar traps " + targets[0].name + " for 1 turn";
         };
 
@@ -17,7 +18,7 @@ public class Jar : Fighter
         this.attack2execute = targets =>
         {
             string msg = "";
-            AttackResult result = this.Hit(targets[0], 2);
+            AttackResult result = this.Hit(targets[0], 2, "Jar");
             msg += result.msg;
             if (result.hit)
             {
@@ -30,7 +31,7 @@ public class Jar : Fighter
         // Roll
         this.attack3execute = targets =>
         {
-            return this.Hit(targets[0], 3).msg;
+            return this.Hit(targets[0], 3, "Jar Roll").msg;
         };
 
         this.attack1 = new Attack(this.attack1name, this.attack1desc, this.attack1type, this.attack1execute);

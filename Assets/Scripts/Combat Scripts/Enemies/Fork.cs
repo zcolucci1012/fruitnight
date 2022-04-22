@@ -9,7 +9,7 @@ public class Fork : Fighter
         // Stab
         this.attack1execute = targets =>
         {
-            return Hit(targets[0], 4).msg;
+            return Hit(targets[0], 4, "Silverware").msg;
         };
 
         // Support

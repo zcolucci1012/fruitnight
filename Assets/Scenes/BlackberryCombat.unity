@@ -1464,6 +1464,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 423995804}
   healthBarObject: {fileID: 55687830}
   canHeal: 0
@@ -2563,6 +2564,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Combat Audio
       objectReference: {fileID: 0}
+    - target: {fileID: 3914964694834393931, guid: e9d5fef4d05d6274980da69f068bd92e, type: 3}
+      propertyPath: clips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914964694834393931, guid: e9d5fef4d05d6274980da69f068bd92e, type: 3}
+      propertyPath: clips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6af238990b4138e45ba1fb247b49aeb1, type: 3}
+    - target: {fileID: 3914964694834393931, guid: e9d5fef4d05d6274980da69f068bd92e, type: 3}
+      propertyPath: clips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b4b61bef98cadc40ad51691fd8a8fed, type: 3}
+    - target: {fileID: 3914964694834393931, guid: e9d5fef4d05d6274980da69f068bd92e, type: 3}
+      propertyPath: clips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f94702339b16324094522d5ab4dba07, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d5fef4d05d6274980da69f068bd92e, type: 3}
 --- !u!1 &1031977488
@@ -4536,6 +4553,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 1843022030}
   healthBarObject: {fileID: 129753080}
   canHeal: 0

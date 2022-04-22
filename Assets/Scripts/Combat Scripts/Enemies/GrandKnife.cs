@@ -12,7 +12,7 @@ public class GrandKnife : Fighter
             string msg = "The Grand Knife swings his blade\n";
             foreach (Fighter f in targets)
             {
-                AttackResult result = this.Hit(f, 3);
+                AttackResult result = this.Hit(f, 3, "Knife");
                 msg += result.msg + "\n";                
             }
             return msg;
@@ -22,7 +22,7 @@ public class GrandKnife : Fighter
         this.attack2execute = targets =>
         {
             string msg = "The Grand Knife performs a massive chop.\n";
-            msg += this.Hit(targets[0], 6).msg;
+            msg += this.Hit(targets[0], 6, "Knife").msg;
             return msg;
         };
 
