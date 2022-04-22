@@ -98,11 +98,19 @@ public class TournamentManager : MonoBehaviour
         }
     }
 
-    public static void TransitionToFightTwo()
+    public static void TransitionToNextFight()
     {
-        OpponentPair = opponentPair2;
-        FighterSprites.RemoveRange(2, 2);
-        SceneManager.LoadScene("TournamentCombat");
+        if (OpponentPair == opponentPair1)
+        {
+            OpponentPair = opponentPair2;
+            FighterSprites.RemoveRange(2, 2);
+            SceneManager.LoadScene("TournamentCombat");
+        }
+        else
+        {
+            // LOAD END OF GAME SCENE
+            Debug.Log("Welcome to the Blender woooooo");
+        }
     }
 
     private void SetUpOpponentPairs()
@@ -142,8 +150,8 @@ public class TournamentManager : MonoBehaviour
         }
         else if (fruit.Equals("Tomato"))
         {
-            // fighters.Add(FighterPrefabs[5].GetComponent<TomatoFighter>());
-            // FighterSprites.Add(fighterSprites[5]);
+            fighters.Add(FighterPrefabs[5].GetComponent<Tomato>());
+            FighterSprites.Add(fighterSprites[5]);
         }
     }
 

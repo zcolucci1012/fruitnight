@@ -218,7 +218,7 @@ public class LevelHandler : MonoBehaviour
     {
         if (TournamentManager.tournamentStarted)
         {
-            TournamentManager.TransitionToFightTwo();
+            TournamentManager.TransitionToNextFight();
         }
         else
         {

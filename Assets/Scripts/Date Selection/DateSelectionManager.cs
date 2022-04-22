@@ -41,12 +41,18 @@ public class DateSelectionManager : MonoBehaviour
     private GameObject[] locations = new GameObject[10]; // Index relates to location on screen, see KitchenLocations Enum
 
     public static int numDatesLeftInDay = 2;
+    public static int day = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         if (numDatesLeftInDay <= 0)
         {
+            day++;
+            if (day > 3)
+            {
+                SceneManager.LoadScene("Tournament Selection");
+            }
             numDatesLeftInDay = 2;
             StrawberryFruit.daysLeftUntilDateable--;
             BlueberryFruit.daysLeftUntilDateable--;
