@@ -128,61 +128,51 @@ public class DateSelectionManager : MonoBehaviour
 
     public void TransitionToDrawer()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.Drawer].InitiateDate();
     }
 
     public void TransitionToBlender()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.Blender].InitiateDate();
     }
 
     public void TransitionToSink()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.Sink].InitiateDate();
     }
 
     public void TransitionToLeftTable()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.LeftTable].InitiateDate();
     }
 
     public void TransitionToUpperCabinet()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.UpperCabinet].InitiateDate();
     }
 
     public void TransitionToRightTable()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.RightTable].InitiateDate();
     }
 
     public void TransitionToOverheadLamp()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.OverheadLamp].InitiateDate();
     }
 
     public void TransitionToLowerCabinet()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.LowerCabinet].InitiateDate();
     }
 
     public void TransitionToStove()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.Stove].InitiateDate();
     }
 
     public void TransitionToOvenMitten()
     {
-        numDatesLeftInDay--;
         fruits[(int)KitchenLocation.OvenMitten].InitiateDate();
     }
 }

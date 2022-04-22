@@ -68,10 +68,10 @@ public class LevelHandler : MonoBehaviour
         {
             fruit = "blackberry";
         }
-        /*else if (players[1] is TomatoFighter)
+        else if (players[1] is Tomato)
         {
             fruit = "tomato";
-        }*/
+        }
         //populate entities array with all entities, players first, then enemies
         entities.AddRange(players);
         entities.AddRange(enemies);
@@ -182,27 +182,33 @@ public class LevelHandler : MonoBehaviour
         }
         else
         {
+            DateSelectionManager.numDatesLeftInDay--;
             CombatTransition.fruit = this.fruit;
             CombatTransition.won = false;
             if (fruit.Equals("strawberry"))
             {
                 RelationshipScore.strawberryScore -= 2;
+                StrawberryFruit.EndDate();
             }
             else if (fruit.Equals("lemon"))
             {
                 RelationshipScore.lemonScore -= 2;
+                LemonFruit.EndDate();
             }
             else if (fruit.Equals("blueberry"))
             {
                 RelationshipScore.blueberryScore -= 2;
+                BlueberryFruit.EndDate();
             }
             else if (fruit.Equals("blackberry"))
             {
                 RelationshipScore.blackberryScore -= 2;
+                BlackberryFruit.EndDate();
             }
             else if (fruit.Equals("tomato"))
             {
                 RelationshipScore.tomatoScore -= 2;
+                TomatoFruit.EndDate();
             }
             SceneManager.LoadScene("CombatTransition");
         }
@@ -216,27 +222,33 @@ public class LevelHandler : MonoBehaviour
         }
         else
         {
+            DateSelectionManager.numDatesLeftInDay--;
             CombatTransition.fruit = this.fruit;
             CombatTransition.won = true;
             if (fruit.Equals("strawberry"))
             {
                 RelationshipScore.strawberryScore += 2;
+                StrawberryFruit.EndDate();
             }
             else if (fruit.Equals("lemon"))
             {
                 RelationshipScore.lemonScore += 2;
+                LemonFruit.EndDate();
             }
             else if (fruit.Equals("blueberry"))
             {
                 RelationshipScore.blueberryScore += 2;
+                BlueberryFruit.EndDate();
             }
             else if (fruit.Equals("blackberry"))
             {
                 RelationshipScore.blackberryScore += 2;
+                BlackberryFruit.EndDate();
             }
             else if (fruit.Equals("tomato"))
             {
                 RelationshipScore.tomatoScore += 2;
+                TomatoFruit.EndDate();
             }
             SceneManager.LoadScene("CombatTransition");
         }
@@ -570,6 +582,9 @@ public class LevelHandler : MonoBehaviour
             else if (this.currentAttack.type == AttackType.MultiAllyTarget)
             {
                 msg = this.currentAttack.execute(enemies.ToList<Fighter>().FindAll(x => !x.unconscious).ToArray<Fighter>());
+            } else if (this.currentAttack.type == AttackType.SelfTarget)
+            {
+                msg = this.currentAttack.execute(new Fighter[] { enemy });
             }
         }
 
