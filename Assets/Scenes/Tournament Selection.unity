@@ -3107,6 +3107,7 @@ MonoBehaviour:
   - {fileID: 7947730126464155183}
   - {fileID: 8884170169482398341}
   - {fileID: 6330654329604009748}
+  - {fileID: 1127400951469577050}
   fruitSprites:
   - {fileID: 21300000, guid: f53b91f88cc951147857c7acaf45ea32, type: 3}
   - {fileID: 21300000, guid: 2b74ba96cf40fbf4b854635a1ab3a0ee, type: 3}
@@ -3114,16 +3115,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6dc794b63fd126348a13f363c3ab30fb, type: 3}
   - {fileID: 21300000, guid: 6a038978b9c4bf447aa4f0f6632e5ad3, type: 3}
   - {fileID: 21300000, guid: 4920fcde737a00c439cd53e70a8d038f, type: 3}
-  - {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
-  - {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
-  - {fileID: 21300000, guid: b12ef9e4ed86b754d8476b4fff65a461, type: 3}
-  - {fileID: 21300000, guid: 37c1eecbf018bd54e9f7457437fe846a, type: 3}
+  - {fileID: 21300000, guid: a116a128ee71b914296083ca1b1626dc, type: 3}
+  - {fileID: 21300000, guid: 36ed6dd0fe1d3914ab45b5e613ece191, type: 3}
+  - {fileID: 21300000, guid: 34293e2a1cbdb254cb1f66637876dcac, type: 3}
+  - {fileID: 21300000, guid: ed38cd7f615d52147b44f930ae354ab7, type: 3}
   fighterSprites:
   - {fileID: 21300000, guid: 5d05c77ccebca04499a0e215df241f54, type: 3}
   - {fileID: 21300000, guid: 4efc653dc81c6184e8662da78787cd86, type: 3}
   - {fileID: 21300000, guid: 6dc794b63fd126348a13f363c3ab30fb, type: 3}
   - {fileID: 21300000, guid: 4920fcde737a00c439cd53e70a8d038f, type: 3}
-  - {fileID: 21300000, guid: 6400f4259d5579f46bb42db4f1031706, type: 3}
+  - {fileID: 21300000, guid: 8f82a456be186ae4994d62b26ae5456f, type: 3}
+  - {fileID: 21300000, guid: 1fd2a1fc96f1ce34bb1ab1366636eb2d, type: 3}
 --- !u!4 &1710452464
 Transform:
   m_ObjectHideFlags: 0
@@ -3140,6 +3142,7 @@ Transform:
   - {fileID: 7947730126464155178}
   - {fileID: 8884170169482398350}
   - {fileID: 1029944428388245654}
+  - {fileID: 8868311419745169487}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4603,6 +4606,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
@@ -4724,6 +4728,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
   m_PrefabInstance: {fileID: 1029944429514520597}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1127400951469577050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8868311419745169487}
+  - component: {fileID: 6947598402939928934}
+  - component: {fileID: 5769890844959717728}
+  - component: {fileID: 3920934527635478773}
+  - component: {fileID: 3714179391294282576}
+  m_Layer: 5
+  m_Name: Tomato
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &1266701936376686463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5230,6 +5254,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2344528169345555190}
   m_CullTransparentMesh: 1
+--- !u!114 &3714179391294282576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127400951469577050}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5769890844959717728}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelHandler, Assembly-CSharp
+        m_MethodName: SelectedTarget
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3920934527635478773}
+          m_ObjectArgumentAssemblyTypeName: Fighter, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3920934527635478773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127400951469577050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803ebcc6499211242a59e2984165057b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 12
+  currentHp: 10
+  defense: 10
+  baseDefense: 10
+  unconscious: 0
+  attack1name: Existntial crisis
+  attack2name: Shakes Pearean Insult
+  attack3name: Writer's Block
+  attack1desc: Tomato philosophizes about the meaning of life and fruit, sending
+    their opponent into a brief existential crisis. Prevents an opponent from attacking
+    the next 2 turns. However, it also has a small chance to backfire and send Tomato
+    into an existential crisis during their next turn instead.
+  attack2desc: Tomato tries his hand at a witty insult, borrowed from Shakes Pear.
+    Does 2-5 hp of damage to an opponent.
+  attack3desc: "Increases Tomato\u2019s and their partner\u2019s defense by 3-6 points
+    for 2 turns."
+  attack1type: 0
+  attack2type: 0
+  attack3type: 3
+  turnsFrozen: 0
+  turnsCantHeal: 0
+  dmgMod: 0
+  turnsStrongHit: 0
+  healthBar: {fileID: 0}
+  healthBarObject: {fileID: 0}
+  canHeal: 0
 --- !u!222 &4537841221258840152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5258,6 +5376,172 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 452, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &5149137622160587928
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622160587931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.05, y: 0.77587, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5149137622492647398}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.3, y: 0.1}
+  m_SizeDelta: {x: 185.1023, y: 19.4888}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5149137622160587929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622160587931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.31654197, g: 0.9150943, b: 0.40623498, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 04e3ef1c803b0d44893060b0d46f708f, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5149137622160587931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5149137622160587928}
+  - component: {fileID: 5149137622160587934}
+  - component: {fileID: 5149137622160587929}
+  m_Layer: 0
+  m_Name: HealthBarInner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!222 &5149137622160587934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622160587931}
+  m_CullTransparentMesh: 1
+--- !u!1 &5149137622492647393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5149137622492647398}
+  - component: {fileID: 5149137622492647396}
+  - component: {fileID: 5149137622492647399}
+  - component: {fileID: 5149137622492647397}
+  m_Layer: 0
+  m_Name: HealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!222 &5149137622492647396
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622492647393}
+  m_CullTransparentMesh: 1
+--- !u!114 &5149137622492647397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622492647393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4296762ec756b3e4bbf01e0f98cb35fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarImage: {fileID: 5149137622160587929}
+  fighter: {fileID: 3920934527635478773}
+--- !u!224 &5149137622492647398
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622492647393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.85470086, y: 0.92948717, z: 0.85470086}
+  m_Children:
+  - {fileID: 5149137622160587928}
+  m_Father: {fileID: 8868311419745169487}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.162445, y: 55.3}
+  m_SizeDelta: {x: 200, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5149137622492647399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149137622492647393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 04e3ef1c803b0d44893060b0d46f708f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &5518084685795730062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5266,6 +5550,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8469959448279646368}
   m_CullTransparentMesh: 1
+--- !u!114 &5769890844959717728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127400951469577050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1fd2a1fc96f1ce34bb1ab1366636eb2d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &6330654328469485448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5451,6 +5765,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
@@ -5550,6 +5865,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!222 &6947598402939928934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127400951469577050}
+  m_CullTransparentMesh: 1
 --- !u!114 &7627863610023477984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5832,6 +6155,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
@@ -5975,6 +6299,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
@@ -6271,6 +6596,26 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 232b035288ef66f49b32ac7a2bee08a1, type: 3}
   defaultBg: {fileID: 21300000, guid: b5a43b7662193994b993b77ebb920c7a, type: 3}
   image: {fileID: 0}
+--- !u!224 &8868311419745169487
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127400951469577050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.17, y: 1.17, z: 1.17}
+  m_Children:
+  - {fileID: 5149137622492647398}
+  m_Father: {fileID: 1710452464}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -450.1, y: 24.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &8884170167879295168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6458,6 +6803,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0

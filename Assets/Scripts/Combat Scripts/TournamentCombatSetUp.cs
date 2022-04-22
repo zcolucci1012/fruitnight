@@ -22,6 +22,8 @@ public class TournamentCombatSetUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetFighters();
+
         Ally1OriginalEulerAngles = Ally1.transform.eulerAngles;
         Ally2OriginalEulerAngles = Ally2.transform.eulerAngles;
         Enemy1OriginaElulerAngles = Enemy1.transform.eulerAngles;
@@ -31,6 +33,15 @@ public class TournamentCombatSetUp : MonoBehaviour
         Ally2.GetComponentInChildren<HealthBar>().fighter = TournamentManager.AllyPair[1];
         Enemy1.GetComponentInChildren<HealthBar>().fighter = TournamentManager.OpponentPair[0];
         Enemy2.GetComponentInChildren<HealthBar>().fighter = TournamentManager.OpponentPair[1];
+
+        TournamentManager.AllyPair[0].healthBar = Ally1.GetComponentInChildren<HealthBar>();
+        TournamentManager.AllyPair[0].healthBarObject = Ally1.transform.Find("HealthBar").gameObject;
+        TournamentManager.AllyPair[1].healthBar = Ally2.GetComponentInChildren<HealthBar>();
+        TournamentManager.AllyPair[1].healthBarObject = Ally2.transform.Find("HealthBar").gameObject;
+        TournamentManager.OpponentPair[0].healthBar = Enemy1.GetComponentInChildren<HealthBar>();
+        TournamentManager.OpponentPair[0].healthBarObject = Enemy1.transform.Find("HealthBar").gameObject;
+        TournamentManager.OpponentPair[1].healthBar = Enemy2.GetComponentInChildren<HealthBar>();
+        TournamentManager.OpponentPair[1].healthBarObject = Enemy2.transform.Find("HealthBar").gameObject;
 
         Ally1.GetComponent<Image>().sprite = TournamentManager.FighterSprites[0];
         Ally2.GetComponent<Image>().sprite = TournamentManager.FighterSprites[1];
@@ -93,5 +104,34 @@ public class TournamentCombatSetUp : MonoBehaviour
         Ally2.GetComponent<Button>().enabled = TournamentManager.AllyPair[1].GetComponent<Button>().IsActive();
         Enemy1.GetComponent<Button>().enabled = TournamentManager.OpponentPair[0].GetComponent<Button>().IsActive();
         Enemy2.GetComponent<Button>().enabled = TournamentManager.OpponentPair[1].GetComponent<Button>().IsActive();
+    }
+
+    private void ResetFighters()
+    {
+        TournamentManager.AllyPair[0].currentHp = TournamentManager.AllyPair[0].maxHp;
+        TournamentManager.AllyPair[1].currentHp = TournamentManager.AllyPair[1].maxHp;
+        TournamentManager.AllyPair[0].unconscious = false;
+        TournamentManager.AllyPair[1].unconscious = false;
+        TournamentManager.AllyPair[0].poisonAttacks.Clear();
+        TournamentManager.AllyPair[1].poisonAttacks.Clear();
+        TournamentManager.AllyPair[0].turnsCantHeal = 0;
+        TournamentManager.AllyPair[1].turnsCantHeal = 0;
+        TournamentManager.AllyPair[0].turnsFrozen = 0;
+        TournamentManager.AllyPair[1].turnsFrozen = 0;
+        TournamentManager.AllyPair[0].turnsStrongHit = 0;
+        TournamentManager.AllyPair[1].turnsStrongHit = 0;
+
+        TournamentManager.OpponentPair[0].currentHp = TournamentManager.OpponentPair[0].maxHp;
+        TournamentManager.OpponentPair[1].currentHp = TournamentManager.OpponentPair[1].maxHp;
+        TournamentManager.OpponentPair[0].unconscious = false;
+        TournamentManager.OpponentPair[1].unconscious = false;
+        TournamentManager.OpponentPair[0].poisonAttacks.Clear();
+        TournamentManager.OpponentPair[1].poisonAttacks.Clear();
+        TournamentManager.OpponentPair[0].turnsCantHeal = 0;
+        TournamentManager.OpponentPair[1].turnsCantHeal = 0;
+        TournamentManager.OpponentPair[0].turnsFrozen = 0;
+        TournamentManager.OpponentPair[1].turnsFrozen = 0;
+        TournamentManager.OpponentPair[0].turnsStrongHit = 0;
+        TournamentManager.OpponentPair[1].turnsStrongHit = 0;
     }
 }

@@ -74,14 +74,17 @@ public abstract class Fighter : MonoBehaviour
             healthBar.UpdateHealthBar();
         }
 
-        if (unconscious)
+        if (healthBarObject != null)
         {
-            healthBarObject.SetActive(false);
-        }
-        else
-        {
-            healthBarObject.SetActive(true);
-        }
+            if (unconscious)
+            {
+                healthBarObject.SetActive(false);
+            }
+            else
+            {
+                healthBarObject.SetActive(true);
+            }
+        }   
     }
 
     public AttackResult Hit(Fighter target, int dmg, string name)
