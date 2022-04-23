@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4013754365720165603, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: nextScene
-      value: BlueberryCombat
+      value: BlueberryCombat2
       objectReference: {fileID: 0}
     - target: {fileID: 4013754365720165603, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: audioPlayer

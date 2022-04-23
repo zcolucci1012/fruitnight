@@ -431,7 +431,7 @@
         "y": "2898"
       },
       "tags": [
-        "4",
+        "0",
         "Banana",
         "base"
       ]
@@ -743,10 +743,10 @@
       ]
     },
     {
-      "text": "Tell me more about this friend of yours. What were they like exactly?\n\n[[cotninue->16]]",
+      "text": "Tell me more about this friend of yours. What were they like exactly?\n\n[[continue->16]]",
       "links": [
         {
-          "name": "cotninue",
+          "name": "continue",
           "link": "16",
           "pid": "17"
         }
@@ -764,10 +764,10 @@
       ]
     },
     {
-      "text": "Those silverwares will pay for what they've done to your friend. I can't believe the audacity.\n\n[[cotninue->22]]",
+      "text": "Those silverwares will pay for what they've done to your friend. I can't believe the audacity.\n\n[[continue->22]]",
       "links": [
         {
-          "name": "cotninue",
+          "name": "continue",
           "link": "22",
           "pid": "23"
         }
@@ -1001,7 +1001,7 @@
         "y": "3276"
       },
       "tags": [
-        "0",
+        "4",
         "Lemon",
         "base"
       ]

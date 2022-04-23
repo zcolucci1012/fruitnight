@@ -799,7 +799,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &789804100
+--- !u!1001 &927565378
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -808,7 +808,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8050970116941013792, guid: 46157cfdd70015641938fc0fcf874c8f, type: 3}
       propertyPath: m_Name
-      value: MusicController
+      value: MusicControllerDate
       objectReference: {fileID: 0}
     - target: {fileID: 8050970116941013797, guid: 46157cfdd70015641938fc0fcf874c8f, type: 3}
       propertyPath: m_RootOrder
