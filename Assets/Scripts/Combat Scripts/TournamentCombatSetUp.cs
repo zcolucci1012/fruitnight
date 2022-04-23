@@ -110,28 +110,40 @@ public class TournamentCombatSetUp : MonoBehaviour
     {
         TournamentManager.AllyPair[0].currentHp = TournamentManager.AllyPair[0].maxHp;
         TournamentManager.AllyPair[1].currentHp = TournamentManager.AllyPair[1].maxHp;
+        TournamentManager.AllyPair[0].defense = TournamentManager.AllyPair[0].baseDefense;
+        TournamentManager.AllyPair[1].defense = TournamentManager.AllyPair[1].baseDefense;
         TournamentManager.AllyPair[0].unconscious = false;
         TournamentManager.AllyPair[1].unconscious = false;
         TournamentManager.AllyPair[0].poisonAttacks.Clear();
         TournamentManager.AllyPair[1].poisonAttacks.Clear();
+        TournamentManager.AllyPair[0].defenseModifiers.Clear();
+        TournamentManager.AllyPair[1].defenseModifiers.Clear();
         TournamentManager.AllyPair[0].turnsCantHeal = 0;
         TournamentManager.AllyPair[1].turnsCantHeal = 0;
         TournamentManager.AllyPair[0].turnsFrozen = 0;
         TournamentManager.AllyPair[1].turnsFrozen = 0;
         TournamentManager.AllyPair[0].turnsStrongHit = 0;
         TournamentManager.AllyPair[1].turnsStrongHit = 0;
+        TournamentManager.AllyPair[0].dmgMod = 0;
+        TournamentManager.AllyPair[1].dmgMod = 0;
 
         TournamentManager.OpponentPair[0].currentHp = TournamentManager.OpponentPair[0].maxHp;
         TournamentManager.OpponentPair[1].currentHp = TournamentManager.OpponentPair[1].maxHp;
+        TournamentManager.OpponentPair[0].defense = TournamentManager.OpponentPair[0].baseDefense;
+        TournamentManager.OpponentPair[1].defense = TournamentManager.OpponentPair[1].baseDefense;
         TournamentManager.OpponentPair[0].unconscious = false;
         TournamentManager.OpponentPair[1].unconscious = false;
         TournamentManager.OpponentPair[0].poisonAttacks.Clear();
         TournamentManager.OpponentPair[1].poisonAttacks.Clear();
+        TournamentManager.OpponentPair[0].defenseModifiers.Clear();
+        TournamentManager.OpponentPair[1].defenseModifiers.Clear();
         TournamentManager.OpponentPair[0].turnsCantHeal = 0;
         TournamentManager.OpponentPair[1].turnsCantHeal = 0;
         TournamentManager.OpponentPair[0].turnsFrozen = 0;
         TournamentManager.OpponentPair[1].turnsFrozen = 0;
         TournamentManager.OpponentPair[0].turnsStrongHit = 0;
         TournamentManager.OpponentPair[1].turnsStrongHit = 0;
+        TournamentManager.OpponentPair[0].dmgMod = 0;
+        TournamentManager.OpponentPair[1].dmgMod = 0;
     }
 }

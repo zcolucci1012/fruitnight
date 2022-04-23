@@ -89,7 +89,7 @@ public class TransitionBetweenDaysManager : MonoBehaviour
         {
             fruitImage.sprite = emotionSprites[index*3 + 1];
             image.sprite = singleUpArrow;
-            text.text = name + " had some fun hanging out with you. They wouldn't mind going on another date with you.";
+            text.text = name + " had some fun hanging out with you. They wouldn't mind talking with you again.";
         }
         else
         {
