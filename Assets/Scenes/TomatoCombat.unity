@@ -4711,8 +4711,8 @@ PrefabInstance:
     - target: {fileID: 2882410655628184236, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
       propertyPath: attack1desc
       value: Tomato philosophizes about the meaning of life, sending their opponent
-        into a brief existential crisis for the next 2 turns. However, it also has
-        a small chance to backfire and send Tomato into an existential crisis instead.
+        into a brief existential crisis for the next turn. However, it also has a
+        small chance to backfire and send Tomato into an existential crisis instead.
       objectReference: {fileID: 0}
     - target: {fileID: 2882410655628184236, guid: 0c05b002919ba8e40b9e399f299e631b, type: 3}
       propertyPath: attack1name

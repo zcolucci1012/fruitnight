@@ -53,13 +53,16 @@ public class DateSelectionManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Tournament Selection");
             }
-            numDatesLeftInDay = 2;
-            StrawberryFruit.daysLeftUntilDateable--;
-            BlueberryFruit.daysLeftUntilDateable--;
-            LemonFruit.daysLeftUntilDateable--;
-            BlackberryFruit.daysLeftUntilDateable--;
-            TomatoFruit.daysLeftUntilDateable--;
-            SceneManager.LoadScene("TransitionBetweenDays");
+            else
+            {
+                numDatesLeftInDay = 2;
+                StrawberryFruit.daysLeftUntilDateable--;
+                BlueberryFruit.daysLeftUntilDateable--;
+                LemonFruit.daysLeftUntilDateable--;
+                BlackberryFruit.daysLeftUntilDateable--;
+                TomatoFruit.daysLeftUntilDateable--;
+                SceneManager.LoadScene("TransitionBetweenDays");
+            }
         }
         else
         {
