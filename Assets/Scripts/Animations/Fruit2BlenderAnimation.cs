@@ -66,11 +66,17 @@ public class Fruit2BlenderAnimation : MonoBehaviour
             if (started && !done)
             {
                 blenderColor.color = (blenderColor.color + fruitColor) / 2;
-                Invoke("WinText", 2);
+                Invoke("ScrollText", 2);
                 done = true;
             }
             started = true;
         }
+    }
+
+    private void ScrollText()
+    {
+        egc.AnimateScrollText(blenderColor.color);
+        Invoke("WinText", 7);
     }
 
     private void WinText()

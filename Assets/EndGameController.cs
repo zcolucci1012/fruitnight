@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class EndGameController : MonoBehaviour
 {
     public GameObject winText;
+    public GameObject credits;
     public GameObject mainMenuButton;
 
     private void Start()
@@ -19,6 +20,12 @@ public class EndGameController : MonoBehaviour
         winText.GetComponent<Animation>().Play("MoveText");
         winText.GetComponent<Text>().color = color;
         winText.GetComponent<AudioSource>().Play();
+    }
+
+    public void AnimateScrollText(Color color)
+    {
+        credits.GetComponent<Animation>().Play("ScrollText");
+        credits.GetComponent<Text>().color = color;
     }
 
     public void DisplayMainMenu()
