@@ -20,7 +20,7 @@ public class OvenMitt : Fighter
             string msg = "The oven mitt slaps both of its enemies.\n";
             foreach (Fighter f in targets)
             {
-                AttackResult result = this.Hit(f, 4);
+                AttackResult result = this.Hit(f, 4, "Oven Mitt");
                 msg += result.msg + "\n";
             }
             return msg;
@@ -30,7 +30,7 @@ public class OvenMitt : Fighter
         this.attack3execute = targets =>
         {
             string msg = "The oven mitt grabs you and shakes the life out of you.\n";
-            AttackResult result = Hit(targets[0], 3);
+            AttackResult result = Hit(targets[0], 3, "Oven Mitt 2");
             msg += result.msg;
             if (result.hit)
             {

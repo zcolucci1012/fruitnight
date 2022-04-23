@@ -656,7 +656,7 @@
       ]
     },
     {
-      "text": "Lemon moves closer to me, almost analyzing me with their gaze. He then puts on a pair of sunglasses.\n\n[[continue->32]]",
+      "text": "Lemon moves closer to me, almost analyzing me with their gaze. They then put on a pair of sunglasses.\n\n[[continue->32]]",
       "links": [
         {
           "name": "continue",
@@ -1071,7 +1071,7 @@
       "tags": [
         "0",
         "Blueberry",
-        "shock"
+        "surprised"
       ]
     },
     {
@@ -1113,7 +1113,7 @@
       "tags": [
         "0",
         "Blackberry",
-        "base"
+        "annoyed"
       ]
     },
     {
@@ -1436,7 +1436,7 @@
       "tags": [
         "1",
         "Blackberry",
-        "surprised"
+        "nervous"
       ]
     },
     {

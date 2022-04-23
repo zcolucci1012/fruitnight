@@ -12,7 +12,7 @@ public class DustBunny : Fighter
             string msg = "The bunny sends toxic dust your way.\n";
             foreach (Fighter f in targets)
             {
-                AttackResult result = this.Hit(f, 2);
+                AttackResult result = this.Hit(f, 2, "Dust");
                 
                 msg += result.msg + "\n";
                 if (result.hit)

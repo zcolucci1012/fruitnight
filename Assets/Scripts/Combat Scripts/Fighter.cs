@@ -98,15 +98,10 @@ public abstract class Fighter : MonoBehaviour
             string msg = "CRITICAL HIT!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
             if (target.unconscious)
             {
-                // play faint sound
-
                 msg += ", knocking them unconscious";
             }
-            else
-            {
-                // play audio
-                FindObjectOfType<DialogueAudio>().PlayAudio(name);
-            }
+            // play audio
+            FindObjectOfType<DialogueAudio>().PlayAudio(name);
             return new AttackResult(true, effectiveDamage, msg);
         }
         else if (roll == 1)
@@ -122,15 +117,10 @@ public abstract class Fighter : MonoBehaviour
             string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
             if (target.unconscious)
             {
-                // play faint sound 
-
                 msg += ", knocking them unconscious";
             }
-            else
-            {
-                // play audio
-                FindObjectOfType<DialogueAudio>().PlayAudio(name);
-            }
+            // play audio
+            FindObjectOfType<DialogueAudio>().PlayAudio(name);
             return new AttackResult(true, effectiveDamage, msg);
         }
         else
@@ -139,8 +129,6 @@ public abstract class Fighter : MonoBehaviour
             string msg = "Weak hit: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
             if (target.unconscious)
             {
-                // play faint sound 
-
                 msg += ", knocking them unconscious";
             }
             else

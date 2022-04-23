@@ -12,7 +12,7 @@ public class FryingPan : Fighter
             string msg = "The frying pan trys to flatten you both.\n";
             foreach (Fighter f in targets)
             {
-                msg += this.Hit(f, 2).msg + "\n";
+                msg += this.Hit(f, 2, "Frying Pan").msg + "\n";
             }
             return msg;
         };

@@ -108,8 +108,8 @@ public class TournamentManager : MonoBehaviour
         }
         else
         {
-            // LOAD END OF GAME SCENE
-            Debug.Log("Welcome to the Blender woooooo");
+            Fruit2BlenderAnimation.fruit = AllyPair[1].name.ToLower();
+            SceneManager.LoadScene("EndScreen");
         }
     }
 

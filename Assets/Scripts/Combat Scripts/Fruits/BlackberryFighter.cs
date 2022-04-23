@@ -10,7 +10,7 @@ public class BlackberryFighter : Fighter
         // Darkseed Shot
         this.attack1execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 2);
+            AttackResult result = Hit(targets[0], 2, this.attack1name);
             string msg = result.msg;
             if (result.hit)
             {
@@ -23,7 +23,7 @@ public class BlackberryFighter : Fighter
         //Poisonfruit
         this.attack2execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 1);
+            AttackResult result = Hit(targets[0], 1, this.attack2name);
             string msg = result.msg;
             if (result.hit) 
             {
@@ -36,7 +36,7 @@ public class BlackberryFighter : Fighter
         // Vampiric prickle
         this.attack3execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 2);
+            AttackResult result = Hit(targets[0], 2, this.attack3name);
             string msg = result.msg;
             if (result.hit) 
             {
