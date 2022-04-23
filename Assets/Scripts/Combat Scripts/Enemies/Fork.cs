@@ -15,8 +15,9 @@ public class Fork : Fighter
         // Support
         this.attack2execute = targets =>
         {
-            if (targets[0].currentHp == targets[0].maxHp)
+            if (targets[0].currentHp == targets[0].maxHp || targets[0].unconscious)
             {
+                Debug.Log("tried to heal but didn't :D");
                 return "ERROR";
             }
             string msg = "The fork heals its partner.\n";

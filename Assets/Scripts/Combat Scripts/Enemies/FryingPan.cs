@@ -20,7 +20,7 @@ public class FryingPan : Fighter
         // Tinker
         this.attack2execute = targets =>
         {
-            if (targets[0].currentHp == targets[0].maxHp)
+            if (targets[0].currentHp == targets[0].maxHp || targets[0].unconscious)
             {
                 return "ERROR";
             }
