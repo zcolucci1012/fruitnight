@@ -28,7 +28,7 @@ public class WateringCan : Fighter
                 return "ERROR";
             }
             string msg = "Watty heals itself with healing water.\n";
-            int healing = this.Damage(-3);
+            int healing = -this.Damage(-3);
             if (healing == 0)
             {
                 msg += "It can't heal!";
