@@ -19,7 +19,7 @@ public class Jar : Fighter
         // Trap
         this.attack1execute = targets =>
         {
-            targets[0].turnsFrozen+=2;
+            targets[0].turnsFrozen+=1;
             FindObjectOfType<DialogueAudio>().PlayAudio("Jar");
             return "The jar traps " + targets[0].name + " for 1 turn";
         };
@@ -32,7 +32,7 @@ public class Jar : Fighter
             msg += result.msg;
             if (result.hit)
             {
-                targets[0].turnsCantHeal+=2;
+                targets[0].turnsCantHeal+=1;
                 msg += "\nThey can't heal for 1 turn";
             }
             return msg;

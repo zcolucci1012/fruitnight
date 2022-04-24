@@ -65,6 +65,9 @@ public abstract class Fighter : MonoBehaviour
 
     public int healingMod = 1;
 
+    public bool complimented = false;
+    public bool insulted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,6 +114,17 @@ public abstract class Fighter : MonoBehaviour
     {
         Debug.Log(name);
         int roll = UnityEngine.Random.Range(1, 20);
+        if (turnsStrongHit > 0) {
+            int effectiveDamage = target.Damage(dmg + dmgMod);
+            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            // play audio
+            FindObjectOfType<DialogueAudio>().PlayAudio(name);
+            return new AttackResult(true, effectiveDamage, msg);
+        }
         // print("defense: " + target.defense + ", roll: " + roll);
         if (roll == 20 || roll == 19)
         {
@@ -201,7 +215,7 @@ public abstract class Fighter : MonoBehaviour
         this.defense = Mathf.Clamp(this.defense + modifier, 0, 20);
     }
 
-    public string endOfRoundUpdate() {
+    public string endOfTurnUpdate() {
         string msg = "";
 
         applyDefenseMods();
@@ -256,6 +270,8 @@ public abstract class Fighter : MonoBehaviour
 
     protected string applyPoisons() {
         string msg = "";
+        bool poisoned = false;
+        bool regenerated = false;
         foreach (PoisonAttack p in poisonAttacks)
         {
             print(p.dmg);
@@ -263,59 +279,66 @@ public abstract class Fighter : MonoBehaviour
             {
                 Damage(p.dmg);
                 print("poison damage!");
-                msg += this.name + " is hurt by it's poison!\n";
+                if (!poisoned) {
+                    msg += this.name + " is hurt by it's poison!\n";
+                    poisoned = true;
+                }
             } else if (p.dmg < 0 && !(turnsCantHeal > 0 || unconscious)) {
                 Damage(p.dmg);
                 print("antidote regeneration!");
-                msg += this.name + " has some health regenerated!\n";
+                if (!regenerated)
+                {
+                    msg += this.name + " has some health regenerated!\n";
+                    regenerated = true;
+                }
             }
             p.turns--;
         }
         return msg;
     }
 
-    // NOTE: because of the way this works, we will need to manually account for an extra turn if
-    // the fighter does damage/modifiers to itself
-    public void endOfTurnUpdate() {
-        // loops through and see if any modifiers have worn off.
-        for (int ii = 0; ii < defenseModifiers.Count; ii++) {
-            defenseModifiers[ii] = (defenseModifiers[ii].defValue, defenseModifiers[ii].turnsLeft - 1);
-            if (defenseModifiers[ii].turnsLeft <= 0) {
-                // remove effects from it on defense
-                // TODO : fix this to account for edge cases where removing the defense modifier will still result in something over 20
-                this.defense = Mathf.Clamp(this.defense - defenseModifiers[ii].defValue, 0, 20);
+    //// NOTE: because of the way this works, we will need to manually account for an extra turn if
+    //// the fighter does damage/modifiers to itself
+    //public void endOfTurnUpdate() {
+    //    // loops through and see if any modifiers have worn off.
+    //    for (int ii = 0; ii < defenseModifiers.Count; ii++) {
+    //        defenseModifiers[ii] = (defenseModifiers[ii].defValue, defenseModifiers[ii].turnsLeft - 1);
+    //        if (defenseModifiers[ii].turnsLeft <= 0) {
+    //            // remove effects from it on defense
+    //            // TODO : fix this to account for edge cases where removing the defense modifier will still result in something over 20
+    //            this.defense = Mathf.Clamp(this.defense - defenseModifiers[ii].defValue, 0, 20);
 
-                // remove defense modifier from active list
-                defenseModifiers.RemoveAt(ii);
-            }
-        }
+    //            // remove defense modifier from active list
+    //            defenseModifiers.RemoveAt(ii);
+    //        }
+    //    }
 
-        // reduces turns frozen value 
-        if (this.turnsFrozen > 0) {
-            this.turnsFrozen--;
-        }
+    //    // reduces turns frozen value 
+    //    if (this.turnsFrozen > 0) {
+    //        this.turnsFrozen--;
+    //    }
 
-        if (this.turnsStrongHit > 0) {
-            this.turnsStrongHit--;
-        }
+    //    if (this.turnsStrongHit > 0) {
+    //        this.turnsStrongHit--;
+    //    }
 
-        foreach (PoisonAttack p in poisonAttacks)
-        {
-            if (!(p.dmg < 0 && (turnsCantHeal > 0 || unconscious)))
-            {
-                Damage(p.dmg);
-                print("poison damage!");
-            }
-            p.turns--;
-        }
+    //    foreach (PoisonAttack p in poisonAttacks)
+    //    {
+    //        if (!(p.dmg < 0 && (turnsCantHeal > 0 || unconscious)))
+    //        {
+    //            Damage(p.dmg);
+    //            print("poison damage!");
+    //        }
+    //        p.turns--;
+    //    }
 
-        if (this.turnsCantHeal > 0)
-        {
-            this.turnsCantHeal--;
-        }
+    //    if (this.turnsCantHeal > 0)
+    //    {
+    //        this.turnsCantHeal--;
+    //    }
 
-        poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
-    }
+    //    poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
+    //}
 
     public bool canAttack() {
         return turnsFrozen <= 0;

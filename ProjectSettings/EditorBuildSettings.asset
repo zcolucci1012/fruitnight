@@ -84,6 +84,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tomato Date 1.unity
     guid: 57dbddae904ae23428d51351a142706b
   - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: c583ae768c9cc0243bb765fb0fdc827f
+  - enabled: 1
     path: Assets/Scenes/TomatoCombat.unity
     guid: 261af048b5eca4d4ea4da21bb2781837
   - enabled: 1

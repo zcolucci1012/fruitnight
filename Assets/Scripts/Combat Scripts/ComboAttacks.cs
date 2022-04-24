@@ -27,6 +27,7 @@ public class ComboAttacks : MonoBehaviour
                 }
                 else
                 {
+                    msg += result.msg;
                     FindObjectOfType<DialogueAudio>().PlayAudio("Miss");
                 }
             }

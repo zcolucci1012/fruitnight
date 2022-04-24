@@ -34,15 +34,17 @@ public class Banana : Fighter
 
         this.complimentExecute = targets => {
             string result = targets[0].Compliment();
+            targets[0].complimented = true;
             return result;
         };
 
         this.insultExecute = targets => {
             string result = targets[0].Insult();
+            targets[0].insulted = true;
             return result;
         };
 
-        this.complimentAttack = new Attack("Compliment", "Compliment an enemy or ally", AttackType.AnyTarget, this.complimentExecute);
-        this.insultAttack = new Attack("Insult", "Insult an enemy or ally", AttackType.AnyTarget, this.insultExecute);
+        this.complimentAttack = new Attack("Compliment", "Compliment an enemy or ally", AttackType.Compliment, this.complimentExecute);
+        this.insultAttack = new Attack("Insult", "Insult an enemy or ally", AttackType.Insult, this.insultExecute);
     }
 }

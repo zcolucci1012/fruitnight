@@ -51,6 +51,8 @@ public class LevelHandler : MonoBehaviour
 
     bool pause = false;
 
+    string endOfRoundMessage = "";
+
     // TODO : add dialogue queue
 
     // Start is called before the first frame update
@@ -152,22 +154,12 @@ public class LevelHandler : MonoBehaviour
             // reset turn
             if (turn >= entities.Count)
             {
-                string msg = "End of round\n";
-                // handle updating fighter stats that decay
-                foreach (Fighter player in players)
-                {
-                    msg += player.endOfRoundUpdate();
-                }
+                description = "End of round\n" + this.endOfRoundMessage; ;
 
-                foreach (Fighter enemy in enemies)
-                {
-                    msg += enemy.endOfRoundUpdate();
-                }
+                this.endOfRoundMessage = "";
 
                 // reset combo attack
                 comboAttackUsed = false;
-
-                description = msg;
 
                 pause = true;
 
@@ -339,7 +331,7 @@ public class LevelHandler : MonoBehaviour
 
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0 || turn == 1;
 
-        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 3 && !players[0].unconscious && !players[1].unconscious && !comboAttackUsed;
+        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 3 && !players[0].unconscious && !players[1].unconscious && !comboAttackUsed && players[0].turnsFrozen <= 0 && players[1].turnsFrozen <= 0;
         player1ComplimentButton.GetComponent<Button>().interactable = verbalAvailable;
         player1InsultButton.GetComponent<Button>().interactable = verbalAvailable;
 
@@ -474,7 +466,11 @@ public class LevelHandler : MonoBehaviour
                 break;
             case -1:
                 if (relationshipScore > 3) {
-                    if (comboAttackUsed) {
+                    if (players[0].turnsFrozen > 0 || players[1].turnsFrozen > 0)
+                    {
+                        description = "One of the players is frozen!";
+                    }
+                    else if (comboAttackUsed) {
                         description = "You've already used the combo attack this round!";
                     } else {
                         description = this.comboAttack.description;
@@ -538,6 +534,43 @@ public class LevelHandler : MonoBehaviour
                     players[i].GetComponent<Button>().enabled = true;
                 }
             }
+        } else if (currentAttack.type == AttackType.Compliment)
+        {
+            description = currentAttack.attackName + ":\nSelect ally or enemy target";
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (!enemies[i].unconscious && !enemies[i].complimented)
+                {
+                    enemies[i].GetComponent<Button>().enabled = true;
+                }
+            }
+
+            for (int i = 1; i < players.Length; i++)
+            {
+                if (!players[i].unconscious && !players[i].complimented)
+                {
+                    players[i].GetComponent<Button>().enabled = true;
+                }
+            }
+        }
+        else if (currentAttack.type == AttackType.Insult)
+        {
+            description = currentAttack.attackName + ":\nSelect ally or enemy target";
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (!enemies[i].unconscious && !enemies[i].insulted)
+                {
+                    enemies[i].GetComponent<Button>().enabled = true;
+                }
+            }
+
+            for (int i = 1; i < players.Length; i++)
+            {
+                if (!players[i].unconscious && !players[i].insulted)
+                {
+                    players[i].GetComponent<Button>().enabled = true;
+                }
+            }
         }
     }
 
@@ -563,6 +596,7 @@ public class LevelHandler : MonoBehaviour
     public void NextTurn()
     {
         selectingTarget = false;
+        this.endOfRoundMessage += entities[turn].endOfTurnUpdate();
         turn++;
         for (int i = 0; i < entities.Count; i++)
         {
@@ -667,6 +701,7 @@ public class LevelHandler : MonoBehaviour
     //ends attack by incrememting turn and stopping enemy attack
     void EndAttack()
     {
+        this.endOfRoundMessage += entities[turn].endOfTurnUpdate();
         turn++;
         enemyAttacking = false;
     }

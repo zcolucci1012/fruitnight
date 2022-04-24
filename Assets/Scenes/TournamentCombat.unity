@@ -632,6 +632,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -639,6 +641,7 @@ MonoBehaviour:
   healthBar: {fileID: 78563426}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!114 &139198399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +668,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -672,6 +677,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!114 &139198400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +785,7 @@ RectTransform:
   m_Children:
   - {fileID: 78563427}
   m_Father: {fileID: 2136767041}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1032,7 +1038,7 @@ RectTransform:
   m_LocalScale: {x: 13.482925, y: 13.482925, z: 13.482925}
   m_Children: []
   m_Father: {fileID: 2136767041}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1497,7 +1503,7 @@ RectTransform:
   - {fileID: 955726738}
   - {fileID: 1178805352}
   m_Father: {fileID: 2136767041}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2014,6 +2020,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -2021,6 +2029,7 @@ MonoBehaviour:
   healthBar: {fileID: 694264959}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!114 &642083359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,6 +2056,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -2054,6 +2065,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!114 &642083360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,13 +2173,88 @@ RectTransform:
   m_Children:
   - {fileID: 694264960}
   m_Father: {fileID: 2136767041}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 464, y: 115}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &668945323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 668945324}
+  - component: {fileID: 668945326}
+  - component: {fileID: 668945325}
+  m_Layer: 5
+  m_Name: PlayerAttackBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &668945324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668945323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3113252, y: 1.8211166, z: 1.4570106}
+  m_Children: []
+  m_Father: {fileID: 2136767041}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -208.99994, y: -117.99997}
+  m_SizeDelta: {x: 421.7969, y: 45.201}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &668945325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668945323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &668945326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668945323}
+  m_CullTransparentMesh: 1
 --- !u!1 &678680023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,6 +4544,10 @@ MonoBehaviour:
   relationshipScore: 1
   scoreObject: {fileID: 359463932}
   verbalAttacks: {fileID: 518877745}
+  verbalAvailable: 0
+  manualScore: -1
+  comboAttackUsed: 0
+  debugVerbal: 0
 --- !u!114 &1848727874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4926,6 +5017,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 668945324}
   - {fileID: 213447041}
   - {fileID: 8171296543410844451}
   - {fileID: 7947730125040154902}
@@ -5055,6 +5147,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 3
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -5062,6 +5156,7 @@ MonoBehaviour:
   healthBar: {fileID: 7947730125286102466}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!1 &7947730125040154899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,7 +5190,7 @@ RectTransform:
   m_Children:
   - {fileID: 7947730125286102467}
   m_Father: {fileID: 2136767041}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5303,6 +5398,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 1
   attack3type: 2
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -5310,6 +5407,7 @@ MonoBehaviour:
   healthBar: {fileID: 8171296543738461439}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!224 &8171296543410844451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5323,7 +5421,7 @@ RectTransform:
   m_Children:
   - {fileID: 8171296543738461440}
   m_Father: {fileID: 2136767041}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.594}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
