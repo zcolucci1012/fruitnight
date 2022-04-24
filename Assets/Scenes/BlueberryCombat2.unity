@@ -1611,15 +1611,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6066122
+      value: 1.606612
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7471905
+      value: 1.7471902
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6066121
+      value: 1.6066117
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1651,11 +1651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5.9004517
+      value: -5.9005127
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 206.51918
+      value: 206.51915
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3129,6 +3129,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369680758}
     m_Modifications:
+    - target: {fileID: 673717791861840996, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 673717791861840996, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589906190110961932, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8171296543577483348, guid: 6fa3cbb415a6b384ab8a66147a66befa, type: 3}
       propertyPath: m_Name
       value: Banana
@@ -3315,6 +3327,7 @@ GameObject:
   - component: {fileID: 1759367004}
   - component: {fileID: 1759367002}
   - component: {fileID: 1759367003}
+  - component: {fileID: 1759367006}
   m_Layer: 5
   m_Name: Dust Bunny
   m_TagString: Untagged
@@ -3331,7 +3344,7 @@ RectTransform:
   m_GameObject: {fileID: 1759367000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6779032, y: 0.67790323, z: 0.67790323}
+  m_LocalScale: {x: 0.6779032, y: 0.67790323, z: 0.6779032}
   m_Children:
   - {fileID: 513086083}
   m_Father: {fileID: 369680758}
@@ -3434,6 +3447,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 824420037}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1759367004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,7 +3469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f847f4676f4ed9c428ce68f9283f70d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16cc961846dcbe046963aefaff163c92, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3472,6 +3487,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759367000}
   m_CullTransparentMesh: 1
+--- !u!111 &1759367006
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759367000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 61d406040b8c723479697d13d6da5915, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 61d406040b8c723479697d13d6da5915, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1805530792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4799,6 +4830,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369680758}
     m_Modifications:
+    - target: {fileID: 533808740398361833, guid: 86fe46678a243f049a663eb89264f4ce, type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+    - target: {fileID: 533808740398361833, guid: 86fe46678a243f049a663eb89264f4ce, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 533808740398361833, guid: 86fe46678a243f049a663eb89264f4ce, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7947730125187051505, guid: 86fe46678a243f049a663eb89264f4ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

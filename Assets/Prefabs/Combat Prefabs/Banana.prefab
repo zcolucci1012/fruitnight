@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8171296543577483353}
   - component: {fileID: 8171296543577483354}
   - component: {fileID: 8171296543577483359}
+  - component: {fileID: 1589906190110961932}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Untagged
@@ -104,12 +105,18 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 1
   attack3type: 2
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 673717791861840999}
   healthBarObject: {fileID: 673717791861840995}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &8171296543577483359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +173,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &1589906190110961932
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171296543577483348}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 491fe7a852e0ba14b8922b8076779d2d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 491fe7a852e0ba14b8922b8076779d2d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &8171296543838119814
 PrefabInstance:
   m_ObjectHideFlags: 0

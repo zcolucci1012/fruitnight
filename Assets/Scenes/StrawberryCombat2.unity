@@ -2070,6 +2070,7 @@ GameObject:
   - component: {fileID: 1262520911}
   - component: {fileID: 1262520909}
   - component: {fileID: 1262520910}
+  - component: {fileID: 1262520914}
   m_Layer: 5
   m_Name: Jar 2
   m_TagString: Untagged
@@ -2113,6 +2114,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 660327435}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1262520910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2227,6 +2230,22 @@ RectTransform:
   m_AnchoredPosition: {x: 420, y: 93}
   m_SizeDelta: {x: 148.1591, y: 148.16}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1262520914
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262520908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1272937476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,6 +3320,7 @@ GameObject:
   - component: {fileID: 1625713357}
   - component: {fileID: 1625713356}
   - component: {fileID: 1625713359}
+  - component: {fileID: 1625713360}
   m_Layer: 5
   m_Name: Jar 1
   m_TagString: Untagged
@@ -3364,6 +3384,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 2130389621}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3458,6 +3480,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &1625713360
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625713354}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1656833230
 GameObject:
   m_ObjectHideFlags: 0

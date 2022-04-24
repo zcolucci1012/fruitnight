@@ -146,8 +146,9 @@ public class LevelHandler : MonoBehaviour
         if (!isGameOver && !pause)
         {
             //skip turn if unconcsious or frozen
-            while (turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
-            {
+            while (!enemyAttacking && turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
+            {                
+                this.endOfRoundMessage += entities[turn].endOfTurnUpdate();
                 turn++;
             }
 
@@ -204,10 +205,9 @@ public class LevelHandler : MonoBehaviour
                 ToggleAttackButtons();
             }
 
-            
-
-            descriptionText.GetComponent<Text>().text = description;
         }
+
+        descriptionText.GetComponent<Text>().text = description;
     }
 
     void LoseGame()
@@ -579,6 +579,7 @@ public class LevelHandler : MonoBehaviour
     public void SelectedTarget(Fighter target)
     {
         this.description = currentAttack.execute(new Fighter[] { target });
+        entities[turn].GetComponent<Animation>().Play();
 
         NextTurn();
     }
@@ -677,7 +678,7 @@ public class LevelHandler : MonoBehaviour
                     }
                 } while (enemy == otherEnemy);
 
-                msg = enemyUnconscious ? this.currentAttack.execute(new Fighter[] { otherEnemy }) : "ERROR";
+                msg = !enemyUnconscious ? this.currentAttack.execute(new Fighter[] { otherEnemy }) : "ERROR";
             }
             else if (this.currentAttack.type == AttackType.MultiTarget)
             {
@@ -693,7 +694,7 @@ public class LevelHandler : MonoBehaviour
         }
 
         description = msg;
-
+        entities[turn].GetComponent<Animation>().Play();
 
         Invoke("EndAttack", Mathf.Max(1.5f, description.Length / 50f));
     }

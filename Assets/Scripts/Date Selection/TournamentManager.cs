@@ -29,6 +29,9 @@ public class TournamentManager : MonoBehaviour
     private static List<Fighter> opponentPair1 = new List<Fighter>();
     private static List<Fighter> opponentPair2 = new List<Fighter>();
 
+    public AnimationClip enemyClip;
+    public AnimationClip allyClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -114,10 +117,10 @@ public class TournamentManager : MonoBehaviour
     private void SetUpOpponentPairs()
     {
         Random.InitState(System.Guid.NewGuid().GetHashCode());
-        int index = Random.Range(0, fruits.Count - 1);
+        int index = Random.Range(0, fruits.Count);
         AddFighter(fruits[index], opponentPair1);
         fruits.RemoveAt(index);
-        index = Random.Range(0, fruits.Count - 1);
+        index = Random.Range(0, fruits.Count);
         AddFighter(fruits[index], opponentPair1);
         fruits.RemoveAt(index);
         AddFighter(fruits[0], opponentPair2);
@@ -155,6 +158,7 @@ public class TournamentManager : MonoBehaviour
 
     private void ToTournament(string partner)
     {
+        UpdateAnimations(partner);
         AllyPair.Add(FighterPrefabs[0].GetComponent<Banana>());
         FighterSprites.Add(fighterSprites[0]);
         fruits.Remove(partner);
@@ -163,6 +167,42 @@ public class TournamentManager : MonoBehaviour
         OpponentPair = opponentPair1;
         tournamentStarted = true;
         SceneManager.LoadScene("TournamentFightPreview");
+    }
+    
+    private void UpdateAnimations(string partner)
+    {
+        foreach (string fruit in fruits)
+        {
+            int index = -1;
+            switch (fruit)
+            {
+                case "Strawberry":
+                    index = 1;
+                    break;
+                case "Blueberry":
+                    index = 2;
+                    break;
+                case "Lemon":
+                    index = 3;
+                    break;
+                case "Blackberry":
+                    index = 4;
+                    break;
+                case "Tomato":
+                    index = 5;
+                    break;
+            }
+            if (fruit != partner)
+            {
+                FighterPrefabs[index].GetComponent<Animation>().clip = enemyClip;
+                FighterPrefabs[index].GetComponent<Animation>().AddClip(enemyClip, "EnemyFlippedAttack");
+            }
+            else
+            {
+                FighterPrefabs[index].GetComponent<Animation>().clip = allyClip;
+                FighterPrefabs[index].GetComponent<Animation>().AddClip(enemyClip, "AllyAttack");
+            }
+        }
     }
 
     private void PickAnotherPartner()

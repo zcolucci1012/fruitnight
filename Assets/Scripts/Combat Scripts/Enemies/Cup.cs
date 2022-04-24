@@ -16,14 +16,14 @@ public class Cup : Fighter
     private void Awake()
     {
         // Heal
-        this.attack2execute = targets =>
+        this.attack1execute = targets =>
         {
             if (targets[0].currentHp == targets[0].maxHp || targets[0].unconscious)
             {
                 Debug.Log("tried to heal but didn't :D");
                 return "ERROR";
             }
-            string msg = this.name + "heals its partner.\n";
+            string msg = this.name + " heals its partner.\n";
             int healing = -targets[0].Damage(-3);
             if (healing == 0)
             {
@@ -51,8 +51,12 @@ public class Cup : Fighter
         // Cooldown
         this.attack3execute = targets =>
         {
+<<<<<<< Updated upstream
             string msg = this.name + " cools down the next turn, and then will gain +2HP of damage on all its attacks.\n";
             this.turnsFrozen = 2;
+=======
+            string msg = this.name + " cools down this turn, and then will gain +2HP of damage on all its attacks.\n";
+>>>>>>> Stashed changes
             this.dmgMod += 2;
             return msg;
         };

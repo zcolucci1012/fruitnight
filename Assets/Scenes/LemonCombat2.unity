@@ -769,6 +769,7 @@ GameObject:
   - component: {fileID: 458976456}
   - component: {fileID: 458976453}
   - component: {fileID: 458976455}
+  - component: {fileID: 458976454}
   m_Layer: 5
   m_Name: Big Fork
   m_TagString: Untagged
@@ -831,6 +832,25 @@ MonoBehaviour:
   healthBar: {fileID: 1968906609}
   healthBarObject: {fileID: 1968906610}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
+--- !u!111 &458976454
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458976451}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &458976455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3982,6 +4002,7 @@ GameObject:
   - component: {fileID: 1494673800}
   - component: {fileID: 1494673797}
   - component: {fileID: 1494673799}
+  - component: {fileID: 1494673798}
   m_Layer: 5
   m_Name: Grand Knife
   m_TagString: Untagged
@@ -4024,6 +4045,25 @@ MonoBehaviour:
   healthBar: {fileID: 1201199119}
   healthBarObject: {fileID: 1201199121}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
+--- !u!111 &1494673798
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494673796}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &1494673799
 MonoBehaviour:
   m_ObjectHideFlags: 0

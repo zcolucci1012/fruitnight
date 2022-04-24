@@ -160,24 +160,54 @@ public class ComboAttacks : MonoBehaviour
         return null;
     }
 
+
     private static AttackResult Hit(Fighter target, int dmg)
     {
         int roll = UnityEngine.Random.Range(1, 20);
-        if (target.defense < roll)
+        // print("defense: " + target.defense + ", roll: " + roll);
+        if (roll == 20 || roll == 19)
         {
-            int effectiveDamage = target.Damage(dmg);
-            string msg = target.name + " takes " + effectiveDamage + " damage";
+            int effectiveDamage = target.Damage((dmg) * 2);
+            string msg = "CRITICAL HIT!: " + "The attack deals " + effectiveDamage + " DMG to " + target.name;
             if (target.unconscious)
             {
                 msg += ", knocking them unconscious";
             }
+            // play audio
+            return new AttackResult(true, effectiveDamage, msg);
+        }
+        else if (roll == 1)
+        {
+            string msg = "Critical miss: The attack misses " + target.name;
+            // play miss sound
+            FindObjectOfType<DialogueAudio>().PlayAudio("Miss");
+            return new AttackResult(false, 0, msg);
+        }
+        else if (target.defense < roll)
+        {
+            int effectiveDamage = target.Damage(dmg);
+            string msg = "Strong hit!: " + "The attack deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            // play audio
             return new AttackResult(true, effectiveDamage, msg);
         }
         else
         {
-            return new AttackResult(false, 0, target.name + " avoids the attack");
+            int effectiveDamage = target.Damage((dmg) / 2);
+            string msg = "Weak hit: " + "The attack deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            else
+            {
+                // play audio
+            }
+            return new AttackResult(true, effectiveDamage, msg);
         }
-
     }
 
 }
