@@ -51,12 +51,7 @@ public class Cup : Fighter
         // Cooldown
         this.attack3execute = targets =>
         {
-<<<<<<< Updated upstream
-            string msg = this.name + " cools down the next turn, and then will gain +2HP of damage on all its attacks.\n";
-            this.turnsFrozen = 2;
-=======
             string msg = this.name + " cools down this turn, and then will gain +2HP of damage on all its attacks.\n";
->>>>>>> Stashed changes
             this.dmgMod += 2;
             return msg;
         };
