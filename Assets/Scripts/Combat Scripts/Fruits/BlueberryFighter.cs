@@ -5,8 +5,26 @@ using UnityEngine;
 public class BlueberryFighter : Fighter
 {
 
+    public override string Compliment() {
+        if (RelationshipScore.blueberryVerbal) {
+            // distracts them for a turn
+            this.Freeze(1);
+            return "'Hey Blueberry, you're so smart. Have you ever considered pickling pickles...'\nYou distract Blueberry with this exciting new thought, freezing them for a turn";
+        } else {
+            return ineffectiveCompliment;
+        }
+    }
+
+    public override string Insult() {
+        if (RelationshipScore.blueberryVerbal) {
+            return "'Hey Blueberry, pickles are kind of… gross…'\nBlueberry scoffs at such a thought, and tells you to read a book. It appears to have no effect on them.";
+        } else {
+            return ineffectiveInsult;
+        }
+    }
+
     private void Awake()
-    {
+    {   
         // Sugar Blast
         this.attack1execute = targets =>
         {
