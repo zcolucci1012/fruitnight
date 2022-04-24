@@ -1,0 +1,1845 @@
+{
+  "passages": [
+    {
+      "text": "Why hello, it's you again. What brings you here today?\n\n[[continue->0 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "0 options",
+          "pid": "2"
+        }
+      ],
+      "name": "0",
+      "pid": "1",
+      "position": {
+        "x": "283.5",
+        "y": "714.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "[[I just liked all these cups.->0.1]]\n[[I want to know what happened to Shakes Pear and Cucumber!->0.2]]",
+      "links": [
+        {
+          "name": "I just liked all these cups.",
+          "link": "0.1",
+          "pid": "3"
+        },
+        {
+          "name": "I want to know what happened to Shakes Pear and Cucumber!",
+          "link": "0.2",
+          "pid": "4"
+        }
+      ],
+      "name": "0 options",
+      "pid": "2",
+      "position": {
+        "x": "283.5",
+        "y": "864.2000122070312"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "The closer you look at them, the more interesting they are. Think of all the secrets they hide in their ceramic vessels...\n[[continue->0.1 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "0.1 options",
+          "pid": "5"
+        }
+      ],
+      "name": "0.1",
+      "pid": "3",
+      "position": {
+        "x": "120.5",
+        "y": "1014.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "That's certainly a way to start off a conversation. But curiosity is just natural, I suppose. Well...\n[[continue->3]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "3",
+          "pid": "9"
+        }
+      ],
+      "name": "0.2",
+      "pid": "4",
+      "position": {
+        "x": "529.5",
+        "y": "1129.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "curious"
+      ]
+    },
+    {
+      "text": "[[I think they're just cups.->0.1.1]]\n[[Yes... think of all they've seen and heard in this kitchen.->0.1.2]]",
+      "links": [
+        {
+          "name": "I think they're just cups.",
+          "link": "0.1.1",
+          "pid": "6"
+        },
+        {
+          "name": "Yes... think of all they've seen and heard in this kitchen.",
+          "link": "0.1.2",
+          "pid": "7"
+        }
+      ],
+      "name": "0.1 options",
+      "pid": "5",
+      "position": {
+        "x": "120.5",
+        "y": "1164.2000122070312"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Hmph... You know, you really have to see the world around you, not just look at it. That's what Shakes Pear always taught me.\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "8"
+        }
+      ],
+      "name": "0.1.1",
+      "pid": "6",
+      "position": {
+        "x": "45.5",
+        "y": "1314.2000122070312"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "Precisely! You know, you really have to see the world around you, not just look at it, to be a poet. That's what Shakes Pear always taught me.\n[[continue->2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2",
+          "pid": "8"
+        }
+      ],
+      "name": "0.1.2",
+      "pid": "7",
+      "position": {
+        "x": "253.5",
+        "y": "1308.2000122070312"
+      },
+      "tags": [
+        "1",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "Speaking of Shakes Pear... you mentioned them last time, and your friend Cucumber. Where are they now?\n[[continue->3]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "3",
+          "pid": "9"
+        }
+      ],
+      "name": "2",
+      "pid": "8",
+      "position": {
+        "x": "140.5",
+        "y": "1560.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "It's a bit of a long story, but I'll try to keep it short. Remember how last time, I told you about how... I...\n[[continue->4]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "4",
+          "pid": "10"
+        }
+      ],
+      "name": "3",
+      "pid": "9",
+      "position": {
+        "x": "220.5",
+        "y": "1703.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "Might not be a vegetable? I remember.\n[[continue->5]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "5",
+          "pid": "11"
+        }
+      ],
+      "name": "4",
+      "pid": "10",
+      "position": {
+        "x": "220.5",
+        "y": "1853.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Well, you see, when blueberry first mentioned that I might be a fruit, at first, I didn't think anything of it. I had my family and my friends, and it didn't seem like it would matter at all.\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "12"
+        }
+      ],
+      "name": "5",
+      "pid": "11",
+      "position": {
+        "x": "220.5",
+        "y": "2003.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "But then, Elderberry started telling us about the Great Blender, and everyone started pairing up to train for the tournament.\n[[continue->7]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "7",
+          "pid": "13"
+        }
+      ],
+      "name": "6",
+      "pid": "12",
+      "position": {
+        "x": "220.5",
+        "y": "2153.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "So, did you train with anyone?\n[[continue->8]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "8",
+          "pid": "14"
+        }
+      ],
+      "name": "7",
+      "pid": "13",
+      "position": {
+        "x": "220.5",
+        "y": "2303.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "At first, I didn't. I didn't really know the other fruits or vegetables very well. They invited me to their tournament trainings, but I didn't feel like I really belonged there with them, you know?\n[[continue->9]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9",
+          "pid": "15"
+        }
+      ],
+      "name": "8",
+      "pid": "14",
+      "position": {
+        "x": "220.5",
+        "y": "2453.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "I didn't want to impose on them at all, and everytime I tried to go to the training, I'd just hang around in the back of the fridge with all the old fruit.\n[[continue->9 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9 options",
+          "pid": "16"
+        }
+      ],
+      "name": "9",
+      "pid": "15",
+      "position": {
+        "x": "220.5",
+        "y": "2603.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "[[Yeah, after last time, it didn't seem like you were very good at fighting.->9.1]]\n[[I know, it can be intimidating...->9.2]]",
+      "links": [
+        {
+          "name": "Yeah, after last time, it didn't seem like you were very good at fighting.",
+          "link": "9.1",
+          "pid": "17"
+        },
+        {
+          "name": "I know, it can be intimidating...",
+          "link": "9.2",
+          "pid": "18"
+        }
+      ],
+      "name": "9 options",
+      "pid": "16",
+      "position": {
+        "x": "220.5",
+        "y": "2753.2000122070312"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Well, I mean, I don't think I'm that bad...\n[[continue->9.2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "9.2",
+          "pid": "18"
+        }
+      ],
+      "name": "9.1",
+      "pid": "17",
+      "position": {
+        "x": "104.5",
+        "y": "2903.2000122070312"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "I know, it can be intimidating... some of the fruit seem like they're really good at fighting.\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "19"
+        }
+      ],
+      "name": "9.2",
+      "pid": "18",
+      "position": {
+        "x": "307.5",
+        "y": "2994.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Shakes Pear felt the same way - they were a fantastic writer, but in a fight, they weren't impressive. Cucumber, on the other hand, loved combat but was in the same predicament as me.\n[[continue->11]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "11",
+          "pid": "20"
+        }
+      ],
+      "name": "10",
+      "pid": "19",
+      "position": {
+        "x": "307.5",
+        "y": "3144.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "Same predicament?\n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "21"
+        }
+      ],
+      "name": "11",
+      "pid": "20",
+      "position": {
+        "x": "307.5",
+        "y": "3294.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "As it turns out... Cucumber wasn't sure if they were a fruit or a vegetable either! So the three of us became a trio of sorts.\n[[continue->13]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "13",
+          "pid": "22"
+        }
+      ],
+      "name": "12",
+      "pid": "21",
+      "position": {
+        "x": "307.5",
+        "y": "3444.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "Cucumber got Shakes Pear and me excited to fight for the first time. We all started training every day, and then afterwards Shakes Pear would share whatever new play they were writing.\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "23"
+        }
+      ],
+      "name": "13",
+      "pid": "22",
+      "position": {
+        "x": "307.5",
+        "y": "3594.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "But then, when it came time for the tournament... we had to pick teams and... well, you can guess what happened next. I'm still here, and they aren't.\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "24"
+        }
+      ],
+      "name": "14",
+      "pid": "23",
+      "position": {
+        "x": "307.5",
+        "y": "3744.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "So... they paired up without you?\n[[continue->16]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "16",
+          "pid": "25"
+        }
+      ],
+      "name": "15",
+      "pid": "24",
+      "position": {
+        "x": "307.5",
+        "y": "3894.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I mean, someone had to stay behind, and luck has never been on my side.\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "26"
+        }
+      ],
+      "name": "16",
+      "pid": "25",
+      "position": {
+        "x": "307.5",
+        "y": "4044.2000122070312"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "I was so proud of them when they made it to the final round of the tournament. They'd always wanted to be able to go in the Great Blender, you know?\n[[continue->18]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "18",
+          "pid": "27"
+        }
+      ],
+      "name": "17",
+      "pid": "26",
+      "position": {
+        "x": "307.5",
+        "y": "4194.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "All the old fruit, rotting in the back of the fridge... we didn't want to end up like them.\n[[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "28"
+        }
+      ],
+      "name": "18",
+      "pid": "27",
+      "position": {
+        "x": "307.5",
+        "y": "4344.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "So, now it's just me.\n[[continue->20]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "29"
+        }
+      ],
+      "name": "19",
+      "pid": "28",
+      "position": {
+        "x": "307.5",
+        "y": "4494.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "Well, you have me now too!\n[[continue->21]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "30"
+        }
+      ],
+      "name": "20",
+      "pid": "29",
+      "position": {
+        "x": "307.5",
+        "y": "4644.200012207031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I suppose that's true! Thanks for hanging out with me again Banana.\n[[continue->21 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21 options",
+          "pid": "31"
+        }
+      ],
+      "name": "21",
+      "pid": "30",
+      "position": {
+        "x": "307.5",
+        "y": "4793.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "blush"
+      ]
+    },
+    {
+      "text": "[[I love spending time with you.->21.1]]\n[[I didn't really have anything better to do.->21.2]]",
+      "links": [
+        {
+          "name": "I love spending time with you.",
+          "link": "21.1",
+          "pid": "32"
+        },
+        {
+          "name": "I didn't really have anything better to do.",
+          "link": "21.2",
+          "pid": "33"
+        }
+      ],
+      "name": "21 options",
+      "pid": "31",
+      "position": {
+        "x": "307.5",
+        "y": "4943.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "You know, you're not so terrible yourself.\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "34"
+        }
+      ],
+      "name": "21.1",
+      "pid": "32",
+      "position": {
+        "x": "232.5",
+        "y": "5093.200012207031"
+      },
+      "tags": [
+        "1",
+        "Tomato",
+        "blush"
+      ]
+    },
+    {
+      "text": "Oh...\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "34"
+        }
+      ],
+      "name": "21.2",
+      "pid": "33",
+      "position": {
+        "x": "382.5",
+        "y": "5093.200012207031"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "Anyways, after all that, I've been meaning to fight in the next tournament and follow in their footsteps, but I never had anyone else to fight with. And, I wanted to finish up my play that I've been working on.\n[[A play? Have you finished it yet?->23]]",
+      "links": [
+        {
+          "name": "A play? Have you finished it yet?",
+          "link": "23",
+          "pid": "35"
+        }
+      ],
+      "name": "22",
+      "pid": "34",
+      "position": {
+        "x": "311.5",
+        "y": "5328.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "A play? Have you finished it yet?\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "36"
+        }
+      ],
+      "name": "23",
+      "pid": "35",
+      "position": {
+        "x": "308.5",
+        "y": "5508.200012207031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Actually, I was just finishing it the first time we met, and I think it's just about done now.\n[[continue->24 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24 options",
+          "pid": "37"
+        }
+      ],
+      "name": "24",
+      "pid": "36",
+      "position": {
+        "x": "308.5",
+        "y": "5658.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "[[I want to see the play! Can you show me some of it?->24.1]]\n[[Good job, I guess? Anyways, did you want train some more for the tournament?->24.1.2]]",
+      "links": [
+        {
+          "name": "I want to see the play! Can you show me some of it?",
+          "link": "24.1",
+          "pid": "38"
+        },
+        {
+          "name": "Good job, I guess? Anyways, did you want train some more for the tournament?",
+          "link": "24.1.2",
+          "pid": "41"
+        }
+      ],
+      "name": "24 options",
+      "pid": "37",
+      "position": {
+        "x": "400.5",
+        "y": "5804.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "You... really want to hear what I've been working on?\n\n[[continue->24.1 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24.1 options",
+          "pid": "39"
+        }
+      ],
+      "name": "24.1",
+      "pid": "38",
+      "position": {
+        "x": "172.5",
+        "y": "5959.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "[[Of course! Why wouldn't I?->24.1.1]]\n[[No, I was just joking. Let's fight!->51]]",
+      "links": [
+        {
+          "name": "Of course! Why wouldn't I?",
+          "link": "24.1.1",
+          "pid": "40"
+        },
+        {
+          "name": "No, I was just joking. Let's fight!",
+          "link": "51",
+          "pid": "85"
+        }
+      ],
+      "name": "24.1 options",
+      "pid": "39",
+      "position": {
+        "x": "172.5",
+        "y": "6109.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Well, it's just... sometimes, the other fruits or vegetables don't particularly enjoy hearing my work. They say it's just not the same as Shakes Pear's.\n[[continue->24.1.1 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24.1.1 options",
+          "pid": "42"
+        }
+      ],
+      "name": "24.1.1",
+      "pid": "40",
+      "position": {
+        "x": "97.5",
+        "y": "6259.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "meh"
+      ]
+    },
+    {
+      "text": "You've definitely inspired me to start fighting again. But... before we train, did you want to see some of my play?\n\n[[Yes, absolutely!->25]]\n[[Nah, not really. Let's fight.->51]]",
+      "links": [
+        {
+          "name": "Yes, absolutely!",
+          "link": "25",
+          "pid": "45"
+        },
+        {
+          "name": "Nah, not really. Let's fight.",
+          "link": "51",
+          "pid": "85"
+        }
+      ],
+      "name": "24.1.2",
+      "pid": "41",
+      "position": {
+        "x": "702.5",
+        "y": "5982.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "[[It's probably not as good as Shakes Pear's, but I'll still listen to it.->24.1.1.1]]\n[[I'm sure that's not true! Just because you're not Shakes Pear, doesn't mean your work isn't good!->24.1.1.2]]",
+      "links": [
+        {
+          "name": "It's probably not as good as Shakes Pear's, but I'll still listen to it.",
+          "link": "24.1.1.1",
+          "pid": "43"
+        },
+        {
+          "name": "I'm sure that's not true! Just because you're not Shakes Pear, doesn't mean your work isn't good!",
+          "link": "24.1.1.2",
+          "pid": "44"
+        }
+      ],
+      "name": "24.1.1 options",
+      "pid": "42",
+      "position": {
+        "x": "131.5",
+        "y": "6381.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Thanks Banana, that means a lot... I always feel like I have to live up to Shakes Pear, but I guess just being myself is enough.\n[[continue->25]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "25",
+          "pid": "45"
+        }
+      ],
+      "name": "24.1.1.1",
+      "pid": "43",
+      "position": {
+        "x": "22.5",
+        "y": "6559.200012207031"
+      },
+      "tags": [
+        "2",
+        "Tomato",
+        "blush"
+      ]
+    },
+    {
+      "text": "Oh... Are you sure you even want to hear it then?\n[[continue->24.1.1.2 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24.1.1.2 options",
+          "pid": "46"
+        }
+      ],
+      "name": "24.1.1.2",
+      "pid": "44",
+      "position": {
+        "x": "356.5",
+        "y": "6506.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "Here goes. The newest play I've been working on recently... Tomateo and Juliet.\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "47"
+        }
+      ],
+      "name": "25",
+      "pid": "45",
+      "position": {
+        "x": "147.5",
+        "y": "6795.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Yeah, I still want to listen to it.->25]]\n[[You're right, I'm in a bit of a rush. Let's just get to training for the tournament instead->51]]",
+      "links": [
+        {
+          "name": "Yeah, I still want to listen to it.",
+          "link": "25",
+          "pid": "45"
+        },
+        {
+          "name": "You're right, I'm in a bit of a rush. Let's just get to training for the tournament instead",
+          "link": "51",
+          "pid": "85"
+        }
+      ],
+      "name": "24.1.1.2 options",
+      "pid": "46",
+      "position": {
+        "x": "402.5",
+        "y": "6693.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "So, basically, Tomato-eo is a vegetable from the fridge and Juliet is a fruit from the table, but their paths cross one day in the kitchen. They fall in love!\n[[continue->26 options]]\n$",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26 options",
+          "pid": "48"
+        }
+      ],
+      "name": "26",
+      "pid": "47",
+      "position": {
+        "x": "107.5",
+        "y": "6963.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "[[But... I thought tomatoes weren't vegetables...->26.1]]\n[[Ew, sounds boring. I want action, not romance!->26.2]]\n[[Aw, how sweet!->26.3]]",
+      "links": [
+        {
+          "name": "But... I thought tomatoes weren't vegetables...",
+          "link": "26.1",
+          "pid": "49"
+        },
+        {
+          "name": "Ew, sounds boring. I want action, not romance!",
+          "link": "26.2",
+          "pid": "50"
+        },
+        {
+          "name": "Aw, how sweet!",
+          "link": "26.3",
+          "pid": "51"
+        }
+      ],
+      "name": "26 options",
+      "pid": "48",
+      "position": {
+        "x": "107.5",
+        "y": "7113.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Are you trying to be funny? Anyways...\n[[continue->26.2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26.2",
+          "pid": "50"
+        }
+      ],
+      "name": "26.1",
+      "pid": "49",
+      "position": {
+        "x": "0",
+        "y": "7263.200012207031"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "mad"
+      ]
+    },
+    {
+      "text": "But... their parents would never want them to be together! It's shocking, I know.\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "52"
+        }
+      ],
+      "name": "26.2",
+      "pid": "50",
+      "position": {
+        "x": "157.5",
+        "y": "7266.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "Maybe you'll like it if you listen to more. Anyways...\n[[continue->26.2]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26.2",
+          "pid": "50"
+        }
+      ],
+      "name": "26.3",
+      "pid": "51",
+      "position": {
+        "x": "304.5",
+        "y": "7253.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "curious"
+      ]
+    },
+    {
+      "text": "So, Juliet and Tomateo see each other in secret. This is what Juliet says:\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "53"
+        }
+      ],
+      "name": "27",
+      "pid": "52",
+      "position": {
+        "x": "157.5",
+        "y": "7416.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "ahem... O Tomateo, Tomateo! Wherefore art thou, Tomateo? What's in a name? That which we call a fruit by any other name would be as seedy.\n[[continue->29]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29",
+          "pid": "54"
+        }
+      ],
+      "name": "28",
+      "pid": "53",
+      "position": {
+        "x": "157.5",
+        "y": "7566.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "And then: tragedy!\n[[continue->29 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29 options",
+          "pid": "55"
+        }
+      ],
+      "name": "29",
+      "pid": "54",
+      "position": {
+        "x": "157.5",
+        "y": "7716.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "[[Gasp!->29.1]]\n[[Yawn...->29.2]]",
+      "links": [
+        {
+          "name": "Gasp!",
+          "link": "29.1",
+          "pid": "56"
+        },
+        {
+          "name": "Yawn...",
+          "link": "29.2",
+          "pid": "57"
+        }
+      ],
+      "name": "29 options",
+      "pid": "55",
+      "position": {
+        "x": "157.5",
+        "y": "7866.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "They try to sneak away together, but to do that, Juliet has to fake being rotten and dead.\n[[continue->30]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "30",
+          "pid": "58"
+        }
+      ],
+      "name": "29.1",
+      "pid": "56",
+      "position": {
+        "x": "82.5",
+        "y": "8016.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "Hmph...\n[[continue->29.1]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29.1",
+          "pid": "56"
+        }
+      ],
+      "name": "29.2",
+      "pid": "57",
+      "position": {
+        "x": "232.5",
+        "y": "8016.200012207031"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "But poor Tomateo doesn't know that, and when they see Juliet... well, they think Juliet is actually rotten.\n[[continue->31]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "31",
+          "pid": "59"
+        }
+      ],
+      "name": "30",
+      "pid": "58",
+      "position": {
+        "x": "184.5",
+        "y": "8207.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "Heartbreak! Young love, tossed aside by the fates! So, Tomateo goes and buys poison, and utters their final words...\n[[continue->32]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "32",
+          "pid": "60"
+        }
+      ],
+      "name": "31",
+      "pid": "59",
+      "position": {
+        "x": "184.5",
+        "y": "8357.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "O true kitchenary! Thy drugs are quick. Thus, with a kiss, I rot.\n[[continue->32 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "32 options",
+          "pid": "61"
+        }
+      ],
+      "name": "32",
+      "pid": "60",
+      "position": {
+        "x": "184.5",
+        "y": "8507.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "shock"
+      ]
+    },
+    {
+      "text": "[[But then what happens to Juliet?!->32.1]]\n[[Let me guess...->32.2]]",
+      "links": [
+        {
+          "name": "But then what happens to Juliet?!",
+          "link": "32.1",
+          "pid": "62"
+        },
+        {
+          "name": "Let me guess...",
+          "link": "32.2",
+          "pid": "63"
+        }
+      ],
+      "name": "32 options",
+      "pid": "61",
+      "position": {
+        "x": "184.5",
+        "y": "8657.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Juliet finds Tomateo, horrified by what has happened, and takes a dagger... and stabs herself, overcome by grief and tormented by the idea of living in a world without Tomateo.\n[[continue->34]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "34",
+          "pid": "65"
+        }
+      ],
+      "name": "32.1",
+      "pid": "62",
+      "position": {
+        "x": "109.5",
+        "y": "8807.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "Juliet finds Tomateo, horrified by what has happened, and takes a dagger and stabs herself, overcome by grief and tormented by the idea of living in a world without Tomateo?\n[[continue->33]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "33",
+          "pid": "64"
+        }
+      ],
+      "name": "32.2",
+      "pid": "63",
+      "position": {
+        "x": "259.5",
+        "y": "8807.200012207031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "How... What... How did you know that? But, yes, that's actually exactly what happens...\n[[continue->34]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "34",
+          "pid": "65"
+        }
+      ],
+      "name": "33",
+      "pid": "64",
+      "position": {
+        "x": "336.5",
+        "y": "9009.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "curious"
+      ]
+    },
+    {
+      "text": "How tragic!\n[[continue->35]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "35",
+          "pid": "66"
+        }
+      ],
+      "name": "34",
+      "pid": "65",
+      "position": {
+        "x": "177.5",
+        "y": "9097.200012207031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Shakes Pear always told me that tragedy is the greatest form of entertainment.\n[[continue->36]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "36",
+          "pid": "67"
+        }
+      ],
+      "name": "35",
+      "pid": "66",
+      "position": {
+        "x": "218.5",
+        "y": "9262.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "So... what did you think?\n\n[[continue->36 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "36 options",
+          "pid": "68"
+        }
+      ],
+      "name": "36",
+      "pid": "67",
+      "position": {
+        "x": "218.5",
+        "y": "9412.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "[[That was amazing!->36.1]]\n[[That was alright.->36.2]]",
+      "links": [
+        {
+          "name": "That was amazing!",
+          "link": "36.1",
+          "pid": "69"
+        },
+        {
+          "name": "That was alright.",
+          "link": "36.2",
+          "pid": "70"
+        }
+      ],
+      "name": "36 options",
+      "pid": "68",
+      "position": {
+        "x": "218.5",
+        "y": "9562.200012207031"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "That's so kind of you... I've never really known who I am and what I'm supposed to do here in the kitchen. Am I fruit? A vegetable? Something else entirely?\n[[continue->37]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "37",
+          "pid": "71"
+        }
+      ],
+      "name": "36.1",
+      "pid": "69",
+      "position": {
+        "x": "143.5",
+        "y": "9712.200012207031"
+      },
+      "tags": [
+        "2",
+        "Tomato",
+        "blush"
+      ]
+    },
+    {
+      "text": "Sigh... I really thought this could be my big break into the writing world. But maybe you're right. I just wasn't meant to be a writer.\n[[continue->38]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "38",
+          "pid": "72"
+        }
+      ],
+      "name": "36.2",
+      "pid": "70",
+      "position": {
+        "x": "293.5",
+        "y": "9712.200012207031"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "sad"
+      ]
+    },
+    {
+      "text": "But, when Shakes Pear started teaching me how to write, I could just tell that's what I was meant to do.\n[[continue->38]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "38",
+          "pid": "72"
+        }
+      ],
+      "name": "37",
+      "pid": "71",
+      "position": {
+        "x": "143.5",
+        "y": "9862.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "blush"
+      ]
+    },
+    {
+      "text": "You're one of the first to actually see some of the play.\n[[continue->39]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "39",
+          "pid": "73"
+        }
+      ],
+      "name": "38",
+      "pid": "72",
+      "position": {
+        "x": "306.5",
+        "y": "9985.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "Who else has seen it so far?\n[[continue->40]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "40",
+          "pid": "74"
+        }
+      ],
+      "name": "39",
+      "pid": "73",
+      "position": {
+        "x": "306.5",
+        "y": "10135.200012207031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "The cups here have actually been helping me with the play. They're the only audience I've performed it to, yet.\n[[continue->41]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "41",
+          "pid": "75"
+        }
+      ],
+      "name": "40",
+      "pid": "74",
+      "position": {
+        "x": "306.5",
+        "y": "10285.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "base"
+      ]
+    },
+    {
+      "text": "They're such a great writer!\n[[continue->42]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "42",
+          "pid": "76"
+        }
+      ],
+      "name": "41",
+      "pid": "75",
+      "position": {
+        "x": "306.5",
+        "y": "10435.200012207031"
+      },
+      "tags": [
+        "0",
+        "Cup-1",
+        "base"
+      ]
+    },
+    {
+      "text": "Ingenious!\n[[continue->43]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "43",
+          "pid": "77"
+        }
+      ],
+      "name": "42",
+      "pid": "76",
+      "position": {
+        "x": "306.5",
+        "y": "10585.200012207031"
+      },
+      "tags": [
+        "0",
+        "Cup-2",
+        "base"
+      ]
+    },
+    {
+      "text": "Extraordinaire!\n[[continue->44]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "44",
+          "pid": "78"
+        }
+      ],
+      "name": "43",
+      "pid": "77",
+      "position": {
+        "x": "306.5",
+        "y": "10736.200012207031"
+      },
+      "tags": [
+        "0",
+        "Cup-1",
+        "base"
+      ]
+    },
+    {
+      "text": "Aw, guys, stop...\n[[continue->45]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "45",
+          "pid": "79"
+        }
+      ],
+      "name": "44",
+      "pid": "78",
+      "position": {
+        "x": "306.5",
+        "y": "10886.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "blush"
+      ]
+    },
+    {
+      "text": "Did you know - the cups are poets too!\n[[continue->46]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "46",
+          "pid": "80"
+        }
+      ],
+      "name": "45",
+      "pid": "79",
+      "position": {
+        "x": "306.5",
+        "y": "11036.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "Really?\n[[continue->47]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "47",
+          "pid": "81"
+        }
+      ],
+      "name": "46",
+      "pid": "80",
+      "position": {
+        "x": "306.5",
+        "y": "11186.200012207031"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Tomato has taught us so much!\n[[continue->48]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "48",
+          "pid": "82"
+        }
+      ],
+      "name": "47",
+      "pid": "81",
+      "position": {
+        "x": "306.5",
+        "y": "11336.200012207031"
+      },
+      "tags": [
+        "0",
+        "Cup-2",
+        "base"
+      ]
+    },
+    {
+      "text": "So very much!\n[[continue->49]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "49",
+          "pid": "83"
+        }
+      ],
+      "name": "48",
+      "pid": "82",
+      "position": {
+        "x": "306.5",
+        "y": "11486.200012207031"
+      },
+      "tags": [
+        "0",
+        "Cup-1",
+        "base"
+      ]
+    },
+    {
+      "text": "Hey guys.. do you think you could help me and Banana out here? We need to train for the tournament, and could use some partners...\n[[continue->50]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "50",
+          "pid": "84"
+        }
+      ],
+      "name": "49",
+      "pid": "83",
+      "position": {
+        "x": "306.5",
+        "y": "11636.200012207031"
+      },
+      "tags": [
+        "0",
+        "Tomato",
+        "smile"
+      ]
+    },
+    {
+      "text": "Absolutely! Let's go!",
+      "name": "50",
+      "pid": "84",
+      "position": {
+        "x": "306.5",
+        "y": "11786.200012207031"
+      },
+      "tags": [
+        "0",
+        "Cup-1",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh, alright then. Let's see if we can find someone to train with.\n[[continue->40]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "40",
+          "pid": "74"
+        }
+      ],
+      "name": "51",
+      "pid": "85",
+      "position": {
+        "x": "1008",
+        "y": "6524.20068359375"
+      },
+      "tags": [
+        "-1",
+        "Tomato",
+        "sad"
+      ]
+    }
+  ],
+  "name": "Tomato Date 2",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.16",
+  "ifid": "65FB5BB4-6593-49BB-BB3C-B64AF52AED8F"
+}

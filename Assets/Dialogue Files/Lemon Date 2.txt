@@ -416,7 +416,7 @@
       ]
     },
     {
-      "text": "Lime would want you to be happy first and foremost, not vengeful. \n\n[[continue->21]]\n$",
+      "text": "Lime would want you to be happy first and foremost, not vengeful. \n\n[[continue->21]]\n",
       "links": [
         {
           "name": "continue",
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "text": "Huh, now that you mention it, that thought never quite crossed my mind. Maybe I should change my ways sooner rather than later.\n[[continue->24]]",
+      "text": "Huh, now that you mention it, that thought never quite crossed my mind. Maybe I should change my ways sooner rather than later.\n[[continue->24]]$",
       "links": [
         {
           "name": "continue",

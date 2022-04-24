@@ -790,7 +790,7 @@ PrefabInstance:
     - target: {fileID: 4013754365720165603, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: dialoguePath
       value: 
-      objectReference: {fileID: 4900000, guid: 30a81cd0451d0e74ea2489bb33f8fb73, type: 3}
+      objectReference: {fileID: 4900000, guid: c4b63cbd18dcdf8489070f3116ab48f7, type: 3}
     - target: {fileID: 4633435680733152107, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: image
       value: 
@@ -893,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 8794711590132858001}
     - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: emotions.Array.size
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: emotions.Array.data[0]
@@ -931,6 +931,14 @@ PrefabInstance:
       propertyPath: emotions.Array.data[8]
       value: 
       objectReference: {fileID: 21300000, guid: ae27248f30ec68e4aa90abcacd865755, type: 3}
+    - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+      propertyPath: emotions.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 984c08f5db68748428c7d841da457be6, type: 3}
+    - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+      propertyPath: emotions.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: e6721d21779912f4182a1f124d01f3fe, type: 3}
     - target: {fileID: 6760429210723653063, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
