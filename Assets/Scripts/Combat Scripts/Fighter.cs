@@ -61,7 +61,6 @@ public abstract class Fighter : MonoBehaviour
 
     public HealthBar healthBar = null;
     public GameObject healthBarObject;
-    public bool canHeal;
 
     public int healingMod = 1;
 
@@ -111,6 +110,17 @@ public abstract class Fighter : MonoBehaviour
     {
         Debug.Log(name);
         int roll = UnityEngine.Random.Range(1, 20);
+        if (turnsStrongHit > 0) {
+            int effectiveDamage = target.Damage(dmg + dmgMod);
+            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
+            if (target.unconscious)
+            {
+                msg += ", knocking them unconscious";
+            }
+            // play audio
+            FindObjectOfType<DialogueAudio>().PlayAudio(name);
+            return new AttackResult(true, effectiveDamage, msg);
+        }
         // print("defense: " + target.defense + ", roll: " + roll);
         if (roll == 20 || roll == 19)
         {
