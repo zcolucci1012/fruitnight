@@ -7,6 +7,10 @@ public class SaveData : MonoBehaviour
     public float saveTime = 10;
     private float saveTimer = 0;
 
+    public Texture2D cursorTexture;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+
     private void Awake()
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Save Data");
@@ -15,6 +19,7 @@ public class SaveData : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         DontDestroyOnLoad(gameObject);
     }
 
