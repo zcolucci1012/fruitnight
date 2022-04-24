@@ -38,6 +38,7 @@ public class BlueberryFighter : Fighter
             return msg;
         };
 
+        // 
         this.attack2execute = targets =>
         {
             string msg = "";

@@ -38,7 +38,7 @@ public class Fork : Fighter
             }
             else
             {
-                msg += "It healed its partner " + healing + " HP";
+                msg += "It healed its partner for " + healing + " HP";
             }
             return msg;
         };

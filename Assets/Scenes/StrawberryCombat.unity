@@ -1302,7 +1302,7 @@ MonoBehaviour:
   scoreObject: {fileID: 1124394018}
   verbalAttacks: {fileID: 1683194490}
   verbalAvailable: 0
-  manualScore: -1
+  manualScore: 10
   comboAttackUsed: 0
   debugVerbal: 0
 --- !u!114 &971594286
