@@ -43,7 +43,7 @@ public class BlueberryFighter : Fighter
             string msg = "";
             foreach (Fighter target in targets) {
                 if (target is BlueberryFighter) {
-                    target.Defense(3, 2);
+                    target.Defense(3, 3);
                     msg += "Blueberry raises their own defense by 3 pts for 2 turns. \n";
                 } else {
                     target.Defense(2, 2);
