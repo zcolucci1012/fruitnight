@@ -3458,6 +3458,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 569631222}
   healthBarObject: {fileID: 824420037}
   canHeal: 0
@@ -3481,7 +3482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4f8fd455cddbc64c844a8f1959d40db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 869abf05d11f30548b2efa03a4e96e32, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3528,6 +3529,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
@@ -3601,6 +3603,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 1526442307}
   healthBarObject: {fileID: 1172594521}
   canHeal: 0
@@ -3633,6 +3636,7 @@ MonoBehaviour:
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
@@ -3712,7 +3716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4f8fd455cddbc64c844a8f1959d40db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 869abf05d11f30548b2efa03a4e96e32, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

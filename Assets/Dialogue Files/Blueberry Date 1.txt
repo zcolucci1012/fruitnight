@@ -27,7 +27,7 @@
         {
           "name": "continue",
           "link": "1 options",
-          "pid": "34"
+          "pid": "33"
         }
       ],
       "name": "1",
@@ -43,12 +43,12 @@
       ]
     },
     {
-      "text": "Oh, my bad. You're new around here so you don't quite know. You see, in the Kitchen, there's some sort of tradition around this blender. \n\n[[continue->3]]",
+      "text": "Oh, my bad. You're new around here, so you don't quite know. Elderberry's tournament tests the strength of each pairing within the game.\n\n[[continue->2.5]]",
       "links": [
         {
           "name": "continue",
-          "link": "3",
-          "pid": "4"
+          "link": "2.5",
+          "pid": "36"
         }
       ],
       "name": "2",
@@ -64,37 +64,16 @@
       ]
     },
     {
-      "text": "Only one pair of fruits may be brought to the blender every other week. Something about appeasing some being from up above. \n\n[[continue->6]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "6",
-          "pid": "7"
-        }
-      ],
-      "name": "3",
-      "pid": "4",
-      "position": {
-        "x": "420",
-        "y": "820"
-      },
-      "tags": [
-        "0",
-        "Blueberry",
-        "book"
-      ]
-    },
-    {
       "text": "Somewhat. There was this large object once that was filled to the brim with these light white sheets. And on the sheets were some interesting scribbles!\n\n[[continue->5]]",
       "links": [
         {
           "name": "continue",
           "link": "5",
-          "pid": "6"
+          "pid": "5"
         }
       ],
       "name": "4",
-      "pid": "5",
+      "pid": "4",
       "position": {
         "x": "908",
         "y": "619"
@@ -106,19 +85,19 @@
       ]
     },
     {
-      "text": "After a good 3 days, I figured out that this book had a list of all sorts of fruits and something referring to their \"real names\". \n\n[[continue->6]]",
+      "text": "After a good 3 days, I figured out that this book had a list of all sorts of fruits and something referring to their \"real names\". \n\n[[continue->5 options]]",
       "links": [
         {
           "name": "continue",
-          "link": "6",
-          "pid": "7"
+          "link": "5 options",
+          "pid": "43"
         }
       ],
       "name": "5",
-      "pid": "6",
+      "pid": "5",
       "position": {
-        "x": "912",
-        "y": "827"
+        "x": "1062",
+        "y": "750"
       },
       "tags": [
         "0",
@@ -132,11 +111,11 @@
         {
           "name": "continue",
           "link": "7",
-          "pid": "8"
+          "pid": "7"
         }
       ],
       "name": "6",
-      "pid": "7",
+      "pid": "6",
       "position": {
         "x": "681",
         "y": "1004"
@@ -153,11 +132,11 @@
         {
           "name": "continue",
           "link": "8",
-          "pid": "9"
+          "pid": "8"
         }
       ],
       "name": "7",
-      "pid": "8",
+      "pid": "7",
       "position": {
         "x": "681",
         "y": "1154"
@@ -174,11 +153,11 @@
         {
           "name": "continue",
           "link": "8 options",
-          "pid": "35"
+          "pid": "34"
         }
       ],
       "name": "8",
-      "pid": "9",
+      "pid": "8",
       "position": {
         "x": "681",
         "y": "1304"
@@ -195,14 +174,14 @@
         {
           "name": "continue",
           "link": "10",
-          "pid": "11"
+          "pid": "10"
         }
       ],
       "name": "9",
-      "pid": "10",
+      "pid": "9",
       "position": {
-        "x": "457",
-        "y": "1457"
+        "x": "546",
+        "y": "1456"
       },
       "tags": [
         "2",
@@ -211,19 +190,19 @@
       ]
     },
     {
-      "text": "I suppose that does make a lot of sense since this is a sacred place. I'm not sure how much we can explore without getting in trouble.\n\n[[continue->11]]",
+      "text": "I suppose that does make a lot of sense since this is a sacred place. I'm not sure how much we can explore without getting in trouble.\n\n[[continue->10 options]]",
       "links": [
         {
           "name": "continue",
-          "link": "11",
-          "pid": "12"
+          "link": "10 options",
+          "pid": "48"
         }
       ],
       "name": "10",
-      "pid": "11",
+      "pid": "10",
       "position": {
-        "x": "457",
-        "y": "1607"
+        "x": "546",
+        "y": "1606"
       },
       "tags": [
         "0",
@@ -237,14 +216,14 @@
         {
           "name": "continue",
           "link": "14",
-          "pid": "15"
+          "pid": "14"
         }
       ],
       "name": "11",
-      "pid": "12",
+      "pid": "11",
       "position": {
-        "x": "455",
-        "y": "1777"
+        "x": "454",
+        "y": "2185"
       },
       "tags": [
         "0",
@@ -253,19 +232,19 @@
       ]
     },
     {
-      "text": "You're right. This is a sacred place. I'd expect there to be things with possibly mystical powers here. \n\n[[continue->13]]",
+      "text": "You're right. With a relic so sacred and grand, I'd expect there to be things with powers around here. Maybe even some magical or mystical abilities.\n\n[[continue->13]]",
       "links": [
         {
           "name": "continue",
           "link": "13",
-          "pid": "14"
+          "pid": "13"
         }
       ],
       "name": "12",
-      "pid": "13",
+      "pid": "12",
       "position": {
-        "x": "900",
-        "y": "1454"
+        "x": "926",
+        "y": "1458"
       },
       "tags": [
         "1",
@@ -274,16 +253,16 @@
       ]
     },
     {
-      "text": "I mean, just look at all of this interesting technology. There are even some shining silver things inside of the blender. \n\n[[continue->14]]",
+      "text": "I mean, just look at all of this interesting technology. There are even some shining silver things inside the blender. I bet they're what send you to beyond.\n\n[[continue->31]]",
       "links": [
         {
           "name": "continue",
-          "link": "14",
-          "pid": "15"
+          "link": "31",
+          "pid": "51"
         }
       ],
       "name": "13",
-      "pid": "14",
+      "pid": "13",
       "position": {
         "x": "900",
         "y": "1604"
@@ -295,19 +274,19 @@
       ]
     },
     {
-      "text": "Now that I'm looking at this thing up close after understanding this language, I think there are some interesting pieces. \n\n[[continue->15]]",
+      "text": "Now that I'm looking at this thing up close after understanding this language, I think there are some interesting pieces and relics.\n\n[[continue->15]]",
       "links": [
         {
           "name": "continue",
           "link": "15",
-          "pid": "16"
+          "pid": "15"
         }
       ],
       "name": "14",
-      "pid": "15",
+      "pid": "14",
       "position": {
-        "x": "689",
-        "y": "2001"
+        "x": "695",
+        "y": "2076"
       },
       "tags": [
         "0",
@@ -321,14 +300,14 @@
         {
           "name": "continue",
           "link": "16",
-          "pid": "17"
+          "pid": "16"
         }
       ],
       "name": "15",
-      "pid": "16",
+      "pid": "15",
       "position": {
-        "x": "684",
-        "y": "2189"
+        "x": "690",
+        "y": "2264"
       },
       "tags": [
         "0",
@@ -342,11 +321,11 @@
         {
           "name": "continue",
           "link": "16 options",
-          "pid": "36"
+          "pid": "35"
         }
       ],
       "name": "16",
-      "pid": "17",
+      "pid": "16",
       "position": {
         "x": "680",
         "y": "2381"
@@ -363,11 +342,11 @@
         {
           "name": "continue",
           "link": "18",
-          "pid": "19"
+          "pid": "18"
         }
       ],
       "name": "17",
-      "pid": "18",
+      "pid": "17",
       "position": {
         "x": "443",
         "y": "2533"
@@ -379,16 +358,16 @@
       ]
     },
     {
-      "text": "I know you said not to do it but I'm really tempted.\n\n[[continue->20]]",
+      "text": "I know you said not to do it but I'm really tempted. I'm sure a little practice of the scientific wouldn't hurt!\n\n[[continue->20]]",
       "links": [
         {
           "name": "continue",
           "link": "20",
-          "pid": "21"
+          "pid": "20"
         }
       ],
       "name": "18",
-      "pid": "19",
+      "pid": "18",
       "position": {
         "x": "443",
         "y": "2683"
@@ -405,11 +384,11 @@
         {
           "name": "continue",
           "link": "20",
-          "pid": "21"
+          "pid": "20"
         }
       ],
       "name": "19",
-      "pid": "20",
+      "pid": "19",
       "position": {
         "x": "911",
         "y": "2540"
@@ -426,11 +405,11 @@
         {
           "name": "continue",
           "link": "21",
-          "pid": "22"
+          "pid": "21"
         }
       ],
       "name": "20",
-      "pid": "21",
+      "pid": "20",
       "position": {
         "x": "707",
         "y": "2882"
@@ -442,16 +421,16 @@
       ]
     },
     {
-      "text": "Oh no, it's the blender defenders! I thought they were on a break or something!\n\n[[continue->22]]",
+      "text": "Oh no, it's the blender defenders! I thought they were on break!\n\n[[continue->22]]",
       "links": [
         {
           "name": "continue",
           "link": "22",
-          "pid": "23"
+          "pid": "22"
         }
       ],
       "name": "21",
-      "pid": "22",
+      "pid": "21",
       "position": {
         "x": "707",
         "y": "3032"
@@ -468,11 +447,11 @@
         {
           "name": "continue",
           "link": "23",
-          "pid": "24"
+          "pid": "23"
         }
       ],
       "name": "22",
-      "pid": "23",
+      "pid": "22",
       "position": {
         "x": "707",
         "y": "3182"
@@ -489,11 +468,11 @@
         {
           "name": "continue",
           "link": "24",
-          "pid": "25"
+          "pid": "24"
         }
       ],
       "name": "23",
-      "pid": "24",
+      "pid": "23",
       "position": {
         "x": "707",
         "y": "3332"
@@ -510,11 +489,11 @@
         {
           "name": "continue",
           "link": "25",
-          "pid": "26"
+          "pid": "25"
         }
       ],
       "name": "24",
-      "pid": "25",
+      "pid": "24",
       "position": {
         "x": "707",
         "y": "3482"
@@ -531,11 +510,11 @@
         {
           "name": "continue",
           "link": "26",
-          "pid": "27"
+          "pid": "26"
         }
       ],
       "name": "25",
-      "pid": "26",
+      "pid": "25",
       "position": {
         "x": "707",
         "y": "3632"
@@ -549,7 +528,7 @@
     {
       "text": "Deal! Come on Musa, let's do our best!",
       "name": "26",
-      "pid": "27",
+      "pid": "26",
       "position": {
         "x": "707",
         "y": "3782"
@@ -561,7 +540,7 @@
       ]
     },
     {
-      "text": "Wait, who's this elderberry fruit? They're a part of something sacred as well?\n\n[[continue->2]]",
+      "text": "Wait, is Elderberry some sort of holy and sacred figure in the Kitchen?\n\n[[continue->2]]",
       "links": [
         {
           "name": "continue",
@@ -570,7 +549,7 @@
         }
       ],
       "name": "1.1",
-      "pid": "28",
+      "pid": "27",
       "position": {
         "x": "402",
         "y": "483"
@@ -587,11 +566,11 @@
         {
           "name": "continue",
           "link": "4",
-          "pid": "5"
+          "pid": "4"
         }
       ],
       "name": "1.2",
-      "pid": "29",
+      "pid": "28",
       "position": {
         "x": "919",
         "y": "448"
@@ -608,11 +587,11 @@
         {
           "name": "continue",
           "link": "12",
-          "pid": "13"
+          "pid": "12"
         }
       ],
       "name": "8.2",
-      "pid": "30",
+      "pid": "29",
       "position": {
         "x": "928",
         "y": "1305"
@@ -629,14 +608,14 @@
         {
           "name": "continue",
           "link": "9",
-          "pid": "10"
+          "pid": "9"
         }
       ],
       "name": "8.1",
-      "pid": "31",
+      "pid": "30",
       "position": {
-        "x": "431",
-        "y": "1298"
+        "x": "520",
+        "y": "1297"
       },
       "tags": [
         "0",
@@ -650,11 +629,11 @@
         {
           "name": "continue",
           "link": "17",
-          "pid": "18"
+          "pid": "17"
         }
       ],
       "name": "16.1",
-      "pid": "32",
+      "pid": "31",
       "position": {
         "x": "438",
         "y": "2390"
@@ -671,11 +650,11 @@
         {
           "name": "continue",
           "link": "19",
-          "pid": "20"
+          "pid": "19"
         }
       ],
       "name": "16.2",
-      "pid": "33",
+      "pid": "32",
       "position": {
         "x": "934",
         "y": "2379"
@@ -692,16 +671,16 @@
         {
           "name": "Wait, Elderberry?",
           "link": "1.1",
-          "pid": "28"
+          "pid": "27"
         },
         {
           "name": "An ancient civilization? That sounds fun!",
           "link": "1.2",
-          "pid": "29"
+          "pid": "28"
         }
       ],
       "name": "1 options",
-      "pid": "34",
+      "pid": "33",
       "position": {
         "x": "668",
         "y": "611"
@@ -717,16 +696,16 @@
         {
           "name": "It could mean something dangerous.",
           "link": "8.1",
-          "pid": "31"
+          "pid": "30"
         },
         {
           "name": "That sounds like there's something interesting around.",
           "link": "8.2",
-          "pid": "30"
+          "pid": "29"
         }
       ],
       "name": "8 options",
-      "pid": "35",
+      "pid": "34",
       "position": {
         "x": "681",
         "y": "1454"
@@ -742,16 +721,16 @@
         {
           "name": "I think that sounds dangerous.",
           "link": "16.1",
-          "pid": "32"
+          "pid": "31"
         },
         {
           "name": "Wait, that's interesting. Let's try it.",
           "link": "16.2",
-          "pid": "33"
+          "pid": "32"
         }
       ],
       "name": "16 options",
-      "pid": "36",
+      "pid": "35",
       "position": {
         "x": "680",
         "y": "2531"
@@ -759,6 +738,403 @@
       "tags": [
         "0",
         "option"
+      ]
+    },
+    {
+      "text": "Only one pair of fruits may be brought to the blender at a time. Something about a restriction by something greater than even Elderberry.\n[[continue->2.5 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "2.5 options",
+          "pid": "37"
+        }
+      ],
+      "name": "2.5",
+      "pid": "36",
+      "position": {
+        "x": "381",
+        "y": "776"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "[[What a menacing thought->2.5.1]]\n[[Do you ever wonder what such a thing could be?->2.5.2]]",
+      "links": [
+        {
+          "name": "What a menacing thought",
+          "link": "2.5.1",
+          "pid": "38"
+        },
+        {
+          "name": "Do you ever wonder what such a thing could be?",
+          "link": "2.5.2",
+          "pid": "39"
+        }
+      ],
+      "name": "2.5 options",
+      "pid": "37",
+      "position": {
+        "x": "361",
+        "y": "919"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "That's an ominous and menacing thought. Something even greater than the blender and Elderberry?\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "40"
+        }
+      ],
+      "name": "2.5.1",
+      "pid": "38",
+      "position": {
+        "x": "210",
+        "y": "1054"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Have you ever wondered what kind of powerful and sacred being is behind all this? They're even greater than Elderberry and the blender according to what you said.\n[[continue->27]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27",
+          "pid": "40"
+        }
+      ],
+      "name": "2.5.2",
+      "pid": "39",
+      "position": {
+        "x": "400",
+        "y": "1050"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I fear about this thing and if it's a horror or a savior sometimes. With the details we have, I still can't tell.\n[[continue->27 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "27 options",
+          "pid": "41"
+        }
+      ],
+      "name": "27",
+      "pid": "40",
+      "position": {
+        "x": "272",
+        "y": "1226"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "[[I'm left speechless...->27.1]]\n[[Oh yeah, about that ancient civilization->1.2]]",
+      "links": [
+        {
+          "name": "I'm left speechless...",
+          "link": "27.1",
+          "pid": "42"
+        },
+        {
+          "name": "Oh yeah, about that ancient civilization",
+          "link": "1.2",
+          "pid": "28"
+        }
+      ],
+      "name": "27 options",
+      "pid": "41",
+      "position": {
+        "x": "271",
+        "y": "1402"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "A-anyways, let's get to reading this thing. I have a feeling my skills may be of use!\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "6"
+        }
+      ],
+      "name": "27.1",
+      "pid": "42",
+      "position": {
+        "x": "337",
+        "y": "1605"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "shock"
+      ]
+    },
+    {
+      "text": "[[And you were comparing me to a plantain?->5.1]]\n[[Did it have any more information than that?->5.2]]",
+      "links": [
+        {
+          "name": "And you were comparing me to a plantain?",
+          "link": "5.1",
+          "pid": "44"
+        },
+        {
+          "name": "Did it have any more information than that?",
+          "link": "5.2",
+          "pid": "45"
+        }
+      ],
+      "name": "5 options",
+      "pid": "43",
+      "position": {
+        "x": "1062",
+        "y": "900"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "And you said something before about me being a plantain? I'm not sure what they look like.\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "46"
+        }
+      ],
+      "name": "5.1",
+      "pid": "44",
+      "position": {
+        "x": "912",
+        "y": "809"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Wow, that's some really impressive information! Is there anything else that the book told you about us fruits?\n[[continue->28]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "28",
+          "pid": "46"
+        }
+      ],
+      "name": "5.2",
+      "pid": "45",
+      "position": {
+        "x": "1174",
+        "y": "1050"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "There wasn't much information other than the real names and description that I could decipher at the time. Maybe I'll check out the object again later.\n[[continue->29]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "29",
+          "pid": "47"
+        }
+      ],
+      "name": "28",
+      "pid": "46",
+      "position": {
+        "x": "877",
+        "y": "992"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "book"
+      ]
+    },
+    {
+      "text": "Well, anyways, let's get to investigating this thing. I have a feeling my skills may be of use!\n[[continue->6]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "6",
+          "pid": "6"
+        }
+      ],
+      "name": "29",
+      "pid": "47",
+      "position": {
+        "x": "961",
+        "y": "1152"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "[[Wait, who would even get us in trouble?->10.1]]\n[[Well, danger is pretty interesting...->8.2]]",
+      "links": [
+        {
+          "name": "Wait, who would even get us in trouble?",
+          "link": "10.1",
+          "pid": "49"
+        },
+        {
+          "name": "Well, danger is pretty interesting...",
+          "link": "8.2",
+          "pid": "29"
+        }
+      ],
+      "name": "10 options",
+      "pid": "48",
+      "position": {
+        "x": "636",
+        "y": "1758"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Wait, who would even get us in trouble? Is there some sort of group in charge of defending the blender?\n[[continue->30.5]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "30.5",
+          "pid": "53"
+        }
+      ],
+      "name": "10.1",
+      "pid": "49",
+      "position": {
+        "x": "320",
+        "y": "1870"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "However, I know that they like to take breaks around this time. As such, it's the perfect opportunity to sneak by and do a bit of snooping!\n[[continue->14]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14",
+          "pid": "14"
+        }
+      ],
+      "name": "30",
+      "pid": "50",
+      "position": {
+        "x": "267",
+        "y": "2040"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Blueberry looks at the symbols on the wall of the blender, entranced in the sacred language only they seem to know.\n[[continue->31 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "31 options",
+          "pid": "52"
+        }
+      ],
+      "name": "31",
+      "pid": "51",
+      "position": {
+        "x": "900",
+        "y": "1754"
+      },
+      "tags": [
+        "0",
+        "noSpeaker"
+      ]
+    },
+    {
+      "text": "[[Let them continue looking->14]]\n[[Wait, wouldn't there be something that guards this thing?->10.1]]",
+      "links": [
+        {
+          "name": "Let them continue looking",
+          "link": "14",
+          "pid": "14"
+        },
+        {
+          "name": "Wait, wouldn't there be something that guards this thing?",
+          "link": "10.1",
+          "pid": "49"
+        }
+      ],
+      "name": "31 options",
+      "pid": "52",
+      "position": {
+        "x": "928",
+        "y": "1914"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Yeah, they're these types of spoons that Elderberry employed called the blender defenders. They pretty strong, so people usually don't want to mess with them!\n[[continue->30]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "30",
+          "pid": "50"
+        }
+      ],
+      "name": "30.5",
+      "pid": "53",
+      "position": {
+        "x": "497",
+        "y": "1926"
+      },
+      "tags": [
+        "0",
+        "Blueberry",
+        "base"
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "Strawberry mentioned that they saw Blueberry hanging around the lights on top of the oven in their spare time. I didn't even realize fruits can get here.\n\n[[continue->1]]",
+      "text": "Strawberry mentioned that they saw Blueberry hanging around the lights on top of the oven in their spare time. I didn’t even realize fruits can get here.\n\n[[continue->1]]",
       "links": [
         {
           "name": "continue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "text": "Fascinating! I've never seen anything like this before!\n\n[[continue->3]]",
+      "text": "Fascinating! I’ve never seen anything like this before!\n\n[[continue->3]]",
       "links": [
         {
           "name": "continue",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "text": "I can't even tell if that's a good thing or a bad thing. I start heading towards where I heard their voice. \n\n[[continue->3.5]]",
+      "text": "I can’t even tell if that’s a good thing or a bad thing. I start heading towards where I heard their voice. \n\n[[continue->3.5]]",
       "links": [
         {
           "name": "continue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "text": "Oh, is that you, Musa? I'm over here, just around the corner! \n\n[[continue->5]]",
+      "text": "Oh, is that you, Musa? I’m over here, just around the corner! \n\n[[continue->5]]",
       "links": [
         {
           "name": "continue",
@@ -438,7 +438,7 @@
       ]
     },
     {
-      "text": "Are you okay, Musa? You're kind of freaking me out here…\n\n[[continue->17]]\n",
+      "text": "Are you okay, Musa? You're kind of freaking me out here...\n\n[[continue->17]]\n",
       "links": [
         {
           "name": "continue",

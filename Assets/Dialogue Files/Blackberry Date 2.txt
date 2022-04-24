@@ -671,7 +671,7 @@
       ]
     },
     {
-      "text": " I like you a lot, too!\n [[continue->19]]",
+      "text": "I like you a lot, too!\n [[continue->19]]",
       "links": [
         {
           "name": "continue",
@@ -776,12 +776,12 @@
       ]
     },
     {
-      "text": "Sure! Let's give it a shot against this oven mitt.",
+      "text": "Sure! Let's give it a shot against this oven mitt. They've got some strange patterns, don't they?\n",
       "name": "22",
       "pid": "37",
       "position": {
-        "x": "173",
-        "y": "4311"
+        "x": "524",
+        "y": "4365"
       },
       "tags": [
         "0",
@@ -1025,7 +1025,7 @@
       ]
     },
     {
-      "text": "Let's practice combat against this oven mitt!\n[[continue->32]]",
+      "text": "Let's practice combat against this oven mitt! They've got some strange patterns, don't they?\n\n[[continue->32]]",
       "links": [
         {
           "name": "continue",

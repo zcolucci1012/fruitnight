@@ -812,7 +812,7 @@
       ]
     },
     {
-      "text": "The Jars... They've been trying to turn me into jam for as long as I can remember.\n\n[[continue->29.5]]",
+      "text": "The Jars... They've been trying to turn me into jam for as long as I can remember. They hate being empty.\n\n[[continue->29.5]]",
       "links": [
         {
           "name": "continue",

@@ -175,6 +175,7 @@ public class NPCDialogue : MonoBehaviour
     {
         dialogue_text.GetComponent<Text>().text = "";
         canContinue = false;
+        spacePressed = false;
         foreach (char c in node.text.ToCharArray())
         {
             dialogueIsPlaying = true;

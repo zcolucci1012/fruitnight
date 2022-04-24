@@ -22,7 +22,7 @@
       ]
     },
     {
-      "text": " I thought you seemed interesting! Care to tell me anything else about you?\n \n [[continue->1]]\n",
+      "text": "I thought you seemed interesting! Care to tell me anything else about you?\n \n [[continue->1]]\n",
       "links": [
         {
           "name": "continue",
