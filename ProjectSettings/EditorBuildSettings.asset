@@ -92,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tomato Date 2.unity
     guid: 1ae0f101c8234784181ae7e10e6f63a5
+  - enabled: 1
+    path: Assets/Scenes/TournamentFightPreview.unity
+    guid: 7d62e2b3954cd294e97753e060ad6a2d
   m_configObjects: {}
