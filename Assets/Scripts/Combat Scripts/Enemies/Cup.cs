@@ -44,7 +44,7 @@ public class Cup : Fighter
             string msg = this.name + " swings across the table to scoop up it's enemies.\n";
             foreach (Fighter f in targets)
             {
-                AttackResult result = this.Hit(f, 3, this.attack2name);
+                AttackResult result = this.Hit(f, 3, "Cup");
                 msg += result.msg + "\n";
             }
             return msg;
