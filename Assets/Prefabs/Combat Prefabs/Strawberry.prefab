@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1029944428594926272}
   - component: {fileID: 1029944428594926275}
   - component: {fileID: 1029944428594926278}
+  - component: {fileID: -2432016960861002234}
   m_Layer: 5
   m_Name: Strawberry
   m_TagString: Untagged
@@ -104,12 +105,18 @@ MonoBehaviour:
   attack1type: 2
   attack2type: 2
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 8535685971008074144}
   healthBarObject: {fileID: 8535685971008074148}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1029944428594926278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +173,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &-2432016960861002234
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029944428594926301}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &1029944429708347969
 PrefabInstance:
   m_ObjectHideFlags: 0

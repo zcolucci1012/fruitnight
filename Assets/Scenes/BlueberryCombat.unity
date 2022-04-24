@@ -1096,6 +1096,10 @@ MonoBehaviour:
   relationshipScore: 1
   scoreObject: {fileID: 1922788358}
   verbalAttacks: {fileID: 1706234247}
+  verbalAvailable: 0
+  manualScore: -1
+  comboAttackUsed: 0
+  debugVerbal: 0
 --- !u!114 &624623258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3422,6 +3426,7 @@ GameObject:
   - component: {fileID: 1759367002}
   - component: {fileID: 1759367003}
   - component: {fileID: 1759367006}
+  - component: {fileID: 1759367007}
   m_Layer: 5
   m_Name: Blender Defender 1
   m_TagString: Untagged
@@ -3540,6 +3545,9 @@ MonoBehaviour:
   healthBar: {fileID: 569631222}
   healthBarObject: {fileID: 824420037}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1759367004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3613,6 +3621,25 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
+--- !u!111 &1759367007
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759367000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1770913045
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,6 +3654,7 @@ GameObject:
   - component: {fileID: 1770913049}
   - component: {fileID: 1770913047}
   - component: {fileID: 1770913048}
+  - component: {fileID: 1770913052}
   m_Layer: 5
   m_Name: Blender Defender 2
   m_TagString: Untagged
@@ -3689,6 +3717,9 @@ MonoBehaviour:
   healthBar: {fileID: 1526442307}
   healthBarObject: {fileID: 1172594521}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1770913048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3724,6 +3755,9 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1770913049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3818,6 +3852,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770913045}
   m_CullTransparentMesh: 1
+--- !u!111 &1770913052
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770913045}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1805530792
 GameObject:
   m_ObjectHideFlags: 0

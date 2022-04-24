@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 139198400}
   - component: {fileID: 139198398}
   - component: {fileID: 139198399}
+  - component: {fileID: 139198404}
   m_Layer: 5
   m_Name: Enemy1
   m_TagString: Untagged
@@ -642,6 +643,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &139198399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,6 +681,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &139198400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,6 +797,22 @@ RectTransform:
   m_AnchoredPosition: {x: 255, y: 123}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &139198404
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139198397}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &202991386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +2008,7 @@ GameObject:
   - component: {fileID: 642083360}
   - component: {fileID: 642083358}
   - component: {fileID: 642083359}
+  - component: {fileID: 642083364}
   m_Layer: 5
   m_Name: Enemy2
   m_TagString: Untagged
@@ -2030,6 +2052,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &642083359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2066,6 +2090,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &642083360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2180,6 +2206,22 @@ RectTransform:
   m_AnchoredPosition: {x: 464, y: 115}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &642083364
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642083357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &668945323
 GameObject:
   m_ObjectHideFlags: 0
@@ -5157,6 +5199,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!1 &7947730125040154899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5170,6 +5214,7 @@ GameObject:
   - component: {fileID: 7947730125040154896}
   - component: {fileID: 7947730125040154897}
   - component: {fileID: 7947730125040154898}
+  - component: {fileID: 7947730125040154900}
   m_Layer: 5
   m_Name: Ally2
   m_TagString: Untagged
@@ -5177,6 +5222,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &7947730125040154900
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947730125040154899}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!224 &7947730125040154902
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5408,6 +5469,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!224 &8171296543410844451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5497,6 +5560,7 @@ GameObject:
   - component: {fileID: 8171296543410844449}
   - component: {fileID: 8171296543410844450}
   - component: {fileID: 8171296543410844455}
+  - component: {fileID: 8171296543410844461}
   m_Layer: 0
   m_Name: Ally1
   m_TagString: Untagged
@@ -5504,6 +5568,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &8171296543410844461
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171296543410844460}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 491fe7a852e0ba14b8922b8076779d2d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 491fe7a852e0ba14b8922b8076779d2d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &8171296543738461438
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class DustBunny : Fighter
 {
+    public override string Compliment()
+    {
+        // DO SOMETHING
+        this.Damage(-2);
+        return "'Who\'s a good dust bunny? You are! Yes you are!!.'\nDust Bunny thumps their leg on the ground joyfully, feeling a little healthier.";
+    }
+
+    public override string Insult()
+    {
+        this.turnsFrozen += 2;
+        return "'It\'s hard to breath with you around! Get lost!'\nDust Bunny looks super depressed. They don\'t even wanna fight anymore.";
+    }
+
     private void Awake()
     {
         // Toxic dust

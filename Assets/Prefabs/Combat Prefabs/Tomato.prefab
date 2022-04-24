@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5655203035712334649}
   - component: {fileID: 2882410655628184236}
   - component: {fileID: 3306484831838144777}
+  - component: {fileID: 1126009025841808260}
   m_Layer: 5
   m_Name: Tomato
   m_TagString: Untagged
@@ -100,8 +101,10 @@ MonoBehaviour:
   attack3name: Writer's Block
   attack1desc: Tomato philosophizes about the meaning of life and fruit, sending
     their opponent into a brief existential crisis. Prevents an opponent from attacking
-    the next turn. However, it also has a small chance to backfire and send Tomato
-    into an existential crisis during their next turn instead.
+    the next turn. However, it also has a small chance to backfire.Tomato philosophizes
+    about the meaning of life and fruit, sending their opponent into a brief existential
+    crisis. Prevents an opponent from attacking the next turn. However, it also has
+    a small chance to backfire.
   attack2desc: Tomato tries his hand at a witty insult, borrowed from Shakes Pear.
     Does 2-5 hp of damage to an opponent.
   attack3desc: "Increases Tomato\u2019s and their partner\u2019s defense by 3-6 points
@@ -109,6 +112,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 3
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -116,6 +121,9 @@ MonoBehaviour:
   healthBar: {fileID: 6421285856711286204}
   healthBarObject: {fileID: 6421285856711286200}
   canHeal: 0
+  healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &3306484831838144777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +180,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &1126009025841808260
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282612357965152515}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &2387819700526786141
 PrefabInstance:
   m_ObjectHideFlags: 0

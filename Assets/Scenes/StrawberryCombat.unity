@@ -1302,7 +1302,7 @@ MonoBehaviour:
   scoreObject: {fileID: 1124394018}
   verbalAttacks: {fileID: 1683194490}
   verbalAvailable: 0
-  manualScore: 10
+  manualScore: -1
   comboAttackUsed: 0
   debugVerbal: 0
 --- !u!114 &971594286
@@ -2977,6 +2977,7 @@ GameObject:
   - component: {fileID: 1625713357}
   - component: {fileID: 1625713356}
   - component: {fileID: 1625713359}
+  - component: {fileID: 1625713360}
   m_Layer: 5
   m_Name: Knife
   m_TagString: Untagged
@@ -2991,14 +2992,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625713354}
-  m_LocalRotation: {x: -0, y: -0, z: -0.09643528, w: 0.9953393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1.777378, y: 1.7773776, z: 1.777378}
   m_Children:
   - {fileID: 2130389619}
   m_Father: {fileID: 780532723}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -11.068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 282.97, y: 117.79}
@@ -3040,6 +3041,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 2130389621}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3060,7 +3063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 724de5c201c08fb478a14c200e94599e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3bc305230d10cb4e955a9b1b9a3f858, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3134,6 +3137,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &1625713360
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625713354}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1656833230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4693,11 +4712,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9953393
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4705,11 +4724,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.09643528
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 7.4141846
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 8664855498313448418, guid: be57d3545cd8c4f4a9ed66b9d08a2fec, type: 3}
       propertyPath: m_AnchoredPosition.y

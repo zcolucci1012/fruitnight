@@ -3126,6 +3126,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4920fcde737a00c439cd53e70a8d038f, type: 3}
   - {fileID: 21300000, guid: 8f82a456be186ae4994d62b26ae5456f, type: 3}
   - {fileID: 21300000, guid: 1fd2a1fc96f1ce34bb1ab1366636eb2d, type: 3}
+  enemyClip: {fileID: 7400000, guid: 72121566be743564e8730b9abfaf025f, type: 2}
+  allyClip: {fileID: 7400000, guid: 3ccdce4929b45a549a41f0c596bd0e8d, type: 2}
 --- !u!4 &1710452464
 Transform:
   m_ObjectHideFlags: 0
@@ -4456,6 +4458,7 @@ GameObject:
   - component: {fileID: 1029944428388245652}
   - component: {fileID: 1029944428388245655}
   - component: {fileID: 1029944428388245650}
+  - component: {fileID: 1029944428388245642}
   m_Layer: 5
   m_Name: Strawberry
   m_TagString: Untagged
@@ -4463,6 +4466,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &1029944428388245642
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029944428388245641}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &1029944428388245650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4613,6 +4631,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!1001 &1029944429514520597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4744,6 +4764,7 @@ GameObject:
   - component: {fileID: 5769890844959717728}
   - component: {fileID: 3920934527635478773}
   - component: {fileID: 3714179391294282576}
+  - component: {fileID: 1127400951469577051}
   m_Layer: 5
   m_Name: Tomato
   m_TagString: Untagged
@@ -4751,6 +4772,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &1127400951469577051
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127400951469577050}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &1266701936376686463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5335,8 +5371,7 @@ MonoBehaviour:
   attack3name: Writer's Block
   attack1desc: Tomato philosophizes about the meaning of life and fruit, sending
     their opponent into a brief existential crisis. Prevents an opponent from attacking
-    the next turn. However, it also has a small chance to backfire and send Tomato
-    into an existential crisis during their next turn instead.
+    the next turn. However, it also has a small chance to backfire.
   attack2desc: Tomato tries his hand at a witty insult, borrowed from Shakes Pear.
     Does 2-5 hp of damage to an opponent.
   attack3desc: "Increases Tomato\u2019s and their partner\u2019s defense by 3-6 points
@@ -5354,6 +5389,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!222 &4537841221258840152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5778,6 +5815,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!224 &6330654329604009739
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5867,6 +5906,7 @@ GameObject:
   - component: {fileID: 6330654329604009738}
   - component: {fileID: 6330654329604009737}
   - component: {fileID: 6330654329604009743}
+  - component: {fileID: 6330654329604009749}
   m_Layer: 5
   m_Name: Blackberry
   m_TagString: Untagged
@@ -5874,6 +5914,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &6330654329604009749
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6330654329604009748}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!222 &6947598402939928934
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6171,6 +6226,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!1 &7947730126464155183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6184,6 +6241,7 @@ GameObject:
   - component: {fileID: 7947730126464155180}
   - component: {fileID: 7947730126464155181}
   - component: {fileID: 7947730126464155182}
+  - component: {fileID: 7947730126464155184}
   m_Layer: 5
   m_Name: Blueberry
   m_TagString: Untagged
@@ -6191,6 +6249,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &7947730126464155184
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947730126464155183}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &8056615119610436358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6219,6 +6292,7 @@ GameObject:
   - component: {fileID: 8171296543636232335}
   - component: {fileID: 8171296543636232332}
   - component: {fileID: 8171296543636232329}
+  - component: {fileID: 8171296543636232323}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Untagged
@@ -6226,6 +6300,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &8171296543636232323
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171296543636232322}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 491fe7a852e0ba14b8922b8076779d2d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 491fe7a852e0ba14b8922b8076779d2d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &8171296543636232329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6318,6 +6408,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!224 &8171296543636232333
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6825,6 +6917,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 0}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &8884170169482398339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6894,6 +6988,7 @@ GameObject:
   - component: {fileID: 8884170169482398336}
   - component: {fileID: 8884170169482398339}
   - component: {fileID: 8884170169482398338}
+  - component: {fileID: 8884170169482398342}
   m_Layer: 5
   m_Name: Lemon
   m_TagString: Untagged
@@ -6901,6 +6996,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!111 &8884170169482398342
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884170169482398341}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!224 &8884170169482398350
 RectTransform:
   m_ObjectHideFlags: 0

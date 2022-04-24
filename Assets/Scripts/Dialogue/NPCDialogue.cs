@@ -38,7 +38,6 @@ public class NPCDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("SPACE");
             spacePressed = true;
         }
         if (!dialogueIsPlaying)

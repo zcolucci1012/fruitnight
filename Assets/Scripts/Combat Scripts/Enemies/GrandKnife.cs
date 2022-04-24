@@ -7,10 +7,12 @@ public class GrandKnife : Fighter
 
      public override string Compliment() {
         // DO SOMETHING
-        return "'I LOVE YOU, GRAND KNIFE!!!'\nThe exclamation and fanfare catches Grand Knife off guard.";
+        this.Defense(-5, 2);
+        return "'I LOVE YOU, GRAND KNIFE!!!'\nThe exclamation and fanfare makes Grand Knife lower their guard. Their defense drops dramatically.";
     }
 
     public override string Insult() {
+        this.Damage(2);
         return "'I can't believe the leader of the silver looked so ugly. Slim down, why don't you?'\nGrand Knife self-consciously looks down at themselves, and frowns.";
     }
 

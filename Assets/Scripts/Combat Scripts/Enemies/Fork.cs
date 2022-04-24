@@ -5,12 +5,16 @@ using UnityEngine;
 public class Fork : Fighter
 {
 
-    public override string Compliment() {
+    public override string Compliment()
+    {
         // DO SOMETHING
+        this.Damage(-1);
         return "'Fork, I know we've had our differences, but I think you're neat.'\nFork's inpenetrable demeanor seems to break a little, and the smallest hint of a smile sneaks through.";
     }
 
-    public override string Insult() {
+    public override string Insult()
+    {
+        this.dmgMod += 1;
         return "'What a crybaby, came back with their parent!'\nFork furrows their forky brow, and doubles down on their attacks.";
     }
 
