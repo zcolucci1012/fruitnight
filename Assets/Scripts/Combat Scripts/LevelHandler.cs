@@ -588,6 +588,7 @@ public class LevelHandler : MonoBehaviour
     public void SelectedTarget(Fighter[] targets)
     {
         this.description = currentAttack.execute(targets);
+        entities[turn].GetComponent<Animation>().Play();
 
         NextTurn();
     }
