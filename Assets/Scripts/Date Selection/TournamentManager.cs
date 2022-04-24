@@ -104,7 +104,7 @@ public class TournamentManager : MonoBehaviour
         {
             OpponentPair = opponentPair2;
             FighterSprites.RemoveRange(2, 2);
-            SceneManager.LoadScene("TournamentCombat");
+            SceneManager.LoadScene("TournamentFightPreview");
         }
         else
         {
@@ -164,7 +164,7 @@ public class TournamentManager : MonoBehaviour
         SetUpOpponentPairs();
         OpponentPair = opponentPair1;
         tournamentStarted = true;
-        SceneManager.LoadScene("TournamentCombat");
+        SceneManager.LoadScene("TournamentFightPreview");
     }
 
     private void PickAnotherPartner()
