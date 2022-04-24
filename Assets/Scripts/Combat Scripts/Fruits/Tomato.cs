@@ -15,6 +15,7 @@ public class Tomato : Fighter
             if (roll > 7 || this.turnsStrongHit > 0)
             {
                 targets[0].turnsFrozen = 1;
+                FindObjectOfType<DialogueAudio>().PlayAudio("Stat Boost");
                 msg = "Tomato sends " + targets[0].name + " into an existential crisis, freezing them for a turn.";
             } else {
                 this.turnsFrozen = 2;

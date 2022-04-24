@@ -22,7 +22,12 @@ public class ComboAttacks : MonoBehaviour
                 if (result.hit)
                 {
                     f.dmgMod = -1;
+                    FindObjectOfType<DialogueAudio>().PlayAudio("Lunchbox Launch");
                     msg += result.msg + " and their damage is reduced by 1";
+                }
+                else
+                {
+                    FindObjectOfType<DialogueAudio>().PlayAudio("Miss");
                 }
             }
 
@@ -40,10 +45,12 @@ public class ComboAttacks : MonoBehaviour
         {
              if (f.defense <= roll) {
                     f.turnsFrozen = 2;
-                    msg += "It hits " + f.name + " and freezes them in combat.";
+                    FindObjectOfType<DialogueAudio>().PlayAudio("Feeling Blue");
+                msg += "It hits " + f.name + " and freezes them in combat.";
              } else {
+                FindObjectOfType<DialogueAudio>().PlayAudio("Miss");
                 msg += "It misses " + f.name;
-             }
+            }
         }
 
         return msg;
@@ -63,6 +70,7 @@ public class ComboAttacks : MonoBehaviour
                     f.Defense(1, 2);
                     msg += "It hits " + f.name + " and does 6 points of damage and lowers their defense by 1 point.";
              } else {
+                FindObjectOfType<DialogueAudio>().PlayAudio("Miss");
                 msg += "It misses " + f.name;
              }
         }
@@ -170,4 +178,5 @@ public class ComboAttacks : MonoBehaviour
         }
 
     }
+
 }

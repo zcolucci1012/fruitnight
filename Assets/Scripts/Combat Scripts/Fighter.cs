@@ -140,61 +140,6 @@ public abstract class Fighter : MonoBehaviour
         }
     }
 
-    public AttackResult Hit(Fighter target, int dmg)
-    {
-        if (turnsStrongHit > 1) {
-            int effectiveDamage = target.Damage(dmg + dmgMod);
-            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
-            if (target.unconscious)
-            {
-                msg += ", knocking them unconscious";
-            }
-            return new AttackResult(true, effectiveDamage, msg);
-        }
-        int roll = UnityEngine.Random.Range(1, 20);
-        // print("defense: " + target.defense + ", roll: " + roll);
-        if (roll == 20 || roll == 19)
-        {
-            int effectiveDamage = target.Damage((dmg + dmgMod) * 2);
-            string msg = "CRITICAL HIT!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
-            if (target.unconscious)
-            {
-                // play faint sound
-                msg += ", knocking them unconscious";
-            }
-            // play audio
-            return new AttackResult(true, effectiveDamage, msg);
-        }
-        else if (roll == 1)
-        {
-            string msg = "Critical miss: The attack misses " + target.name;
-            return new AttackResult(false, 0, msg);
-        }
-        else if (target.defense < roll)
-        {
-            int effectiveDamage = target.Damage(dmg + dmgMod);
-            string msg = "Strong hit!: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
-            if (target.unconscious)
-            {
-                msg += ", knocking them unconscious";
-            }
-            // play audio
-            return new AttackResult(true, effectiveDamage, msg);
-        }
-        else
-        {
-            int effectiveDamage = target.Damage((dmg + dmgMod)/2);
-            string msg = "Weak hit: " + this.name + " deals " + effectiveDamage + " DMG to " + target.name;
-            if (target.unconscious)
-            {
-                msg += ", knocking them unconscious";
-            }
-            // play audio
-            return new AttackResult(true, effectiveDamage, msg);
-        }
-        
-    }
-
     public int Damage(int hp)
     {
         if (turnsCantHeal > 0 && hp < 0)

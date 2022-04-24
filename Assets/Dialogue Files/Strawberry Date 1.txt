@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "It took me a while, but I finally caught up to Strawberry and found out where Passionfruits were.\n\n[[continue->1]]",
+      "text": "It took me a while, but I finally caught up to Strawberry and found out where Passionfruits were.\n[[continue->1]]",
       "links": [
         {
           "name": "continue",
@@ -13,28 +13,27 @@
       "pid": "1",
       "position": {
         "x": "405",
-        "y": "442"
+        "y": "171.5"
       },
       "tags": [
         "0",
-        "noSpeaker",
-        "noEmotion"
+        "noSpeaker"
       ]
     },
     {
-      "text": "Okay, I'll be sure to visit another day! Keep up the good wor- Oh, I didn't think I'd see you here.\n[[continue->1.5]]",
+      "text": "Okay, I'll be sure to visit another day! Keep up the good wor- Oh, I didn't think I'd see you here.\n[[continue->2]]",
       "links": [
         {
           "name": "continue",
-          "link": "1.5",
-          "pid": "22"
+          "link": "2",
+          "pid": "3"
         }
       ],
       "name": "1",
       "pid": "2",
       "position": {
         "x": "405",
-        "y": "592"
+        "y": "321.5"
       },
       "tags": [
         "0",
@@ -43,11 +42,11 @@
       ]
     },
     {
-      "text": "I'm not quite sure where I am but I think this place is called the sink?\n\n[[continue->3]]",
+      "text": "Yeah, I'm trying to find my way around this place. What is this we're standing in exactly?\n[[continue->8]]",
       "links": [
         {
           "name": "continue",
-          "link": "3",
+          "link": "8",
           "pid": "4"
         }
       ],
@@ -55,7 +54,7 @@
       "pid": "3",
       "position": {
         "x": "405",
-        "y": "742"
+        "y": "471.5"
       },
       "tags": [
         "0",
@@ -64,19 +63,19 @@
       ]
     },
     {
-      "text": "Mhm! It's a place where a lot of fruits don't mind hanging out, especially when the table is busy and things can happen at random. \n\n[[continue->4]]",
+      "text": "Oh, this is called The Sink! It's a place where a lot of fruits hang out when the table gets too busy.\n[[continue->9]]",
       "links": [
         {
           "name": "continue",
-          "link": "4",
+          "link": "9",
           "pid": "5"
         }
       ],
-      "name": "3",
+      "name": "8",
       "pid": "4",
       "position": {
         "x": "405",
-        "y": "892"
+        "y": "621.5"
       },
       "tags": [
         "0",
@@ -85,40 +84,19 @@
       ]
     },
     {
-      "text": "I need to go there though. Something about cleaning up a large brown object. \n\n[[continue->4.5]]",
+      "text": "So what do you think of it?\n[[continue-> 9 options]]",
       "links": [
         {
           "name": "continue",
-          "link": "4.5",
-          "pid": "23"
+          "link": " 9 options",
+          "pid": "6"
         }
       ],
-      "name": "4",
+      "name": "9",
       "pid": "5",
       "position": {
         "x": "405",
-        "y": "1042"
-      },
-      "tags": [
-        "0",
-        "Strawberry",
-        "sad"
-      ]
-    },
-    {
-      "text": "Oh, that's great! It gives me some time to myself finally. Now I can have a nice one-on-one conversation with you.\n\n[[continue->6]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "6",
-          "pid": "7"
-        }
-      ],
-      "name": "5",
-      "pid": "6",
-      "position": {
-        "x": "405",
-        "y": "1192"
+        "y": "771.5"
       },
       "tags": [
         "0",
@@ -127,40 +105,107 @@
       ]
     },
     {
-      "text": "So, did you see anything in particular that caught your attention?\n[[continue->6 options]]",
+      "text": "[[It's kinda gross...->9.1]]\n[[Rad!->9.2]]",
       "links": [
         {
-          "name": "continue",
-          "link": "6 options",
-          "pid": "21"
+          "name": "It's kinda gross...",
+          "link": "9.1",
+          "pid": "7"
+        },
+        {
+          "name": "Rad!",
+          "link": "9.2",
+          "pid": "8"
         }
       ],
-      "name": "6",
-      "pid": "7",
+      "name": " 9 options",
+      "pid": "6",
       "position": {
         "x": "405",
-        "y": "1342"
+        "y": "921.5"
       },
       "tags": [
         "0",
-        "Strawberry",
+        "option"
+      ]
+    },
+    {
+      "text": "It's kinda gross here. I keep slipping into puddles? Plus it sorta reeks.\n[[continue->10]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "10",
+          "pid": "9"
+        }
+      ],
+      "name": "9.1",
+      "pid": "7",
+      "position": {
+        "x": "330",
+        "y": "1071.5"
+      },
+      "tags": [
+        "0",
+        "Banana",
         "base"
       ]
     },
     {
-      "text": "Strawberry laughs to themself quietly.\n\n[[continue->8]]",
+      "text": "Rad! It's so exciting seeing all these new things!\n[[cotninue->11]]",
+      "links": [
+        {
+          "name": "cotninue",
+          "link": "11",
+          "pid": "10"
+        }
+      ],
+      "name": "9.2",
+      "pid": "8",
+      "position": {
+        "x": "480",
+        "y": "1071.5"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Oh... I'm sorry you don't like it, Banana. I hope you like the rest of The Kitchen better.\n[[continue->12]]",
       "links": [
         {
           "name": "continue",
-          "link": "8",
-          "pid": "9"
+          "link": "12",
+          "pid": "11"
         }
       ],
-      "name": "7",
-      "pid": "8",
+      "name": "10",
+      "pid": "9",
       "position": {
-        "x": "119",
-        "y": "1542"
+        "x": "242",
+        "y": "1255.5"
+      },
+      "tags": [
+        "-1",
+        "Strawberry",
+        "sad"
+      ]
+    },
+    {
+      "text": "I'm glad you like it! Maybe we can hang out here more often.\n[[continue->12]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "12",
+          "pid": "11"
+        }
+      ],
+      "name": "11",
+      "pid": "10",
+      "position": {
+        "x": "559",
+        "y": "1229.5"
       },
       "tags": [
         "1",
@@ -169,61 +214,19 @@
       ]
     },
     {
-      "text": "I see, I see. The sink is large, so if you take the wrong turn, it'd be hard to find your way back. \n\n[[continue->9]]",
+      "text": "Practice with the Passionfruits wrapped up early today, so I have some time to spare. Is there anything you need from me?\n[[continue->12 options]]",
       "links": [
         {
           "name": "continue",
-          "link": "9",
-          "pid": "10"
-        }
-      ],
-      "name": "8",
-      "pid": "9",
-      "position": {
-        "x": "119",
-        "y": "1692"
-      },
-      "tags": [
-        "0",
-        "Strawberry",
-        "base"
-      ]
-    },
-    {
-      "text": "Although good job finding your way around to me. It seems you have a knack for finding your way! \n\n[[continue->11]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "11",
+          "link": "12 options",
           "pid": "12"
         }
       ],
-      "name": "9",
-      "pid": "10",
-      "position": {
-        "x": "127",
-        "y": "1894"
-      },
-      "tags": [
-        "0",
-        "Strawberry",
-        "happy"
-      ]
-    },
-    {
-      "text": "That makes sense, you're new here. If you want, I do have free time to show you somewhere.\n\n[[continue->11]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "11",
-          "pid": "12"
-        }
-      ],
-      "name": "10",
+      "name": "12",
       "pid": "11",
       "position": {
-        "x": "610",
-        "y": "1521"
+        "x": "430",
+        "y": "1403.5"
       },
       "tags": [
         "0",
@@ -232,19 +235,44 @@
       ]
     },
     {
-      "text": "I did notice that there was an area on the table dedicated to training and hitting things, do you know what that's all about?\n\n[[continue->12]]",
+      "text": "[[I noticed a training area...->12.1]]\n[[Could you tell me more about this tournament?->12.2]]",
+      "links": [
+        {
+          "name": "I noticed a training area...",
+          "link": "12.1",
+          "pid": "13"
+        },
+        {
+          "name": "Could you tell me more about this tournament?",
+          "link": "12.2",
+          "pid": "14"
+        }
+      ],
+      "name": "12 options",
+      "pid": "12",
+      "position": {
+        "x": "430",
+        "y": "1553.5"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "I did notice that there was an area dedicated to training and hitting things, do you know what that's all about?\n[[continue->13]]",
       "links": [
         {
           "name": "continue",
-          "link": "12",
-          "pid": "13"
+          "link": "13",
+          "pid": "15"
         }
       ],
-      "name": "11",
-      "pid": "12",
+      "name": "12.1",
+      "pid": "13",
       "position": {
-        "x": "385",
-        "y": "2175"
+        "x": "252",
+        "y": "1704.5"
       },
       "tags": [
         "0",
@@ -253,61 +281,40 @@
       ]
     },
     {
-      "text": "Oh, that's training for something big. You see, there's a tournament happening later to determine the best pair.\n\n[[continue->13]]",
+      "text": "This tournament sounds crazy to me, can you give me the 411 on it?\n[[continue->18]]",
       "links": [
         {
           "name": "continue",
-          "link": "13",
-          "pid": "14"
+          "link": "18",
+          "pid": "23"
         }
       ],
-      "name": "12",
-      "pid": "13",
-      "position": {
-        "x": "343",
-        "y": "2381"
-      },
-      "tags": [
-        "0",
-        "Strawberry",
-        "meh"
-      ]
-    },
-    {
-      "text": "I'm not terribly interested but I can help you if you want.\n\n[[continue->13.5]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "13.5",
-          "pid": "24"
-        }
-      ],
-      "name": "13",
+      "name": "12.2",
       "pid": "14",
       "position": {
-        "x": "358",
-        "y": "2563"
+        "x": "546",
+        "y": "1697.5"
       },
       "tags": [
         "0",
-        "Strawberry",
-        "meh"
+        "Banana",
+        "base"
       ]
     },
     {
-      "text": "Okay! Let's go then!\n\n[[continue->15]]",
+      "text": "Well that's for the tournament we mentioned earlier!\n[[continue->14]]",
       "links": [
         {
           "name": "continue",
-          "link": "15",
+          "link": "14",
           "pid": "16"
         }
       ],
-      "name": "14",
+      "name": "13",
       "pid": "15",
       "position": {
-        "x": "358",
-        "y": "2713"
+        "x": "252",
+        "y": "1854.5"
       },
       "tags": [
         "0",
@@ -316,19 +323,275 @@
       ]
     },
     {
-      "text": "After a few minutes, we head to the table. Oddly enough, the dummies are knife-shaped.\n\n[[continue->16]]",
+      "text": "I'm not there often, I hate violence...\n[[continue->14 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14 options",
+          "pid": "17"
+        }
+      ],
+      "name": "14",
+      "pid": "16",
+      "position": {
+        "x": "252",
+        "y": "2004.5"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "meh"
+      ]
+    },
+    {
+      "text": "[[Are you scared of losing?->14.1]]\n[[Would you ever enter the tournament->14.2]]",
+      "links": [
+        {
+          "name": "Are you scared of losing?",
+          "link": "14.1",
+          "pid": "18"
+        },
+        {
+          "name": "Would you ever enter the tournament",
+          "link": "14.2",
+          "pid": "19"
+        }
+      ],
+      "name": "14 options",
+      "pid": "17",
+      "position": {
+        "x": "252",
+        "y": "2154.5"
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
+    },
+    {
+      "text": "Are you sure you hate fighting? Or are you scared you're going to lose?\n[[continue->17]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "17",
+          "pid": "22"
+        }
+      ],
+      "name": "14.1",
+      "pid": "18",
+      "position": {
+        "x": "102",
+        "y": "2298.5"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I know you don't like to fight but...\n[[continue->15]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "15",
+          "pid": "20"
+        }
+      ],
+      "name": "14.2",
+      "pid": "19",
+      "position": {
+        "x": "425",
+        "y": "2307.5"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Would you ever enter the tournament?\n[[continue->16]]",
       "links": [
         {
           "name": "continue",
           "link": "16",
-          "pid": "17"
+          "pid": "21"
         }
       ],
       "name": "15",
-      "pid": "16",
+      "pid": "20",
       "position": {
-        "x": "359",
-        "y": "2863"
+        "x": "425",
+        "y": "2457.5"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "I think I would... if I found the right fruit to be blended with.\n[[continue->20]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "25"
+        }
+      ],
+      "name": "16",
+      "pid": "21",
+      "position": {
+        "x": "425",
+        "y": "2607.5"
+      },
+      "tags": [
+        "2",
+        "Strawberry",
+        "blush"
+      ]
+    },
+    {
+      "text": "I just don't care for it, that's all... There are other things I care for more.\n[[continue->20]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "20",
+          "pid": "25"
+        }
+      ],
+      "name": "17",
+      "pid": "22",
+      "position": {
+        "x": "102",
+        "y": "2448.5"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "meh"
+      ]
+    },
+    {
+      "text": "The tournament helps Elderbery determine the best pair! Once you find your match you have to put your relationship to the test... by fighting I guess.\n[[continue->19]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "19",
+          "pid": "24"
+        }
+      ],
+      "name": "18",
+      "pid": "23",
+      "position": {
+        "x": "584",
+        "y": "1859.5"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "I'm not really a fan of violence, myself.\n[[continue->14 options]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "14 options",
+          "pid": "17"
+        }
+      ],
+      "name": "19",
+      "pid": "24",
+      "position": {
+        "x": "521",
+        "y": "2021.5"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "meh"
+      ]
+    },
+    {
+      "text": "I'm not doing anything right now, do you want to head to the training area? I don't mind showing you the ropes!\n[[continue->21]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "21",
+          "pid": "26"
+        }
+      ],
+      "name": "20",
+      "pid": "25",
+      "position": {
+        "x": "361",
+        "y": "2805.5"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "base"
+      ]
+    },
+    {
+      "text": "Yeah, sure! I'm not sure what fighting has to do with being the best pair but let's try it out!\n[[continue->22]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "22",
+          "pid": "27"
+        }
+      ],
+      "name": "21",
+      "pid": "26",
+      "position": {
+        "x": "361",
+        "y": "2955.5"
+      },
+      "tags": [
+        "0",
+        "Banana",
+        "base"
+      ]
+    },
+    {
+      "text": "Okay! Let's go then!\n[[continue->23]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "23",
+          "pid": "28"
+        }
+      ],
+      "name": "22",
+      "pid": "27",
+      "position": {
+        "x": "361",
+        "y": "3105.5"
+      },
+      "tags": [
+        "0",
+        "Strawberry",
+        "happy"
+      ]
+    },
+    {
+      "text": "After a few minutes, we head to another level of the fridge. Oddly enough, the dummies are knife-shaped.\n[[continue->24]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "24",
+          "pid": "29"
+        }
+      ],
+      "name": "23",
+      "pid": "28",
+      "position": {
+        "x": "361",
+        "y": "3255.5"
       },
       "tags": [
         "0",
@@ -338,19 +601,19 @@
       ]
     },
     {
-      "text": "Don't mind the size of the dummies, Lemon is the one who likes to train here and all. It's kind of where he hangs out if he's not bullying silverware.\n\n[[continue->16.5]]",
+      "text": "Don't mind the size of the dummies, Lemon is the one who likes to train here and all. It's kind of where they hang out if they're not bullying silverware.\n[[continue->25]]",
       "links": [
         {
           "name": "continue",
-          "link": "16.5",
-          "pid": "25"
+          "link": "25",
+          "pid": "30"
         }
       ],
-      "name": "16",
-      "pid": "17",
+      "name": "24",
+      "pid": "29",
       "position": {
-        "x": "359",
-        "y": "3013"
+        "x": "361",
+        "y": "3405.5"
       },
       "tags": [
         "0",
@@ -360,176 +623,46 @@
       ]
     },
     {
-      "text": "Mhm! Now that we're here, I can show you the ropes! Just follow my lead!",
-      "name": "17",
-      "pid": "18",
+      "text": "Oh, that's fine! So you mentioned combat?\n[[continue->26]]",
+      "links": [
+        {
+          "name": "continue",
+          "link": "26",
+          "pid": "31"
+        }
+      ],
+      "name": "25",
+      "pid": "30",
       "position": {
-        "x": "359",
-        "y": "3163"
+        "x": "361",
+        "y": "3555.5"
       },
       "tags": [
         "0",
-        "Strawberry",
+        "Banana",
         "base",
         "TableBackground"
       ]
     },
     {
-      "text": "I was kind of stuck navigating this sink. It's not exactly the easiest thing to figure out for the first time on your own.\n\n[[continue->7]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "7",
-          "pid": "8"
-        }
-      ],
-      "name": "6.1",
-      "pid": "19",
+      "text": "Mhm! Now that we're here, I can show you some moves! Just follow my lead!",
+      "name": "26",
+      "pid": "31",
       "position": {
-        "x": "147",
-        "y": "1386"
+        "x": "361",
+        "y": "3705.5"
       },
       "tags": [
         "0",
-        "Banana",
-        "base"
-      ]
-    },
-    {
-      "text": "Yeah, there are a lot of cool places to explore! Although I think I might need someone with me before I get lost.\n\n[[continue->10]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "10",
-          "pid": "11"
-        }
-      ],
-      "name": "6.2",
-      "pid": "20",
-      "position": {
-        "x": "649",
-        "y": "1359"
-      },
-      "tags": [
-        "0",
-        "Banana",
-        "base"
-      ]
-    },
-    {
-      "text": "[[I was more focused on navigating this sink.->6.1]]\n[[Yeah, there are a lot of cool places!->6.2]]",
-      "links": [
-        {
-          "name": "I was more focused on navigating this sink.",
-          "link": "6.1",
-          "pid": "19"
-        },
-        {
-          "name": "Yeah, there are a lot of cool places!",
-          "link": "6.2",
-          "pid": "20"
-        }
-      ],
-      "name": "6 options",
-      "pid": "21",
-      "position": {
-        "x": "405",
-        "y": "1492"
-      },
-      "tags": [
-        "0",
-        "option"
-      ]
-    },
-    {
-      "text": "Yeah, it took me a long time to actually find out where this place was.\n[[continue->2]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "2",
-          "pid": "3"
-        }
-      ],
-      "name": "1.5",
-      "pid": "22",
-      "position": {
-        "x": "525",
-        "y": "742"
-      },
-      "tags": [
-        "0",
-        "Banana",
-        "base"
-      ]
-    },
-    {
-      "text": "Oh, wait. Do you mean the thing I was in? At some point, I saw some fruits and silverware just tear it down.\n[[continue->5]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "5",
-          "pid": "6"
-        }
-      ],
-      "name": "4.5",
-      "pid": "23",
-      "position": {
-        "x": "525",
-        "y": "1192"
-      },
-      "tags": [
-        "0",
-        "Banana",
-        "base"
-      ]
-    },
-    {
-      "text": "Yeah, sure! I'm not sure what fighting has to do with being the best pair but let's try it out!\n[[continue->14]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "14",
-          "pid": "15"
-        }
-      ],
-      "name": "13.5",
-      "pid": "24",
-      "position": {
-        "x": "478",
-        "y": "2713"
-      },
-      "tags": [
-        "0",
-        "Banana",
-        "base"
-      ]
-    },
-    {
-      "text": "Oh, that's fine! So you mentioned combat?\n[[continue->17]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "17",
-          "pid": "18"
-        }
-      ],
-      "name": "16.5",
-      "pid": "25",
-      "position": {
-        "x": "479",
-        "y": "3163"
-      },
-      "tags": [
-        "0",
-        "Banana",
+        "Strawberry",
         "base",
         "TableBackground"
       ]
     }
   ],
-  "name": "Strawberry Date 1",
+  "name": "New Strawberry Date 1",
   "startnode": "1",
   "creator": "Twine",
   "creator-version": "2.3.16",
-  "ifid": "70E975CA-AEFD-43B6-99AB-E77CAA3AEA09"
+  "ifid": "71D6C082-240F-4492-9580-4682D0DCA3AC"
 }
