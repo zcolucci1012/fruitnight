@@ -4586,7 +4586,7 @@ MonoBehaviour:
   relationshipScore: 1
   scoreObject: {fileID: 359463932}
   verbalAttacks: {fileID: 518877745}
-  verbalAvailable: 0
+  verbalAvailable: 1
   manualScore: -1
   comboAttackUsed: 0
   debugVerbal: 0
