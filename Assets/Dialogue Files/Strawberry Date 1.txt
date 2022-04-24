@@ -43,7 +43,7 @@
       ]
     },
     {
-      "text": " I'm not quite sure where I am but I think this place is called the sink?\n\n[[continue->3]]",
+      "text": "I'm not quite sure where I am but I think this place is called the sink?\n\n[[continue->3]]",
       "links": [
         {
           "name": "continue",
