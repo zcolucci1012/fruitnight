@@ -34,8 +34,6 @@ public class TournamentManager : MonoBehaviour
     {
         PickAnotherPartner();
         DontDestroyOnLoad(this.gameObject);
-        RelationshipScore.blueberryScore = 4;
-        RelationshipScore.lemonScore = 4;
     }
 
     public void StrawberryPicked()

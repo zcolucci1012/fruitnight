@@ -1302,7 +1302,7 @@ MonoBehaviour:
   scoreObject: {fileID: 1124394018}
   verbalAttacks: {fileID: 1683194490}
   verbalAvailable: 0
-  manualScore: 10
+  manualScore: -1
   comboAttackUsed: 0
   debugVerbal: 0
 --- !u!114 &971594286
@@ -3040,6 +3040,8 @@ MonoBehaviour:
   healthBarObject: {fileID: 2130389621}
   canHeal: 0
   healingMod: 1
+  complimented: 0
+  insulted: 0
 --- !u!114 &1625713357
 MonoBehaviour:
   m_ObjectHideFlags: 0
