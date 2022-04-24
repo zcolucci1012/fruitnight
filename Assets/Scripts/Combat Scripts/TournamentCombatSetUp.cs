@@ -114,6 +114,10 @@ public class TournamentCombatSetUp : MonoBehaviour
         TournamentManager.AllyPair[1].defense = TournamentManager.AllyPair[1].baseDefense;
         TournamentManager.AllyPair[0].unconscious = false;
         TournamentManager.AllyPair[1].unconscious = false;
+        TournamentManager.AllyPair[0].canCompliment = false;
+        TournamentManager.AllyPair[1].canCompliment = false;
+        TournamentManager.AllyPair[0].canInsult = false;
+        TournamentManager.AllyPair[1].canInsult = false;
         TournamentManager.AllyPair[0].poisonAttacks.Clear();
         TournamentManager.AllyPair[1].poisonAttacks.Clear();
         TournamentManager.AllyPair[0].defenseModifiers.Clear();
@@ -126,6 +130,8 @@ public class TournamentCombatSetUp : MonoBehaviour
         TournamentManager.AllyPair[1].turnsStrongHit = 0;
         TournamentManager.AllyPair[0].dmgMod = 0;
         TournamentManager.AllyPair[1].dmgMod = 0;
+        TournamentManager.AllyPair[0].healingMod = 1;
+        TournamentManager.AllyPair[1].healingMod = 1;
 
         TournamentManager.OpponentPair[0].currentHp = TournamentManager.OpponentPair[0].maxHp;
         TournamentManager.OpponentPair[1].currentHp = TournamentManager.OpponentPair[1].maxHp;
@@ -145,5 +151,11 @@ public class TournamentCombatSetUp : MonoBehaviour
         TournamentManager.OpponentPair[1].turnsStrongHit = 0;
         TournamentManager.OpponentPair[0].dmgMod = 0;
         TournamentManager.OpponentPair[1].dmgMod = 0;
+        TournamentManager.OpponentPair[0].healingMod = 1;
+        TournamentManager.OpponentPair[1].healingMod = 1;
+        TournamentManager.OpponentPair[0].canCompliment = false;
+        TournamentManager.OpponentPair[1].canCompliment = false;
+        TournamentManager.OpponentPair[0].canInsult = false;
+        TournamentManager.OpponentPair[1].canInsult = false;
     }
 }

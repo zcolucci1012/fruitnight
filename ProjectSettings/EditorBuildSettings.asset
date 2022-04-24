@@ -95,4 +95,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TournamentFightPreview.unity
     guid: 7d62e2b3954cd294e97753e060ad6a2d
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 8ac277c4af2127d4d96719c30b173c6b
   m_configObjects: {}

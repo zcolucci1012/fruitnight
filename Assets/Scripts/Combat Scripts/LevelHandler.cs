@@ -222,7 +222,7 @@ public class LevelHandler : MonoBehaviour
     {
         if (TournamentManager.tournamentStarted)
         {
-            SceneManager.LoadScene("TournamentCombat");
+            SceneManager.LoadScene("LoseScene");
         }
         else
         {
