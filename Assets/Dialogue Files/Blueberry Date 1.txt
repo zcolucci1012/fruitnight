@@ -243,8 +243,8 @@
       "name": "12",
       "pid": "12",
       "position": {
-        "x": "900",
-        "y": "1454"
+        "x": "926",
+        "y": "1458"
       },
       "tags": [
         "1",
@@ -798,8 +798,8 @@
       "name": "2.5.1",
       "pid": "38",
       "position": {
-        "x": "220",
-        "y": "1053"
+        "x": "210",
+        "y": "1054"
       },
       "tags": [
         "0",
@@ -819,8 +819,8 @@
       "name": "2.5.2",
       "pid": "39",
       "position": {
-        "x": "352",
-        "y": "1066"
+        "x": "400",
+        "y": "1050"
       },
       "tags": [
         "0",
@@ -1110,10 +1110,14 @@
       "position": {
         "x": "928",
         "y": "1914"
-      }
+      },
+      "tags": [
+        "0",
+        "option"
+      ]
     },
     {
-      "text": "Yeah, they're these types of spoons that Elderberry employed called the blender defenders. They're pretty strong, so people usually don't want to mess with them!\n[[continue->30]]",
+      "text": "Yeah, they're these types of spoons that Elderberry employed called the blender defenders. They pretty strong, so people usually don't want to mess with them!\n[[continue->30]]",
       "links": [
         {
           "name": "continue",
