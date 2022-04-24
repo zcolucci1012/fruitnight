@@ -6,11 +6,13 @@ public class Cup : Fighter
 {
     public override string Compliment() {
         // DO SOMETHING
-        return "'You're such a great poet!'\nCup almost breaks out into haikus, but contains themself and instead heals for 5HP.";
+        this.Damage(-5);
+        return "'You're such a great poet!'\nCup almost breaks out into haikus, but contains themself and instead feels healthier.";
     }
 
     public override string Insult() {
-        return "'You'll never be as good a poet as Tomato and Shakes Pear!'\nCup has one tear stream silently down their cheek, and gets hurt for 5HP.";
+        this.Damage(5);
+        return "'You'll never be as good a poet as Tomato and Shakes Pear!'\nCup has one tear stream silently down their cheek, feeling weak.";
     }
 
     private void Awake()

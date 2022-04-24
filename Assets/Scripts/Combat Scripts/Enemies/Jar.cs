@@ -7,10 +7,12 @@ public class Jar : Fighter
 
      public override string Compliment() {
         // DO SOMETHING
+        this.Damage(-2);
         return "'I bet your jam tastes great! I'd love to try some!'\nJar also thinks that their jam tastes great. They do not think even they could make banana jam taste good, though. pog";
     }
 
     public override string Insult() {
+        this.turnsFrozen += 1;
         return "'I can see right through you, Jar!'\nIt takes a second, but the insult finally dawns on Jar.";
     }
 

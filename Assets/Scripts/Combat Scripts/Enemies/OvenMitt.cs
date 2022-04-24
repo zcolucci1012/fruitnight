@@ -11,6 +11,7 @@ public class OvenMitt : Fighter
     }
 
     public override string Insult() {
+        this.poisonAttacks.Add(new PoisonAttack(3, 1));
         return "'I hate your patterns! It's so late 80s'\nOven Mitt quietly sobs.";
     }
 
