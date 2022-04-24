@@ -158,17 +158,21 @@ MonoBehaviour:
     for 2 turns"
   attack2desc: Increases partner's defense by 2 pts, increases their own by 3 pts
     for 2 turns
-  attack3desc: Lowers all opponents defense by 2 pts for 2 turns and deals 1 hp of
-    damage to all opponents
+  attack3desc: Quickly reads up on the enemy, and prevents an enemy from healing
+    for 2 turns
   attack1type: 0
   attack2type: 3
-  attack3type: 1
+  attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
+  turnsStrongHit: 0
   healthBar: {fileID: 1617850384108812487}
   healthBarObject: {fileID: 1617850384108812483}
   canHeal: 0
+  healingMod: 1
 --- !u!1001 &7947730124937937702
 PrefabInstance:
   m_ObjectHideFlags: 0

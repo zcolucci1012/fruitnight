@@ -4603,6 +4603,8 @@ MonoBehaviour:
   attack1type: 2
   attack2type: 2
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -4610,6 +4612,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!1001 &1029944429514520597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5341,6 +5344,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 3
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -5348,6 +5353,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!222 &4537841221258840152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5762,6 +5768,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -5769,6 +5777,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!224 &6330654329604009739
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6147,11 +6156,13 @@ MonoBehaviour:
     for 2 turns"
   attack2desc: Increases partner's defense by 2 pts, increases their own by 3 pts
     for 2 turns
-  attack3desc: Lowers all opponents defense by 2 pts for 2 turns and deals 1 hp of
-    damage to all opponents
+  attack3desc: Quickly reads up on the enemy, and prevents an enemy from healing
+    for 2 turns
   attack1type: 0
   attack2type: 3
-  attack3type: 1
+  attack3type: 0
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -6159,6 +6170,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!1 &7947730126464155183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6296,6 +6308,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 1
   attack3type: 2
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -6303,6 +6317,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!224 &8171296543636232333
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6800,6 +6815,8 @@ MonoBehaviour:
   attack1type: 0
   attack2type: 0
   attack3type: 3
+  canCompliment: 0
+  canInsult: 0
   turnsFrozen: 0
   turnsCantHeal: 0
   dmgMod: 0
@@ -6807,6 +6824,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarObject: {fileID: 0}
   canHeal: 0
+  healingMod: 1
 --- !u!114 &8884170169482398339
 MonoBehaviour:
   m_ObjectHideFlags: 0
