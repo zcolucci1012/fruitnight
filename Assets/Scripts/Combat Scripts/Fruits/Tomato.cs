@@ -5,6 +5,26 @@ using UnityEngine;
 public class Tomato : Fighter
 {
 
+    public override string Compliment() {
+        if (RelationshipScore.tomatoVerbal) {
+            this.healingMod *= 2;
+            return "'Tomato, I can't stop thinking about how great your play was!'\nTomato blushes with pride and oozes confidence, guaranteeing strong attacks.";
+        } else {
+            return ineffectiveCompliment;
+        }
+    }
+
+    public override string Insult() {
+        if (RelationshipScore.tomatoVerbal) {
+            this.turnsFrozen = 2;
+            this.turnsCantHeal = 2;
+            return "'You'll never be as good a writer as Shakes Pear!'\nTomato wilts, and feels overcome by sadness, unable to move or heal.";
+        } else {
+            return ineffectiveInsult;
+        }
+    }
+
+
     private void Awake()
     {
         // Existential Crisis
@@ -28,9 +48,9 @@ public class Tomato : Fighter
         // Shakes Pearean Insult
         this.attack2execute = targets =>
         {
-            int roll = UnityEngine.Random.Range(2, 5);
+            int roll = UnityEngine.Random.Range(2, 6);
             if (this.turnsStrongHit > 0) {
-                roll = 5;
+                roll = 6;
             }
             AttackResult result = this.Hit(targets[0], roll, this.attack2name);
             string msg = result.msg;

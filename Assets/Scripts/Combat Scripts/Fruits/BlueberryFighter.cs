@@ -28,12 +28,12 @@ public class BlueberryFighter : Fighter
         // Sugar Blast
         this.attack1execute = targets =>
         {
-            AttackResult result = Hit(targets[0], 2, this.attack1name);
+            AttackResult result = Hit(targets[0], 3, this.attack1name);
             string msg = result.msg;
             if (result.hit)
             {
                 targets[0].Defense(-2, 2);
-                msg += "\n" + targets[0].name + "\'s defense lowers by 2 pts";
+                msg += "\n" + targets[0].name + "\'s defense lowers by 3 pts";
             }
             return msg;
         };
@@ -54,6 +54,7 @@ public class BlueberryFighter : Fighter
             return msg;
         };
 
+        // removes ability to heal
         this.attack3execute = targets =>
         {
             targets[0].turnsCantHeal = 3;

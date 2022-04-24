@@ -466,9 +466,9 @@ public class LevelHandler : MonoBehaviour
                 break;
             case -1:
                 if (relationshipScore > 3) {
-                    if (players[0].turnsFrozen > 0 || players[1].turnsFrozen > 0)
+                    if (players[0].turnsFrozen > 0 || players[1].turnsFrozen > 0 || players[0].unconscious || players[1].unconscious)
                     {
-                        description = "One of the players is frozen!";
+                        description = "One of the players can't attack this round!";
                     }
                     else if (comboAttackUsed) {
                         description = "You've already used the combo attack this round!";
