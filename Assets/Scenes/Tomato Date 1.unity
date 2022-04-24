@@ -893,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 8794711590132858001}
     - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: emotions.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: emotions.Array.data[0]
@@ -931,6 +931,10 @@ PrefabInstance:
       propertyPath: emotions.Array.data[8]
       value: 
       objectReference: {fileID: 21300000, guid: ae27248f30ec68e4aa90abcacd865755, type: 3}
+    - target: {fileID: 6620291157887662970, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
+      propertyPath: emotions.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 363aa756fd04a71488e28d7c885aa4b4, type: 3}
     - target: {fileID: 6760429210723653063, guid: 6f5428ea017418745b8acb741e6e527b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
