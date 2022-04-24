@@ -12,6 +12,7 @@ public class BlenderDefender : Fighter
             return Hit(targets[0], 4, "Silverware").msg;
         };
 
+        // heal
         this.attack2execute = targets =>
         {
             if (this.currentHp == this.maxHp)
