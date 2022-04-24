@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class OvenMitt : Fighter
 {
+
+    public override string Compliment() {
+        // DO SOMETHING
+        return "'I like your patterns! They're very divine!'\nOven Mitt blushes in appreciation. However, they are committed to their fight, and it has no effect.";
+    }
+
+    public override string Insult() {
+        return "'I hate your patterns! It's so late 80s'\nOven Mitt quietly sobs.";
+    }
+
+
     private void Awake()
     {
         // Mend

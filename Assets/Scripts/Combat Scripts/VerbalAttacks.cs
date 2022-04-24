@@ -32,6 +32,7 @@ public class VerbalAttacks : MonoBehaviour
 
     public void Awake()
     {
+
         strawberryCompliment = new Attack("Compliment Strawberry",
         "Compliment Strawberry",
         AttackType.AllyTarget,
