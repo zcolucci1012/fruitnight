@@ -5,6 +5,26 @@ using UnityEngine;
 public class BlackberryFighter : Fighter
 {
 
+    public override string Compliment() {
+        if (RelationshipScore.blackberryVerbal) {
+            // poison for 2 turns
+            this.poisonAttacks.Add(new PoisonAttack(2, -2));
+            return "'You're doing super well Blackberry! I love hanging out with you!'\nBlackberry blushes, and their crush on you grows stronger. They regenerate health for the next 2 turns";
+        } else {
+            return ineffectiveCompliment;
+        }
+    }
+
+    public override string Insult() {
+        if (RelationshipScore.blackberryVerbal) {
+            // poison for 2 turns
+            this.poisonAttacks.Add(new PoisonAttack(2, 2));
+            return "'I heard you had a crush on me, Blackberry! How embarrassing!'\nBlackberry internalizes your cruel comment, and is poisoned for the next 2 turns.";
+        } else {
+            return ineffectiveInsult;
+        }
+    }
+
     private void Awake()
     {
         // Darkseed Shot

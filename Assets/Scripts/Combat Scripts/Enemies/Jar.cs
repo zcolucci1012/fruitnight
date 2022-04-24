@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class Jar : Fighter
 {
+
+     public override string Compliment() {
+        // DO SOMETHING
+        return "'I bet your jam tastes great! I'd love to try some!'\nJar also thinks that their jam tastes great. They do not think even they could make banana jam taste good, though. pog";
+    }
+
+    public override string Insult() {
+        return "'I can see right through you, Jar!'\nIt takes a second, but the insult finally dawns on Jar.";
+    }
+
     private void Awake()
     {
         // Trap

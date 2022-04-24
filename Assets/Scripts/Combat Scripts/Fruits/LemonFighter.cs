@@ -4,6 +4,29 @@ using UnityEngine;
 
 public class LemonFighter : Fighter
 {
+
+    public override string Compliment() {
+        if (RelationshipScore.lemonVerbal) {
+            // attack and defense drop
+            this.dmgMod += -1;
+            this.Defense(-3, 2);
+            return "'You know Lemon, I think you've done a really great job so far. Lime would be proud of you.'\nLemon is taken aback by your kindness. Their defense drops by 3 pts, and their attacks do 1HP less damage";
+        } else {
+            return ineffectiveCompliment;
+        }
+    }
+
+    public override string Insult() {
+        if (RelationshipScore.lemonVerbal) {
+            // attack boost
+            this.dmgMod += 2;
+            return "'Lemon, I can't believe you haven't been able to beat those silverware yet! What are you, weak?'\nLemon doesn't say anything back, but you swear lemon is almost turning red with rage. Its attacks are boosted by 2HP";
+        } else {
+            return ineffectiveInsult;
+        }
+    }
+
+
     private void Awake()
     {
         // Sour Power

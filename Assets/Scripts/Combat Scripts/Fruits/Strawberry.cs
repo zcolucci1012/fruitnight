@@ -4,11 +4,30 @@ using UnityEngine;
 
 public class Strawberry : Fighter
 {
+
+    public override string Compliment() {
+        if (RelationshipScore.strawberryVerbal) {
+            this.healingMod *= 2;
+            return "'Strawberry, I know we're fighting now, but… I can tell how much you care about your partner.'\nStrawberry overflows with joy. Their healing moves restore double HP.";
+        } else {
+            return ineffectiveCompliment;
+        }
+    }
+
+    public override string Insult() {
+        if (RelationshipScore.strawberryVerbal) {
+            this.Damage(4);
+            return "'You sheep! You're just in this competition for your partner, think for yourself!'\nStrawberry thinks you're rude, but is still hurt. They lose 4HP.";
+        } else {
+            return ineffectiveInsult;
+        }
+    }
+
     private void Awake()
     {
         this.attack1execute = targets =>
         {
-            int healing = -targets[0].Damage(-4);
+            int healing = -targets[0].Damage(healingMod * -4);
             return "Strawberry heals " + targets[0].name + " for " + healing + " HP";
         };
 

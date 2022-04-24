@@ -31,12 +31,20 @@ public abstract class Fighter : MonoBehaviour
     public Func<Fighter[], string> attack1execute;
     public Func<Fighter[], string> attack2execute;
     public Func<Fighter[], string> attack3execute;
+    public Func<Fighter[], string> complimentExecute;
+    public Func<Fighter[], string> insultExecute;
 
+    public bool canCompliment = false;
+    public bool canInsult = false;
+
+    protected string ineffectiveCompliment;
+    protected string ineffectiveInsult;
 
     public Attack attack1 = null;
     public Attack attack2 = null;
     public Attack attack3 = null;
-    //public Attack[] attacks;
+    public Attack complimentAttack = null;
+    public Attack insultAttack = null;
 
     // list of current acting defense modifiers, and how long they will last
     public List<(int defValue, int turnsLeft)> defenseModifiers = new List<(int defValue, int turnsLeft)>{};
@@ -55,6 +63,8 @@ public abstract class Fighter : MonoBehaviour
     public GameObject healthBarObject;
     public bool canHeal;
 
+    public int healingMod = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +75,10 @@ public abstract class Fighter : MonoBehaviour
         }*/
 
         originalEulerAngles = this.transform.eulerAngles;
+
+        ineffectiveCompliment = "'You're doing great!'\nIt's not very effective on " + name + ".\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them later.";
+        ineffectiveInsult = "'You suck!'\nIt's not very effective on " + name + ".\nYou rack your brain for something else to say to them, but nothing comes to mind. You'll need to learn more about them later.";
+
     }
 
     // Update is called once per frame
@@ -85,6 +99,12 @@ public abstract class Fighter : MonoBehaviour
                 healthBarObject.SetActive(true);
             }
         }   
+    }
+
+    // freezes this fighter for the specified number of turns
+    // NOTE: freezes do NOT stack, so we take the max of the existing freeze and new freeze
+    public void Freeze(int turns) {
+        turnsFrozen = Mathf.Max(turnsFrozen, turns);
     }
 
     public AttackResult Hit(Fighter target, int dmg, string name)
@@ -181,7 +201,82 @@ public abstract class Fighter : MonoBehaviour
         this.defense = Mathf.Clamp(this.defense + modifier, 0, 20);
     }
 
-    public void endOfRoundUpdate() {
+    public string endOfRoundUpdate() {
+        string msg = "";
+
+        applyDefenseMods();
+
+        // reduces turns frozen value 
+        if (this.turnsFrozen > 0) {
+            this.turnsFrozen--;
+            if (this.turnsFrozen == 0) {
+                msg += this.name + " can move again!\n";
+            }
+        }
+
+        if (this.turnsStrongHit > 0) {
+            this.turnsStrongHit--;
+            if (this.turnsStrongHit == 0) {
+                msg += this.name + "'s attack boost wore off\n";
+            }
+        }
+
+        msg += applyPoisons();
+
+        if (this.turnsCantHeal > 0)
+        {
+            this.turnsCantHeal--;
+            if (this.turnsCantHeal == 0) {
+                msg += this.name + " can heal again!\n";
+            }
+        }
+
+        poisonAttacks = poisonAttacks.FindAll(x => x.turns > 0);
+
+        return msg;
+    }
+
+    protected string applyDefenseMods() {
+        string msg = "";
+        // loops through and see if any modifiers have worn off.
+        for (int ii = 0; ii < defenseModifiers.Count; ii++) {
+            defenseModifiers[ii] = (defenseModifiers[ii].defValue, defenseModifiers[ii].turnsLeft - 1);
+            if (defenseModifiers[ii].turnsLeft <= 0) {
+                // remove effects from it on defense
+                // TODO : fix this to account for edge cases where removing the defense modifier will still result in something over 20
+                this.defense = Mathf.Clamp(this.defense - defenseModifiers[ii].defValue, 0, 20);
+
+                // remove defense modifier from active list
+                defenseModifiers.RemoveAt(ii);
+                msg += this.name + "'s defense boost wore off!\n";
+            }
+        }
+        return msg;
+    }
+
+    protected string applyPoisons() {
+        string msg = "";
+        foreach (PoisonAttack p in poisonAttacks)
+        {
+            print(p.dmg);
+            if (p.dmg > 0 && !unconscious)
+            {
+                Damage(p.dmg);
+                print("poison damage!");
+                msg += this.name + " is hurt by it's poison!\n";
+            } else if (p.dmg < 0 && !(turnsCantHeal > 0 || unconscious)) {
+                Damage(p.dmg);
+                print("antidote regeneration!");
+                msg += this.name + " has some health regenerated!\n";
+            }
+            p.turns--;
+        }
+        return msg;
+    }
+
+    // NOTE: because of the way this works, we will need to manually account for an extra turn if
+    // the fighter does damage/modifiers to itself
+    public void endOfTurnUpdate() {
         // loops through and see if any modifiers have worn off.
         for (int ii = 0; ii < defenseModifiers.Count; ii++) {
             defenseModifiers[ii] = (defenseModifiers[ii].defValue, defenseModifiers[ii].turnsLeft - 1);
@@ -243,5 +338,12 @@ public abstract class Fighter : MonoBehaviour
         }
 
         return eligibleAttacks.ToArray();
+    }
+
+    public virtual string Compliment() {
+        return ineffectiveCompliment;
+    }
+    public virtual string Insult() {
+        return ineffectiveInsult;
     }
 }

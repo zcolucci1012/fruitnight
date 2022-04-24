@@ -41,6 +41,16 @@ public class LevelHandler : MonoBehaviour
 
     bool isGameOver = false;
 
+    public bool verbalAvailable = false;
+
+    public int manualScore = -1;
+
+    public bool comboAttackUsed = false;
+
+    public bool debugVerbal = false;
+
+    bool pause = false;
+
     // TODO : add dialogue queue
 
     // Start is called before the first frame update
@@ -110,12 +120,28 @@ public class LevelHandler : MonoBehaviour
         } else if (fruit.Equals("tomato")){
             relationshipScore = RelationshipScore.tomatoScore;
         }
+
+        if (manualScore >= 0) {
+            relationshipScore = manualScore;
+        }
+
+        if (debugVerbal) {
+            RelationshipScore.strawberryVerbal = true;
+            RelationshipScore.blueberryVerbal = true;
+            RelationshipScore.lemonVerbal = true;
+            RelationshipScore.tomatoVerbal = true;
+            RelationshipScore.blackberryVerbal = true;
+        }
+    }
+
+    void Unpause() {
+        pause = false;
     }
 
     // Update is called once per frame
     void Update()
     { 
-        if (!isGameOver)
+        if (!isGameOver && !pause)
         {
             //skip turn if unconcsious or frozen
             while (turn < entities.Count && (entities[turn].unconscious || entities[turn].turnsFrozen > 0))
@@ -126,49 +152,67 @@ public class LevelHandler : MonoBehaviour
             // reset turn
             if (turn >= entities.Count)
             {
+                string msg = "End of round\n";
                 // handle updating fighter stats that decay
                 foreach (Fighter player in players)
                 {
-                    player.endOfRoundUpdate();
+                    msg += player.endOfRoundUpdate();
                 }
 
                 foreach (Fighter enemy in enemies)
                 {
-                    enemy.endOfRoundUpdate();
+                    msg += enemy.endOfRoundUpdate();
                 }
+
+                // reset combo attack
+                comboAttackUsed = false;
+
+                description = msg;
+
+                pause = true;
+
+                Invoke("Unpause", 3);
+
+                Debug.Log("test");
+
+                // set turn back to banana
                 turn = 0;
             }
 
-            //checks if player is selecting a target, and if its a player's turn
-            if (selectingTarget && turn < players.Length)
-            {
-                SelectTarget();
-            }
-            //if enemy's turn, play enemy attack after a certain number of seconds
-            else if (turn >= players.Length)
-            {
-                if (!enemyAttacking)
+            if (!pause) {
+                //checks if player is selecting a target, and if its a player's turn
+                if (selectingTarget && turn < players.Length)
                 {
-                    float duration = Mathf.Max(1.5f, description.Length / 50f);
-                    Invoke("BeginEnemyAttack", duration);
-                    enemyAttacking = true;
+                    SelectTarget();
                 }
+                //if enemy's turn, play enemy attack after a certain number of seconds
+                else if (turn >= players.Length)
+                {
+                    if (!enemyAttacking)
+                    {
+                        float duration = Mathf.Max(1.5f, description.Length / 50f);
+                        Invoke("BeginEnemyAttack", duration);
+                        enemyAttacking = true;
+                    }
+                }
+
+                // checks if the combat should end
+                if (AllUnconscious(enemies))
+                {
+                    Invoke("WinGame", 2);
+                    isGameOver = true;
+                }
+                else if (AllUnconscious(players))
+                {
+                    Invoke("LoseGame", 2);
+                    isGameOver = true;
+                }
+
+                //ensure attack buttons are enabled/disabled
+                ToggleAttackButtons();
             }
 
-            // checks if the combat should end
-            if (AllUnconscious(enemies))
-            {
-                Invoke("WinGame", 2);
-                isGameOver = true;
-            }
-            else if (AllUnconscious(players))
-            {
-                Invoke("LoseGame", 2);
-                isGameOver = true;
-            }
-
-            //ensure attack buttons are enabled/disabled
-            ToggleAttackButtons();
+            
 
             descriptionText.GetComponent<Text>().text = description;
         }
@@ -272,33 +316,44 @@ public class LevelHandler : MonoBehaviour
         player1Attack1Button.GetComponent<Button>().enabled = turn == 0;
         player1Attack2Button.GetComponent<Button>().enabled = turn == 0;
         player1Attack3Button.GetComponent<Button>().enabled = turn == 0;
+
         player1ComplimentButton.GetComponent<Button>().enabled = turn == 0;
         player1InsultButton.GetComponent<Button>().enabled = turn == 0;
+
         player2Attack1Button.GetComponent<Button>().enabled = turn == 1;
         player2Attack2Button.GetComponent<Button>().enabled = turn == 1;
         player2Attack3Button.GetComponent<Button>().enabled = turn == 1;
+
         comboAttackButton.GetComponent<Button>().enabled = turn == 0 || turn == 1;
 
         player1Attack1Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player1Attack2Button.GetComponent<EventTrigger>().enabled = turn == 0;
         player1Attack3Button.GetComponent<EventTrigger>().enabled = turn == 0;
+
         player1ComplimentButton.GetComponent<EventTrigger>().enabled = turn == 0;
         player1InsultButton.GetComponent<EventTrigger>().enabled = turn == 0;
+
         player2Attack1Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack2Button.GetComponent<EventTrigger>().enabled = turn == 1;
         player2Attack3Button.GetComponent<EventTrigger>().enabled = turn == 1;
+
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0 || turn == 1;
 
-        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2 && !players[0].unconscious && !players[1].unconscious;
+        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 3 && !players[0].unconscious && !players[1].unconscious && !comboAttackUsed;
+        player1ComplimentButton.GetComponent<Button>().interactable = verbalAvailable;
+        player1InsultButton.GetComponent<Button>().interactable = verbalAvailable;
 
         player1Attack1Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack2Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1Attack3Button.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+
         player1ComplimentButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
         player1InsultButton.GetComponent<Image>().color = turn == 0 ? defaultColor : grayedOut;
+
         player2Attack1Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack2Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
         player2Attack3Button.GetComponent<Image>().color = turn == 1 ? defaultColor : grayedOut;
+
         comboAttackButton.GetComponent<Image>().color = turn == 0 || turn == 1 ? defaultColor : grayedOut;
     }
 
@@ -306,6 +361,7 @@ public class LevelHandler : MonoBehaviour
     public void Player1Attack1()
     {
         selectingTarget = true;
+        comboAttackUsed = false;
         currentAttack = players[0].attack1;
     }
 
@@ -313,6 +369,7 @@ public class LevelHandler : MonoBehaviour
     public void Player1Attack2()
     {
         selectingTarget = true;
+        comboAttackUsed = false;
         currentAttack = players[0].attack2;
     }
 
@@ -327,14 +384,14 @@ public class LevelHandler : MonoBehaviour
     public void Player1Compliment() 
     {
         selectingTarget = true;
-        currentAttack = verbalAttacks.VerbalAttack(true);
+        currentAttack = players[0].complimentAttack;
     }
 
     // begins insult attack for player 1
     public void Player1Insult() 
     {
         selectingTarget = true;
-        currentAttack = verbalAttacks.VerbalAttack(false);
+        currentAttack = players[0].insultAttack;
     }
 
     //begins attack 1 for player 2
@@ -361,7 +418,12 @@ public class LevelHandler : MonoBehaviour
     public void ComboAttack()
     {
         selectingTarget = true;
+        //comboAttackUsed = true;
         currentAttack = this.comboAttack;
+    }
+
+    public void deselectButton() {
+        selectingTarget = false;
     }
 
     //displays description and adds ">" over hovered attack
@@ -386,12 +448,12 @@ public class LevelHandler : MonoBehaviour
                     "> " + players[0].attack3name;
                 break;
             case 3: // compliment attack
-                description = "Compliment an ally or opponent.";
+                description = verbalAvailable ? "Compliment an enemy or ally." : "You can't compliment anyone yet.";
                 player1ComplimentButton.GetComponentInChildren<Text>().text =
                     "> Compliment";
                 break;
             case 4: // insult atack
-                description = "Insult an ally or opponent.";
+                description = verbalAvailable ? "Insult an enemy or ally." : "You can't insult anyone yet.";
                 player1InsultButton.GetComponentInChildren<Text>().text =
                     "> Insult";
                 break;
@@ -411,7 +473,15 @@ public class LevelHandler : MonoBehaviour
                     "> " + players[1].attack3name;
                 break;
             case -1:
-                description = relationshipScore > 2 ? this.comboAttack.description : "Your partner doesn't feel comfortable enough yet to do this attack with you...";
+                if (relationshipScore > 3) {
+                    if (comboAttackUsed) {
+                        description = "You've already used the combo attack this round!";
+                    } else {
+                        description = this.comboAttack.description;
+                    }
+                } else {
+                    description = "Your partner doesn't feel comfortable enough yet to do this attack with you...";
+                }
                 comboAttackButton.GetComponentInChildren<Text>().text =
                     "> " + this.comboAttack.attackName;
                 break;
