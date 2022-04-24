@@ -103,7 +103,7 @@ public class ComboAttacks : MonoBehaviour
                 }
                 int f2healing = -fighter2.Damage(-(healthStolen - healthStolen / 2));
                 int f1healing = -fighter1.Damage(-(healthStolen / 2));
-                msg += "Blackberry and Banana heal for " + f2healing + " HP and " + f1healing + " HP respectively";
+                msg += "Blackberry and Banana heal for " + f2healing + " HP and " + f1healing + " HP respectively.";
             }
 
             return msg;
@@ -111,7 +111,7 @@ public class ComboAttacks : MonoBehaviour
 
 
     private Attack tomatoBanana = new Attack("Boost of Confidence",
-        "Banana reassures Tomato, and boosts their confidence. Tomato’s defense is raised by 3 pts, and guarantees maximum defense/HP effects for moves the next 2 turns.",
+        "Banana reassures Tomato, and boosts their confidence. Tomato’s defense is raised by 3 pts, and guarantees maximum defense/HP effects for moves the next 2 or 3 turns.",
         AttackType.MultiAllyTarget,
         targets =>
         {
@@ -119,7 +119,7 @@ public class ComboAttacks : MonoBehaviour
             foreach (Fighter target in targets) {
                 if (target is Tomato) {
                     target.Defense(3, 2);
-                    target.turnsStrongHit = 2;
+                    target.turnsStrongHit = 3;
                 }
             }
             msg += "Tomato's defense was raised, and their moves are guaranteed to hit with maximum effect the next turn.";

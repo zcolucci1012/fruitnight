@@ -4821,7 +4821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -480.00006, y: -270.03238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1876769048074032249
@@ -5363,8 +5363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 12
   currentHp: 10
-  defense: 10
-  baseDefense: 10
+  defense: 12
+  baseDefense: 12
   unconscious: 0
   attack1name: Existntial crisis
   attack2name: Shakes Pearean Insult
@@ -5373,7 +5373,7 @@ MonoBehaviour:
     their opponent into a brief existential crisis. Prevents an opponent from attacking
     the next turn. However, it also has a small chance to backfire.
   attack2desc: Tomato tries his hand at a witty insult, borrowed from Shakes Pear.
-    Does 2-5 hp of damage to an opponent.
+    Does 2-6 hp of damage to an opponent.
   attack3desc: "Increases Tomato\u2019s and their partner\u2019s defense by 3-6 points
     for 2 turns."
   attack1type: 0

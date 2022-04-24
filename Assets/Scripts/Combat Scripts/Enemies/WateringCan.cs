@@ -13,7 +13,7 @@ public class WateringCan : Fighter
             string msg = "Watty sprinkles a stream of water on its opponents.\n";
             foreach (Fighter f in targets)
             {
-                AttackResult result = this.Hit(f, 2, "Watty");
+                AttackResult result = this.Hit(f, 4, "Watty");
                 msg += result.msg + "\n";                
             }
             return msg;
