@@ -185,8 +185,8 @@ MonoBehaviour:
   tomatoRelationshipText: {fileID: 659628180}
   doubleUpArrow: {fileID: 21300000, guid: 9a83a5c0445500f448e919bc70b5d8d1, type: 3}
   singleUpArrow: {fileID: 21300000, guid: 1d47aec28c72a814db36c4b37d18c34c, type: 3}
-  doubleDownArrow: {fileID: 21300000, guid: a488b5b952266404d9b665d8df775d6c, type: 3}
-  singleDownArrow: {fileID: 21300000, guid: 6743ea1edde53f64c8cc3a1ced4e3995, type: 3}
+  doubleDownArrow: {fileID: 21300000, guid: 8d43779f2ce0f45459ccc0238a7c926a, type: 3}
+  singleDownArrow: {fileID: 21300000, guid: d0f759211a1c36847894b158978fc3c4, type: 3}
   noChange: {fileID: 21300000, guid: edf68ec97747c7a4db0c6023bf14930b, type: 3}
 --- !u!4 &2500545
 Transform:
