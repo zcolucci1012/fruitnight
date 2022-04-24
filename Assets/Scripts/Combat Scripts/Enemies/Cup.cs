@@ -6,11 +6,11 @@ public class Cup : Fighter
 {
     public override string Compliment() {
         // DO SOMETHING
-        return "'I like your patterns! They're very divine!'\nOven Mitt blushes in appreciation. However, they are committed to their fight, and it has no effect.";
+        return "'You're such a great poet!'\nCup almost breaks out into haikus, but contains themself and instead heals for 5HP.";
     }
 
     public override string Insult() {
-        return "'I hate your patterns! It's so late 80s'\nOven Mitt quietly sobs.";
+        return "'You'll never be as good a poet as Tomato and Shakes Pear!'\nCup has one tear stream silently down their cheek, and gets hurt for 5HP.";
     }
 
     private void Awake()
@@ -51,9 +51,9 @@ public class Cup : Fighter
         // Cooldown
         this.attack3execute = targets =>
         {
-            string msg = this.name + " cools down the next turn, and then will gain +1HP of damage on all its attacks.\n";
+            string msg = this.name + " cools down the next turn, and then will gain +2HP of damage on all its attacks.\n";
             this.turnsFrozen = 2;
-            this.dmgMod += 1;
+            this.dmgMod += 2;
             return msg;
         };
 
