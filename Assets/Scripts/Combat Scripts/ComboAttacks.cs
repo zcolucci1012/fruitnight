@@ -111,7 +111,7 @@ public class ComboAttacks : MonoBehaviour
 
 
     private Attack tomatoBanana = new Attack("Boost of Confidence",
-        "Banana reassures Tomato, and boosts their confidence. Tomato’s defense is raised by 3 pts, and guarantees maximum defense/HP effects for moves the next 2 or 3 turns.",
+        "Banana reassures Tomato, and boosts their confidence. Tomato’s defense is raised by 3 pts, and guarantees maximum defense/HP effects for moves the next 1 or 2 turns.",
         AttackType.MultiAllyTarget,
         targets =>
         {
@@ -119,7 +119,7 @@ public class ComboAttacks : MonoBehaviour
             foreach (Fighter target in targets) {
                 if (target is Tomato) {
                     target.Defense(3, 2);
-                    target.turnsStrongHit = 3;
+                    target.turnsStrongHit = 2;
                 }
             }
             msg += "Tomato's defense was raised, and their moves are guaranteed to hit with maximum effect the next turn.";

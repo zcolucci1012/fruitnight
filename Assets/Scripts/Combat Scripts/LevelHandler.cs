@@ -331,7 +331,7 @@ public class LevelHandler : MonoBehaviour
 
         comboAttackButton.GetComponent<EventTrigger>().enabled = turn == 0 || turn == 1;
 
-        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 3 && !players[0].unconscious && !players[1].unconscious && !comboAttackUsed && players[0].turnsFrozen <= 0 && players[1].turnsFrozen <= 0;
+        comboAttackButton.GetComponent<Button>().interactable = relationshipScore > 2 && !players[0].unconscious && !players[1].unconscious && !comboAttackUsed && players[0].turnsFrozen <= 0 && players[1].turnsFrozen <= 0;
         player1ComplimentButton.GetComponent<Button>().interactable = verbalAvailable;
         player1InsultButton.GetComponent<Button>().interactable = verbalAvailable;
 
@@ -465,7 +465,7 @@ public class LevelHandler : MonoBehaviour
                     "> " + players[1].attack3name;
                 break;
             case -1:
-                if (relationshipScore > 3) {
+                if (relationshipScore > 2) {
                     if (players[0].turnsFrozen > 0 || players[1].turnsFrozen > 0 || players[0].unconscious || players[1].unconscious)
                     {
                         description = "One of the players can't attack this round!";

@@ -3697,8 +3697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -208.99994, y: -123}
-  m_SizeDelta: {x: 421.7969, y: 45.201}
+  m_AnchoredPosition: {x: -223.89273, y: -139.38206}
+  m_SizeDelta: {x: 444.5111, y: 63.1922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850263838
 MonoBehaviour:
@@ -4863,30 +4863,6 @@ PrefabInstance:
     - target: {fileID: 1029944428594926274, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
-      propertyPath: attack1desc
-      value: Heals the selected player for 4 hp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
-      propertyPath: attack2desc
-      value: Increases damage of selected player's attacks by 2 hp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
-      propertyPath: attack3desc
-      value: Shoots a stream of seeds at opponent for 3 hp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1029944428594926275, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
-      propertyPath: attack3name
-      value: Seems seedy
-      objectReference: {fileID: 0}
-    - target: {fileID: 1029944428594926278, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 971594285}
-    - target: {fileID: 1029944428594926278, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectedTarget
       objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926301, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: m_Name

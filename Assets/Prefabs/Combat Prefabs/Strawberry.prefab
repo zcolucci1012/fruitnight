@@ -98,10 +98,10 @@ MonoBehaviour:
   unconscious: 0
   attack1name: Strawberry patch
   attack2name: Vitamic c-rious
-  attack3name: Seems Seedy
-  attack1desc: Heals the selected player for 4 health
-  attack2desc: Increases damage of target by 1
-  attack3desc: Shoots a stream of seeds at opponent for 3 hp
+  attack3name: Seems seedy
+  attack1desc: Heals the selected player for 4 HP
+  attack2desc: Increases damage of selected player's attacks by 1 DMG
+  attack3desc: Shoots a stream of seeds at opponent for 3 DMG
   attack1type: 2
   attack2type: 2
   attack3type: 0
