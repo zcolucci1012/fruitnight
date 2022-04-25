@@ -106,8 +106,8 @@ MonoBehaviour:
     crisis. Prevents an opponent from attacking the next turn. However, it also has
     a small chance to backfire.
   attack2desc: Tomato tries his hand at a witty insult, borrowed from Shakes Pear.
-    Does 2-6 hp of damage to an opponent.
-  attack3desc: "Increases Tomato\u2019s and their partner\u2019s defense by 3-6 points
+    Does 2-6 DMG to an opponent.
+  attack3desc: "Increases Tomato\u2019s and their partner\u2019s defense by 3-6 PTS
     for 2 turns."
   attack1type: 0
   attack2type: 0
