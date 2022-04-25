@@ -5106,7 +5106,7 @@ PrefabInstance:
     - target: {fileID: 8884170169285886198, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: attack3desc
       value: 'Gives its team a pep talk. Raises its partner and itself''s defense
-        by 2 pt for 3 turns '
+        by 2 PTS for 3 turns '
       objectReference: {fileID: 0}
     - target: {fileID: 8884170169285886198, guid: 212eb8af95407154485ba6e282162091, type: 3}
       propertyPath: attack3name

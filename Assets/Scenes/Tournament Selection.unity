@@ -5242,10 +5242,11 @@ MonoBehaviour:
   attack1desc: Lemon flings citric acid in an opponents face. Does 4 DMG
   attack2desc: Lemon becomes enraged. Does 6 DMG to a selected enemy, but hurts itself
     for 2-4 hp.
-  attack3desc: none
+  attack3desc: 'Gives its team a pep talk. Raises its partner and itself''s defense
+    by 2 PTS for 3 turns '
   attack1type: 0
   attack2type: 0
-  attack3type: 0
+  attack3type: 3
   canCompliment: 0
   canInsult: 0
   turnsFrozen: 0

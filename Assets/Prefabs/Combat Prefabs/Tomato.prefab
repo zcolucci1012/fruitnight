@@ -100,7 +100,7 @@ MonoBehaviour:
   attack2name: Shakes Pearean Insult
   attack3name: Writer's Block
   attack1desc: Tomato philosophizes about the meaning of life and fruit, sending
-    their opponent into a brief existential crisis. Prevents an opponent from attacking
+    their opponent into an existential crisis. Prevents an opponent from attacking
     the next turn. However, it also has a small chance to backfire.
   attack2desc: Tomato tries his hand at a witty insult, borrowed from Shakes Pear.
     Does 2-6 DMG to an opponent.
