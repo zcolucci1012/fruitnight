@@ -4864,6 +4864,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1029944428594926278, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 971594285}
+    - target: {fileID: 1029944428594926278, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectedTarget
+      objectReference: {fileID: 0}
     - target: {fileID: 1029944428594926301, guid: 5e2dd18f1e7222e45bdac2457a47a666, type: 3}
       propertyPath: m_Name
       value: Strawberry
