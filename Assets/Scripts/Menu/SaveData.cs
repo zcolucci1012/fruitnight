@@ -115,7 +115,7 @@ public class SaveData : MonoBehaviour
         PlayerPrefs.SetInt("blackberryDaysLeftUntilDateable", 0);
         PlayerPrefs.SetInt("tomatoDaysLeftUntilDateable", 0);
 
-        PlayerPrefs.SetInt("tournamentStarted", TournamentManager.tournamentStarted ? 1 : 0);
+        PlayerPrefs.SetInt("tournamentStarted", 0);
 
         PlayerPrefs.SetInt("strawberryVerbal", 0);
         PlayerPrefs.SetInt("blueberryVerbal", 0);
