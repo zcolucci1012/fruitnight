@@ -1810,8 +1810,8 @@
       },
       "tags": [
         "0",
-        "???",
-        "noEmotion"
+        "Watering Can",
+        "base"
       ]
     },
     {
