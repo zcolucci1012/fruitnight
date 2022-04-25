@@ -24,6 +24,7 @@ public class LevelHandler : MonoBehaviour
 
     public Color defaultColor;
     public Color grayedOut;
+    public GameObject overPanel;
 
     List<Fighter> entities = new List<Fighter>();
     int turn = 0;
@@ -192,11 +193,13 @@ public class LevelHandler : MonoBehaviour
                 // checks if the combat should end
                 if (AllUnconscious(enemies))
                 {
+                    overPanel.SetActive(true);
                     Invoke("WinGame", 2);
                     isGameOver = true;
                 }
                 else if (AllUnconscious(players))
                 {
+                    overPanel.SetActive(true);
                     Invoke("LoseGame", 2);
                     isGameOver = true;
                 }
