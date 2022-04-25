@@ -20,6 +20,7 @@ public class SaveData : MonoBehaviour
             Destroy(this.gameObject);
         }
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        Load();
         DontDestroyOnLoad(gameObject);
     }
 
@@ -76,6 +77,8 @@ public class SaveData : MonoBehaviour
         PlayerPrefs.SetInt("lemonVerbal", RelationshipScore.lemonVerbal ? 1 : 0);
         PlayerPrefs.SetInt("blackberryVerbal", RelationshipScore.blackberryVerbal ? 1 : 0);
         PlayerPrefs.SetInt("tomatoVerbal", RelationshipScore.tomatoVerbal ? 1 : 0);
+
+        PlayerPrefs.SetInt("day", DateSelectionManager.day);
     }
 
     public static void Restart()
@@ -112,13 +115,15 @@ public class SaveData : MonoBehaviour
         PlayerPrefs.SetInt("blackberryDaysLeftUntilDateable", 0);
         PlayerPrefs.SetInt("tomatoDaysLeftUntilDateable", 0);
 
-        PlayerPrefs.SetInt("tournamentStarted", TournamentManager.tournamentStarted ? 1 : 0);
+        PlayerPrefs.SetInt("tournamentStarted", 0);
 
         PlayerPrefs.SetInt("strawberryVerbal", 0);
         PlayerPrefs.SetInt("blueberryVerbal", 0);
         PlayerPrefs.SetInt("lemonVerbal", 0);
         PlayerPrefs.SetInt("blackberryVerbal", 0);
         PlayerPrefs.SetInt("tomatoVerbal", 0);
+
+        PlayerPrefs.SetInt("day", 1);
     }
 
     public static void Load()
@@ -158,11 +163,13 @@ public class SaveData : MonoBehaviour
 
         TournamentManager.tournamentStarted = PlayerPrefs.GetInt("tournamentStarted", 0) == 1;
 
-        RelationshipScore.strawberryVerbal = PlayerPrefs.GetInt("strawberryVerbal") == 1;
-        RelationshipScore.blueberryVerbal = PlayerPrefs.GetInt("blueberryVerbal") == 1;
-        RelationshipScore.lemonVerbal = PlayerPrefs.GetInt("lemonVerbal") == 1;
-        RelationshipScore.blackberryVerbal = PlayerPrefs.GetInt("blackberryVerbal") == 1;
-        RelationshipScore.tomatoVerbal = PlayerPrefs.GetInt("tomatoVerbal") == 1;
+        RelationshipScore.strawberryVerbal = PlayerPrefs.GetInt("strawberryVerbal", 0) == 1;
+        RelationshipScore.blueberryVerbal = PlayerPrefs.GetInt("blueberryVerbal", 0) == 1;
+        RelationshipScore.lemonVerbal = PlayerPrefs.GetInt("lemonVerbal", 0) == 1;
+        RelationshipScore.blackberryVerbal = PlayerPrefs.GetInt("blackberryVerbal", 0) == 1;
+        RelationshipScore.tomatoVerbal = PlayerPrefs.GetInt("tomatoVerbal", 0) == 1;
+
+        DateSelectionManager.day = PlayerPrefs.GetInt("day", 0);
     }
 
     public static void LogData()
@@ -206,7 +213,9 @@ public class SaveData : MonoBehaviour
             "blueberryVerbal : " + PlayerPrefs.GetInt("blueberryVerbal", 0) + "\n" +
             "lemonVerbal : " + PlayerPrefs.GetInt("lemonVerbal", 0) + "\n" +
             "blackberryVerbal : " + PlayerPrefs.GetInt("blackberryVerbal", 0) + "\n" +
-            "tomatoVerbal : " + PlayerPrefs.GetInt("tomatoVerbal", 0) + "\n"
+            "tomatoVerbal : " + PlayerPrefs.GetInt("tomatoVerbal", 0) + "\n" +
+
+            "day: " + PlayerPrefs.GetInt("day", 0) + "\n"
 
             );
     }

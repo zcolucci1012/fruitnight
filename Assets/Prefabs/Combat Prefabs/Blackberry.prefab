@@ -69,9 +69,9 @@ MonoBehaviour:
   attack1name: Darkseed Shot
   attack2name: Poisonfruit
   attack3name: Vampiric Prickle
-  attack1desc: Attacks enemy for 2 damage, preventing any healing for 2 turns
-  attack2desc: Infects enemy with poison dealing 1 damage per round for 4 rounds
-  attack3desc: Steals 2 hp from a chosen enemy
+  attack1desc: Attacks enemy for 2 DMG, preventing any healing for 2 turns
+  attack2desc: Infects enemy with poison dealing 1 DMG per round for 4 rounds
+  attack3desc: Steals 2 HP from a chosen enemy
   attack1type: 0
   attack2type: 0
   attack3type: 0

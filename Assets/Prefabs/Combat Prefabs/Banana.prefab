@@ -99,8 +99,8 @@ MonoBehaviour:
   attack1name: Peel Slap
   attack2name: Banana Slamma
   attack3name: Banana Soothie
-  attack1desc: Attacks one enemy for 4 hp
-  attack2desc: Attacks all enemies for 2 hp
+  attack1desc: Attacks one enemy for 4 HP
+  attack2desc: Attacks all enemies for 2 HP
   attack3desc: Choose an ally to heal by 2 HP
   attack1type: 0
   attack2type: 1

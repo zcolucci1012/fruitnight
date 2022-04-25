@@ -155,9 +155,9 @@ MonoBehaviour:
   attack1name: Sour Power
   attack2name: Raging Lemon
   attack3name: none
-  attack1desc: Lemon flings citric acid in an opponents face. Does 4 pts of damage.
-  attack2desc: Lemon becomes enraged. Does 6 pts of damage to a selected enemy, but
-    hurts itself for 2-4 hp.
+  attack1desc: Lemon flings citric acid in an opponents face. Does 4 DMG
+  attack2desc: Lemon becomes enraged. Does 6 DMG to a selected enemy, but hurts itself
+    for 2-4 hp.
   attack3desc: none
   attack1type: 0
   attack2type: 0

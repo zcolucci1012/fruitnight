@@ -155,9 +155,9 @@ MonoBehaviour:
   attack1name: Evil Genius
   attack2name: Study Up
   attack3name: Berry Smart
-  attack1desc: "Attack enemy for 3 hp, lowers an opponent\u2019s defense by 3 pts
+  attack1desc: "Attack enemy for 3 HP, lowers an opponent\u2019s defense by 3 PTS
     for 2 turns"
-  attack2desc: Increases partner's defense by 2 pts, increases their own by 3 pts
+  attack2desc: Increases partner's defense by 2 PTS, increases their own by 3 PTS
     for 2 turns
   attack3desc: Quickly reads up on the enemy, and prevents an enemy from healing
     for 2 turns

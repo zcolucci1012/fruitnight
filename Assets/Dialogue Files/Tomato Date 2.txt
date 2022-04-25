@@ -219,7 +219,7 @@
       ]
     },
     {
-      "text": "Well, you see, when blueberry first mentioned that I might be a fruit, at first, I didn't think anything of it. I had my family and my friends, and it didn't seem like it would matter at all.\n[[continue->6]]",
+      "text": "Well, you see, when blueberry first mentioned that I might be a fruit, at first, I didn't think anything of it.\n[[continue->6]]",
       "links": [
         {
           "name": "continue",
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "text": "At first, I didn't. I didn't really know the other fruits or vegetables very well. They invited me to their tournament trainings, but I didn't feel like I really belonged there with them, you know?\n[[continue->9]]",
+      "text": "At first, I didn't. I didn't really know the other fruits or vegetables very well. I didn't feel like I really belonged there with them, you know?\n[[continue->9]]",
       "links": [
         {
           "name": "continue",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "text": "I didn't want to impose on them at all, and everytime I tried to go to the training, I'd just hang around in the back of the fridge with all the old fruit.\n[[continue->9 options]]",
+      "text": "I didn't want to impose on them, I'd just hang around in the back of the fridge with all the old fruit.\n[[continue->9 options]]",
       "links": [
         {
           "name": "continue",
@@ -433,11 +433,11 @@
       ]
     },
     {
-      "text": "As it turns out... Cucumber wasn't sure if they were a fruit or a vegetable either! So the three of us became a trio of sorts.\n[[continue->13]]",
+      "text": "As it turns out... Cucumber wasn't sure if they were a fruit or a vegetable either! So the three of us became a trio of sorts.\n[[continue->14]]",
       "links": [
         {
           "name": "continue",
-          "link": "13",
+          "link": "14",
           "pid": "22"
         }
       ],
@@ -454,37 +454,16 @@
       ]
     },
     {
-      "text": "Cucumber got Shakes Pear and me excited to fight for the first time. We all started training every day, and then afterwards Shakes Pear would share whatever new play they were writing.\n[[continue->14]]",
-      "links": [
-        {
-          "name": "continue",
-          "link": "14",
-          "pid": "23"
-        }
-      ],
-      "name": "13",
-      "pid": "22",
-      "position": {
-        "x": "307",
-        "y": "3594"
-      },
-      "tags": [
-        "0",
-        "Tomato",
-        "smile"
-      ]
-    },
-    {
       "text": "But then, when it came time for the tournament... we had to pick teams and... well, you can guess what happened next. I'm still here, and they aren't.\n[[continue->15]]",
       "links": [
         {
           "name": "continue",
           "link": "15",
-          "pid": "24"
+          "pid": "23"
         }
       ],
       "name": "14",
-      "pid": "23",
+      "pid": "22",
       "position": {
         "x": "307",
         "y": "3744"
@@ -501,11 +480,11 @@
         {
           "name": "continue",
           "link": "16",
-          "pid": "25"
+          "pid": "24"
         }
       ],
       "name": "15",
-      "pid": "24",
+      "pid": "23",
       "position": {
         "x": "307",
         "y": "3894"
@@ -522,11 +501,11 @@
         {
           "name": "continue",
           "link": "17",
-          "pid": "26"
+          "pid": "25"
         }
       ],
       "name": "16",
-      "pid": "25",
+      "pid": "24",
       "position": {
         "x": "307",
         "y": "4044"
@@ -538,16 +517,16 @@
       ]
     },
     {
-      "text": "I was so proud of them when they made it to the final round of the tournament. They'd always wanted to be able to go in the Great Blender, you know?\n[[continue->18]]",
+      "text": "I was so proud of them when they made it to the final round of the tournament.\n[[continue->18]]",
       "links": [
         {
           "name": "continue",
           "link": "18",
-          "pid": "27"
+          "pid": "26"
         }
       ],
       "name": "17",
-      "pid": "26",
+      "pid": "25",
       "position": {
         "x": "307",
         "y": "4194"
@@ -564,11 +543,11 @@
         {
           "name": "continue",
           "link": "19",
-          "pid": "28"
+          "pid": "27"
         }
       ],
       "name": "18",
-      "pid": "27",
+      "pid": "26",
       "position": {
         "x": "307",
         "y": "4344"
@@ -585,11 +564,11 @@
         {
           "name": "continue",
           "link": "20",
-          "pid": "29"
+          "pid": "28"
         }
       ],
       "name": "19",
-      "pid": "28",
+      "pid": "27",
       "position": {
         "x": "307",
         "y": "4494"
@@ -606,11 +585,11 @@
         {
           "name": "continue",
           "link": "21",
-          "pid": "30"
+          "pid": "29"
         }
       ],
       "name": "20",
-      "pid": "29",
+      "pid": "28",
       "position": {
         "x": "307",
         "y": "4644"
@@ -627,11 +606,11 @@
         {
           "name": "continue",
           "link": "21 options",
-          "pid": "31"
+          "pid": "30"
         }
       ],
       "name": "21",
-      "pid": "30",
+      "pid": "29",
       "position": {
         "x": "307",
         "y": "4793"
@@ -648,16 +627,16 @@
         {
           "name": "I love spending time with you.",
           "link": "21.1",
-          "pid": "32"
+          "pid": "31"
         },
         {
           "name": "I didn't really have anything better to do.",
           "link": "21.2",
-          "pid": "33"
+          "pid": "32"
         }
       ],
       "name": "21 options",
-      "pid": "31",
+      "pid": "30",
       "position": {
         "x": "307",
         "y": "4943"
@@ -673,11 +652,11 @@
         {
           "name": "continue",
           "link": "22",
-          "pid": "34"
+          "pid": "33"
         }
       ],
       "name": "21.1",
-      "pid": "32",
+      "pid": "31",
       "position": {
         "x": "232",
         "y": "5093"
@@ -694,11 +673,11 @@
         {
           "name": "continue",
           "link": "22",
-          "pid": "34"
+          "pid": "33"
         }
       ],
       "name": "21.2",
-      "pid": "33",
+      "pid": "32",
       "position": {
         "x": "382",
         "y": "5093"
@@ -710,16 +689,16 @@
       ]
     },
     {
-      "text": "Anyways, after all that, I've been meaning to fight in the next tournament and follow in their footsteps, but I never had anyone else to fight with. And, I wanted to finish up my play that I've been working on.\n[[A play? Have you finished it yet?->23]]",
+      "text": "Afterwards, I've been meaning to fight in the next tournament, but I never had anyone else to fight with. And, I wanted to finish up my play that I've been working on.\n[[A play? Have you finished it yet?->23]]",
       "links": [
         {
           "name": "A play? Have you finished it yet?",
           "link": "23",
-          "pid": "35"
+          "pid": "34"
         }
       ],
       "name": "22",
-      "pid": "34",
+      "pid": "33",
       "position": {
         "x": "311",
         "y": "5328"
@@ -736,11 +715,11 @@
         {
           "name": "continue",
           "link": "24",
-          "pid": "36"
+          "pid": "35"
         }
       ],
       "name": "23",
-      "pid": "35",
+      "pid": "34",
       "position": {
         "x": "308",
         "y": "5508"
@@ -757,11 +736,11 @@
         {
           "name": "continue",
           "link": "24 options",
-          "pid": "37"
+          "pid": "36"
         }
       ],
       "name": "24",
-      "pid": "36",
+      "pid": "35",
       "position": {
         "x": "308",
         "y": "5658"
@@ -778,16 +757,16 @@
         {
           "name": "I want to see the play! Can you show me some of it?",
           "link": "24.1",
-          "pid": "38"
+          "pid": "37"
         },
         {
           "name": "Good job, I guess? Anyways, did you want train some more for the tournament?",
           "link": "24.1.2",
-          "pid": "41"
+          "pid": "40"
         }
       ],
       "name": "24 options",
-      "pid": "37",
+      "pid": "36",
       "position": {
         "x": "400",
         "y": "5804"
@@ -803,11 +782,11 @@
         {
           "name": "continue",
           "link": "24.1 options",
-          "pid": "39"
+          "pid": "38"
         }
       ],
       "name": "24.1",
-      "pid": "38",
+      "pid": "37",
       "position": {
         "x": "172",
         "y": "5959"
@@ -824,16 +803,16 @@
         {
           "name": "Of course! Why wouldn't I?",
           "link": "24.1.1",
-          "pid": "40"
+          "pid": "39"
         },
         {
           "name": "No, I was just joking. Let's fight!",
           "link": "51",
-          "pid": "85"
+          "pid": "84"
         }
       ],
       "name": "24.1 options",
-      "pid": "39",
+      "pid": "38",
       "position": {
         "x": "172",
         "y": "6109"
@@ -849,11 +828,11 @@
         {
           "name": "continue",
           "link": "24.1.1 options",
-          "pid": "42"
+          "pid": "41"
         }
       ],
       "name": "24.1.1",
-      "pid": "40",
+      "pid": "39",
       "position": {
         "x": "97",
         "y": "6259"
@@ -870,19 +849,19 @@
         {
           "name": "Yes, absolutely!",
           "link": "25",
-          "pid": "45"
+          "pid": "44"
         },
         {
           "name": "Nah, not really. Let's fight.",
           "link": "51",
-          "pid": "85"
+          "pid": "84"
         }
       ],
       "name": "24.1.2",
-      "pid": "41",
+      "pid": "40",
       "position": {
-        "x": "702",
-        "y": "5982"
+        "x": "534",
+        "y": "5959"
       },
       "tags": [
         "0",
@@ -896,16 +875,16 @@
         {
           "name": "It's probably not as good as Shakes Pear's, but I'll still listen to it.",
           "link": "24.1.1.2",
-          "pid": "44"
+          "pid": "43"
         },
         {
           "name": "I'm sure that's not true! Just because you're not Shakes Pear, doesn't mean your work isn't good!",
           "link": "24.1.1.1",
-          "pid": "43"
+          "pid": "42"
         }
       ],
       "name": "24.1.1 options",
-      "pid": "42",
+      "pid": "41",
       "position": {
         "x": "131",
         "y": "6381"
@@ -921,11 +900,11 @@
         {
           "name": "continue",
           "link": "25",
-          "pid": "45"
+          "pid": "44"
         }
       ],
       "name": "24.1.1.1",
-      "pid": "43",
+      "pid": "42",
       "position": {
         "x": "22",
         "y": "6559"
@@ -942,11 +921,11 @@
         {
           "name": "continue",
           "link": "24.1.1.2 options",
-          "pid": "46"
+          "pid": "45"
         }
       ],
       "name": "24.1.1.2",
-      "pid": "44",
+      "pid": "43",
       "position": {
         "x": "356",
         "y": "6506"
@@ -963,11 +942,11 @@
         {
           "name": "continue",
           "link": "26",
-          "pid": "47"
+          "pid": "46"
         }
       ],
       "name": "25",
-      "pid": "45",
+      "pid": "44",
       "position": {
         "x": "147",
         "y": "6795"
@@ -984,16 +963,16 @@
         {
           "name": "Yeah, I still want to listen to it.",
           "link": "25",
-          "pid": "45"
+          "pid": "44"
         },
         {
           "name": "You're right, I'm in a bit of a rush. Let's just get to training for the tournament instead",
           "link": "51",
-          "pid": "85"
+          "pid": "84"
         }
       ],
       "name": "24.1.1.2 options",
-      "pid": "46",
+      "pid": "45",
       "position": {
         "x": "402",
         "y": "6693"
@@ -1009,11 +988,11 @@
         {
           "name": "continue",
           "link": "26 options",
-          "pid": "48"
+          "pid": "47"
         }
       ],
       "name": "26",
-      "pid": "47",
+      "pid": "46",
       "position": {
         "x": "107",
         "y": "6963"
@@ -1030,21 +1009,21 @@
         {
           "name": "But... I thought tomatoes weren't vegetables...",
           "link": "26.1",
-          "pid": "49"
+          "pid": "48"
         },
         {
           "name": "Ew, sounds boring. I want action, not romance!",
           "link": "26.3",
-          "pid": "51"
+          "pid": "50"
         },
         {
           "name": "Aw, how sweet!",
           "link": "26.2",
-          "pid": "50"
+          "pid": "49"
         }
       ],
       "name": "26 options",
-      "pid": "48",
+      "pid": "47",
       "position": {
         "x": "107",
         "y": "7113"
@@ -1060,11 +1039,11 @@
         {
           "name": "continue",
           "link": "26.2",
-          "pid": "50"
+          "pid": "49"
         }
       ],
       "name": "26.1",
-      "pid": "49",
+      "pid": "48",
       "position": {
         "x": "0",
         "y": "7263"
@@ -1081,14 +1060,14 @@
         {
           "name": "continue",
           "link": "27",
-          "pid": "52"
+          "pid": "51"
         }
       ],
       "name": "26.2",
-      "pid": "50",
+      "pid": "49",
       "position": {
-        "x": "196",
-        "y": "7279"
+        "x": "218",
+        "y": "7280"
       },
       "tags": [
         "0",
@@ -1102,14 +1081,14 @@
         {
           "name": "continue",
           "link": "26.2",
-          "pid": "50"
+          "pid": "49"
         }
       ],
       "name": "26.3",
-      "pid": "51",
+      "pid": "50",
       "position": {
-        "x": "401",
-        "y": "7211"
+        "x": "388",
+        "y": "7193"
       },
       "tags": [
         "0",
@@ -1123,11 +1102,11 @@
         {
           "name": "continue",
           "link": "28",
-          "pid": "53"
+          "pid": "52"
         }
       ],
       "name": "27",
-      "pid": "52",
+      "pid": "51",
       "position": {
         "x": "157",
         "y": "7416"
@@ -1144,11 +1123,11 @@
         {
           "name": "continue",
           "link": "29",
-          "pid": "54"
+          "pid": "53"
         }
       ],
       "name": "28",
-      "pid": "53",
+      "pid": "52",
       "position": {
         "x": "157",
         "y": "7566"
@@ -1165,11 +1144,11 @@
         {
           "name": "continue",
           "link": "29 options",
-          "pid": "55"
+          "pid": "54"
         }
       ],
       "name": "29",
-      "pid": "54",
+      "pid": "53",
       "position": {
         "x": "157",
         "y": "7716"
@@ -1186,16 +1165,16 @@
         {
           "name": "Gasp!",
           "link": "29.1",
-          "pid": "56"
+          "pid": "55"
         },
         {
           "name": "Yawn...",
           "link": "29.2",
-          "pid": "57"
+          "pid": "56"
         }
       ],
       "name": "29 options",
-      "pid": "55",
+      "pid": "54",
       "position": {
         "x": "157",
         "y": "7866"
@@ -1206,16 +1185,16 @@
       ]
     },
     {
-      "text": "They try to sneak away together, but to do that, Juliet has to fake being rotten and dead.\n[[continue->30]]",
+      "text": "They try to sneak away together, but to do that, Juliet has to fake her death.\n[[continue->30]]",
       "links": [
         {
           "name": "continue",
           "link": "30",
-          "pid": "58"
+          "pid": "57"
         }
       ],
       "name": "29.1",
-      "pid": "56",
+      "pid": "55",
       "position": {
         "x": "82",
         "y": "8016"
@@ -1232,11 +1211,11 @@
         {
           "name": "continue",
           "link": "29.1",
-          "pid": "56"
+          "pid": "55"
         }
       ],
       "name": "29.2",
-      "pid": "57",
+      "pid": "56",
       "position": {
         "x": "232",
         "y": "8016"
@@ -1248,16 +1227,16 @@
       ]
     },
     {
-      "text": "But poor Tomateo doesn't know that, and when they see Juliet... well, they think Juliet is actually rotten.\n[[continue->31]]",
+      "text": "Poor Tomateo doesn't know that, and when they see Juliet... well, they think Juliet is actually dead and rotten.\n[[continue->31]]",
       "links": [
         {
           "name": "continue",
           "link": "31",
-          "pid": "59"
+          "pid": "58"
         }
       ],
       "name": "30",
-      "pid": "58",
+      "pid": "57",
       "position": {
         "x": "184",
         "y": "8207"
@@ -1274,11 +1253,11 @@
         {
           "name": "continue",
           "link": "32",
-          "pid": "60"
+          "pid": "59"
         }
       ],
       "name": "31",
-      "pid": "59",
+      "pid": "58",
       "position": {
         "x": "184",
         "y": "8357"
@@ -1295,11 +1274,11 @@
         {
           "name": "continue",
           "link": "32 options",
-          "pid": "61"
+          "pid": "60"
         }
       ],
       "name": "32",
-      "pid": "60",
+      "pid": "59",
       "position": {
         "x": "184",
         "y": "8507"
@@ -1311,21 +1290,21 @@
       ]
     },
     {
-      "text": "[[But then what happens to Juliet?!->32.1]]\n[[Let me guess...->32.2]]",
+      "text": "[[But then what happens to Juliet?!->32.1]]\n[[Let me guess what happens...->32.2]]",
       "links": [
         {
           "name": "But then what happens to Juliet?!",
           "link": "32.1",
-          "pid": "62"
+          "pid": "61"
         },
         {
-          "name": "Let me guess...",
+          "name": "Let me guess what happens...",
           "link": "32.2",
-          "pid": "63"
+          "pid": "62"
         }
       ],
       "name": "32 options",
-      "pid": "61",
+      "pid": "60",
       "position": {
         "x": "184",
         "y": "8657"
@@ -1341,11 +1320,11 @@
         {
           "name": "continue",
           "link": "34",
-          "pid": "65"
+          "pid": "64"
         }
       ],
       "name": "32.1",
-      "pid": "62",
+      "pid": "61",
       "position": {
         "x": "109",
         "y": "8807"
@@ -1362,11 +1341,11 @@
         {
           "name": "continue",
           "link": "33",
-          "pid": "64"
+          "pid": "63"
         }
       ],
       "name": "32.2",
-      "pid": "63",
+      "pid": "62",
       "position": {
         "x": "259",
         "y": "8807"
@@ -1383,14 +1362,14 @@
         {
           "name": "continue",
           "link": "34",
-          "pid": "65"
+          "pid": "64"
         }
       ],
       "name": "33",
-      "pid": "64",
+      "pid": "63",
       "position": {
-        "x": "471",
-        "y": "8982"
+        "x": "554",
+        "y": "8989"
       },
       "tags": [
         "0",
@@ -1404,14 +1383,14 @@
         {
           "name": "continue",
           "link": "35",
-          "pid": "66"
+          "pid": "65"
         }
       ],
       "name": "34",
-      "pid": "65",
+      "pid": "64",
       "position": {
-        "x": "116",
-        "y": "9096"
+        "x": "79",
+        "y": "9074"
       },
       "tags": [
         "0",
@@ -1425,11 +1404,11 @@
         {
           "name": "continue",
           "link": "36",
-          "pid": "67"
+          "pid": "66"
         }
       ],
       "name": "35",
-      "pid": "66",
+      "pid": "65",
       "position": {
         "x": "218",
         "y": "9262"
@@ -1446,11 +1425,11 @@
         {
           "name": "continue",
           "link": "36 options",
-          "pid": "68"
+          "pid": "67"
         }
       ],
       "name": "36",
-      "pid": "67",
+      "pid": "66",
       "position": {
         "x": "218",
         "y": "9412"
@@ -1467,16 +1446,16 @@
         {
           "name": "That was amazing!",
           "link": "36.1",
-          "pid": "69"
+          "pid": "68"
         },
         {
           "name": "That was alright.",
           "link": "36.2",
-          "pid": "70"
+          "pid": "69"
         }
       ],
       "name": "36 options",
-      "pid": "68",
+      "pid": "67",
       "position": {
         "x": "218",
         "y": "9562"
@@ -1492,11 +1471,11 @@
         {
           "name": "continue",
           "link": "37",
-          "pid": "71"
+          "pid": "70"
         }
       ],
       "name": "36.1",
-      "pid": "69",
+      "pid": "68",
       "position": {
         "x": "143",
         "y": "9712"
@@ -1513,11 +1492,11 @@
         {
           "name": "continue",
           "link": "38",
-          "pid": "72"
+          "pid": "71"
         }
       ],
       "name": "36.2",
-      "pid": "70",
+      "pid": "69",
       "position": {
         "x": "293",
         "y": "9712"
@@ -1534,11 +1513,11 @@
         {
           "name": "continue",
           "link": "38",
-          "pid": "72"
+          "pid": "71"
         }
       ],
       "name": "37",
-      "pid": "71",
+      "pid": "70",
       "position": {
         "x": "143",
         "y": "9862"
@@ -1550,16 +1529,16 @@
       ]
     },
     {
-      "text": "You're one of the first to actually see some of the play.\n[[continue->39]]",
+      "text": "You're one of the first to see some of the play.\n[[continue->39]]",
       "links": [
         {
           "name": "continue",
           "link": "39",
-          "pid": "73"
+          "pid": "72"
         }
       ],
       "name": "38",
-      "pid": "72",
+      "pid": "71",
       "position": {
         "x": "306",
         "y": "9985"
@@ -1576,11 +1555,11 @@
         {
           "name": "continue",
           "link": "40",
-          "pid": "74"
+          "pid": "73"
         }
       ],
       "name": "39",
-      "pid": "73",
+      "pid": "72",
       "position": {
         "x": "306",
         "y": "10135"
@@ -1597,11 +1576,11 @@
         {
           "name": "continue",
           "link": "41",
-          "pid": "75"
+          "pid": "74"
         }
       ],
       "name": "40",
-      "pid": "74",
+      "pid": "73",
       "position": {
         "x": "306",
         "y": "10285"
@@ -1618,11 +1597,11 @@
         {
           "name": "continue",
           "link": "42",
-          "pid": "76"
+          "pid": "75"
         }
       ],
       "name": "41",
-      "pid": "75",
+      "pid": "74",
       "position": {
         "x": "306",
         "y": "10435"
@@ -1639,11 +1618,11 @@
         {
           "name": "continue",
           "link": "43",
-          "pid": "77"
+          "pid": "76"
         }
       ],
       "name": "42",
-      "pid": "76",
+      "pid": "75",
       "position": {
         "x": "306",
         "y": "10585"
@@ -1660,11 +1639,11 @@
         {
           "name": "continue",
           "link": "44",
-          "pid": "78"
+          "pid": "77"
         }
       ],
       "name": "43",
-      "pid": "77",
+      "pid": "76",
       "position": {
         "x": "306",
         "y": "10736"
@@ -1681,14 +1660,14 @@
         {
           "name": "continue",
           "link": "45",
-          "pid": "79"
+          "pid": "78"
         }
       ],
       "name": "44",
-      "pid": "78",
+      "pid": "77",
       "position": {
         "x": "306",
-        "y": "10886"
+        "y": "10885"
       },
       "tags": [
         "0",
@@ -1702,11 +1681,11 @@
         {
           "name": "continue",
           "link": "46",
-          "pid": "80"
+          "pid": "79"
         }
       ],
       "name": "45",
-      "pid": "79",
+      "pid": "78",
       "position": {
         "x": "306",
         "y": "11036"
@@ -1723,11 +1702,11 @@
         {
           "name": "continue",
           "link": "47",
-          "pid": "81"
+          "pid": "80"
         }
       ],
       "name": "46",
-      "pid": "80",
+      "pid": "79",
       "position": {
         "x": "306",
         "y": "11186"
@@ -1744,11 +1723,11 @@
         {
           "name": "continue",
           "link": "48",
-          "pid": "82"
+          "pid": "81"
         }
       ],
       "name": "47",
-      "pid": "81",
+      "pid": "80",
       "position": {
         "x": "306",
         "y": "11336"
@@ -1765,11 +1744,11 @@
         {
           "name": "continue",
           "link": "49",
-          "pid": "83"
+          "pid": "82"
         }
       ],
       "name": "48",
-      "pid": "82",
+      "pid": "81",
       "position": {
         "x": "306",
         "y": "11486"
@@ -1786,11 +1765,11 @@
         {
           "name": "continue",
           "link": "50",
-          "pid": "84"
+          "pid": "83"
         }
       ],
       "name": "49",
-      "pid": "83",
+      "pid": "82",
       "position": {
         "x": "306",
         "y": "11636"
@@ -1804,7 +1783,7 @@
     {
       "text": "Absolutely! Let's go!",
       "name": "50",
-      "pid": "84",
+      "pid": "83",
       "position": {
         "x": "306",
         "y": "11786"
@@ -1821,11 +1800,11 @@
         {
           "name": "continue",
           "link": "40",
-          "pid": "74"
+          "pid": "73"
         }
       ],
       "name": "51",
-      "pid": "85",
+      "pid": "84",
       "position": {
         "x": "1008",
         "y": "6524"

@@ -8,7 +8,7 @@ public class Strawberry : Fighter
     public override string Compliment() {
         if (RelationshipScore.strawberryVerbal) {
             this.healingMod *= 2;
-            return "'Strawberry, I know we're fighting now, but… I can tell how much you care about your partner.'\nStrawberry overflows with joy. Their healing moves restore double HP.";
+            return "'Strawberry, I know we're fighting now, but… I can tell how much you care about your partner.'\nStrawberry overflows with joy. Their healing moves double.";
         } else {
             return ineffectiveCompliment;
         }
@@ -17,7 +17,7 @@ public class Strawberry : Fighter
     public override string Insult() {
         if (RelationshipScore.strawberryVerbal) {
             this.Damage(4);
-            return "'You sheep! You're just in this competition for your partner, think for yourself!'\nStrawberry thinks you're rude, but is still hurt. They lose 4HP.";
+            return "'You sheep! You're just in this competition for your partner, think for yourself!'\nStrawberry thinks you're rude, but is still very hurt.";
         } else {
             return ineffectiveInsult;
         }
@@ -35,7 +35,7 @@ public class Strawberry : Fighter
         {
             targets[0].dmgMod += 2;
             FindObjectOfType<DialogueAudio>().PlayAudio("Stat Boost");
-            return "Strawberry increases " + targets[0].name + "\'s damage by 2";
+            return "Strawberry increases " + targets[0].name + "\'s damage by 2 PTS";
         };
 
         this.attack3execute = targets =>
