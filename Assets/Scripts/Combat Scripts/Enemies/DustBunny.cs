@@ -42,7 +42,7 @@ public class DustBunny : Fighter
         {
             string msg = "The bunny sends out a cloud of dust.\n";
             targets[0].Defense(-2, 3);
-            msg += targets[0].name + "\'s defense is lowered by 2 for 3 turns.";
+            msg += targets[0].name + "\'s defense is lowered by 2 PTS for 3 turns.";
             return msg;
         };
 

@@ -44,7 +44,7 @@ public class LemonFighter : Fighter
             {
                 int selfDamage = UnityEngine.Random.Range(2, 4);
                 this.Damage(selfDamage);
-                msg += "\nLemon hurts themself for " + selfDamage + " hp";
+                msg += "\nLemon hurts themself for " + selfDamage + " HP";
 
             }
             return msg;
@@ -57,9 +57,9 @@ public class LemonFighter : Fighter
             foreach (Fighter target in targets) {
                 target.Defense(2, 3);
                 if (target is LemonFighter) {
-                    msg += "Lemon raises their own defense by 2 pts for 3 turns.";
+                    msg += "Lemon raises their own defense by 2 PTS for 3 turns.";
                 } else {
-                    msg += "Lemon raises " + target.name + "'s defense by 2 pts for 3 turns. \n";
+                    msg += "Lemon raises " + target.name + "'s defense by 2 PTS for 3 turns. \n";
                 }
             }
             return msg;

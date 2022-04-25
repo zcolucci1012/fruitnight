@@ -47,7 +47,7 @@ public class OvenMitt : Fighter
             if (result.hit)
             {
                 int healing = Damage(-result.dmg);
-                msg += ", and stole " + targets[0].name + "\'s health to heal itself for " + (-healing) + " hp";
+                msg += ", and stole " + targets[0].name + "\'s health to heal itself for " + (-healing) + " HP";
             }
             return msg;
         };

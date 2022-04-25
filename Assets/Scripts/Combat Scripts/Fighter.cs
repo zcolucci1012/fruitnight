@@ -280,7 +280,7 @@ public abstract class Fighter : MonoBehaviour
                 Damage(p.dmg);
                 print("poison damage!");
                 if (!poisoned) {
-                    msg += this.name + " is hurt by it's poison!\n";
+                    msg += this.name + " was hurt by it's poison!\n";
                     poisoned = true;
                 }
             } else if (p.dmg < 0 && !(turnsCantHeal > 0 || unconscious)) {
@@ -288,7 +288,7 @@ public abstract class Fighter : MonoBehaviour
                 print("antidote regeneration!");
                 if (!regenerated)
                 {
-                    msg += this.name + " has some health regenerated!\n";
+                    msg += this.name + " had some health regenerated!\n";
                     regenerated = true;
                 }
             }

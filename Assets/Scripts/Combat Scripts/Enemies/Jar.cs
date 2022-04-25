@@ -8,7 +8,7 @@ public class Jar : Fighter
      public override string Compliment() {
         // DO SOMETHING
         this.Damage(-2);
-        return "'I bet your jam tastes great! I'd love to try some!'\nJar also thinks that their jam tastes great. They do not think even they could make banana jam taste good, though. pog";
+        return "'I bet your jam tastes great! I'd love to try some!'\nJar also thinks that their jam tastes great. They do not think even they could make banana jam taste good, though. They feel healthier.";
     }
 
     public override string Insult() {
@@ -35,7 +35,7 @@ public class Jar : Fighter
             if (result.hit)
             {
                 targets[0].turnsCantHeal+=1;
-                msg += "\nThey can't heal for 1 turn";
+                msg += "\nThe jar can't heal for 1 turn";
             }
             return msg;
         };

@@ -8,8 +8,8 @@ public class BlueberryFighter : Fighter
     public override string Compliment() {
         if (RelationshipScore.blueberryVerbal) {
             // distracts them for a turn
-            this.Freeze(1);
-            return "'Hey Blueberry, you're so smart. Have you ever considered pickling pickles...'\nYou distract Blueberry with this exciting new thought, freezing them for a turn";
+            
+            return "'Hey Blueberry, we never quite found out what Caut Ion meant, did we? I'll find out for you!'\nBlueberry scoffs at the thought of someone else investigating instead of him, taking no effect from your comment.";
         } else {
             return ineffectiveCompliment;
         }
@@ -17,7 +17,8 @@ public class BlueberryFighter : Fighter
 
     public override string Insult() {
         if (RelationshipScore.blueberryVerbal) {
-            return "'Hey Blueberry, pickles are kind of… gross…'\nBlueberry scoffs at such a thought, and tells you to read a book. It appears to have no effect on them.";
+            this.Freeze(2);
+            return "'Elderberry is watching, Blueberry. Are you sure you're at the top of your game? It'd be best to read up on your opponent for a while.'\nBlueberry panics, reading instead of fighting for the next couple turns.";
         } else {
             return ineffectiveInsult;
         }
@@ -33,7 +34,7 @@ public class BlueberryFighter : Fighter
             if (result.hit)
             {
                 targets[0].Defense(-2, 2);
-                msg += "\n" + targets[0].name + "\'s defense lowers by 3 pts";
+                msg += "\n" + targets[0].name + "\'s defense lowers by 3 PTS";
             }
             return msg;
         };
@@ -45,10 +46,10 @@ public class BlueberryFighter : Fighter
             foreach (Fighter target in targets) {
                 if (target is BlueberryFighter) {
                     target.Defense(3, 3);
-                    msg += "Blueberry raises their own defense by 3 pts for 2 turns. \n";
+                    msg += "Blueberry raises their own defense by 3 PTS for 2 turns. \n";
                 } else {
                     target.Defense(2, 2);
-                    msg += "Blueberry raises " + target.name + "'s defense by 2 pts for 2 turns. \n";
+                    msg += "Blueberry raises " + target.name + "'s defense by 2 PTS for 2 turns. \n";
                 } 
             }
             return msg;
